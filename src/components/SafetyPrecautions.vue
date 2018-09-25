@@ -9,7 +9,7 @@
         </div>
 
         <div class="ui blue message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            If something goes wrong or you need help, check <a href="troubleshooting.html">troubleshooting</a>.
+            If something goes wrong or you need help, check <router-link to="/troubleshooting">troubleshooting</router-link>.
         </div>
 
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
@@ -20,7 +20,7 @@
             <p>By backing up your NAND (the Switch's internal memory), you will later be able to restore it in the event that anything goes wrong, essentially rewinding it back to a previous state.</p>
 
             <ol>
-                <li>Enter RCM but this time send the Hekate payload provided in the SDSetup download to your Switch (refer to <a href="accessingrcm.html">Section 1: Accessing RCM</a> if you've forgotten how)</li>
+                <li>Enter RCM but this time send the Hekate payload provided in the SDSetup download to your Switch (refer to <router-link to="/accessingrcm">Section 1: Accessing RCM</router-link> if you've forgotten how)</li>
                 <li>In Hekate, select <b>'Tools > Backup > Backup eMMC BOOT0/1'</b>
                     <ul><li>Use Volume +/- to change menu selection and Power to select an option.</li></ul>
                 </li>

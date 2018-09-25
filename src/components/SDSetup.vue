@@ -9,7 +9,7 @@
         </div>
 
         <div class="ui blue message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            If something goes wrong or you need help, check <a href="troubleshooting.html">troubleshooting</a>.
+            If something goes wrong or you need help, check <router-link to="/troubleshooting">troubleshooting</router-link>.
         </div>
 
         <div class="ui blue message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
