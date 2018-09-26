@@ -6,10 +6,12 @@
             </h1>
             <div class="ui divider"></div>
             <p style="text-align:center">This section of the guide will teach you how to access RCM, determine if your Switch is vulnerable to fusee-gelee, and run a payload</p>
-            <router-link to="/sdsetup"><button class="fluid ui red button" v-bind:class="{ inverted: $root.$data.darkTheme }">If you already have access to RCM, you can skip to Section 2: SD Card Setup</button></router-link>
+            <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }" style="text-align:center">
+                <b>If you already have access to RCM and can launch payloads, continue to <router-link to="/sdsetup">SD Card Setup</router-link></b>
+            </div>
         </div>
 
-        <div class="ui blue message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
+        <div class="ui teal message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
             If something goes wrong or you need help, check <router-link to="/troubleshooting">troubleshooting</router-link>.
         </div>
 
@@ -164,7 +166,11 @@
             Wait for your Switch to shutdown before continuing.
         </div>
 
-        <router-link to="/sdsetup"><button class="fluid ui red button" v-bind:class="{ inverted: $root.$data.darkTheme }">Proceed to Section 2: SD Card Setup</button></router-link>
+        <div class="ui divider"></div>
+
+        <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <b>Continue to <router-link to="/sdsetup">SD Card Setup</router-link></b>
+        </div>
     </div>
 </template>
 

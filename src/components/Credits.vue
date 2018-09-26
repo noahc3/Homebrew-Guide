@@ -7,6 +7,7 @@
                 </h1>
                 <div class="ui divider"></div>
                 <ul>
+                    <li>Plailect for starting this guide trend and providing a basis for this guide.</li>
                     <li>SciresM and ReSwitched for Atmosphere</li>
                     <li>CTCaer and naehrwert for Hekate</li>
                     <li>tomGER for SDFilesSwitch</li>

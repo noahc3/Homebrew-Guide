@@ -8,7 +8,7 @@
             <p style="text-align:center">You are now able to run Hekate on your Nintendo Switch to launch Atmosphere or ReiNX custom firmwares. These next steps will make sure your being as careful as possible in regards to keeping your Switch from bricking and getting banned. <b>These steps are optional but highly recommended</b></p>
         </div>
 
-        <div class="ui blue message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
+        <div class="ui teal message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
             If something goes wrong or you need help, check <router-link to="/troubleshooting">troubleshooting</router-link>.
         </div>
 
@@ -73,8 +73,11 @@
             </ol>
         </div>
 
-        <router-link to="final"><button class="fluid ui red button" v-bind:class="{ inverted: $root.$data.darkTheme }">Proceed to Section 4: Using CFW</button></router-link>
-    </div>
+        <div class="ui divider"></div>
+
+        <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <b>Continue to <router-link to="/final">Using CFW</router-link></b>
+        </div>    </div>
 </template>
 
 <script>

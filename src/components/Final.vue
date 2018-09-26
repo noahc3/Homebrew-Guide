@@ -15,7 +15,7 @@
             <p>This section provides some extra info about using your newly found powers.</p>
         </div>
 
-        <div class="ui blue message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
+        <div class="ui teal message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
             If something goes wrong or you need help, check <router-link to="/troubleshooting">troubleshooting</router-link>.
         </div>
 

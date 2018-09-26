@@ -8,8 +8,12 @@
             <p style="text-align:center">Want to hack your Nintendo Switch but don't know where to start? Just follow this guide!<br/><br/>
                 This website will walk you through all of the steps required to getting homebrew and custom firmware on your Nintendo Switch.</p>
         </div>
-        <router-link to="/beforestarting"><button class="fluid ui red button" v-bind:class="{ inverted: $root.$data.darkTheme }">Proceed to Section 0: Before Starting</button></router-link>
-    </div>
+
+        <div class="ui divider"></div>
+
+        <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <b>Continue to <router-link to="/beforestarting">Before Starting</router-link></b>
+        </div>    </div>
 </template>
 
 <script>

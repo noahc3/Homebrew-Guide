@@ -8,11 +8,11 @@
             <p style="text-align:center">At this point, you've verified that you can exploit fusee-gelee to run CFW. You will now prepare your SD card with the necessary software.</p>
         </div>
 
-        <div class="ui blue message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
+        <div class="ui teal message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
             If something goes wrong or you need help, check <router-link to="/troubleshooting">troubleshooting</router-link>.
         </div>
 
-        <div class="ui blue message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
+        <div class="ui teal message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
             This guide will assume you want to use <a href="https://www.sdsetup.com">https://www.sdsetup.com</a> to get your homebrew setup, and will guide you on doing so. You can alternatively directly use <a href="https://www.github.com/tumGER/SDFilesSwitch">tomGER's SDFilesSwitch</a>, or obtain and setup CFW software on your own (not recommended).
         </div>
 
@@ -58,11 +58,14 @@
         </div>
 
         <div class="ui green message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            You are technically done! At this point, you can use the Hekate payload provided in your download in conjunction with your payload sender to launch into Atmosphere or ReiNX CFW. The next section includes important information about safety precautions you should take.
+            You are technically done! At this point, you can use the Hekate payload provided in your download with your payload sender to launch into Atmosphere or ReiNX CFW.<br/>The next section includes important information about safety precautions you should take.
         </div>
 
-        <router-link to="/safetyprecautions"><button class="fluid ui red button" v-bind:class="{ inverted: $root.$data.darkTheme }">Proceed to Section 3: Safety Precautions</button></router-link>
-    </div>
+        <div class="ui divider"></div>
+
+        <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <b>Continue to <router-link to="/safetyprecautions">Safety Precautions</router-link></b>
+        </div>    </div>
 </template>
 
 <script>

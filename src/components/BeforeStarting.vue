@@ -68,11 +68,17 @@
                 </ul>
             </div>
 
-            <div class="ui blue message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <div class="ui teal message" v-bind:class="{ inverted: $root.$data.darkTheme }">
                 This guide will work on <b>all firmware versions</b> as long as fusee-gelee is not patched on the Switch. The guide will include a step for checking if fusee-gelee is patched or not.
             </div>
 
-            <router-link to="/accessingrcm"><button class="fluid ui red button" v-bind:class="{ inverted: $root.$data.darkTheme }">Proceed to Section 1: Accessing RCM</button></router-link>
+            <div class="ui divider"></div>
+
+            <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                <b>Continue to <router-link to="/accessingrcm">Accessing RCM</router-link></b>
+            </div>
+
+
         </div>
     </div>
 </template>
