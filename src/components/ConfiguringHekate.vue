@@ -100,6 +100,12 @@
                 It is highly recommended that you store these backups in multiple locations (ex. cloud storage, external harddrive, etc) as they may be critical to restoring your Switch if anything goes wrong in the future.
             </div>
         </div>
+
+        <div class="ui divider"></div>
+
+        <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <b>Back to <router-link to="/final">After Setup</router-link></b>
+        </div>
     </div>
 </template>
 

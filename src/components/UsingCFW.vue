@@ -44,6 +44,12 @@
             <div class="ui divider"></div>
             <p>You can backup and restore save files locally, without Nintendo Switch Online, by using <b>Checkpoint</b> from within the Homebrew Menu. Dumped saves will go in <b>'/switch/checkpoint/'</b> on your SD card for you to copy elsewhere. These save backups can later be restored to any user account on any Switch using Checkpoint.</p>
         </div>
+
+        <div class="ui divider"></div>
+
+        <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <b>Back to <router-link to="/final">After Setup</router-link></b>
+        </div>
     </div>
 </template>
 

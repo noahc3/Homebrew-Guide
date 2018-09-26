@@ -19,11 +19,23 @@
                         <router-link class="item" to="/safetyprecautions">
                             Safety Precautions
                         </router-link>
-                        <router-link class="item" to="/final">
-                            Using CFW
-                        </router-link>
                     </div>
                 </div>
+                <router-link to="/final" class="ui simple dropdown item" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                    After Setup
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <router-link class="item" to="/configuringhekate">
+                            Using Hekate
+                        </router-link>
+                        <router-link class="item" to="/usingcfw">
+                            Using CFW
+                        </router-link>
+                        <router-link class="item" to="/exfat">
+                            Enabling exFAT
+                        </router-link>
+                    </div>
+                </router-link>
                 <router-link class="item" to="/troubleshooting">
                     Troubleshooting
                 </router-link>
@@ -63,6 +75,20 @@
                         </router-link>
                     </div>
                 </div>
+                <div class="ui item">
+                    After Setup
+                    <div class="menu">
+                        <router-link class="item" to="/configuringhekate">
+                            Using Hekate
+                        </router-link>
+                        <router-link class="item" to="/usingcfw">
+                            Using CFW
+                        </router-link>
+                        <router-link class="item" to="/exfat">
+                            Enabling exFAT
+                        </router-link>
+                    </div>
+                </div>
                 <router-link class="item" to="/troubleshooting">
                     Troubleshooting
                 </router-link>
@@ -81,11 +107,13 @@
 
         <router-view/> <!-- main page -->
 
+
+
         <div style="margin-top:2em">
             <div class=" ui center compact segment" style="margin:auto" v-bind:class="{ inverted: $root.$data.darkTheme }">
                 <span style="margin-right:1rem;padding-bottom:0.5rem">Light</span>
                 <div class="ui toggle fitted checkbox" v-bind:class="{ inverted: $root.$data.darkTheme }">
-                    <input id="cbx-theme" type="checkbox" v-model="$root.$data.darkTheme">
+                    <input id="cbx-theme" type="checkbox" v-model="$root.$data.darkTheme"/>
                     <label/>
                 </div>
                 <span style="margin-left:1rem">Dark</span>

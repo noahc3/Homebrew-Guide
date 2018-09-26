@@ -2,7 +2,7 @@
     <div class="ui container">
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <h1 class="ui header" style="text-align:center">
-                Post Setup
+                After Setup
             </h1>
             <div class="ui divider"></div>
             <p>Congratulations! By this point you have:</p>
@@ -35,7 +35,7 @@
         <div class="ui divider"></div>
 
         <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            <b>(Recommended) For information on enabling and using exFAT, see <router-link to="/configuringhekate">Using exFAT</router-link></b>
+            <b>(Recommended) For information on enabling and using exFAT, see <router-link to="/exfat">Using exFAT</router-link></b>
         </div>
 
         <div class="ui divider"></div>
@@ -49,6 +49,8 @@
         <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <b>For information on using Custom Firmware and the features they enable, see <router-link to="/usingcfw">Using Custom Firmware</router-link></b>
         </div>
+
+
     </div>
 </template>
 
