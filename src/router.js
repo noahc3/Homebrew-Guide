@@ -9,6 +9,8 @@ import Final from './components/Final.vue'
 import FAQ from './components/FAQ.vue'
 import Troubleshooting from './components/Troubleshooting.vue'
 import Credits from './components/Credits.vue'
+import ConfiguringHekate from './components/ConfiguringHekate.vue'
+import UsingCFW from './components/UsingCFW'
 
 Vue.use(Router)
 
@@ -58,6 +60,16 @@ export default new Router({
             path: '/credits',
             name: 'credits',
             component: Credits
+        },
+        {
+            path: '/configuringhekate',
+            name: 'configuringhekate',
+            component: ConfiguringHekate
+        },
+        {
+            path: '/usingcfw',
+            name: 'usingcfw',
+            component: UsingCFW
         }
     ]
 })

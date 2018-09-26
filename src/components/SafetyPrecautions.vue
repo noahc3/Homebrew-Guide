@@ -77,7 +77,8 @@
 
         <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <b>Continue to <router-link to="/final">Using CFW</router-link></b>
-        </div>    </div>
+        </div>
+    </div>
 </template>
 
 <script>
