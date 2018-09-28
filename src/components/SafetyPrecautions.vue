@@ -62,8 +62,7 @@
                 <b>Doing this will make games unable to be played online, block eShop, game updates and system updates.</b> If you are OK with this, follow these instructions:</p>
             <ol>
                 <li>Power on your Switch normally (no CFW).</li>
-                <li>Go to the Internet tab</li>
-                <li>Open Internet Settings</li>
+                <li>Open settings and go to the Internet tab</li>
                 <li>Configure a WiFi connection if you have not already done so</li>
                 <li>Select your Wifi network and pick Change Settings</li>
                 <li>Set DNS Settings to Manual</li>
@@ -77,7 +76,8 @@
 
         <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <b>Continue to <router-link to="/final">Using CFW</router-link></b>
-        </div>    </div>
+        </div>
+    </div>
 </template>
 
 <script>
