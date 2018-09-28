@@ -50,6 +50,12 @@
             <b>For information on using Custom Firmware and the features they enable, see <router-link to="/usingcfw">Using Custom Firmware</router-link></b>
         </div>
 
+        <div class="ui divider"></div>
+
+        <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <b>To learn how to upgrade your system without burning fuses, how to upgrade without Internet or while superbanned, or how to downgrade, see <router-link to="/manualupdate">Updating/Downgrading Without Burning Fuses</router-link></b>
+        </div>
+
 
     </div>
 </template>

@@ -34,6 +34,9 @@
                         <router-link class="item" to="/preparingexfat">
                             Enabling exFAT
                         </router-link>
+                        <router-link class="item" to="/manualupdate">
+                            Manually Updating/Downgrading
+                        </router-link>
                     </div>
                 </router-link>
                 <router-link class="item" to="/troubleshooting">
@@ -87,6 +90,9 @@
                         </router-link>
                         <router-link class="item" to="/preparingexfat">
                             Enabling exFAT
+                        </router-link>
+                        <router-link class="item" to="/manualupdate">
+                            Manually Updating/Downgrading
                         </router-link>
                     </div>
                 </div>
@@ -173,6 +179,10 @@
         min-height: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    li{
+        margin: 10px 0;
     }
 
 </style>
