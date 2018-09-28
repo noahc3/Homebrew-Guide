@@ -31,7 +31,7 @@
                         <router-link class="item" to="/usingcfw">
                             Using CFW
                         </router-link>
-                        <router-link class="item" to="/exfat">
+                        <router-link class="item" to="/preparingexfat">
                             Enabling exFAT
                         </router-link>
                     </div>
@@ -46,6 +46,7 @@
                     Credits
                 </router-link>
                 <div class="right menu">
+                    <a href="https://github.com/noahc3/homebrew-guide" class="ui item" style="text-align:center"><i class="big github icon" style="margin:0"/></a>
                     <a href="https://www.sdsetup.com" class="item">
                         Back to SDSetup
                     </a>
@@ -84,7 +85,7 @@
                         <router-link class="item" to="/usingcfw">
                             Using CFW
                         </router-link>
-                        <router-link class="item" to="/exfat">
+                        <router-link class="item" to="/preparingexfat">
                             Enabling exFAT
                         </router-link>
                     </div>
@@ -98,6 +99,7 @@
                 <router-link class="item" to="/credits">
                     Credits
                 </router-link>
+                <a href="https://github.com/noahc3/homebrew-guide" class="ui item">Source on Github</a>
                 <a href="https://www.sdsetup.com" class="item">
                     Back to SDSetup
                 </a>

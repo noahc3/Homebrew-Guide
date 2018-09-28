@@ -10,7 +10,10 @@ import FAQ from './components/FAQ.vue'
 import Troubleshooting from './components/Troubleshooting.vue'
 import Credits from './components/Credits.vue'
 import ConfiguringHekate from './components/ConfiguringHekate.vue'
-import UsingCFW from './components/UsingCFW'
+import UsingCFW from './components/UsingCFW.vue'
+import Exfat from './components/Exfat.vue'
+import AutoExfat from './components/AutoExfat'
+import ManualExfat from './components/ManualExfat'
 
 Vue.use(Router)
 
@@ -70,6 +73,21 @@ export default new Router({
             path: '/usingcfw',
             name: 'usingcfw',
             component: UsingCFW
+        },
+        {
+            path: '/preparingexfat',
+            name: 'preparingexfat',
+            component: Exfat
+        },
+        {
+            path: '/preparingexfat/auto',
+            name: 'preparingexfat/auto',
+            component: AutoExfat
+        },
+        {
+            path: '/preparingexfat/manual',
+            name: 'preparingexfat/manual',
+            component: ManualExfat
         }
     ]
 })

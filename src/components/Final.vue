@@ -35,7 +35,7 @@
         <div class="ui divider"></div>
 
         <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            <b>(Recommended) For information on enabling and using exFAT, see <router-link to="/exfat">Using exFAT</router-link></b>
+            <b>(Recommended) For information on enabling and using exFAT, see <router-link to="/preparingexfat">Preparing exFAT</router-link></b>
         </div>
 
         <div class="ui divider"></div>
