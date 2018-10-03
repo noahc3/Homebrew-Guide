@@ -13,7 +13,7 @@
                 </h3>
                 <div class="ui divider"></div>
                 <p>This is an extreme that you don't necessarily need to take, though it will basically 100% guarantee you won't get banned (since you are basically banning yourself).<br><br>
-                    Using 90DNS or enabling GDPR protections is usually enough to keep from being banned as long as you don't care about NSP files.</p>
+                    Using 90DNS (163.172.141.219 or 45.248.48.62) or enabling GDPR protections is usually enough to keep from being banned as long as you don't care about NSP files.</p>
             </div>
 
             <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
@@ -30,7 +30,7 @@
                 </h3>
                 <div class="ui divider"></div>
                 <p>When a new firmware update is released, you should always wait for SDSetup and/or SDFilesSwitch to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.<br><br>
-                    <b>As of writing, the latest firmware version is 6.0. It is currently completely safe to update as long as you are using SDFiles v9.0.1 or a bundle from SDSetup downloaded after Sept. 19th 2018.</b></p>
+                    <b>As of writing, the latest firmware version is 6.0. It is currently completely safe to update as long as you are using SDFiles v9+ or a bundle from SDSetup downloaded after Sept. 19th 2018.</b></p>
             </div>
 
             <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
