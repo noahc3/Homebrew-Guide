@@ -8,6 +8,10 @@
                 <div class="ui divider"></div>
                 <p>This section of the guide will teach you basic information about terminology used, what you will be able to do after following this guide, and provide some warnings before you proceed.</p>
             </div>
+			
+			<div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                This is a lot of info to take in, but if you are a complete noob to the Switch scene, you should seriously consider reading all of it. The Switch scene is very different from the 3DS/WiiU/Wii.
+            </div>
 
             <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
                 <h2 class="ui header" style="text-align:center">
