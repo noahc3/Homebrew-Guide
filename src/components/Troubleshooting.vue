@@ -32,7 +32,7 @@
         </div>
 
         <div class="ui red message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            If this page doesn't solve your problem, feel free to ask for help in the <a href="https://discord.gg/5WrBKQ">support channel</a> on the SDFilesSwitched Discord.
+            If this page doesn't solve your problem, feel free to ask for help in the <a href="https://discord.gg/qbRAuy7">support channel</a> on the SDFilesSwitched Discord.
         </div>
     </div>
 </template>
