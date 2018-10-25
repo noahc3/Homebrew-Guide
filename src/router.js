@@ -11,15 +11,12 @@ import Troubleshooting from './components/Troubleshooting'
 import Credits from './components/Credits'
 import ConfiguringHekate from './components/ConfiguringHekate'
 import UsingCFW from './components/UsingCFW'
-import Exfat from './components/Exfat'
-import AutoExfat from './components/AutoExfat'
-import ManualExfat from './components/ManualExfat'
 import ManualUpdate from './components/ManualUpdate'
 
 Vue.use(Router)
 
 export default new Router({
-    mode: 'history',
+    mode: 'hash',
     routes: [
         {
             path: '/',
