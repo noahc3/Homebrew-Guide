@@ -31,9 +31,6 @@
                         <router-link class="item" to="/usingcfw">
                             Using CFW
                         </router-link>
-                        <router-link class="item" to="/preparingexfat">
-                            Enabling exFAT
-                        </router-link>
                         <router-link class="item" to="/manualupdate">
                             Manually Updating/Downgrading
                         </router-link>
@@ -87,9 +84,6 @@
                         </router-link>
                         <router-link class="item" to="/usingcfw">
                             Using CFW
-                        </router-link>
-                        <router-link class="item" to="/preparingexfat">
-                            Enabling exFAT
                         </router-link>
                         <router-link class="item" to="/manualupdate">
                             Manually Updating/Downgrading
