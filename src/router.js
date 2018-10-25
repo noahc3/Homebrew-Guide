@@ -77,21 +77,6 @@ export default new Router({
             component: UsingCFW
         },
         {
-            path: '/preparingexfat',
-            name: 'preparingexfat',
-            component: Exfat
-        },
-        {
-            path: '/preparingexfat/auto',
-            name: 'preparingexfat/auto',
-            component: AutoExfat
-        },
-        {
-            path: '/preparingexfat/manual',
-            name: 'preparingexfat/manual',
-            component: ManualExfat
-        },
-        {
             path: '/manualupdate',
             name: 'manualupdate',
             component: ManualUpdate
