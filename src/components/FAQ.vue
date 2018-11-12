@@ -30,7 +30,7 @@
                 </h3>
                 <div class="ui divider"></div>
                 <p>When a new firmware update is released, you should always wait for SDSetup and/or SDFilesSwitch to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.<br><br>
-                    <b>As of writing, the latest firmware version is 6.0. It is currently completely safe to update as long as you are using SDFiles v9+ or a bundle from SDSetup downloaded after Sept. 19th 2018.</b></p>
+                    <b>As of writing, the latest firmware version is 6.1. It is currently completely safe to update as long as you are using Kosmos/SDFiles v10+ or a bundle from SDSetup downloaded after October. 29th 2018.</b></p>
             </div>
 
             <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">

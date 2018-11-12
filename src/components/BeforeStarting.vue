@@ -38,7 +38,7 @@
                     The guide will utilize the fusee-gelee exploit (sometimes also referred to as ShofEL2 or CVE-2018-6242, these are all the same exploit) which takes advantage of an oversight in the Nintendo Switch built-in recovery mode (referred to as RCM). <b>fusee-gelee is a tethered, non-persistent exploit</b>, meaning you require a secondary device (such as a PC or Android phone) to enable CFW on every reboot. This is unlike the untethered coldboot exploits available on other systems such as Boot9strap for 3DS and Henkaku Enso for Vita.<br><br>
                     The fusee-gelee exploit allows for a full system takeover; the exploit runs before even the normal bootloader code, meaning anything about the normal Switch operating system (named Horizon, or HOS) can be changed. The exploit also allows dumping on the bootloader and any console unique information.<br><br>
                     For an advanced technical overview on how fusee-gelee works, you can view <a href="https://www.exploit-db.com/docs/english/44532-nintendo-switchnvidia-vulnerability-disclosure-fus%C3%A9e-gel%C3%A9e.pdf">this whitepaper</a><br><br>
-                    This guide will focus on using a configuration of the Hekate custom bootloader, as well as the Atmosphere Custom Firmware, both provided by tomGER's SDFilesSwitch. You will also install ReiNX along the way if you wish to use that instead.</p>
+                    This guide will focus on using a configuration of the Hekate custom bootloader, as well as the Atmosphere custom firmware, both provided by Team AtlasNX's Kosmos. You can also install ReiNX along the way if you wish to use that instead.</p>
             </div>
 
             <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">

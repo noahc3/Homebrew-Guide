@@ -25,8 +25,8 @@
             <ol>
                 <li>Go to <a href=https://www.sdsetup.com>https://www.sdsetup.com</a></li>
                 <li>Select Nintendo Switch</li>
-                <li>Select the <b>"SDFiles Defaults"</b> package
-                    <ul><li>If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, HBMenu and Hekate.</li></ul>
+                <li>Select the <b>"Kosmos Defaults"</b> package
+                    <ul><li>If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, Homebrew Menu and Hekate.</li></ul>
                 </li>
                 <li>Select any additional homebrew packages you wish.
                     <ul><li>On desktop, you can hover over the homebrew names to get a description of what they do.</li></ul>
