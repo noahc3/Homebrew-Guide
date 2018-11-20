@@ -8,6 +8,10 @@
             <p>When you update your system firmware version, your Nintendo Switch burns a microscopic fuse to prevent your Switch from being able to downgrade. Essentially, if a firmware tries to boot but too many fuses are burnt for that specific firmware version, the system will simply power off, preventing you from booting.<br/><br/>
             Hekate, ReiNX and SXOS bypass these fuse checks and the fuse burns. By enabling AutoRCM and then manually updating using ChoiDujourNX, you can keep your Switch in a state where it can be downgraded again the future.<br/><br/>
             You can also use this guide as a way to upgrade your Switch if your Switch does not have access to the internet or is superbanned, and to downgrade your Switch to any firmware version.</p>
+            <div class="ui red message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                <div class="ui header">Do not update to 6.2.0+</div>
+                Nintendo changed key derivation and there are currently no bootloaders compatible with the changes. Updating to 6.2.0+ will currently break CFW. This will be fixed in the near future.
+            </div>
         </div>
 
         <div class="ui teal message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
