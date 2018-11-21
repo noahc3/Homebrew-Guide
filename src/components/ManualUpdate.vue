@@ -90,7 +90,7 @@
                 <li>In ChoiDujourNX, enter the <b>/firmware</b> you created earlier and select <b>Choose</b> </li>
                 <li>After processing, select <b>[x.x.x] (exFAT)</b> where [x.x.x] is the firmware version you chose</li>
                 <li>After verification, choose <b>Select Firmware</b></li>
-                <li>Choose whether you want to enable or disable AutoRCM (see above for more information).</li>
+                <li>Choose whether you want to enable or disable AutoRCM (see above for more information). <b>This will override an existing AutoRCM settings you have, so make sure to pick which you want.</b></li>
                 <li>Choose <b>Start installation</b></li>
                 <li>Wait for the firmware update to finish
                     <ul><li>This can be take little time or a long time depending on the situation. Be patient, and don't worry if it finishes very quickly.</li></ul></li>
