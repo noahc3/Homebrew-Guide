@@ -106,6 +106,14 @@
             </div>
         </div>
 
+        <div class="ui container">
+            <div class="ui red message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                <div class="ui header">!!! IMPORTANT !!!</div>
+                Firmware 6.2.0 breaks everything. For more information, see <b><router-link to="/FW620">Firmware 6.2.0 FAQ</router-link></b>
+            </div>
+        </div>
+
+<br><br>
 
         <router-view/> <!-- main page -->
 

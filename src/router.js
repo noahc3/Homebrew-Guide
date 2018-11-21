@@ -12,6 +12,7 @@ import Credits from './components/Credits'
 import ConfiguringHekate from './components/ConfiguringHekate'
 import UsingCFW from './components/UsingCFW'
 import ManualUpdate from './components/ManualUpdate'
+import FW620 from './components/FW620'
 
 Vue.use(Router)
 
@@ -77,6 +78,11 @@ export default new Router({
             path: '/manualupdate',
             name: 'manualupdate',
             component: ManualUpdate
+        },
+        {
+            path: '/fw620',
+            name: 'fw620',
+            component: FW620
         }
     ]
 })

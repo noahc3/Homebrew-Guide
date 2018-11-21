@@ -14,10 +14,10 @@
 
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <h2 class="ui header" style="text-align:center">
-                Step 1: Backing up your NAND.
+                Step 1: Backing up your NAND and BIS keys.
             </h2>
             <div class="ui divider"></div>
-            <p>By backing up your NAND (the Switch's internal memory), you will later be able to restore it in the event that anything goes wrong, essentially rewinding it back to a previous state.</p>
+            <p>By backing up your NAND (the Switch's internal memory), you will later be able to restore it in the event that anything goes wrong, essentially rewinding it back to a previous state. BIS keys are also good to backup so you can reinstall any firmware version manually should your NAND backup become corrupted or lost.</p>
 
             <ol>
                 <li>Enter RCM but this time send the Hekate payload provided in the SDSetup download to your Switch (refer to <router-link to="/accessingrcm">Section 1: Accessing RCM</router-link> if you've forgotten how)</li>
@@ -30,10 +30,14 @@
                     <ul><li>If your SD card has less than ~32GB free space, Hekate will provide additional instructions every few minutes about pulling files off of your SD card so it can continue.</li></ul>
                 </li>
                 <li>If you weren't required to copy files during the backup process, once again copy the 'backup' folder off of your SD card and put it in a safe location on your PC. Delete the 'backup' folder on your SD card.</li>
-                <li>Go back to the main menu and select 'Power Off'</li>
+                <li>Go back to the main menu and select 'Reboot (RCM)'</li>
+                <li>Send the <b>"biskeydump"</b> payload provided in the SDSetup download to your Switch (if you do not have this payload, you can obtain it <a href="https://switchtools.sshnuke.net/">from sshnuke</a>.</li>
+                <li>Scan the QR code displayed on screen with your phone.</li>
+                <li><b>Store the BIS keys from the QR code in a safe location.</b></li>
+                <li>Press the power button to shutdown.</li>
             </ol>
             <div class="ui yellow message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
-                It is highly recommended that you store these backups in multiple locations (ex. cloud storage, external harddrive, etc) as they may be critical to restoring your Switch if anything goes wrong in the future.
+                It is highly recommended that you store these backups and keys in multiple locations (ex. cloud storage, external harddrive, etc) as they may be critical to restoring your Switch if anything goes wrong in the future.
             </div>
         </div>
 

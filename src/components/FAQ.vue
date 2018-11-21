@@ -73,7 +73,7 @@
             </div>
 
             <div class="ui red message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
-                If this page doesn't answer your question, feel free to ask in the <a href="https://discord.gg/qbRAuy7">support channel</a> on the SDFilesSwitched Discord.
+                If this page doesn't answer your question, feel free to ask in the <a href="https://discord.gg/qbRAuy7">support channel</a> on the Team AtlasNX Discord.
             </div>
         </div>
     </div>

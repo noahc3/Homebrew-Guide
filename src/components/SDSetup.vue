@@ -13,7 +13,7 @@
         </div>
 
         <div class="ui teal message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            This guide will assume you want to use <a href="https://www.sdsetup.com">https://www.sdsetup.com</a> to get your homebrew setup, and will guide you on doing so. You can alternatively directly use <a href="https://www.github.com/tumGER/SDFilesSwitch">tomGER's SDFilesSwitch</a>, or obtain and setup CFW software on your own (not recommended).
+            This guide will assume you want to use <a href="https://www.sdsetup.com">https://www.sdsetup.com</a> to get your homebrew setup, and will guide you on doing so. You can alternatively directly use <a href="https://www.github.com/AtlasNX/Kosmos">Team AtlasNX's Kosmos</a>, or obtain and setup CFW software on your own (not recommended).
         </div>
 
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
@@ -28,6 +28,7 @@
                 <li>Select the <b>"Kosmos Defaults"</b> package
                     <ul><li>If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, Homebrew Menu and Hekate.</li></ul>
                 </li>
+                <li>Select the <b>"biskeydump"</b> payload under <b>Extras > Payloads > biskeydump</b></li>
                 <li>Select any additional homebrew packages you wish.
                     <ul><li>On desktop, you can hover over the homebrew names to get a description of what they do.</li></ul>
                 </li>
