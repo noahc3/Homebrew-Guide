@@ -35,9 +35,9 @@
                 <li>If you have a NAND backup from before 6.2.0, you can restore this through Hekate to downgrade.</li>
                 <li>If you don't have a NAND dump but have dumped your console's BIS keys in the past, you can use ChoiDujour (the PC client) to regenerate your Switch's NAND with an older firmware version. Follow <a href="https://gbatemp.net/threads/how-to-install-run-any-switch-firmware-unofficially-without-burning-any-fuses.507461/">this guide by rajkosto</a> to do this (a version of this guide will be available on this site soon).</li>
             </ul>
-            <p>These solutions come with a caveat:</p>
+            <p style="color:red"><b>These solutions come with a caveat:</b></p>
             <ul>
-                <li>If you ever launched your Switch into Horizon without Hekate/fusee/ReiNX/SXOS on firmware 6.2.0, you will have 8 fuses burnt (you can check your fuse count in Hekate > Tools > . This means you are <b>required to use AutoRCM upon downgrading</b> to bypass the fuse count mismatch. This means:
+                <li>If you ever launched your Switch into Horizon without Hekate/fusee/ReiNX/SXOS on firmware 6.2.0, you will have 8 fuses burnt (you can check your fuse count in <b>Hekate > Console Info > Print fuse info</b>). This means you are <b>required to use AutoRCM upon downgrading</b> to bypass the fuse count mismatch. This means:
                 <ul>
                     <li>Your Switch will not be able to wake from sleep mode as the Switch checks the fuse count when you try to wake up, and will shut down when it finds that the fuse count is wrong.</li>
                     <li>You have to deal with the normal issues with AutoRCM, such as odd charging behaviour with a dead battery, and the Switch not shutting down correctly from Horizon.</li>
