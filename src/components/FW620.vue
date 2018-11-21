@@ -59,6 +59,13 @@
             <p>You should also heavily consider <b>backing up your NAND pre-6.2.0 and dumping your BIS keys just in case.</b> You can find out how to do these things with step 1 of <router-link to="/safetyprecautions">Safety Precautions</router-link>.</p>
         </div>
 
+        <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <h3 class="ui header" style="text-align:center">
+                I'm on a firmware below 6.1.0, how can I update to 6.1.0 without risking updating to 6.2.0?
+            </h3>
+            See <router-link class="item" to="/manualupdate">Manually Updating/Downgrading</router-link> to install any firmware version.
+        </div>
+
         <div class="ui red message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
             If this page doesn't answer your question, feel free to ask in the <a href="https://discord.gg/qbRAuy7">support channel</a> on the Team AtlasNX Discord.
         </div>
