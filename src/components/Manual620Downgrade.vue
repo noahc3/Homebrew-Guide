@@ -74,6 +74,12 @@
             <ol>
                 <li>You should have the latest version of Hekate and a working Hekate setup on your SD card (ex. Kosmos)</li>
                 <li>You need a Windows PC capable of pushing payloads <b>(you <i>need</i> a Windows PC to follow this guide)</b></li>
+                <li>You need the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted (hint: darthsternie, xbins)
+                    <ul>
+                        <li>These should be a .ZIP/.RAR/.7z file containing a single folder with multiple .NCA files inside</li>
+                    </ul>
+                </li>
+                <li>You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal (hint: google)</li>
             </ol>
         </div>
 
@@ -90,13 +96,9 @@
                 <li>Download the latest version of <b>HacDiskMount</b> by rajkosto</li>
                 <li>Download the latest version of <b>memloader</b> by rajkosto</li>
                 <li>Extract each downloaded .ZIP file to separate folders on your PC</li>
-                <li>Download <a href="https://paste.ee/d/b533j/0">keys.txt</a></li>
-                <li>Put <b>keys.txt</b> into the ChoiDujour folder</li>
-                <li>Go to <a href="https://darthsternie.bplaced.net/switch.html">darthsternie.bplaced.net/switch</a></li>
-                <li>Download the .ZIP file for the system firmware version you want to downgrade to
-                    <ul><li>Do not use pre-release firmware versions unless you know what you are doing</li></ul></li>
+                <li>Copy your hactool <b>keys.txt</b> into the ChoiDujour folder</li>
                 <li>Create a folder named <b>"fw"</b> inside of your ChoiDujour folder</li>
-                <li>Extract the contents of the downloaded .ZIP file to the newly created <b>"fw"</b> folder</li>
+                <li>Extract the contents of your firmware .ZIP file to the newly created <b>"fw"</b> folder</li>
                 <li>Go to <a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a>, download and install Etcher for your system</li>
                 <li>In File Explorer, make sure Hidden Files are set to be shown</li>
                 <img src="https://puu.sh/C65Ri/a4bf21e2f4.png" style="max-width: 100%;display:block;margin:auto"/>

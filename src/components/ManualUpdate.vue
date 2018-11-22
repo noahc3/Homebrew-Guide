@@ -62,13 +62,15 @@
             </h2>
             <div class="ui divider"></div>
             <ol>
+                <li>You need to locate the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted (hint: darthsternie, xbins)
+                    <ul>
+                        <li>These should be a .ZIP/.RAR/.7z file containing a single folder with multiple .NCA files inside</li>
+                    </ul>
+                </li>
                 <li>Make sure your SD card includes a basic Hekate/Atmosphere setup (such as the one installed when following this guide)</li>
                 <li>Insert your SD card into your PC</li>
-                <li>Go to <a href="https://darthsternie.bplaced.net/switch.html">darthsternie.bplaced.net/switch</a></li>
-                <li>Download the .ZIP file for the system firmware version you want to upgrade/downgrade to
-                <ul><li>Do not use pre-release firmware versions unless you know what you are doing</li></ul></li>
                 <li>Create a new folder on the root of your SD card named <b>"firmware"</b></li>
-                <li>Extract <b>the contents</b> of the downloaded ZIP file into the new <b>/firmware</b> folder on your SD card</li>
+                <li>Extract <b>the contents</b> of your firmware archive file into the new <b>/firmware</b> folder on your SD card</li>
                 <li>Go to <a href="https://switchtools.sshnuke.net/">switchtools.sshnuke.net</a></li>
                 <li>Download the latest version of ChoiDujourNX by rajkosto</li>
                 <li>Extract the <b>ChoiDujourNX.nro</b> file within the downloaded .ZIP file into the <b>/switch</b> folder on your SD card</li>
