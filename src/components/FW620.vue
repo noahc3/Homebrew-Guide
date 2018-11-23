@@ -22,7 +22,7 @@
                 Can these changes be adapted to? Will CFW work again in the future?
             </h3>
             <div class="ui divider"></div>
-            <p>Yes, but you'll need to wait for hard working developers to reverse engineer and reimplement the changes. This might take a while, as some pretty fundamental CFW functionality has been mitigated in this update.</p>
+            <p>Yes, but you'll need to wait for hard working developers to discover a new exploit for the TSEC chip's auth mode. This might take a while, as we basically need to find a whole knew smoking gun exploit (alternatively, someone can use a normal userland exploit and leak the new masterkey, but that's dubiously legal).</p>
         </div>
 
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
@@ -33,7 +33,7 @@
             <p>No:</p>
             <ul>
                 <li>If you have a NAND backup from before 6.2.0, you can restore this through Hekate to downgrade.</li>
-                <li>If you don't have a NAND dump, you can follow <router-link to="/final">Downgrading Manually from Firmware 6.2.0 to Any Firmware</router-link>.</li>
+                <li>If you don't have a NAND dump, you can follow <router-link to="/manual620downgrade">Downgrading Manually from Firmware 6.2.0 to Any Firmware</router-link>.</li>
             </ul>
             <p style="color:red"><b>These solutions come with a caveat:</b></p>
             <ul>
@@ -43,6 +43,7 @@
                     <li>You have to deal with the normal issues with AutoRCM, such as odd charging behaviour with a dead battery, and the Switch not shutting down correctly from Horizon.</li>
                 </ul></li>
             </ul>
+            <p>If you don't like not having sleep mode, then you'll need to wait for a new TSEC auth mode exploit or for master_key_06 to leak.</p>
         </div>
 
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
