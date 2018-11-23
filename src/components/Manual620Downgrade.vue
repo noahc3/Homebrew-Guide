@@ -75,8 +75,8 @@
             <ol>
                 <li>You should have the latest version of Hekate and a working Hekate setup on your SD card (ex. Kosmos)</li>
                 <li>You need a Windows PC capable of pushing payloads <b>(you <i>need</i> a Windows PC to follow this guide)</b></li>
-                <li>You need the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted (hint: darthsternie, xbins)</li>
-                <li>You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal (hint: google)
+                <li>You need the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted</li>
+                <li>You need a fully populated hactool keys.txt file. These cannot be shared as doing so is arguably illegal
                     <ul>
                         <li>ChoiDujour is very picky about the keys file you use. If you have one generated from HACGUI, use that.</li>
                         <li>You cannot generate this with a 6.2.0 NAND (ex. kezplez or HACGUI). You must obtain this either from a dump you already have or online.</li>
@@ -156,7 +156,11 @@
                 <li>In the address bar at the top, type <b>"cmd"</b> and press enter. A command prompt should open.</li>
                 <img src="https://puu.sh/C652v/857f93f5ed.png" style="max-width: 100%;display:block;margin:auto"/>
                 <li>In the command prompt, type <b>"ChoiDujour.exe --keyset=keys.txt fw"</b> without quotes
-                <ul><li>If this fails, you likely put keys.txt or the firmware files in the wrong location. Try steps 1.9-1.13 again.</li></ul></li>
+                    <ul>
+                        <li>If ChoiDujour says it cannot find firmware files or keys.txt, you likely put keys.txt or the firmware files in the wrong location. Try steps 1.9-1.13 again.</li>
+                        <li>If the script fails otherwise, your keys.txt may be incompatible with ChoiDujour.</li>
+                    </ul>
+                </li>
                 <li>Once finished, you should see a message similar to <b>"All files verified! Prepared firmware update is in folder NX-6.1.0"</b> in the command prompt. Make sure you can find this folder, it will be used later.</li>
             </ol>
         </div>
