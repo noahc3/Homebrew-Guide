@@ -78,6 +78,7 @@
                 <li>You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal (hint: google)
                     <ul>
                         <li>ChoiDujour is very picky about the keys file you use. If you have one generated from HACGUI, use that.</li>
+                        <li>You cannot generate this with a 6.2.0 NAND (ex. kezplez or HACGUI). You must obtain this either from a dump you already have or online.</li>
                     </ul>
                 </li>
             </ol>
