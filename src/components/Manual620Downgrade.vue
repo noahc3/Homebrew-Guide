@@ -452,7 +452,11 @@
                 <li>Press <b>"Mount"</b></li>
                 <li style="color:red">MAKE SURE YOU DO NOT FORMAT THE DRIVE AS PER THE WARNING ABOVE. You will not be warned again.</li>
                 <li>Navigate to the newly mounted drive in File Explorer</li>
-                <li>Delete ALL existing files and folders on the drive. <b>Make sure the drive is EMPTY before continuing.</b></li>
+                <li>If you see anyt files/folders in this drive, delete ALL of them. <b>Make sure the drive is EMPTY before continuing.</b>
+                    <ul>
+                        <li>It is normal to not see any. If there are no files/folders, skip this step.</li>
+                    </ul>
+                </li>
                 <li>Navigate to <b>"/NX-X.X.X/SAFE"</b> folder which was generated with ChoiDujour.</li>
                 <li>If you see any files/folders in this folder, copy ALL OF THEM to the mounted drive.
                     <ul>
