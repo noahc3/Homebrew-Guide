@@ -111,6 +111,14 @@
                 <a href="https://www.sdsetup.com" class="item">
                     Back to SDSetup
                 </a>
+                <div class=" ui item" style="margin:auto;margin-bottom:0;" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                    <span style="margin-right:1rem;padding-bottom:0.5rem;margin-top:0.5rem">Light</span>
+                    <div class="ui toggle fitted checkbox" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                        <input id="cbx-theme2" type="checkbox" v-model="$root.$data.darkTheme"/>
+                        <label/>
+                    </div>
+                    <span style="margin-left:1rem">Dark</span>
+                </div>
             </div>
         </div>
 
