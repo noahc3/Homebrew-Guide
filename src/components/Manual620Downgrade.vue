@@ -114,7 +114,7 @@
             <b style="color: red;">If anything goes wrong during this guide, you can always restore this backup with Hekate and restart</b> </p>
 
             <ol>
-                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin</b> payload</li>
+                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin"</b> payload</li>
                 <li>In Hekate, select <b>'Tools > Backup > Backup eMMC BOOT0/1'</b>
                     <ul><li>Use Volume +/- to change menu selection and Power to select an option.</li></ul>
                 </li>
@@ -176,7 +176,7 @@
             <ol>
                 <li>Press <b>Windows Key + R</b></li>
                 <li>In the <b>"Run"</b> dialogue, type <b>"devmgmt.msc"</b> without quotes and press enter to open Device Manager</li>
-                <li>Put your Switch into RCM and send the <b>"memloader.bin</b> payload you downloaded earlier</li>
+                <li>Put your Switch into RCM and send the <b>"memloader.bin"</b> payload you downloaded earlier</li>
                 <li>On your Switch, using volume buttons, navigate to <b>"ums_boot0.ini"</b> and select it with power</li>
                 <li>The disk should now connect to your PC. In Device Manager, make sure you can see <b>"LINUX UMS DISK 0"</b> under <b>"Disk Drives"</b>
                     <ul>
@@ -215,7 +215,7 @@
             </div>
             <div class="ui divider"></div>
             <ol>
-                <li>Put your Switch into RCM and send the <b>"memloader.bin</b> payload you downloaded earlier</li>
+                <li>Put your Switch into RCM and send the <b>"memloader.bin"</b> payload you downloaded earlier</li>
                 <li>On your Switch, using volume buttons, navigate to <b>"ums_boot1.ini"</b> and select it with power</li>
                 <li>The disk should now connect to your PC. In Device Manager, make sure you can see <b>"LINUX UMS DISK 0"</b> under <b>"Disk Drives"</b>
                     <ul>
@@ -254,7 +254,7 @@
             </div>
             <div class="ui divider"></div>
             <ol>
-                <li>Put your Switch into RCM and send the <b>"memloader.bin</b> payload you downloaded earlier</li>
+                <li>Put your Switch into RCM and send the <b>"memloader.bin"</b> payload you downloaded earlier</li>
                 <li>On your Switch, using volume buttons, navigate to <b>"ums_emmc.ini"</b> and select it with power</li>
                 <li>The disk should now connect to your PC. In Device Manager, make sure you can see <b>"LINUX UMS DISK 0"</b> under <b>"Disk Drives"</b>
                     <ul>
@@ -270,11 +270,11 @@
                 <li>Choose <b>Linux UMS disk 0 (29.121GiB)</b>. If you do not see this device <b>with the exact name, STOP! You cannot continue.</b> Close HacDiskMount and hold the power button on your Switch to shut down. Repeat steps 7.1-7.7</li>
                 <li>Make sure you see a list of partitions as shown below</li>
                 <img src="https://puu.sh/C67nN/a471896603.png" style="max-width: 100%;display:block;margin:auto"/>
-                <li>Double-click <b>"BCPKG2-1-Normal-Main</b></li>
+                <li>Double-click <b>"BCPKG2-1-Normal-Main"</b></li>
                 <li>Make sure both BIS key text boxes are BLANK. Clear them and press <b>"Test"</b> if they are not.</li>
                 <li>In the <b>"Restore from file"</b> section, select <b>"Browse"</b> and search for the <b>"BCPKG2-1-Normal-Main.bin"</b> file inside of the NX-X.X.X folder generated earlier with ChoiDujour.</li>
                 <li>Select <b>"Start"</b> and wait for the process to complete.</li>
-                <li>Close the <b>"Operations on BCPKG2-1-Normal-Main</b> window</li>
+                <li>Close the <b>"Operations on BCPKG2-1-Normal-Main"</b> window</li>
                 <li>Repeat steps 7.9-7.13 for each of the following partitions, <b style="color:red;">making sure to select the appropriately named paritions and filenames for each:</b>
                     <ul>
                         <li>BCPKG2-2-Normal-Sub</li>
@@ -311,7 +311,7 @@
             <ol>
                 <li>Close HacDiskMount</li>
                 <li>Hold the power button on your Switch to shut down</li>
-                <li>Put your Switch into RCM and send the <b>"hekate-ctcaer-4.2.bin</b> payload you downloaded earlier</li>
+                <li>Put your Switch into RCM and send the <b>"hekate-ctcaer-4.2.bin"</b> payload you downloaded earlier</li>
                 <li>In Hekate, navigate to <b>Console Info > Print fuse info</b></li>
                 <li>Press <b>Power</b> to dump your fuse information to your SD card</li>
                 <li>Press <b>Volume +/-</b> to go back</li>
@@ -321,10 +321,10 @@
                 <li>Go back to the main menu and choose <b>Reboot (RCM)</b></li>
                 <li>Insert your SD Card into your PC</li>
                 <li>Go to <a href="https://www.sdsetup.com/biskeygen">https://www.sdsetup.com/biskeygen</a> </li>
-                <li>Under <b>"Upload Hekate fuses.bin</b>, click <b>Choose File</b></li>
-                <li>Browse for <b>"[SD]/backup/[8 character folder]/dumps/fuses.bin</b></li>
-                <li>Under <b>"Upload Hekate tsec_keys.bin</b>, click <b>Choose File</b></li>
-                <li>Browse for <b>"[SD]/backup/[8 character folder]/dumps/tsec_keys.bin</b></li>
+                <li>Under <b>"Upload Hekate fuses.bin"</b>, click <b>Choose File</b></li>
+                <li>Browse for <b>"[SD]/backup/[8 character folder]/dumps/fuses.bin"</b></li>
+                <li>Under <b>"Upload Hekate tsec_keys.bin"</b>, click <b>Choose File</b></li>
+                <li>Browse for <b>"[SD]/backup/[8 character folder]/dumps/tsec_keys.bin"</b></li>
                 <li>Press <b>"Derive BIS Keys"</b></li>
                 <li>The <b>"Output"</b> textbox should now be filled with 8 keys as shown below.</li>
                 <img src="https://puu.sh/C68E1/e7692c881a.png" style="max-width: 100%;display:block;margin:auto"/>
@@ -349,7 +349,7 @@
             <ol>
                 <li>If you closed memloader and HacDiskMount in the last step:
                     <ol>
-                        <li>Put your Switch into RCM and send the <b>"memloader.bin</b> payload you downloaded earlier</li>
+                        <li>Put your Switch into RCM and send the <b>"memloader.bin"</b> payload you downloaded earlier</li>
                         <li>On your Switch, using volume buttons, navigate to <b>"ums_emmc.ini"</b> and select it with power</li>
                         <li>The disk should now connect to your PC. In Device Manager, make sure you can see <b>"LINUX UMS DISK 0"</b> under <b>"Disk Drives"</b>
                             <ul>
@@ -376,7 +376,7 @@
                     </ul>
                 </li>
                 <img src="https://puu.sh/C693m/8de28d2b24.png" style="max-width: 100%;display:block;margin:auto"/>
-                <li>Close the <b>"Operations on PRODINFO</b> window</li>
+                <li>Close the <b>"Operations on PRODINFO"</b> window</li>
                 <br>
                 <li>Double-click the <b>"PRODINFOF"</b> partition</li>
                 <li>Make sure the keys are prefilled</li>
@@ -386,7 +386,7 @@
                         <li>If the message is red, <b style="color: red;">STOP! Your keys are WRONG! You cannot continue.</b> Make sure you put in the correct keys in the last step, and otherwise repeat step 8.</li>
                     </ul>
                 </li>
-                <li>Close the <b>"Operations on PRODINFOF</b> window</li>
+                <li>Close the <b>"Operations on PRODINFOF"</b> window</li>
                 <br>
                 <li>Double-click the <b>"SAFE"</b> partition</li>
                 <li>Copy the 32 character <b>"BIS Key 1 (Crypt)"</b> key you obtained earlier into the <b>Crypto (Upper)</b> text box</li>
@@ -439,7 +439,7 @@
             <div class="ui divider"></div>
             <ol>
                 <li>Double-click <b>"SAFE"</b> in HacDiskMount</li>
-                <li>Make sure both BIS key text boxes are FILLED as they should have been in Step 9.</li>
+                <li>Make sure both BIS key text boxes are FILLED as they should have been in Step 9. Press <b>"Test"</b> and make sure they are green as before.</li>
                 <li>Under <b>"Virtual Drive"</b>, if the driver status shows up as <b>"Driver not installed"</b>, click <b>"Install"</b> to install it.
                     <ul>
                         <li>You may see driver signature verification dialogs. Accept all of them.</li>
@@ -484,13 +484,13 @@
             <div class="ui divider"></div>
             <ol>
                 <li>Double-click <b>"SYSTEM"</b> in HacDiskMount</li>
-                <li>Make sure both BIS key text boxes are FILLED as they should have been in Step 9.</li>
+                <li>Make sure both BIS key text boxes are FILLED as they should have been in Step 9. Press <b>"Test"</b> and make sure they are green as before.</li>
                 <li>Under <b>"Virtual drive"</b>, select an unused drive letter</li>
                 <li>Make sure <b>"Passthrough zeroes"</b> is checked</li>
                 <li>Press <b>"Mount"</b></li>
                 <li>Navigate to the newly mounted drive in File Explorer</li>
                 <li>Delete the <b>"Contents"</b> folder</li>
-                <li>If it exists, delete the <b>"PRF2SAFE.RCV</b> file
+                <li>If it exists, delete the <b>"PRF2SAFE.RCV"</b> file
                     <ul>
                         <li>It is normal to not see this. If this file is not there, skip this step.</li>
                     </ul>
@@ -522,7 +522,7 @@
             <div class="ui divider"></div>
             <ol>
                 <li>Double-click <b>"USER"</b> in HacDiskMount</li>
-                <li>Make sure both BIS key text boxes are FILLED as they should have been in Step 9.</li>
+                <li>Make sure both BIS key text boxes are FILLED as they should have been in Step 9. Press <b>"Test"</b> and make sure they are green as before.</li>
                 <li>Under <b>"Virtual drive"</b>, select an unused drive letter</li>
                 <li>Make sure <b>"Passthrough zeroes"</b> is checked</li>
                 <li>Press <b>"Mount"</b></li>
@@ -546,13 +546,13 @@
             <div class="ui divider"></div>
             <ol>
                 <li>Insert your SD card into your PC</li>
-                <li>Navigate to the <b>/bootloader</b> folder on your SD card</li>
-                <li>Rename <b>hekate_ipl.ini</b> to <b>hekate_bak.ini</b></li>
+                <li>Navigate to the <b>"/bootloader"</b> folder on your SD card</li>
+                <li>Rename <b>"hekate_ipl.ini"</b> to <b>"hekate_bak.ini"</b></li>
                 <li>Navigate to <b>"/NX-X.X.X/microSD"</b> folder which was generated with ChoiDujour.</li>
-                <li>Copy the <b>FSXXX-exfat_nocmac_nogc.kip1</b> file to <b>the root</b> of your SD card</li>
-                <li>Copy the <b>hekate_ipl.ini</b> file to the <b>/bootloader</b> folder on your SD card</li>
+                <li>Copy the <b>"FSXXX-exfat_nocmac_nogc.kip1"</b> file to <b>the root</b> of your SD card</li>
+                <li>Copy the <b>"hekate_ipl.ini"</b> file to the <b>"/bootloader"</b> folder on your SD card</li>
                 <li>Safely eject your SD card and insert it into your Switch</li>
-                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin</b> payload</li>
+                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin"</b> payload</li>
                 <li>In Hekate, select <b>'Launch > FS_610-exfat_nocmac_nogc'</b></li>
                 <li>Make sure your system successfully boots
                     <ul>
@@ -562,10 +562,10 @@
                 <li>Shutdown</li>
                 <li>Insert your SD card into your PC</li>
                 <li>Navigate to the <b>/bootloader</b> folder on your SD card</li>
-                <li>Delete the <b>hekate_ipl.ini</b> file</li>
-                <li>Rename the <b>hekate_bak.ini</b> file to <b>hekate_ipl.ini</b></li>
+                <li>Delete the <b>"hekate_ipl.ini"</b> file</li>
+                <li>Rename the <b>"hekate_bak.ini"</b> file to <b>"hekate_ipl.ini"</b></li>
                 <li>Safely eject your SD card and insert it into your Switch</li>
-                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin</b> payload</li>
+                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin"</b> payload</li>
                 <li>In Hekate, select <b>'Launch > CFW'</b></li>
                 <li>Make sure your system successfully boots</li>
             </ol>
