@@ -6,7 +6,8 @@
             </h1>
             <div class="ui divider"></div>
             <p style="text-align: center">This guide will teach you how to downgrade from firmware 6.2.0 to any firmware version of your choosing, using the Choidujour Windows application.<br><br>
-            <b style="color:red;">This guide will likely take at least an hour to complete if it is your first time. If you decide to stop half way through, you must restore your NAND backup that you will create with Hekate to make your Switch work again.</b> </p>
+            <b style="color:red;">This guide will likely take at least an hour to complete if it is your first time. If you decide to stop half way through, you must restore your NAND backup that you will create with Hekate to make your Switch work again.</b> <br><br>
+            <sub>Credit to shchmue for figuring out how to recover BIS keys from firmware 6.2.0</sub></p>
         </div>
 
         <div class="ui teal message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
