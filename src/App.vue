@@ -46,6 +46,14 @@
                     Credits
                 </router-link>
                 <div class="right menu">
+                    <div class=" ui item" style="margin:auto;margin-bottom:0;" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                        <span style="margin-right:1rem;padding-bottom:0.5rem;margin-top:0.5rem">Light</span>
+                        <div class="ui toggle fitted checkbox" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                            <input id="cbx-theme" type="checkbox" v-model="$root.$data.darkTheme"/>
+                            <label/>
+                        </div>
+                        <span style="margin-left:1rem">Dark</span>
+                    </div>
                     <a href="https://github.com/noahc3/homebrew-guide" class="ui item" style="text-align:center"><i class="big github icon" style="margin:0"/></a>
                     <a href="https://www.sdsetup.com" class="item">
                         Back to SDSetup
@@ -119,15 +127,8 @@
 
 
 
-        <div style="margin-top:2em">
-            <div class=" ui center compact segment" style="margin:auto" v-bind:class="{ inverted: $root.$data.darkTheme }">
-                <span style="margin-right:1rem;padding-bottom:0.5rem">Light</span>
-                <div class="ui toggle fitted checkbox" v-bind:class="{ inverted: $root.$data.darkTheme }">
-                    <input id="cbx-theme" type="checkbox" v-model="$root.$data.darkTheme"/>
-                    <label/>
-                </div>
-                <span style="margin-left:1rem">Dark</span>
-            </div>
+        <div style="margin-top:1rem">
+
             <br>
             <div style="text-align:center;color:#808080">
                 <b>
