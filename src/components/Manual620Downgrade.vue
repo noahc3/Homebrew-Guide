@@ -75,7 +75,11 @@
                 <li>You should have the latest version of Hekate and a working Hekate setup on your SD card (ex. Kosmos)</li>
                 <li>You need a Windows PC capable of pushing payloads <b>(you <i>need</i> a Windows PC to follow this guide)</b></li>
                 <li>You need the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted (hint: darthsternie, xbins)</li>
-                <li>You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal (hint: google)</li>
+                <li>You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal (hint: google)
+                    <ul>
+                        <li>ChoiDujour is very picky about the keys file you use. If you have one generated from HACGUI, use that.</li>
+                    </ul>
+                </li>
             </ol>
         </div>
 
