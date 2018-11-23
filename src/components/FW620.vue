@@ -30,10 +30,10 @@
                 If I updated to 6.2.0 by accident, am I screwed for the time being?
             </h3>
             <div class="ui divider"></div>
-            <p>If you've used CFW before, probably not:</p>
+            <p>No:</p>
             <ul>
                 <li>If you have a NAND backup from before 6.2.0, you can restore this through Hekate to downgrade.</li>
-                <li>If you don't have a NAND dump but have dumped your console's BIS keys in the past, you can use ChoiDujour (the PC client) to regenerate your Switch's NAND with an older firmware version. Follow <a href="https://gbatemp.net/threads/how-to-install-run-any-switch-firmware-unofficially-without-burning-any-fuses.507461/">this guide by rajkosto</a> to do this (a version of this guide will be available on this site soon).</li>
+                <li>If you don't have a NAND dump, you can follow <router-link to="/final">Downgrading Manually from Firmware 6.2.0 to Any Firmware</router-link>.</li>
             </ul>
             <p style="color:red"><b>These solutions come with a caveat:</b></p>
             <ul>
@@ -43,7 +43,6 @@
                     <li>You have to deal with the normal issues with AutoRCM, such as odd charging behaviour with a dead battery, and the Switch not shutting down correctly from Horizon.</li>
                 </ul></li>
             </ul>
-            <p>If you do not have a NAND backup or your BIS keys, you will need to wait for either Hekate/fusee-primary to update with support for the new firmware, or a new version of biskeydump that supports the new encryption scheme. You can still use Lakka though, if that matters to you.</p>
         </div>
 
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
