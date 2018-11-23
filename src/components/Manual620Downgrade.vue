@@ -187,7 +187,11 @@
                     </ul>
                 </li>
                 <li>Open Etcher.</li>
-                <li>Click <b>"Select image"</b>, browse for <b>"BOOT0.BIN"</b> which was generated within the NX-X.X.X folder you created earlier with ChoiDujour</li>
+                <li>Click <b>"Select image"</b>, browse for <b>"BOOT0.BIN"</b> which was generated within the NX-X.X.X folder you created earlier with ChoiDujour
+                    <ul>
+                        <li>Etcher may say that <b>BOOT0.BIN</b> is not a bootable image. Select <b>"Continue"</b> anyways.</li>
+                    </ul>
+                </li>
                 <li>Make sure the target is <b>"Linux UMS USB Device"</b> if it is not already chosen</li>
                 <li><b style="color:red;">"BOOT0.BIN" MUST SHOW AS 1.57MB. "Linux UMS USB Device" MUST SHOW AS 4.19MB.</b> If any of the sizes are incorrect, <b style="color:red;">STOP! You cannot continue!</b> Repeat steps 1.11-1.13, 4.1-4.4, and 5.3-5.9.</li>
                 <img src="https://puu.sh/C66TN/97d03d8ae3.png" style="max-width: 100%;display:block;margin:auto"/>
@@ -212,7 +216,7 @@
             <div class="ui divider"></div>
             <ol>
                 <li>Put your Switch into RCM and send the <b>"memloader.bin</b> payload you downloaded earlier</li>
-                <li>On your Switch, using volume buttons, navigate to <b>"ums_boot0.ini"</b> and select it with power</li>
+                <li>On your Switch, using volume buttons, navigate to <b>"ums_boot1.ini"</b> and select it with power</li>
                 <li>The disk should now connect to your PC. In Device Manager, make sure you can see <b>"LINUX UMS DISK 0"</b> under <b>"Disk Drives"</b>
                     <ul>
                         <li>If you see <b>"USB Download Gadget"</b>, right click the entry and choose Uninstall.</li>
@@ -221,7 +225,11 @@
                         <li>If you still cannot see <b>"LINUX UMS DISK 0"</b> under <b>"Disk Drives"</b>, <b>STOP!</b> Press and hold the power button to shutdown the Switch and try steps 5.3-5.5 again. <b>You cannot continue until you see this device.</b></li>
                     </ul>
                 </li>
-                <li>Open Etcher.</li>
+                <li>Click <b>"Select image"</b>, browse for <b>"BOOT1.BIN"</b> which was generated within the NX-X.X.X folder you created earlier with ChoiDujour
+                    <ul>
+                        <li>Etcher may say that <b>BOOT1.BIN</b> is not a bootable image. Select <b>"Continue"</b> anyways.</li>
+                    </ul>
+                </li>
                 <li>Click <b>"Select image"</b>, browse for <b>"BOOT1.BIN"</b> which was generated within the NX-X.X.X folder you created earlier with ChoiDujour</li>
                 <li>Make sure the target is <b>"Linux UMS USB Device"</b> if it is not already chosen</li>
                 <li><b style="color:red;">"BOOT1.BIN" MUST SHOW AS 524.29KB. "Linux UMS USB Device" MUST SHOW AS 4.19MB.</b> If any of the sizes are incorrect, <b style="color:red;">STOP! You cannot continue!</b> Repeat steps 1.11-1.13, 4.1-4.4, and 5.1-5.7.</li>
@@ -509,12 +517,12 @@
             </div>
             <div class="ui divider"></div>
             <ol>
-                <li>Double-click <b>"SYSTEM"</b> in HacDiskMount</li>
+                <li>Double-click <b>"USER"</b> in HacDiskMount</li>
                 <li>Make sure both BIS key text boxes are FILLED as they should have been in Step 9.</li>
                 <li>Under <b>"Virtual drive"</b>, select an unused drive letter</li>
                 <li>Make sure <b>"Passthrough zeroes"</b> is checked</li>
                 <li>Press <b>"Mount"</b></li>
-                <li>Navigate to <b>"/NX-X.X.X/SYSTEM"</b> folder which was generated with ChoiDujour.</li>
+                <li>Navigate to <b>"/NX-X.X.X/USER"</b> folder which was generated with ChoiDujour.</li>
                 <li>Copy ALL of the files/folders in this directory to the newly mounted drive
                     <ul>
                         <li>Make sure to <b>copy and replace</b> all duplicate files.</li>
@@ -533,10 +541,29 @@
             </h2>
             <div class="ui divider"></div>
             <ol>
+                <li>Insert your SD card into your PC</li>
+                <li>Navigate to the <b>/bootloader</b> folder on your SD card</li>
+                <li>Rename <b>hekate_ipl.ini</b> to <b>hekate_bak.ini</b></li>
+                <li>Navigate to <b>"/NX-X.X.X/microSD"</b> folder which was generated with ChoiDujour.</li>
+                <li>Copy the <b>FSXXX-exfat_nocmac_nogc.kip1</b> file to <b>the root</b> of your SD card</li>
+                <li>Copy the <b>hekate_ipl.ini</b> file to the <b>/bootloader</b> folder on your SD card</li>
+                <li>Safely eject your SD card and insert it into your Switch</li>
                 <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin</b> payload</li>
-                <li>In Hekate, select <b>'Launch > Stock'</b></li>
-                <li>Make sure your system successfully boots</li>
+                <li>In Hekate, select <b>'Launch > FS_610-exfat_nocmac_nogc'</b></li>
+                <li>Make sure your system successfully boots
+                    <ul>
+                        <li>Your system may say it was unable to read the gamecard. This is normal.</li>
+                    </ul>
+                </li>
                 <li>Shutdown</li>
+                <li>Insert your SD card into your PC</li>
+                <li>Navigate to the <b>/bootloader</b> folder on your SD card</li>
+                <li>Delete the <b>hekate_ipl.ini</b> file</li>
+                <li>Rename the <b>hekate_bak.ini</b> file to <b>hekate_ipl.ini</b></li>
+                <li>Safely eject your SD card and insert it into your Switch</li>
+                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin</b> payload</li>
+                <li>In Hekate, select <b>'Launch > CFW'</b></li>
+                <li>Make sure your system successfully boots</li>
             </ol>
         </div>
 
