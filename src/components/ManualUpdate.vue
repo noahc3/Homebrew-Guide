@@ -62,11 +62,7 @@
             </h2>
             <div class="ui divider"></div>
             <ol>
-                <li>You need to locate the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted (hint: darthsternie, xbins)
-                    <ul>
-                        <li>These should be a .ZIP/.RAR/.7z file containing a single folder with multiple .NCA files inside</li>
-                    </ul>
-                </li>
+                <li>You need to locate the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted (hint: darthsternie, xbins)</li>
                 <li>Make sure your SD card includes a basic Hekate/Atmosphere setup (such as the one installed when following this guide)</li>
                 <li>Insert your SD card into your PC</li>
                 <li>Create a new folder on the root of your SD card named <b>"firmware"</b></li>
