@@ -14,6 +14,7 @@ import UsingCFW from './components/UsingCFW'
 import ManualUpdate from './components/ManualUpdate'
 import FW620 from './components/FW620'
 import Manual620Downgrade from './components/Manual620Downgrade'
+import ManualChoiDowngrade from './components/ManualChoiDowngrade'
 
 Vue.use(Router)
 
@@ -89,6 +90,11 @@ export default new Router({
             path: '/manual620downgrade',
             name: 'manual620downgrade',
             component: Manual620Downgrade
+        },
+        {
+            path: '/manualchoidowngrade',
+            name: 'manualchoidowngrade',
+            component: ManualChoiDowngrade
         }
     ]
 })

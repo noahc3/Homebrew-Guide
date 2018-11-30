@@ -5,12 +5,13 @@
                 Firmware 6.2.0 FAQ
             </h1>
             <div class="ui divider"></div>
-            <p>Nintendo released firmware 6.2.0 which has temporarily broken all third-party bootloaders, meaning you cannot launch custom firmware. This page will answer some common questions.</p>
+            <p>Nintendo released firmware 6.2.0 which has temporarily broken all third-party bootloaders, meaning you cannot launch custom firmware. This page will answer some common questions.<br><br>
+            <b>Update 2018/11/29:</b> Atmosphere has now been updated for 6.2.0 support, and includes the TSEC vulnerability. You can now launch stock atmosphere on 6.2. <b>Hekate does not work yet,</b> and Kosmos will be updated as soon as Hekate supports 6.2.0.</p>
         </div>
 
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <h3 class="ui header" style="text-align:center">
-                What happened in firmware 6.2.0? Why are custom firmwares broken?
+                What happened in firmware 6.2.0? Why were custom firmwares broken?
             </h3>
             <div class="ui divider"></div>
             <p><b>Non-technical explanation:</b> Nintendo changed the method of decrypting the firmware, meaning all third-party bootloaders, including Hekate, fusee, ReiNX and SX OS, are unable to decrypt the firmware and launch the Switch operating system. <br><br>
@@ -22,28 +23,7 @@
                 Can these changes be adapted to? Will CFW work again in the future?
             </h3>
             <div class="ui divider"></div>
-            <p>Yes, but you'll need to wait for hard working developers to discover a new exploit for the TSEC chip's auth mode. This might take a while, as we basically need to find a whole knew smoking gun exploit (alternatively, someone can use a normal userland exploit and leak the new masterkey, but that's dubiously legal).</p>
-        </div>
-
-        <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            <h3 class="ui header" style="text-align:center">
-                If I updated to 6.2.0 by accident, am I screwed for the time being?
-            </h3>
-            <div class="ui divider"></div>
-            <p>No:</p>
-            <ul>
-                <li>If you have a NAND backup from before 6.2.0, you can restore this through Hekate to downgrade.</li>
-                <li>If you don't have a NAND dump, you can follow <router-link to="/manual620downgrade">Downgrading Manually from Firmware 6.2.0 to Any Firmware</router-link>.</li>
-            </ul>
-            <p style="color:red"><b>These solutions come with a caveat:</b></p>
-            <ul>
-                <li>If you ever launched your Switch into Horizon without Hekate/fusee/ReiNX/SXOS on firmware 6.2.0, you will have 8 fuses burnt (you can check your fuse count in <b>Hekate > Console Info > Print fuse info</b>). This means you are <b>required to use AutoRCM upon downgrading</b> to bypass the fuse count mismatch. This means:
-                <ul>
-                    <li>Your Switch will not be able to wake from sleep mode as the Switch checks the fuse count when you try to wake up, and will shut down when it finds that the fuse count is wrong.</li>
-                    <li>You have to deal with the normal issues with AutoRCM, such as odd charging behaviour with a dead battery, and the Switch not shutting down correctly from Horizon.</li>
-                </ul></li>
-            </ul>
-            <p>If you don't like not having sleep mode, then you'll need to wait for a new TSEC auth mode exploit or for master_key_06 to leak.</p>
+            <p><b>Update 2018/11/29:</b> Atmosphere has now been updated with the TSEC vulnerability integrated into the bootloader. You can now use stock Atmosphere on 6.2.0. Kosmos will become compatible as soon as Hekate is updated to integrate the exploit as well.</p>
         </div>
 
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
