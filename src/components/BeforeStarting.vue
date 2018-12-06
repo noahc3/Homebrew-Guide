@@ -73,7 +73,7 @@
             </div>
 
             <div class="ui teal message" v-bind:class="{ inverted: $root.$data.darkTheme }">
-                This guide will work on <b>all firmware versions except 6.2.0 (6.2.0 will be supported in the future)</b> as long as fusee-gelee is not patched on the Switch. The guide will include a step for checking if fusee-gelee is patched or not.
+                This guide will work on <b>all firmware versions</b> as long as fusee-gelee is not patched on the Switch. The guide will include a step for checking if fusee-gelee is patched or not.
             </div>
 
             <div class="ui divider"></div>

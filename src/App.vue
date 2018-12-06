@@ -122,12 +122,6 @@
             </div>
         </div>
 
-        <div class="ui container">
-            <div class="ui blue message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
-                <div class="ui header">!!! IMPORTANT !!!</div>
-                Atmosphere now supports firmware 6.2.0. Kosmos and this guide will support 6.2.0 when Hekate is updated for it. For more information, see <b><router-link to="/FW620">Firmware 6.2.0 FAQ</router-link></b>
-            </div>
-        </div>
 
 <br><br>
 
