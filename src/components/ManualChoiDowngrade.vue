@@ -32,14 +32,6 @@
 
         <div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <h2 class="ui header" style="text-align:center">
-                IMPORTANT: Downgrading side-effects
-            </h2>
-            <div class="ui divider"></div>
-            <p>This guide will downgrade your Switch to a firmware version expecting less fuses than your have burnt. Because of this, <b style="color:red">your Switch will not wake from sleep mode after downgrading</b> as the bootloader checks the fuse count upon warmboot. This cannot be fixed until you update again to a firmware expecting more or the same number of fuses that you have burnt (ie. 6.2.0).</p>
-        </div>
-
-        <div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            <h2 class="ui header" style="text-align:center">
                 IMPORTANT: Understanding AutoRCM
             </h2>
             <div class="ui divider"></div>

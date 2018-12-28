@@ -20,7 +20,7 @@
                 IMPORTANT: Understanding AutoRCM
             </h2>
             <div class="ui divider"></div>
-            <p><b style="color:red">A later step will give you the option to enable or disable AutoRCM. </b>AutoRCM is an optional software method of forcing your Switch to go into RCM on every launch, without the need of a jig or hardmod. Essentially, you are purposefully bricking your Switch in a controlled matter that forces it to launch into recovery. This might sound scary but is not actually dangerous, and can be undone at any time.<br><br>
+            <p><b style="color:red">A later step will give you the option to enable or disable AutoRCM. </b>AutoRCM is a software method of forcing your Switch to go into RCM on every launch, without the need of a jig or hardmod. Essentially, you are purposefully bricking your Switch in a controlled matter that forces it to launch into recovery. This might sound scary but is not actually dangerous, and can be undone at any time.<br><br>
             AutoRCM has the following benefits:
             </p>
             <ul>
@@ -38,18 +38,11 @@
             <div class="ui info message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
                 If you just want to manually update your system firmware and do not care about burning fuses, you can leave AutoRCM disabled.
             </div>
+            <div class="ui red message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
+                If you are downgrading to a firmware expecting less fuses burnt than you have, <b style="color:red">AutoRCM is required to boot your Switch</b> until you upgrade again.
+            </div>
 
             <p>AutoRCM can always be disabled <b>Hekate > Tools > AutoRCM</b></p>
-        </div>
-
-        <div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            <h2 class="ui header" style="text-align:center">
-                IMPORTANT: Downgrading side-effects
-            </h2>
-            <div class="ui divider"></div>
-            <p><i style="color:red">This only applies if you are downgrading your Switch to a firmware expecting less fuses than you have burnt.</i>
-                <br><br>If you downgrade to a firmware version expecting less fuses than your have burnt, your Switch will not wake from sleep mode as the bootloader checks the fuse count upon warmboot. This cannot be fixed until you update again to a firmware expecting more or the same number of fuses that you have burnt.</p>
-            <p>You can determine how many fuses are burnt on your system in <b>Hekate > Console Info > Print fuse info</b>. <a href="https://switchbrew.org/wiki/Fuses#Anti-downgrade">See SwitchBrew</a> for information on how many fuses each firmware expects burnt.</p>
         </div>
 
         <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
