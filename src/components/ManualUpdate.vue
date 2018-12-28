@@ -14,10 +14,6 @@
             If something goes wrong or you need help, check <router-link to="/troubleshooting">troubleshooting</router-link>.
         </div>
 
-        <div class="ui red message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            <div class="ui header">Do not update to 6.2.0+</div>
-            Nintendo changed key derivation and there are currently no bootloaders compatible with the changes. Updating to 6.2.0+ will currently break CFW. For more information, see <b><router-link to="/FW620">Firmware 6.2.0 FAQ</router-link></b>.
-        </div>
 
         <div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <h2 class="ui header" style="text-align:center">
