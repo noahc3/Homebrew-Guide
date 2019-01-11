@@ -27,11 +27,11 @@
             <p>NSP is a standard format used for digital applications.<br><br>
                 <b>Installing NSP files is the easiest way to get yourself banned!</b> You shouldn't do this if you want to keep using your Switch online.</p>
             <ol>
-                <li>Create a <b>'tinfoil'</b> folder on your SD card, and a <b>'nsp'</b> folder inside that</li>
-                <li>Copy your NSP file to the <b>'/tinfoil/nsp'</b> folder you just created on your SD card.</li>
+                <li>Create a <b>'goldleaf'</b> folder on your SD card, and a <b>'nsp'</b> folder inside that</li>
+                <li>Copy your NSP file to the <b>'/goldleaf/nsp'</b> folder you just created on your SD card.</li>
                 <li>Launch into <b>Atmosphere CFW</b> or <b>ReiNX</b></li>
                 <li>Load the Homebrew Launcher (album icon)</li>
-                <li>Launch <b>Tinfoil</b> and install your NSPs</li>
+                <li>Launch <b>Goldleaf</b> (formerly Tinfoil) and install your NSPs</li>
             </ol>
 
             <p>After installing, your applications will appear on the Home Menu.</p>
