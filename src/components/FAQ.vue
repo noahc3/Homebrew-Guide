@@ -46,7 +46,7 @@
                     <li>If there are too many fuses burnt, your Switch will shutdown, not allowing the firmware to boot.</li>
                 </ul>
 
-                <p>The fusee-gelee exploit happens before any of these checks occur, meaning these checks can be bypassed. <b>Hekate, ReiNX, and SXOS all block fuses from being burnt and bypass the fuse check</b>, meaning you can keep your Switch in a downgradable state if you update your firmware in a certain way (detailed below).</p>
+                <p>The fusee-gelee exploit happens before any of these checks occur, meaning these checks can be bypassed. <b>Hekate, ReiNX, and SX OS all block fuses from being burnt and bypass the fuse check</b>, meaning you can keep your Switch in a downgradable state if you update your firmware in a certain way (detailed below).</p>
             </div>
 
             <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
@@ -56,9 +56,9 @@
                 <div class="ui divider"></div>
                 <p>You can use a homebrew tool called <b><a href="https://gbatemp.net/threads/choidujournx-a-system-firmware-installer-homebrew-for-the-nintendo-switch.513416/">ChoiDujourNX by rajkosto</a></b> to install any firmware version you want.</p>
                 <ul>
-                    <li>This requires having a copy of the firmware binaries on your SD card. You can find these <a href="https://darthsternie.bplaced.net/switch.html">here.</a></li>
-                    <li>If you want to keep your Switch in a downgradable state (ie. not burn fuses), you should enable AutoRCM before doing this. <b>If you ever boot your Switch without Hekate, ReiNX, or SXOS, your fuses will burn and you will not be able to downgrade (cleanly).</b>
-                    <li>You can use this method to downgrade to any firmware version <b>even if too many fuses are burnt</b>, however you <b>must use Hekate, ReiNX or SXOS to boot</b> as otherwise the fuse check will fail.</li>
+                    <li>This requires having a copy of the firmware binaries on your SD card. You can find these <a href="https://team-xecuter.com/community/threads/nintendo-switch-official-firmwares.129233/">here.</a></li>
+                    <li>If you want to keep your Switch in a downgradable state (ie. not burn fuses), you should enable AutoRCM before doing this. <b>If you ever boot your Switch without Hekate, ReiNX, or SX OS, your fuses will burn and you will not be able to downgrade (cleanly).</b>
+                    <li>You can use this method to downgrade to any firmware version <b>even if too many fuses are burnt</b>, however you <b>must use Hekate, ReiNX or SX OS to boot</b> as otherwise the fuse check will fail.</li>
                 </ul>
             </div>
 
