@@ -1,9 +1,14 @@
 .wy-side-nav-search {
-	background-color: #DB2828;
+	background-color: #E5554B;
 }
 
 .wy-nav-side {
-	background: #DB2828;
+	background: #E5554B;
+	color: #FDFFFF;
+}
+
+.wy-nav-top {
+	background: #E5554B;
 	color: #FDFFFF;
 }
 
@@ -13,9 +18,10 @@
 
 .toctree-l1>a:hover { 
   color: #FDFFFF !important;
-  background-color: #D84949 !important;
+  background-color: #EA645D !important;
 }
 
 .wy-side-nav-search input[type=text] {
-   border-color:#D84949 !important;
+   border-color:#EA645D !important;
 }
+
