@@ -11,3 +11,11 @@
 	max-width: 80%;
 }
 
+.toctree-l1>a:hover { 
+  color: #FDFFFF !important;
+  background-color: #D84949 !important;
+}
+
+.wy-side-nav-search input[type=text] {
+   border-color:#D84949 !important;
+}

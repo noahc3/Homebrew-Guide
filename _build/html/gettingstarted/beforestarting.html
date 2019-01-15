@@ -142,8 +142,6 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/gettingstarted/beforestarting.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
     
@@ -158,6 +156,10 @@
   <div class="section" id="before-starting">
 <h1>Before Starting<a class="headerlink" href="#before-starting" title="Permalink to this headline">¶</a></h1>
 <p>This section of the guide will teach you basic information about terminology used, what you will be able to do after following this guide, and provide some warnings before you proceed.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">This is a lot of info to take in, but if you are a complete noob to the Switch scene, you should seriously consider reading all of it. The Switch scene is very different from the 3DS/WiiU/Wii.</p>
+</div>
 <div class="section" id="what-is-homebrew">
 <h2>What is Homebrew?<a class="headerlink" href="#what-is-homebrew" title="Permalink to this headline">¶</a></h2>
 <p>Homebrew is a term used to describe software not authorized by Nintendo. This includes custom firmwares, tools, applications, games, emulators, etc.</p>
@@ -170,11 +172,27 @@
 <div class="section" id="what-will-i-get-by-following-this-guide">
 <h2>What will I get by following this guide?<a class="headerlink" href="#what-will-i-get-by-following-this-guide" title="Permalink to this headline">¶</a></h2>
 <p>This guide will give you the ability to run a custom firmware of choice on a previously unmodified Nintendo Switch.</p>
-<p>The guide will utilize the fusee-gelee exploit (sometimes also referred to as ShofEL2 or CVE-2018-6242, these are all the same exploit) which takes advantage of an oversight in the Nintendo Switch built-in recovery mode (referred to as RCM). fusee-gelee is a tethered, non-persistent exploit, meaning you require a secondary device (such as a PC or Android phone) to enable CFW on every reboot. This is unlike the untethered coldboot exploits available on other systems such as Boot9strap for 3DS and Henkaku Enso for Vita.</p>
+<p>The guide will utilize the fusee-gelee exploit (sometimes also referred to as ShofEL2 or CVE-2018-6242, these are all the same exploit) which takes advantage of an oversight in the Nintendo Switch built-in recovery mode (referred to as RCM). <strong>fusee-gelee is a tethered, non-persistent exploit</strong>, meaning you require a secondary device (such as a PC or Android phone) to enable CFW on every reboot. This is unlike the untethered coldboot exploits available on other systems such as Boot9strap for 3DS and Henkaku Enso for Vita.</p>
 <p>The fusee-gelee exploit allows for a full system takeover; the exploit runs before even the normal bootloader code, meaning anything about the normal Switch operating system (named Horizon, or HOS) can be changed. The exploit also allows dumping on the bootloader and any console unique information.</p>
-<p>For an advanced technical overview on how fusee-gelee works, you can view this whitepaper</p>
+<p>For an advanced technical overview on how fusee-gelee works, you can view <a class="reference external" href="https://www.exploit-db.com/docs/english/44532-nintendo-switchnvidia-vulnerability-disclosure-fus%C3%A9e-gel%C3%A9e.pdf">this paper</a></p>
 <p>This guide will focus on using a configuration of the Hekate custom bootloader, as well as the Atmosphere custom firmware, both provided by Team AtlasNX’s Kosmos. You can also install ReiNX along the way if you wish to use that instead.</p>
-<div class="toctree-wrapper compound">
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<ul class="last simple">
+<li>Nintendo is taking no chances with the Nintendo Switch. Permanent console bans can and often do happen. This guide will take many precautions to avoid getting banned, but this site assumes no responsibility if your system is banned.</li>
+<li>There is always a chance that your Nintendo Switch will brick. This is very rare, and often recoverable thanks to the level of access fusee-gelee provides, but unrecoverable bricks CAN happen.</li>
+<li>Due to the level of access fusee-gelee provides, malicious homebrew exists. These can brick your Switch or otherwise render your Switch inoperable. You should only ever run homebrew from trusted sources.</li>
+<li>Follow the guide and everything should be fine.</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This guide will work on <strong>all firmware versions</strong> as long as fusee-gelee is not patched on the Switch. The guide will include a step for checking if fusee-gelee is patched or not.</p>
+</div>
+
+<a href="link/to/stuff.html">
+    <span class="btn btn-neutral float-right">Continue to Accessing RCM <span class="fa fa-arrow-circle-right"></span></span>
+</a><br><br><div class="toctree-wrapper compound">
 </div>
 </div>
 </div>
@@ -184,13 +202,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="../index.html" class="btn btn-neutral" title="The Ultimate Noob Guide for Hacking your Nintendo Switch" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

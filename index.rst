@@ -9,5 +9,6 @@ The Ultimate Noob Guide for Hacking your Nintendo Switch
 .. toctree::
    :maxdepth: 2
    :caption: Getting Started
+   :hidden:
    
    /gettingstarted/beforestarting

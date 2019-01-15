@@ -12,9 +12,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('_extensions'))
 
 
 # -- Project information -----------------------------------------------------
@@ -39,6 +39,7 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'button',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -83,7 +84,8 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 
 html_theme_options = {
-    'logo_only': True
+    'logo_only': True,
+	'prev_next_buttons_location': None
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -93,7 +95,7 @@ html_static_path = ['_static']
 
 html_logo = "_static/logo.png"
 
-html_show_sourcelink = True
+html_show_sourcelink = False
 
 def setup(app):
    app.add_stylesheet("guidetheme.css")
