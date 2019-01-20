@@ -11,10 +11,14 @@ This section of the guide will teach you basic information about terminology use
 .. important:: 
    This is a lot of info to take in, but if you are a complete noob to the Switch scene, you should seriously consider reading all of it. The Switch scene is very different from the 3DS/WiiU/Wii.
 
+........
+   
 What is Homebrew?
 -----------------
 
 Homebrew is a term used to describe software not authorized by Nintendo. This includes custom firmwares, tools, applications, games, emulators, etc.
+
+........
 
 What is Custom Firmware?
 ------------------------
@@ -22,6 +26,8 @@ What is Custom Firmware?
 Custom Firmware (CFW) gives homebrew more access to the system than standard userland homebrew most commonly available on most systems. 
 
 Currently, all Nintendo Switches sold before July 2018 can run custom firmware. Switches sold after this point may not be exploitable right now. This guide will include checking if your system is vulnerable.
+
+........
 
 What will I get by following this guide?
 ----------------------------------------
@@ -45,13 +51,14 @@ This guide will focus on using a configuration of the Hekate custom bootloader, 
 .. note::
 	This guide will work on **all firmware versions** as long as fusee-gelee is not patched on the Switch. The guide will include a step for checking if fusee-gelee is patched or not.
 
-.. button::
-   :text: Continue to Accessing RCM <span class="fa fa-arrow-circle-right"></span>
-   :link: link/to/stuff.html
+    
+........
 
 .. raw:: html
 
-	<br><br>
+	<div class="admonition warning">
+		<p class="last">Continue to <a href="accessingrcm.html">Acessing RCM</a></p>
+	</div>
 
 .. toctree::
    :maxdepth: 2
