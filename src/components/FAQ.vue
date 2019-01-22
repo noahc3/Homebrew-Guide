@@ -54,12 +54,7 @@
                     How do I upgrade without burning fuses? / How do I install any firmware version I want?
                 </h3>
                 <div class="ui divider"></div>
-                <p>You can use a homebrew tool called <b><a href="https://gbatemp.net/threads/choidujournx-a-system-firmware-installer-homebrew-for-the-nintendo-switch.513416/">ChoiDujourNX by rajkosto</a></b> to install any firmware version you want.</p>
-                <ul>
-                    <li>This requires having a copy of the firmware binaries on your SD card. You can find these <a href="https://darthsternie.net/index.php/switch-firmwares/">here.</a></li>
-                    <li>If you want to keep your Switch in a downgradable state (ie. not burn fuses), you should enable AutoRCM before doing this. <b>If you ever boot your Switch without Hekate, ReiNX, or SX OS, your fuses will burn and you will not be able to downgrade (cleanly).</b>
-                    <li>You can use this method to downgrade to any firmware version <b>even if too many fuses are burnt</b>, however you <b>must use Hekate, ReiNX or SX OS to boot</b> as otherwise the fuse check will fail.</li>
-                </ul>
+                <p>See <router-link class="item" to="/manualupdate">Manually Updating/Downgrading Without Burning Fuses</router-link></p>
             </div>
 
             <div class="ui segment" v-bind:class="{ inverted: $root.$data.darkTheme }">
@@ -68,7 +63,7 @@
                 </h3>
                 <div class="ui divider"></div>
                 <p>Currently only SX OS is able to emulate cartridges using XCI files. SX OS is a paid custom firmware (usually $25 USD depending on the reseller) by Team Xecuter, with some drama behind it due to theft and license violation of open source code.<br><br>
-                    If you want, you can instead install XCI files as if they were NSP files using <a href="https://gbatemp.net/threads/team-2168-zerotwoxci-the-xci-installer.518171/">ZeroTwoXCI by Elise and Team 2168</a>, but this comes with all of the same risks as installing NSP files.</p>
+                    If you want, you can instead install XCI files as if they were NSP files using <a href="https://gbatemp.net/threads/team-2168-zerotwoxci-the-xci-installer.518171/">ZeroTwoXCI by Elise</a>, but this comes with all of the same risks as installing NSP files.</p>
 
             </div>
 
