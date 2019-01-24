@@ -1,0 +1,5 @@
+The purpose of the theme files is to have a webserver (ex. nginx) redirect theme.css to whichever theme the user has selected based on a cookie.
+
+See https://hookrace.net/blog/theme-switcher-nginx/ for an implementation.
+
+If there is no redirect (ex. a development environment) then guide.css is used (by default it is the light theme).

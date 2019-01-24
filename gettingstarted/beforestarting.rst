@@ -57,7 +57,7 @@ This guide will focus on using a configuration of the Hekate custom bootloader, 
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">Continue to <a href="accessingrcm.html">Acessing RCM</a></p>
+		<p class="last">Continue to <a href="accessingrcm.html">Accessing RCM</a></p>
 	</div>
 
 .. toctree::
