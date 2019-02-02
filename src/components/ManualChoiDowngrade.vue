@@ -242,7 +242,6 @@
                         <li>Etcher may say that <b>BOOT1.BIN</b> is not a bootable image. Select <b>"Continue"</b> anyways.</li>
                     </ul>
                 </li>
-                <li>Click <b>"Select image"</b>, browse for <b>"BOOT1.BIN"</b> which was generated within the NX-X.X.X folder you created earlier with ChoiDujour</li>
                 <li>Make sure the target is <b>"Linux UMS USB Device"</b> if it is not already chosen</li>
                 <li><b style="color:red;">"BOOT1.BIN" MUST SHOW AS 524.29KB. "Linux UMS USB Device" MUST SHOW AS 4.19MB.</b> If any of the sizes are incorrect, <b style="color:red;">STOP! You cannot continue!</b> Repeat steps 1.11-1.13, 4.1-4.4, and 5.1-5.7.</li>
                 <img src="https://puu.sh/C676E/3dc60b58bb.png" style="max-width: 100%;display:block;margin:auto"/>
