@@ -35,7 +35,7 @@
                             Manually Updating/Downgrading (with HOS)
                         </router-link>
                         <router-link class="item" to="/manualchoidowngrade">
-                            Manually Updating/Downgrading (without HOS)
+                            Manually Downgrading (without HOS)
                         </router-link>
                     </div>
                 </router-link>
@@ -97,7 +97,10 @@
                             Using CFW
                         </router-link>
                         <router-link class="item" to="/manualupdate">
-                            Manually Updating/Downgrading
+                            Manually Updating/Downgrading (with HOS)
+                        </router-link>
+                        <router-link class="item" to="/manualchoidowngrade">
+                            Manually Downgrading (without HOS)
                         </router-link>
                     </div>
                 </div>
@@ -137,7 +140,7 @@
             <br>
             <div style="text-align:center;color:#808080">
                 <b>
-                    &copy; 2018 noahc3<br/>The Nintendo Switch name and logo are &copy; Nintendo. This site is in no way affiliated with Nintendo or any of its partners.
+                    &copy; 2018 noahc3 | <a href=https://git.teamatlasnx.com>Team AtlasNX</a> <br/>The Nintendo Switch name and logo are &copy; Nintendo. This site is in no way affiliated with Nintendo or any of its partners.
                 </b>
             </div>
         </div>
