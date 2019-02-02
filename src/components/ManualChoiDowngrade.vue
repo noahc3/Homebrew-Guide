@@ -24,6 +24,14 @@
 
         <div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <h2 class="ui header" style="text-align:center">
+                IMPORTANT: To 7.0.0 Downgraders
+            </h2>
+            <div class="ui divider"></div>
+            <p>You cannot downgrade directly to 6.2.0 as the ChoiDujour PC application does not support 6.2.0. You must downgrade to any other firmware version first and then upgrade back to 6.2.0 with ChoiDujourNX if you specifically want 6.2.0</p>
+        </div>
+
+        <div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
+            <h2 class="ui header" style="text-align:center">
                 !!! IMPORTANT !!!
             </h2>
             <div class="ui divider"></div>
@@ -53,6 +61,8 @@
             </p>
 
             <p>AutoRCM can always be disabled <b>Hekate > Tools > AutoRCM</b></p>
+
+            <p style="color:red">In the past, downgrading below your fuse count would mean you could no longer use sleep mode. This is no longer the case, as Hekate and Atmosphere both support sleep mode while downgraded.</p>
         </div>
 
         <div class="ui info message" style="text-align:center" v-bind:class="{ inverted: $root.$data.darkTheme }">
@@ -67,11 +77,15 @@
             <ol>
                 <li>You should have the latest version of Hekate and a working Hekate setup on your SD card (ex. Kosmos)</li>
                 <li>You need a Windows PC capable of pushing payloads <b>(you <i>need</i> a Windows PC to follow this guide)</b></li>
-                <li>You need the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted. Google is your friend.</li>
-                <li>You need a fully populated hactool keys.txt file. These cannot be shared as doing so is arguably illegal. Google is your friend.
+                <li>You need the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted. Google is your friend.
                     <ul>
-                        <li>ChoiDujour is very picky about the keys file you use. If you have one generated from HACGUI, use that.</li>
-                        <li>You cannot generate this with a 6.2.0 NAND (ex. kezplez or HACGUI). You must obtain this either from a dump you already have or online.</li>
+                        <li>You cannot use 6.2.0 or 7.0.0 firmware files as the ChoiDujour PC application does not support these versions. If you want to specifically downgrade to 6.2.0, you must first downgrade to any other firmware version and then upgrade to 6.2.0 using ChoiDujourNX.</li>
+                    </ul>
+                </li>
+                <li>You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal. Google is your friend.
+                    <ul>
+                        <li>ChoiDujour is very picky about the keys file you use. If you have one generated from Lockpick or HACGUI, use that.</li>
+                        <li>You cannot generate this with a 7.0.0 NAND (ex. lockpick or HACGUI). You must obtain this either from a dump you already have or online.</li>
                     </ul>
                 </li>
             </ol>
