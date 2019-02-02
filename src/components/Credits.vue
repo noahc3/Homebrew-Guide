@@ -11,7 +11,7 @@
                     <li>SciresM and ReSwitched for Atmosphere</li>
                     <li>CTCaer and naehrwert for Hekate</li>
                     <li>tomGER for SDFilesSwitch</li>
-                    <li>ReiNX Team for ReiNX and the first sections of <a href="https://www.reinx.guide/">https://www.reinx.guide</a></li>
+                    <li>ReiNX Team for ReiNX and the first sections of <a href="https://reinx.guide/">https://reinx.guide</a></li>
                 </ul>
             </div>
         </div>
