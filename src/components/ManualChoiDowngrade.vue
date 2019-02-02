@@ -122,7 +122,7 @@
                 <b style="color: red;">If anything goes wrong during this guide, you can always restore this backup with Hekate and restart</b> </p>
 
             <ol>
-                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin"</b> payload</li>
+                <li>Enter RCM and send the <b>"hekate-ctcaer-4.6.bin"</b> payload</li>
                 <li>In Hekate, select <b>'Tools > Backup > Backup eMMC BOOT0/1'</b>
                     <ul><li>Use Volume +/- to change menu selection and Power to select an option.</li></ul>
                 </li>
@@ -323,7 +323,7 @@
             <ol>
                 <li>Close HacDiskMount</li>
                 <li>Hold the power button on your Switch to shut down</li>
-                <li>Put your Switch into RCM and send the <b>"hekate-ctcaer-4.2.bin"</b> payload you downloaded earlier</li>
+                <li>Put your Switch into RCM and send the <b>"hekate-ctcaer-4.6.bin"</b> payload you downloaded earlier</li>
                 <li>In Hekate, navigate to <b>Console Info > Print fuse info</b></li>
                 <li>Press <b>Power</b> to dump your fuse information to your SD card</li>
                 <li>Press <b>Volume +/-</b> to go back</li>
@@ -564,7 +564,7 @@
                 <li>Copy the <b>"FSXXX-exfat_nocmac_nogc.kip1"</b> file to <b>the root</b> of your SD card</li>
                 <li>Copy the <b>"hekate_ipl.ini"</b> file to the <b>"/bootloader"</b> folder on your SD card</li>
                 <li>Safely eject your SD card and insert it into your Switch</li>
-                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin"</b> payload</li>
+                <li>Enter RCM and send the <b>"hekate-ctcaer-4.6.bin"</b> payload</li>
                 <li>In Hekate, select <b>'Launch > FS_610-exfat_nocmac_nogc'</b></li>
                 <li>Make sure your system successfully boots
                     <ul>
@@ -577,7 +577,7 @@
                 <li>Delete the <b>"hekate_ipl.ini"</b> file</li>
                 <li>Rename the <b>"hekate_bak.ini"</b> file to <b>"hekate_ipl.ini"</b></li>
                 <li>Safely eject your SD card and insert it into your Switch</li>
-                <li>Enter RCM and send the <b>"hekate-ctcaer-4.2.bin"</b> payload</li>
+                <li>Enter RCM and send the <b>"hekate-ctcaer-4.6.bin"</b> payload</li>
                 <li>In Hekate, select <b>'Launch > CFW'</b></li>
                 <li>Make sure your system successfully boots</li>
             </ol>
