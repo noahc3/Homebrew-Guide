@@ -32,7 +32,10 @@
                             Using CFW
                         </router-link>
                         <router-link class="item" to="/manualupdate">
-                            Manually Updating/Downgrading
+                            Manually Updating/Downgrading (with HOS)
+                        </router-link>
+                        <router-link class="item" to="/manualchoidowngrade">
+                            Manually Updating/Downgrading (without HOS)
                         </router-link>
                     </div>
                 </router-link>
