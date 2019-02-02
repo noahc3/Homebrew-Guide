@@ -14,11 +14,6 @@
             If something goes wrong or you need help, check <router-link to="/troubleshooting">troubleshooting</router-link>.
         </div>
 
-        <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            <b>If you have acces to HOS (Horizon Operating System) and by that can launch homebrew we recommend the much easier ChoiDujourNX guide: <router-link to="/manualupdate">Manually Updating/Downgrading (with HOS)</router-link></b>
-        </div>
-
-
         <div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
             <h2 class="ui header" style="text-align:center">
                 !!! IMPORTANT !!!

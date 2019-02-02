@@ -15,7 +15,7 @@
         </div>
 
         <div class="ui purple message" v-bind:class="{ inverted: $root.$data.darkTheme }">
-            <b>This guide requires you to have access to the OS of the Nintendo Switch [HOS (Horizon Operating System)]. If you don't have access to it for some reason please follow this guide: <router-link to="/manualchoidowngrade">Manually Downgrading (Without HOS)</router-link></b>
+            <b>This guide requires you to have access to the OS of the Nintendo Switch [HOS (Horizon Operating System)]. If you don't have access to it for some reason, please follow this guide: <router-link to="/manualchoidowngrade">Manually Downgrading (Without HOS)</router-link></b>
         </div>
 
         <div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
