@@ -13,7 +13,7 @@ This guide will walk you through all of the steps required to getting homebrew a
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">To learn how to hack your Switch, proceed to <a href="gettingstarted/beforestarting.html">Before Starting</a></p>
+		<p class="last">To learn how to hack your Switch without any previous experience, proceed to <a href="gettingstarted/beforestarting.html">Before Starting</a></p>
 	</div>
     
     <div class="admonition warning">
@@ -40,6 +40,7 @@ This guide will walk you through all of the steps required to getting homebrew a
    
    /usingcfw/hekate
    /usingcfw/manualupgrade
+   /usingcfw/installnsps
    
 .. toctree::
    :maxdepth: 2

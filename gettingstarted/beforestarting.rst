@@ -61,5 +61,5 @@ This guide will focus on using a configuration of the Hekate custom bootloader, 
 	</div>
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents:

@@ -1,9 +1,9 @@
 .wy-side-nav-search {
-	background-color: #E84843;
+	background-color: #E53937;
 }
 
 .wy-nav-side {
-	background: #E84843;
+	background: #C42525;
 	color: #FDFFFF;
 }
 
@@ -25,3 +25,6 @@
    border-color:#EA645D !important;
 }
 
+ul .simple {
+    margin: -5px;
+}

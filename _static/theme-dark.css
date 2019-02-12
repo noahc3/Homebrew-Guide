@@ -59,7 +59,7 @@ background-color: #2d2d2d !important;
 }
 
 .wy-nav-side {
-	background: #C42525;
+	background: #821C1C;
 	color: #FDFFFF;
 }
 
@@ -70,9 +70,13 @@ background-color: #2d2d2d !important;
 
 .toctree-l1>a:hover { 
   color: #FDFFFF !important;
-  background-color: #EA645D !important;
+  background-color: #C42525 !important;
 }
 
 .wy-side-nav-search input[type=text] {
-   border-color:#EA645D !important;
+   border-color:#C42525 !important;
+}
+
+ul .simple {
+    margin: -5px;
 }
