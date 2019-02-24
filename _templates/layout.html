@@ -1,0 +1,8 @@
+{% extends "!layout.html" %}
+
+{%- block extrahead %}
+<meta name="sourcename" content="{{ sourcename }}" />
+{% if "index" in sourcename %}
+  <script type="text/javascript" src="./_static/old-guide-redirect.js"></script>
+{% endif %}
+{% endblock %}
