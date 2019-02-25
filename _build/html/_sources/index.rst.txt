@@ -39,8 +39,9 @@ This guide will walk you through all of the steps required to getting homebrew a
    :hidden:
    
    /usingcfw/hekate
-   /usingcfw/manualupgrade
    /usingcfw/installnsps
+   /usingcfw/manualupgrade
+   /usingcfw/manualchoiupgrade
    
 .. toctree::
    :maxdepth: 2
