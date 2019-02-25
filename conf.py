@@ -88,6 +88,14 @@ html_theme_options = {
 	'prev_next_buttons_location': None
 }
 
+html_context = {
+    "display_github": True,
+    "github_user": "AtlasNX",
+    "github_repo": "Homebrew-Guide",
+    "github_version": "new",
+    "conf_py_path": "/"
+}
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
