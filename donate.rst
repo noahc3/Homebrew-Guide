@@ -26,8 +26,6 @@ Ko-fi is used as a frontend for PayPal. You can send money through Ko-fi using P
 
 bc1qlw084ezjld5kw2rmh40ljuf20fulxp8j2fqd2z
 
-........
-
 
 
 .. toctree::

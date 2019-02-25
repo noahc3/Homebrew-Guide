@@ -50,6 +50,7 @@ This guide will walk you through all of the steps required to getting homebrew a
    
    /troubleshooting
    /faq
+   /credits
    /donate
    
 .. toctree::
