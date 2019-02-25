@@ -20,6 +20,10 @@ This is usually due to an archive metadata bit used by some OS's that Horizon si
 
     * This might take a while, be patient.
 
+........
+
+.. tip::
+    If this page doesn't solve your problem, feel free to ask for help in the support channel on the `Team AtlasNX Discord <https://discord.teamatlasnx.com/>`_.
 
 .. toctree::
    :maxdepth: 2
