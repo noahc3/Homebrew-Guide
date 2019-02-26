@@ -40,7 +40,6 @@ This guide will teach you how to upgrade or downgrade to any firmware version of
     AutoRCM has the following disadvantages:
 
     * You will not be able to boot your Switch at all without a payload sender.
-    * Your Switch will not turn off correctly from the Switch OS. You will have to shutdown from a payload like Hekate.
     
     If you are downgrading, your fuse count will be incorrect for that firmware version. Because of this, **AutoRCM is required to boot your Switch** until you upgrade again.
     
@@ -217,7 +216,7 @@ Step 7: Transferring BCPKG2 images to your Switch
     
     
 1. Put your Switch into RCM and send the **"memloader.bin"** payload you downloaded earlier
-2. On your Switch, using volume buttons, navigate to **"ums_boot1.ini"** and select it with power
+2. On your Switch, using volume buttons, navigate to **"ums_emmc.ini"** and select it with power
 3. The disk should now connect to your PC. In Device Manager, make sure you can see **"LINUX UMS DISK 0"** under **"Disk Drives"**
 
     * If you see "USB Download Gadget", right click the entry and choose Uninstall.
@@ -517,21 +516,21 @@ If your Switch fails to launch during step 13, and you were trying to downgrade 
     .. image:: https://puu.sh/C65yy/8d4a4708fd.png
     
 
-1. Double-click **"SYSTEM"** in HacDiskMount
-2. Make sure both BIS key text boxes are FILLED as they should have been in Step 9. Press **"Test"** and make sure they are green as before.
-3. Under **"Virtual drive",** select an unused drive letter
-4. Make sure **"Passthrough zeroes"** is checked
-5. Press **"Mount"** 
-6. Navigate to the newly mounted drive in File Explorer
-7. Delete EVERYTHING in this drive. **By doing this, you accept that you will lose access to all users, save data, installed games, and other system data.**
-8. Navigate to **"/NX-X.X.X/SYSTEM"** folder which was generated with ChoiDujour.
-9. Copy ALL of the files/folders in this directory to the newly mounted drive
-
-    * Make sure to **copy and replace** all duplicate files.
-
-10. In HacDiskMount, under **"Virtual drive",** press **"Unmount"**
-11. Close the **"Operations on SYSTEM"** window.
-12. Return to and repeat **Step 13.** Your Switch should now boot where it previously did not.
+1. Put your Switch into RCM and send the **"memloader.bin"** payload you downloaded earlier
+2. On your Switch, using volume buttons, navigate to **"ums_emmc.ini"** and select it with power
+3. The disk should now connect to your PC. In Device Manager, make sure you can see **"LINUX UMS DISK 0"** under **"Disk Drives"**
+4. Double-click **"SYSTEM"** in HacDiskMount
+5. Make sure both BIS key text boxes are FILLED as they should have been in Step 9. Press **"Test"** and make sure they are green as before.
+6. Under **"Virtual drive",** select an unused drive letter
+7. Make sure **"Passthrough zeroes"** is checked
+8. Press **"Mount"** 
+9. Navigate to the newly mounted drive in File Explorer
+10. Delete EVERYTHING in this drive. **By doing this, you accept that you will lose access to all users, save data, installed games, and other system data.**
+11. Navigate to **"/NX-X.X.X/SYSTEM"** folder which was generated with ChoiDujour.
+12. Copy ALL of the files/folders in this directory to the newly mounted drive
+13. In HacDiskMount, under **"Virtual drive",** press **"Unmount"**
+14. Close the **"Operations on SYSTEM"** window.
+15. Return to and repeat **Step 13.** Your Switch should now boot where it previously did not.
     
 .. toctree::
    :maxdepth: 2

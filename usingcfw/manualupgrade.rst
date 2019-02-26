@@ -26,7 +26,6 @@ You can also use this guide as a way to upgrade your Switch if your Switch does 
     AutoRCM has the following disadvantages:
 
     * You will not be able to boot your Switch at all without a payload sender.
-    * Your Switch will not turn off correctly from the Switch OS. You will have to shutdown from a payload like Hekate.
     
     It is **highly recommended that you enable AutoRCM** as if you ever boot your Switch without Hekate, your fuses will burn and you will not be able to cleanly downgrade again in the future.
     

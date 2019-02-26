@@ -80,3 +80,11 @@ background-color: #2d2d2d !important;
 ul .simple {
     margin: -5px;
 }
+
+.wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
+    background-color: #2d2d2d;
+}
+
+.wy-table thead, .rst-content table.docutils thead, .rst-content table.field-list thead {
+    color: aliceblue;
+}
