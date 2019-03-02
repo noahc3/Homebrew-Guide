@@ -33,7 +33,7 @@ Step 0: What You Will Need
     
     * OSX users should install this with the command **'brew install python3'** if it is not already installed.
     
-    * Linux users should install this with their distribution's package manager if it is not already installed. You will also need pip3 (python3-pip).
+    * Linux users should install this with their distribution's package manager if it is not already installed. You will also need pip3 (python3-pip), setuptools (python3-setuptools), and tk (python3-tk).
 
 * **For Windows Users Only:** The latest version of Zadig. Available from `zadig.akeo.ie <https://zadig.akeo.ie/>`__.
     
