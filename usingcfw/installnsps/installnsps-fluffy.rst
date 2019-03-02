@@ -12,7 +12,7 @@ This guide will teach you how to setup the unofficial Fluffy USB installer for G
    If something goes wrong or you need help, check `troubleshooting </troubleshooting.html>`__.
    
 .. tip:: 
-   After completing steps 0 through 2 once, you can `skip to Step 3 <http://localhost/usingcfw/installnsps/installnsps-fluffy#step-3-install-nsp-with-fluffy>`_ to install more NSP files.
+   After completing steps 0 through 2 once, you can `skip to Step 3 </usingcfw/installnsps/installnsps-fluffy#step-3-install-nsp-with-fluffy>`_ to install more NSP files.
 
 ........
    
@@ -47,7 +47,7 @@ Step 1 (Windows Only): Installing libusbk Driver
 ------------------------------------------------
 
 .. note::
-    OSX and Linux do not need this driver. If you are not using Windows, `skip to Step 2 <http://localhost/usingcfw/installnsps/installnsps-fluffy#step-2-install-python3-dependencies>`_.
+    OSX and Linux do not need this driver. If you are not using Windows, `skip to Step 2 </usingcfw/installnsps/installnsps-fluffy#step-2-install-python3-dependencies>`_.
 
 1. Make sure Goldleaf is available on your Switch.
 
