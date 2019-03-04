@@ -40,6 +40,7 @@ release = ''
 # ones.
 extensions = [
     'button',
+    'sphinxcontrib.googleanalytics'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -195,3 +196,8 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+
+
+#google analytics
+
+googleanalytics_id = 'UA-124060019-2'
