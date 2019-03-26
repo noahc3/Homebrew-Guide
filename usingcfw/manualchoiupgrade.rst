@@ -132,7 +132,7 @@ Step 4: Converting Firmware Files
 
 .. image:: https://puu.sh/C652v/857f93f5ed.png
 
-3. In the command prompt, type **"ChoiDujour.exe --keyset=keys.txt fw"** without quotes
+3. In the command prompt, type **"ChoiDujour.exe \\-\\-keyset=keys.txt fw"** without quotes
 
     * If ChoiDujour says it cannot find firmware files or keys.txt, you likely put keys.txt or the firmware files in the wrong location. Try steps 1.9-1.13 again.
     * If the script fails otherwise, your keys.txt may be incompatible with ChoiDujour.
