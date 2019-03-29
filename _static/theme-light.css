@@ -13,7 +13,7 @@
 }
 
 .wy-nav-content {
-	max-width: 80%;
+	max-width: 85%;
 }
 
 .toctree-l1>a:hover { 
@@ -28,3 +28,4 @@
 ul .simple {
     margin: -5px;
 }
+

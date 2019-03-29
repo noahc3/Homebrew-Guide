@@ -11,16 +11,16 @@ Features                         Stock Atmosphere                               
 ================================ ===============================================================  ================================================  ==================================== ========================================== ==========================================================
 Free                             ✓                                                                ✓                                                 ✓                                     ✖ (~$25 USD)                                         
 Open Source                      ✓                                                                ✓                                                 ✓                                     ✖                                          
-Firmware 7.0.0+ Support          ✓                                                                ✓                                                 ✖                                     ✖
+Firmware 7.0.0+ Support          ✓                                                                ✓                                                 ✓                                     ✓
 Supports Custom Sysmodules       ✓                                                                ✓                                                 ✓                                     ✖                                          
 Supports Game Modding            ✓                                                                ✓                                                 ✓                                     ✓
 Homebrew Support                 ✓                                                                ✓                                                 ✓                                     ‒                                         SX OS has compatibility issues with many homebrew
 FS Patches                       ✓                                                                ✓                                                 ✓                                     ✓                                         
 ES Patches                       ‒                                                                ‒                                                 ✓                                     ✓                                         Atmosphere & Kosmos Sigpatches must be installed manually
 Configuration Tools              ✖                                                                ✓                                                 ✓                                     ✓                                         
-Ban Protection                   ✓                                                                ✓                                                 ✓                                     ‒                                         Always use 90DNS
-NAND Backups                     ✖                                                                ✓                                                 ✓                                     ✖                                         
-Realtime Cheat Engine            ‒                                                                ✓                                                 ✓                                     ✓                                         Built-in on Atmosphere and SX-OS. Via Sysnetcheat or noexes on others and requires a PC or phone.
+Reboot to Payload                ✓                                                                ✓                                                 ✖                                     ✖
+Proper Shutdown w/ AutoRCM       ✓                                                                ✓                                                 ✖                                     ✖
+Realtime Cheat Engine            ✓                                                                ✓                                                 -                                     ✓                                         Sysnetcheat or noexes on ReiNX. Requires a PC or phone.
 EmuNAND                          ✖                                                                ✖                                                 ✖                                     ✓                                         
 XCI Loading                      ✖                                                                ✖                                                 ✖                                     ✓                                         XCIs can be converted to NSP for other CFWs
 Relevant Guide                   `nh switch guide <https://nh-server.github.io/switch-guide/>`_   `guide.sdsetup.com <https://guide.sdsetup.com>`_  `reinx.guide <https://reinx.guide>`_ `sx.xecuter.com <https://sx.xecuter.com>`_
@@ -28,7 +28,7 @@ Relevant Guide                   `nh switch guide <https://nh-server.github.io/s
 
 ✓ - Supported
 
-‒ - Partial or Incomplete support
+‒ - Partial or incomplete support
 
 ✖ - No Support
 
@@ -40,3 +40,6 @@ Relevant Guide                   `nh switch guide <https://nh-server.github.io/s
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   
+   

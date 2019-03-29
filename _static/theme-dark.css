@@ -7,7 +7,7 @@ background-color: #b9b9b9 !important;
 {
 background: #3c3c3c;
 color: aliceblue;
-min-width: 80%;
+min-width: 85%;
 max-width: calc(100% - 320px);
 width: calc(100% - 320px);
 }
@@ -88,3 +88,4 @@ ul .simple {
 .wy-table thead, .rst-content table.docutils thead, .rst-content table.field-list thead {
     color: aliceblue;
 }
+
