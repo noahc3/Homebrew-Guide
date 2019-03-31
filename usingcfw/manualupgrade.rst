@@ -51,7 +51,40 @@ Step 1: Preparing Files
 
 ........
 
-Step 2: Installing the New Firmware Version
+Step 2: Allow ChoiDujourNX to write to BIS
+------------------------------------------
+
+.. note:: 
+   If you are not using Atmosphere or Kosmos, skip to step 3.
+
+A new security feature in Atmosphere requires you to explicitly allow applications to write to BIS, something ChoiDujourNX needs to do to upgrade the firmware.
+   
+1. If you are on Windows, in File Explorer, make sure File Extensions are set to be shown
+
+.. image:: https://i.imgur.com/REKpKTi.png
+
+2. Open the file **/atmosphere/loader.ini** on your SD card in a plain text editor (ex. Notepad, Notepad++, VSCode, etc).
+3. Copy the value of the **title_id** setting unber **[hbl_config]**.
+
+.. image:: https://i.imgur.com/tmqc1FG.png
+
+.. note:: 
+   If you do not see specifically the **title_id** property with that exact name under the **[hbl_config]** section with that exact name, your version of Atmosphere does not need the bis_write flag. Skip to step 3.
+   
+4. Navigate to **/atmosphere/titles/** on your SD card.
+5. Create a folder with the name of the title_id you copied earlier if it does not already exist.
+
+    * Example: /atmosphere/titles/\ **010000000000100D**\ /
+    
+6. Inside the newly created folder, create a **flags** folder.
+7. Create a blank txt file named **bis_write.flag**.
+
+    * The file extension must be changed from **.txt** to **.flag**. The filename **bis_write.flag.txt** is **WRONG**.
+    * On Windows, you will be asked to confirm to change the file extension. This means you have done it correctly, choose **OK**.
+
+    .. image:: https://i.imgur.com/9yQ4puo.png
+
+Step 3: Installing the New Firmware Version
 -------------------------------------------
 
 1. Insert your SD card into your Switch
