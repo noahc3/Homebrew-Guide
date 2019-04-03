@@ -76,6 +76,9 @@ A new security feature in Atmosphere requires you to explicitly allow applicatio
 
     * Example: /atmosphere/titles/\ **010000000000100D**\ /
     
+    .. warning::
+        010000000000\ **000D**  IS NOT 010000000000\ **100D** (000D vs 100D)!
+    
 6. Inside the newly created folder, create a **flags** folder.
 7. Create a blank txt file named **bis_write.flag**.
 
