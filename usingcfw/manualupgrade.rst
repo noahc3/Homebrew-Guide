@@ -97,7 +97,7 @@ Step 3: Installing the New Firmware Version
     * If Atmosphere does not autoboot, select **Launch > CFW** in Hekate
     
 4. **IMPORTANT: Plug your Switch in to prevent the Switch from dying midway through the install process**
-5. Enter the Homebrew Menu through Album
+5. Enter the Homebrew Menu through Album while holding the R button
 6. Select **ChoiDujourNX**
 7. In ChoiDujourNX, enter the **/firmware** you created earlier and select Choose
 8. After processing, select **[x.x.x] (exFAT)** where [x.x.x] is the firmware version you chose
