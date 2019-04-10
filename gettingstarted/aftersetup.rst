@@ -22,7 +22,8 @@ Atmosphere is currently the CFW with the largest feature set. It enables game mo
 
 1. Enter RCM on your Switch
 2. Push the Hekate payload to your Switch
-3. Select 'Launch > CFW'
+
+Hekate will now autoboot Atmosphere.
 
 ........
 

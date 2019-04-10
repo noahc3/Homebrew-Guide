@@ -35,7 +35,7 @@ If you aren't sure what to pick, choose the first option.
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">For a nice looking GUI, but with a more complicated setup process, continue to <a href="/usingcfw/installnsps/installnsps-nsusbloader.html">Installing NSPs over USB (NS-USBLoader)</a></p>
+		<p class="last">For a nice looking GUI, but with the extra step of installing Java, continue to <a href="/usingcfw/installnsps/installnsps-nsusbloader.html">Installing NSPs over USB (NS-USBLoader)</a></p>
 	</div>
     
 

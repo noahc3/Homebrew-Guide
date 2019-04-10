@@ -95,7 +95,7 @@ By backing up your NAND (the Switch's internal memory), you will later be able t
 
 **If anything goes wrong during this guide, you can always restore this backup with Hekate and restart**
 
-1. Enter RCM and send the *"hekate-ctcaer-4.8.bin"** payload
+1. Enter RCM and send the *"hekate-ctcaer-4.9.1.bin"** payload **while holding Vol-** to skip autoboot and enter the menu
 2. In Hekate, select **'Tools > Backup > Backup eMMC BOOT0/1'**
 
     * Use Volume +/- to change menu selection and Power to select an option.
@@ -263,7 +263,7 @@ Step 8: Recovering your BIS Keys
     
 1. Close HacDiskMount
 2. Hold the power button on your Switch to shut down
-3. Put your Switch into RCM and send the **"hekate-ctcaer-4.8.bin"** payload you downloaded earlier
+3. Put your Switch into RCM and send the **"hekate-ctcaer-4.9.1.bin"** payload you downloaded earlier **while holding Vol-** to skip autoboot and enter the menu
 4. In Hekate, navigate to **Console Info > Print fuse info**
 5. Press **Power** to dump your fuse information to your SD card
 6. Press **Volume +/-** to go back
@@ -467,7 +467,7 @@ Step 13: Launching the First Time After Downgrading
 5. Copy the **"FSXXX-exfat_nocmac_nogc.kip1"** file to the root of your SD card
 6. Copy the **"hekate_ipl.ini"** file to the **"/bootloader"** folder on your SD card
 7. Safely eject your SD card and insert it into your Switch
-8. Enter RCM and send the **"hekate-ctcaer-4.8.bin"** payload
+8. Enter RCM and send the **"hekate-ctcaer-4.9.1.bin"** payload **while holding Vol-** to skip autoboot and enter the menu
 9. In Hekate, navigate to **Hekate > Tools > Fix archive bit (except Nintendo folder)**
 10. Navigate to **Hekate > Tools > Fix archive bit (Nintendo folder)**
 11. Return to the main menu, then select **'Launch > FS_XXX-exfat_nocmac_nogc'** where **XXX** is the firmware version you downgraded to.
@@ -483,8 +483,11 @@ Step 13: Launching the First Time After Downgrading
 16. Delete the **"hekate_ipl.ini"** file
 17. Rename the **"hekate_bak.ini"** file to **"hekate_ipl.ini"**
 18. Safely eject your SD card and insert it into your Switch
-19. Enter RCM and send the **"hekate-ctcaer-4.8.bin"** payload
-20. In Hekate, select **'Launch > CFW'**
+19. Enter RCM and send the **"hekate-ctcaer-4.9.1.bin"** payload
+
+    * If you are using Kosmos, Hekate will now autoboot Atmosphere.
+    * If Atmosphere does not autoboot, select **'Launch > CFW'** in Hekate
+    
 21. Make sure your system successfully boots
 
 

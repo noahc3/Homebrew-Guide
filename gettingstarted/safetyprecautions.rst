@@ -18,7 +18,7 @@ Step 1: Backing up your NAND and BIS keys
 
 By backing up your NAND (the Switch's internal memory), you will later be able to restore it in the event that anything goes wrong, essentially rewinding it back to a previous state. BIS keys are also good to backup so you can reinstall any firmware version manually should your NAND backup become corrupted or lost.
 
-1. Enter RCM but this time send the Hekate payload provided in the SDSetup download to your Switch (refer to Section 1: Accessing RCM if you've forgotten how)
+1. Enter RCM but this time send the Hekate payload provided in the SDSetup download to your Switch **while holding Vol-** (refer to Section 1: Accessing RCM if you've forgotten how)
 2. In Hekate, select **'Tools > Backup > Backup eMMC BOOT0/1'**
 
     * Use Volume +/- to change menu selection and Power to select an option.

@@ -57,7 +57,7 @@ After copying the SD card files to your SD card, insert it back into your Switch
 ........
 
 .. important::
-    You are technically done! At this point, you can use the Hekate payload provided in your download with your payload sender to launch into Atmosphere or ReiNX CFW.
+    You are technically done! At this point, you can use the Hekate payload provided in your download with your payload sender to launch into Atmosphere.
     
     The next section includes important information about safety precautions you should take.
     
