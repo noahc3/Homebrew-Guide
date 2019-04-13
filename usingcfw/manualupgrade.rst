@@ -63,14 +63,12 @@ A new security feature in Atmosphere requires you to explicitly allow applicatio
 
 .. image:: https://i.imgur.com/REKpKTi.png
 
-2. Navigate to **/atmosphere/titles/** on your SD card.
+2. Navigate to **/atmosphere** on your SD card.
 3. Create a folder named **flags**
 4. Create a blank txt file named **hbl_bis_write.flag**.
 
     * The file extension must be changed from **.txt** to **.flag**. The filename **hbl_bis_write.flag.txt** is **WRONG**.
     * On Windows, you will be asked to confirm to change the file extension. This means you have done it correctly, choose **OK**.
-
-    .. image:: https://i.imgur.com/9yQ4puo.png
 
 Step 3: Installing the New Firmware Version
 -------------------------------------------
