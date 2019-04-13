@@ -23,7 +23,15 @@ Atmosphere is currently the CFW with the largest feature set. It enables game mo
 1. Enter RCM on your Switch
 2. Push the Hekate payload to your Switch
 
-Hekate will now autoboot Atmosphere.
+Hekate will now autoboot Atmosphere. Note that Atmosphere CFW does not look fundamentaly different to the normal Switch operating system. You can verify you are in Atmosphere by trying to load the Homebrew Menu (see below) or checking if the system version string in System Settings contains **(AMS x.x.x)**.
+
+
+Accessing the Homebrew Menu
+---------------------------
+
+Homebrew installed by placing an **NRO** file into the **/switch** folder on your SD card can be launched through the Homebrew Menu.
+
+Access the Homebrew Menu by holding the **R** button while opening **any game, app or the album**. Note that for games, you need to hold **R** *after* choosing a user (if applicable).
 
 ........
 
