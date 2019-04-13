@@ -40,8 +40,6 @@ Step 1: Installing libusbk Driver
 
 4. Choose **USB installation** and choose **Start**.
 
-    * Goldleaf should now say 'USB connection detected'. If it doesn't, close Goldleaf and try again.
-
 5. On your PC, open the Zadig application and complete the installation if prompted.
 
 6. In the dropdown box, look for either **'libnx usb comms'** or **'Nintendo Switch'** and select it.
@@ -55,6 +53,10 @@ Step 1: Installing libusbk Driver
 8. Choose **'Install Driver'** or **'Replace Driver'** or **'Reinstall Driver'** (the big button). Wait for this process to finish.
 
 9. Close Zadig.
+
+10. Disconnect and reconnect your Switch
+
+    * Goldleaf should now say 'USB connection detected'. If it doesn't, close Goldleaf and try again.
 
 
 Step 2: Install NSP with Goldtree
