@@ -38,7 +38,7 @@ Step 1: Installing libusbk Driver
 
 3. Run Goldleaf on your Switch.
 
-4. Choose **USB installation (via Goldtree)** and choose **Start**.
+4. Choose **USB installation** and choose **Start**.
 
     * Goldleaf should now say 'USB connection detected'. If it doesn't, close Goldleaf and try again.
 
