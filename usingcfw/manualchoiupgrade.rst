@@ -23,7 +23,7 @@ This guide will teach you how to upgrade or downgrade to any firmware version of
     **This guide is only for who do not have access to CFW on their latest firmware version and do not have a working NAND backup from a lower firmware version.** If you have access to CFW, follow `Manually Updating/Downgrading </usingcfw/manualupgrade>`_ instead. If you have a working NAND backup, you can restore that with Hekate instead to downgrade to whatever firmware version that NAND backup was made on. In all cases, the side-effects below might still apply.
 
 .. danger::
-    **You cannot upgrade or downgrade directly to 6.2.0, 7.0.0 or 7.0.1** as the ChoiDujour PC application does not support these firmware versions. You must upgrade/downgrade to any other firmware version first and then upgrade to these higher firmware versions with the ChoiDujourNX Switch application if you specifically want one of these firmware versions.
+    **You cannot upgrade or downgrade directly to 6.2.0, 7.0.0, 7.0.1 or 8.0** as the ChoiDujour PC application does not support these firmware versions. You must upgrade/downgrade to any other firmware version first and then upgrade to these higher firmware versions with the ChoiDujourNX Switch application if you specifically want one of these firmware versions.
     
 .. danger::
     This process is very complex and contains many steps. Make sure to read everything carefully, **as any missteps can lead to a bricked Switch.** You have been warned.
@@ -60,7 +60,7 @@ Step 0: Before Starting
 2. You should have the latest version of Hekate and a working Hekate setup on your SD card (ex. Kosmos). If you do not, follow `SD Card Setup </gettingstarted/sdsetup>`_ and then return back to this page.
 3. You need the firmware files for the firmware version you want to upgrade/downgrade to. These cannot be shared here as they are copyrighted. Google is your friend.
 
-    * You cannot use 6.2.0, 7.0.0 or 7.0.1 firmware files as the ChoiDujour PC application does not support these versions. If you want to specifically upgrade/downgrade to one of these versions, you must first downgrade to any other firmware version and then upgrade to one of these versions using the ChoiDujourNX Switch application afterwards.
+    * You cannot use 6.2.0, 7.0.0, 7.0.1 or 8.0 firmware files as the ChoiDujour PC application does not support these versions. If you want to specifically upgrade/downgrade to one of these versions, you must first downgrade to any other firmware version and then upgrade to one of these versions using the ChoiDujourNX Switch application afterwards.
     
 4. You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal. Google is your friend.
     
