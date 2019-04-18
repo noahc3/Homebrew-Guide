@@ -23,7 +23,7 @@ This guide will teach you how to upgrade or downgrade to any firmware version of
     **This guide is only for who do not have access to CFW on their latest firmware version and do not have a working NAND backup from a lower firmware version.** If you have access to CFW, follow `Manually Updating/Downgrading </usingcfw/manualupgrade>`_ instead. If you have a working NAND backup, you can restore that with Hekate instead to downgrade to whatever firmware version that NAND backup was made on. In all cases, the side-effects below might still apply.
 
 .. danger::
-    **You cannot upgrade or downgrade directly to 6.2.0, 7.0.0, 7.0.1 or 8.0** as the ChoiDujour PC application does not support these firmware versions. You must upgrade/downgrade to any other firmware version first and then upgrade to these higher firmware versions with the ChoiDujourNX Switch application if you specifically want one of these firmware versions.
+    **You cannot upgrade or downgrade directly to 6.2.0, 7.0.0, 7.0.1 or 8.0.0** as the ChoiDujour PC application does not support these firmware versions. You must upgrade/downgrade to any other firmware version first and then upgrade to these higher firmware versions with the ChoiDujourNX Switch application if you specifically want one of these firmware versions.
     
 .. danger::
     This process is very complex and contains many steps. Make sure to read everything carefully, **as any missteps can lead to a bricked Switch.** You have been warned.
