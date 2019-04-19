@@ -508,6 +508,9 @@ Step 14: Launching the First Time After Downgrading
 Step 14: First Launch Failed
 ---------------------------------------------------
 
+.. tip::
+    Booting ReiNX once can correct the underlying problem and allow your switch to boot properly.
+
 .. warning::
     This next step is **only to be followed if your Switch did not boot during step 13.12 and you are trying to downgrade your Switch!** Do not follow it for any other reason.
 
