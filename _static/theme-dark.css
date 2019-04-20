@@ -89,3 +89,10 @@ ul .simple {
     color: aliceblue;
 }
 
+.wy-table-responsive {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}

@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Accessing RCM
-=============
+Checking RCM
+============
 
 This section of the guide will teach you how to access RCM, determine if your Switch is vulnerable to fusee-gelee, and run a payload.
 

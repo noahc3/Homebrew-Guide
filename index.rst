@@ -28,7 +28,8 @@ This guide will walk you through all of the steps required to getting homebrew a
    :hidden:
    
    /gettingstarted/beforestarting
-   /gettingstarted/accessingrcm
+   /gettingstarted/checkingrcm
+   /gettingstarted/choosinganexploit
    /gettingstarted/sdsetup
    /gettingstarted/safetyprecautions
    /gettingstarted/aftersetup
