@@ -23,7 +23,7 @@ This guide will teach you how to upgrade or downgrade to any firmware version of
     **This guide is only for who do not have access to CFW on their latest firmware version and do not have a working NAND backup from a lower firmware version.** If you have access to CFW, follow `Manually Updating/Downgrading </usingcfw/manualupgrade>`_ instead. If you have a working NAND backup, you can restore that with Hekate instead to downgrade to whatever firmware version that NAND backup was made on. In all cases, the side-effects below might still apply.
 
 .. danger::
-    **You cannot upgrade or downgrade directly to 6.2.0, 7.0.0, 7.0.1 or 8.0.0** as the ChoiDujour PC application does not support these firmware versions. You must upgrade/downgrade to any other firmware version first and then upgrade to these higher firmware versions with the ChoiDujourNX Switch application if you specifically want one of these firmware versions.
+    **You cannot upgrade or downgrade directly to 6.2.0, 7.0.0, 7.0.1 or 8.0** as the ChoiDujour PC application does not support these firmware versions. You must upgrade/downgrade to any other firmware version first and then upgrade to these higher firmware versions with the ChoiDujourNX Switch application if you specifically want one of these firmware versions.
     
 .. danger::
     This process is very complex and contains many steps. Make sure to read everything carefully, **as any missteps can lead to a bricked Switch.** You have been warned.
@@ -61,6 +61,10 @@ Step 0: Before Starting
 3. You need the firmware files for the firmware version you want to upgrade/downgrade to. These cannot be shared here as they are copyrighted. Google is your friend.
 
     * You cannot use 6.2.0, 7.0.0, 7.0.1 or 8.0 firmware files as the ChoiDujour PC application does not support these versions. If you want to specifically upgrade/downgrade to one of these versions, you must first downgrade to any other firmware version and then upgrade to one of these versions using the ChoiDujourNX Switch application afterwards.
+    
+4. You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal. Google is your friend.
+    
+    * ChoiDujour is very picky about the keys file you use. If you have one generated from Lockpick or HACGUI, use that.
 
 ........
 
@@ -74,7 +78,7 @@ Step 1: Preparing Files
 5. Download the latest version of **HacDiskMount** by rajkosto
 6. Download the latest version of **memloader** by rajkosto
 7. Extract each downloaded .ZIP file to separate folders on your PC
-8. Download **Lockpick_RCM** from `its releases page <http://github.com/shchmue/Lockpick_RCM/releases/latest>`_ (**"Lockpick_RCM.bin"**)
+8. Copy your hactool **keys.txt** into the ChoiDujour folder
 9. Create a folder named **"fw"** inside of your ChoiDujour folder
 10. Extract the contents of your firmware .ZIP file to the newly created **"fw"** folder
 11. Go to `www.balena.io/etcher/ <https://www.balena.io/etcher/>`_, download and install Etcher for your system
@@ -91,7 +95,7 @@ By backing up your NAND (the Switch's internal memory), you will later be able t
 
 **If anything goes wrong during this guide, you can always restore this backup with Hekate and restart**
 
-1. Enter RCM and send the **"hekate-ctcaer-4.9.1.bin"** payload **while holding Vol-** to skip autoboot and enter the menu
+1. Enter RCM and send the *"hekate-ctcaer-4.9.1.bin"** payload **while holding Vol-** to skip autoboot and enter the menu
 2. In Hekate, select **'Tools > Backup > Backup eMMC BOOT0/1'**
 
     * Use Volume +/- to change menu selection and Power to select an option.
@@ -107,30 +111,20 @@ By backing up your NAND (the Switch's internal memory), you will later be able t
 
 .. tip:: 
    It is highly recommended that you store these backups in multiple locations (ex. cloud storage, external harddrive, etc) as they may be critical to restoring your Switch if anything goes wrong in the future.
-
+   
 ........
    
-Step 3: Dumping keys
--------------------------------------------
-
-1. Put your Switch into RCM and send the **"Lockpick_RCM.bin"** payload you downloaded earlier
-2. If prompted, press a button to launch Sept
-3. Once prompted, press Vol+ to reboot back into RCM
-
-........
-   
-Step 4: Preparing SD card
+Step 3: Preparing SD card
 -------------------------------------------
 
 1. Insert your SD card into your PC
 2. Navigate to where you extracted memloader earlier
 3. Copy **the contents** of the **"/sample"** folder to the **root** of your SD card
 4. Safely eject your SD card from your PC and put it into your Switch
-5. In the **"/switch"** directory on your SD card, copy **"prod.keys"** to your ChoiDujour folder and rename it to **"keys.txt"**
 
 ........
 
-Step 5: Converting Firmware Files
+Step 4: Converting Firmware Files
 -------------------------------------------
 
 1. Navigate to your ChoiDujour folder with File Explorer
@@ -147,7 +141,7 @@ Step 5: Converting Firmware Files
 
 ........
 
-Step 6: Transferring boot0 to your Switch
+Step 5: Transferring boot0 to your Switch
 -------------------------------------------
 
 .. danger::
@@ -181,7 +175,7 @@ Step 6: Transferring boot0 to your Switch
 
 ........
 
-Step 7: Transferring boot1 to your Switch
+Step 6: Transferring boot1 to your Switch
 -------------------------------------------
 
 .. danger::
@@ -212,7 +206,7 @@ Step 7: Transferring boot1 to your Switch
 
 ........
 
-Step 8: Transferring BCPKG2 images to your Switch
+Step 7: Transferring BCPKG2 images to your Switch
 -------------------------------------------------
 
 .. danger::
@@ -252,7 +246,7 @@ Step 8: Transferring BCPKG2 images to your Switch
     
 ........
 
-Step 9: Recovering your BIS Keys
+Step 8: Recovering your BIS Keys
 -------------------------------------------------
     
 .. danger::
@@ -292,7 +286,7 @@ Step 9: Recovering your BIS Keys
 
 ........
 
-Step 10: Configuring HacDiskMount BIS Keys
+Step 9: Configuring HacDiskMount BIS Keys
 -------------------------------------------------
     
 .. danger::
@@ -370,7 +364,7 @@ Step 10: Configuring HacDiskMount BIS Keys
 
 ........
 
-Step 11: Transferring SAFE
+Step 10: Transferring SAFE
 -------------------------------------------------
 
 .. danger::
@@ -408,7 +402,7 @@ Step 11: Transferring SAFE
 
 ........
 
-Step 12: Transferring SYSTEM
+Step 11: Transferring SYSTEM
 -------------------------------------------------
 
 .. danger::
@@ -438,7 +432,7 @@ Step 12: Transferring SYSTEM
 
 ........
 
-Step 13: Transferring USER
+Step 12: Transferring USER
 -------------------------------------------------
 
 .. danger::
@@ -463,7 +457,7 @@ Step 13: Transferring USER
 
 ........
 
-Step 14: Launching the First Time After Downgrading
+Step 13: Launching the First Time After Downgrading
 ---------------------------------------------------
 
 1. Insert your SD card into your PC

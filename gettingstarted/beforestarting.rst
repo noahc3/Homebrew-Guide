@@ -49,7 +49,7 @@ This guide will focus on using a configuration of the Hekate custom bootloader, 
 	* Follow the guide and everything should be fine.
 	
 .. note::
-	This guide will work on **all firmware versions except 8.0.0** as long as fusee-gelee is not patched on the Switch. See `Upgrading/Downgrading Manually With a PC <../usingcfw/manualupgrade.html>`_ for how to downgrade. The guide will include a step for checking if fusee-gelee is patched or not.
+	This guide will work on **all firmware versions except 8.0.0** as long as fusee-gelee is not patched on the Switch. The guide will include a step for checking if fusee-gelee is patched or not.
 
     
 ........
