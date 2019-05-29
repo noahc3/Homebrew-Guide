@@ -25,6 +25,7 @@ Step 0: What You Will Need
     * **NOTE:** This is not required if you just want to run the Browser exploit. We do recommend buying one of these games though
     * **WARNING:** Don't use a pirated copy of these games. This will result in a brick.
 
+
     .. raw:: html
         <table>
         <thead>
@@ -114,6 +115,7 @@ Step 1: Format your SD
 ----------------------
 
 Like your Switch, the Wii U needs a FAT32 formatted Switch. However unlike the Switch, **only FAT32 works!**. If you need to format your SD on Windows and you can't find FAT32 as a selectable option use
+
 .. raw:: html
 
     <b><a href="http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm">guiformat</a></b>
@@ -139,7 +141,6 @@ Step 2: Download Kosmos Wii U
 ........
 
 .. raw:: html
-
 	<div class="admonition warning">
 		<p class="last">Continue to <a href="wiiu/browserexp.html">"Exploits, Homebrew Channel and more"</a></p>
 	</div>
