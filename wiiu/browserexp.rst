@@ -45,7 +45,7 @@ Step 2: Backing up your NAND
 
 ........
 
-[Optional] Step 4: Installing Haxchi
+[Optional] Step 3: Installing Haxchi
 ----------------------
 
 If you installed any of the Haxchi-compatible games we mentioned in the preparations you can now proceed to install Haxchi.
@@ -65,7 +65,7 @@ Pressing the Haxchi application will automatically start Mocha CFW, if you want 
 
 ........
 
-Step 5: Installing the Homebrew Channel (Channel)
+Step 4: Installing the Homebrew Channel (Channel)
 ----------------------
 
 The Homebrew Channel (Channel) is a shortcut to the homebrew channel you can start from your home menu when having Mocha CFW enabled. Please note that you always have to launch Mocha before starting this application! Otherwise it won't work.
