@@ -6,18 +6,6 @@
 Exploits and you
 =============
 
-    
-Step 0: A clean desk
---------------------------
-
-1. Start the Wii U web browser.
-2. Go into your browser settings.
-3. Reset your browser's data.
-4. Close your browser.
-5. Open your browser again.
-
-........
-
 Step 1: Running the exploit
 ----------------------
 
@@ -51,7 +39,7 @@ Step 2: Backing up your NAND
 If you installed any of the Haxchi-compatible games we mentioned in the preparations you can now proceed to install Haxchi.
 Compared to the browser exploit, haxchi does not require any luck or internet and is just a launchable icon on your home menu.
 
-**NOTE:** Your DS game must be installed on your NAND, installing it on a USB could potentially cause a brick and does not work
+**NOTE:** Your DS game must be installed on your NAND, otherwise it will not work!
 
 1. Select `Haxchi` in your Homebrew Channel.
 2. Select the DS title you would like to overwrite with Haxchi
@@ -79,7 +67,7 @@ The Homebrew Channel (Channel) is a shortcut to the homebrew channel you can sta
 6. Select `NAND` as the destination
 7. Press the (HOME) button
 8. Close the application once the installation finishes.
-9. You can now launch the Homebrew Channel through the icon, congratulations!
+9. You can now launch the Homebrew Channel through the icon while being in CFW, congratulations!
 
 .. toctree::
    :maxdepth: 2

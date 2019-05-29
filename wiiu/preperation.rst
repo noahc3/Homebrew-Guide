@@ -11,9 +11,9 @@ This section of the guide will help you to prepare everything.
 Step 0: What You Will Need
 --------------------------
 
-* A Micro SD Card
+* A SD Card (or Micro SD card + adapter)
 
-    * You should have an SD card at least 4GB in size. A small SD card is enough to get CFW running, but larger ones are preferred for installing games and performing NAND backups efficiently.
+    * We recommend a SD with at least 4GB+ even if not needed. A small SD card is enough to get CFW running, but larger ones are preferred for installing games and performing NAND backups efficiently.
     * If you want to backup your Wii U, you should use a SD at least twice the size of your console (16GB for the white console and 64GB for the black one)
 
 * A working internet connection on your Wii U
