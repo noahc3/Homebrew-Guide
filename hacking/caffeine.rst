@@ -19,3 +19,4 @@ Caffeine
    /hacking/caffeine/sdsetup
    /hacking/caffeine/pegascape
    /hacking/caffeine/safetyprecautions
+   /hacking/caffeine/aftersetup
