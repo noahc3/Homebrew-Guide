@@ -74,10 +74,7 @@ Step 3: Installing the New Firmware Version
 -------------------------------------------
 
 1. Insert your SD card into your Switch
-2. Run Hekate using your payload sender of choice 
-
-    * If you are using Kosmos, Hekate will now autoboot Atmosphere.
-    * If Atmosphere does not autoboot, select **Launch > CFW** in Hekate
+2. Launch Atmosphere CFW
     
 4. **IMPORTANT: Plug your Switch in to prevent the Switch from dying midway through the install process**
 5. Enter the Homebrew Menu through Album while holding the R button

@@ -16,8 +16,7 @@ Launching Atmosphere CFW
 
 Atmosphere is currently the CFW with the largest feature set. It enables game modding, homebrew, backup installs, and more. To launch Atmosphere:
 
-1. Enter RCM on your Switch
-2. Push the Hekate payload to your Switch
+1. Enter Hekate through RCM or with PegaScape.
 
 Hekate will now autoboot Atmosphere.
 

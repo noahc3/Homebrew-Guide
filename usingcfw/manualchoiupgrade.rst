@@ -14,6 +14,9 @@ This guide will teach you how to upgrade or downgrade to any firmware version of
    If something goes wrong or you need help, check `troubleshooting </troubleshooting.html>`_.
    
 .. danger::
+    This guide is only intended to be used with RCM. It is **very very dangerous** to follow this guide without the ability to launch payloads via RCM. **Do not follow this guide if you cannot launch RCM payloads!**
+
+.. danger::
     **This guide will likely take you 30-60 minutes to complete if it is your first time.** If you decide to stop half way through, or if anything goes wrong, you must restore your NAND backup that you will create with Hekate to make your Switch work again.
     
 .. danger::
@@ -23,7 +26,7 @@ This guide will teach you how to upgrade or downgrade to any firmware version of
     **This guide is only for who do not have access to CFW on their latest firmware version and do not have a working NAND backup from a lower firmware version.** If you have access to CFW, follow `Manually Updating/Downgrading </usingcfw/manualupgrade>`_ instead. If you have a working NAND backup, you can restore that with Hekate instead to downgrade to whatever firmware version that NAND backup was made on. In all cases, the side-effects below might still apply.
 
 .. danger::
-    **You cannot upgrade or downgrade directly to 6.2.0, 7.0.0, 7.0.1 or 8.0** as the ChoiDujour PC application does not support these firmware versions. You must upgrade/downgrade to any other firmware version first and then upgrade to these higher firmware versions with the ChoiDujourNX Switch application if you specifically want one of these firmware versions.
+    **You cannot upgrade or downgrade directly to any firmwares from 6.2.0-8.1.0** as the ChoiDujour PC application does not support these firmware versions. You must upgrade/downgrade to any other firmware version first and then upgrade to these higher firmware versions with the ChoiDujourNX Switch application if you specifically want one of these firmware versions.
     
 .. danger::
     This process is very complex and contains many steps. Make sure to read everything carefully, **as any missteps can lead to a bricked Switch.** You have been warned.
@@ -60,7 +63,7 @@ Step 0: Before Starting
 2. You should have the latest version of Hekate and a working Hekate setup on your SD card (ex. Kosmos). If you do not, follow `SD Card Setup </gettingstarted/sdsetup>`_ and then return back to this page.
 3. You need the firmware files for the firmware version you want to upgrade/downgrade to. These cannot be shared here as they are copyrighted. Google is your friend.
 
-    * You cannot use 6.2.0, 7.0.0, 7.0.1 or 8.0 firmware files as the ChoiDujour PC application does not support these versions. If you want to specifically upgrade/downgrade to one of these versions, you must first downgrade to any other firmware version and then upgrade to one of these versions using the ChoiDujourNX Switch application afterwards.
+    * You cannot use files for firmwares 6.2.0-8.1.0 as the ChoiDujour PC application does not support these versions. If you want to specifically upgrade/downgrade to one of these versions, you must first downgrade to any other firmware version and then upgrade to one of these versions using the ChoiDujourNX Switch application afterwards.
     
 4. You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal. Google is your friend.
     
@@ -95,7 +98,7 @@ By backing up your NAND (the Switch's internal memory), you will later be able t
 
 **If anything goes wrong during this guide, you can always restore this backup with Hekate and restart**
 
-1. Enter RCM and send the *"hekate-ctcaer-4.10.1.bin"** payload **while holding Vol-** to skip autoboot and enter the menu
+1. Enter RCM and send the **"hekate-ctcaer-4.10.1.bin"** payload **while holding Vol-** to skip autoboot and enter the menu
 2. In Hekate, select **'Tools > Backup > Backup eMMC BOOT0/1'**
 
     * Use Volume +/- to change menu selection and Power to select an option.
@@ -327,8 +330,8 @@ Step 9: Configuring HacDiskMount BIS Keys
 8. Make sure the keys are prefilled
 9. Press **"Test"**
 
-    ** You should see a green message with **"OK!"** next to the **"Save"** button like before.
-    ** If the message is red, **STOP! Your keys are WRONG! You cannot continue.** Make sure you put in the correct keys in the last step, and otherwise repeat step 8.
+    * You should see a green message with **"OK!"** next to the **"Save"** button like before.
+    * If the message is red, **STOP! Your keys are WRONG! You cannot continue.** Make sure you put in the correct keys in the last step, and otherwise repeat step 8.
 
 10. Close the **"Operations on PRODINFOF"** window
 

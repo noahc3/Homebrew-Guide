@@ -30,9 +30,6 @@ This guide will walk you through all of the steps required to getting homebrew a
    /gettingstarted/beforestarting
    /gettingstarted/checkingrcm
    /gettingstarted/choosinganexploit
-   /gettingstarted/sdsetup
-   /gettingstarted/safetyprecautions
-   /gettingstarted/aftersetup
 
 .. toctree::
    :maxdepth: 2
@@ -61,6 +58,7 @@ This guide will walk you through all of the steps required to getting homebrew a
    /comparingcfws
    /troubleshooting
    /faq
+   /wiiu
    /credits
    /donate
    
