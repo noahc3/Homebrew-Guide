@@ -50,7 +50,7 @@ Deja-vu
 
 The secondary exploit group is called deja-vu, which takes advantage of an oversight in the Nintendo Switch's warmboot firmware (the code that runs when you put your Switch to sleep and wake it up). This exploit also allows for a full system takeover, as we can reboot the system into a state with the same posibilities that fusee-gelee provides. **Deja-vu is a browser-based, software only exploit. You must launch the exploit through the browser every time you reboot your system into stock firmware.**
 
-Deja-vu currently only has implementations available from firmwares 1.0.0 - 3.0.0, however the exploit theoretically works up to firmware 7.0.1 (the exploit was patched in firmware 8.0.0) and support for these higher firmwares should be added in the future. The current deja-vu implementations are **Nereba** for firmware 1.0.0, and **Caffeine for firmwares 2.0.0-3.0.0.
+Deja-vu currently only has implementations available from firmwares 1.0.0 - 3.0.0, however the exploit theoretically works up to firmware 7.0.1 (the exploit was patched in firmware 8.0.0) and support for these higher firmwares should be added in the future. The current deja-vu implementations are **Nereba** for firmware 1.0.0, and **Caffeine** for firmwares 2.0.0-3.0.0.
 
 Custom Firmware
 ^^^^^^^^^^^^^^^

@@ -13,7 +13,7 @@ RCM is the best way to run CFW as it supports all firmwares. Even if you plan to
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">If you already have access to RCM and can launch payloads, continue to <a href="sdsetup.html">SD Card Setup</a></p>
+		<p class="last">If you already have access to RCM and can launch payloads, continue to <a href="/gettingstarted/choosinganexploit">Choosing an Exploit</a></p>
 	</div>
 	
 ........
