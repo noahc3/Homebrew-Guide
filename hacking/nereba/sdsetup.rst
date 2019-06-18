@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-SD Card Setup (Caffeine)
+SD Card Setup (Nereba)
 ========================
 
-At this point, you've decided that you want to use the Caffeine browser exploit to launch CFW. You will now prepare your SD card with the necessary software.
+At this point, you've decided that you want to use the Nereba browser exploit to launch CFW. You will now prepare your SD card with the necessary software.
 
 .. note:: 
    If something goes wrong or you need help, check `troubleshooting </troubleshooting.html>`_.
@@ -25,7 +25,7 @@ This guide will walk you through the process of using the website SDSetup to pre
 2. Select **Nintendo Switch** 
 3. Select the **"Kosmos + PegaScape"** package
 
-    * If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, Homebrew Menu, Fake News Injector, Hekate, and the Caffeine PegaScape payload.
+    * If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, Homebrew Menu, Fake News Injector, Hekate, and the Nereba PegaScape payload.
     
 4. Select the **"biskeydump"** payload under **Extras > Payloads > biskeydump** 
 5. Select any additional homebrew packages you wish.
@@ -62,7 +62,7 @@ After copying the SD card files to your SD card, insert it back into your Switch
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">Continue to <a href="/hacking/caffeine/pegascape">Using PegaScape (Caffeine)</a></p>
+		<p class="last">Continue to <a href="/hacking/nereba/pegascape">Using PegaScape (Nereba)</a></p>
 	</div>
 
 .. toctree::

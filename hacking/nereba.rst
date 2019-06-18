@@ -19,3 +19,4 @@ Nereba
    /hacking/nereba/sdsetup
    /hacking/nereba/pegascape
    /hacking/nereba/safetyprecautions
+   /hacking/nereba/aftersetup

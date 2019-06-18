@@ -3,35 +3,41 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-After Setup
-===========
+After Setup (Nereba)
+=========================
 
 Congratulations! By this point you have:
 
-* Learned how to enter RCM
-* Learned how to launch fusee-gelee payloads
-* Learned how to perform NAND backups
-* Learned how to block as much Nintendo telemetry as possible
+* Learned how to use PegaScape to reboot to Hekate.
+* Learned how to launch fusee-gelee payloads through Hekate.
+* Learned how to perform NAND backups.
+* Learned how to block as much Nintendo telemetry as possible.
 
 ........
    
 Launching Atmosphere CFW
 ------------------------
 
-Atmosphere is currently the CFW with the largest feature set. It enables game modding, homebrew, backup installs, and more. To launch Atmosphere:
+To launch Atmosphere:
 
-1. Enter RCM on your Switch
-2. Push the Hekate payload to your Switch
+1. Reboot to Hekate using PegaScape.
 
 Hekate will now autoboot Atmosphere. Note that Atmosphere CFW does not look fundamentaly different to the normal Switch operating system. You can verify you are in Atmosphere by trying to load the Homebrew Menu (see below) or checking if the system version string in System Settings contains **(AMS x.x.x)**.
 
+.. important::
+
+    When you select "Restart" in the power options menu, Atmosphere will instead reboot into Hekate. This means you do not necessarily have to rerun PegaScape on every reboot.
+
+.. important::
+
+    PegaScape will not work in Atmosphere. You must shutdown your switch and turn it on to enter stock firmware to use PegaScape.
 
 Accessing the Homebrew Menu
 ---------------------------
 
 Homebrew installed by placing an **NRO** file into the **/switch** folder on your SD card can be launched through the Homebrew Menu.
 
-Access the Homebrew Menu by holding the **R** button while opening **any game, app or the album**. Note that for games, you need to hold **R** *after* choosing a user (if applicable).
+Access the Homebrew Menu by holding the **R** button while opening **any game, app or the album** while in Atmosphere. Note that for games, you need to hold **R** *after* choosing a user (if applicable).
 
 ........
 
