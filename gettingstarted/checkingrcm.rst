@@ -8,6 +8,8 @@ Checking RCM
 
 This section of the guide will teach you how to access RCM, determine if your Switch is vulnerable to fusee-gelee, and run a payload.
 
+RCM is the best way to run CFW as it supports all firmwares. Even if you plan to use a software-based exploit, you should always know if your Switch has an exploitable RCM and how to push payloads.
+
 .. raw:: html
 
 	<div class="admonition warning">
@@ -107,7 +109,7 @@ Time to find out if any of this prep was worth it.
     
 .. error::
 
-    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is patched. You will not be able to run CFW at this time. **You should try a few more times to be certain.**
+    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. You will not be able to run CFW at this time. **You should try a few more times to be certain.**
 
 ........
 
@@ -127,7 +129,7 @@ Time to find out if any of this prep was worth it.
     
 .. error::
 
-    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is patched. You will not be able to run CFW at this time. **You should try a few more times to be certain.**
+    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. You will not be able to run CFW at this time. **You should try a few more times to be certain.**
 
 ........
 
@@ -146,7 +148,7 @@ Time to find out if any of this prep was worth it.
     
 .. error::
 
-    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is patched. You will not be able to run CFW at this time. **You should try a few more times to be certain.**
+    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. You will not be able to run CFW at this time. **You should try a few more times to be certain.**
     
 ........
 
@@ -157,7 +159,7 @@ Wait for your Switch to shutdown before continuing. This should happen automatic
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">Continue to <a href="sdsetup.html">SD Card Setup</a></p>
+		<p class="last">Continue to <a href="choosinganexploit.html">Choosing an Exploit</a></p>
 	</div>
 
 .. toctree::

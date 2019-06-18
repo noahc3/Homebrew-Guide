@@ -33,6 +33,15 @@ This guide will walk you through all of the steps required to getting homebrew a
    /gettingstarted/sdsetup
    /gettingstarted/safetyprecautions
    /gettingstarted/aftersetup
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Hacking Your Switch
+   :hidden:
+   
+   /hacking/fuseegelee
+   /hacking/nereba
+   /hacking/caffeine
    
 .. toctree::
    :maxdepth: 2
