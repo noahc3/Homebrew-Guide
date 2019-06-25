@@ -36,21 +36,53 @@ Step 1: Configuring PegaScape (Wifi Authentication Prompt)
 
 1. Power on your Switch normally.
 2. Open settings and go to the Internet tab
-3. Configure a WiFi connection if you have not already done so
-4. Select your WiFi network and pick Change Settings
-5. Set DNS Settings to Manual
-6. Set **'Primary DNS'** to **'<insert pegascape wifi auth dns ip>'**
-7. Set **'Secondary DNS'** to **'163.172.141.219'**
-8. Save and perform the connection test. 
-9. **You should be told that the WiFi network requires registration.** Click Next.
-10. Wait for the PegaScape page to load.
+3. Delete your existing WiFi connection if you have one for the network you want to connect to
+4. Add your WiFi network, **but type in a long, wrong password** to fail the connection test.
+5. After the connection test fails, choose to change settings.
+6. Set DNS Settings to Manual
+7. Set **'Primary DNS'** to **'<insert pegascape wifi auth dns ip>'**
+8. Set **'Secondary DNS'** to **'163.172.141.219'**
+9. Save and perform the connection test. 
+10. **You should be told that the WiFi network requires registration.** Click Next.
+
+    * If the connection test passes without the registration prompt:
+
+        * **Immediately delete the WiFi connection setting.** It is possible that your router is overriding the Switch's DNS settings with its own. You will need to determine how to disable this settings on your router, or set the PegaScape DNS settings on your router.
+
+            * Not fixing this on your router will not only cause PegaScape to not work, but you could get "supernag" which prevents you from launching the browser, potentially blocking you from using PegaScape.
+
+            * Every router is different so unfortunately we can not help with this step.
+
+    * If you are told you must update your system to use the web browser, your system has been hit with "supernag". Your console previously connected to the internet, discovered an update was available, and will not let you use the Internet browser until you update.
+
+        * If your console is IPATCHED:
+
+            * At this stage, you can attempt a factory reset to try to clear the supernag. It is unknown if this works at this time.
+
+            * You should follow `this guide <http://www.nintendoswitchguides.com/2018/03/how-to-initialize-nintendo-switch-without-deleting-save-data.html>`_, but make sure to select **Initialize Console** instead of **Initialize Console Without Deleting Save Data**
+
+            * You will lose access to **all save data and installed games** by doing this. Rememeber that **this has not been tested and may not work**, consider waiting for someone else to test this if you have save data you wish to keep.
+
+            * Repeat this step afterwards.
+
+        * If your console can launch payloads through RCM with fusee-gelee:
+
+            * You should install CFW with fusee-gelee and use `Gag-Order <https://github.com/Adubbz/Gag-Order>`_ to remove the supernag.
+
+            * If you do not already have working CFW through fusee-gelee, jump to `SD Card Setup (fusee-gelee) </hacking/fuseegelee/sdsetup>`_
+
+            * You can come back here when you are done.
+
+11. Wait for the PegaScape page to load.
 
 Step 2: Injecting Fake News
 ---------------------------
 
 1. On the PegaScape page, select the **hbmenu** icon. Wait for a success alert to pop up.
 
-    * If the exploit fails, press the HOME button, repeat the connection test in Internet settings, and try again.
+    * If the exploit fails or takes longer than 60 seconds to load, press the HOME button, repeat the connection test in Internet settings, and try again.
+
+        * If your Switch white screens trying to do this, hold **POWER** for 15 seconds to shutdown, then try again.
 
 2. Press HOME
 3. Tap the **Album** icon. This should load hbmenu.
@@ -64,17 +96,21 @@ Step 3: Configuring PegaScape (Fake News)
 2. Select your WiFi network and pick Change Settings
 3. Set **'Primary DNS'** to **'<insert pegascape fake news dns ip>'**
 4. Save and perform the connection test. 
-5. **The connection test should pass.** Press HOME.
+5. **The connection test should pass without any registration prompt.** Press HOME.
 6. Tap the **News** icon.
-7. Select the new **"Launch PegaScape"** news entry.
-8. Tap the video to load PegaScape.
+7. Select the new **"Launch PegaSwitch"** news entry.
+8. Tap the "ReSwitched" video to load PegaScape.
 
 Step 4: Rebooting to Hekate (Caffeine)
 --------------------------------------
 
 1. On the PegaScape page, select the **Caffeine** icon. Wait for a prompt with a textbox to appear.
 
-    * If the exploit fails, press the HOME button, repeat the connection test in Internet settings, and try again.
+    * On firmwares 4.0.1 and 4.1.0, the spinner will freeze and the exploit can take up to 45 seconds to run. Be patient.
+
+    * If the exploit fails or takes longer than 60 seconds to load, press the HOME button, reopen the browser through Fake News and try again.
+
+        * If your Switch white screens trying to do this, hold **POWER** for 15 seconds to shutdown, then try again.
 
 2. When the prompt with the textbox appears, **tap** the textbox. The keyboard will not appear.
 3. **Wait five full seconds.**

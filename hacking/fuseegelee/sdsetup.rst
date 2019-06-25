@@ -25,18 +25,17 @@ This guide will walk you through the process of using the website SDSetup to pre
 2. Select **Nintendo Switch** 
 3. Select the **"Kosmos Defaults"** package
 
-    * If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, Homebrew Menu and Hekate.
+    * If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, Homebrew Menu, Hekate and Lockpick_RCM.
     
-4. Select the **"biskeydump"** payload under **Extras > Payloads > biskeydump** 
-5. Select any additional homebrew packages you wish.
+4. Select any additional homebrew packages you wish.
 
     * On desktop, you can hover over the homebrew names to get a description of what they do.
     
-6. Select **"Download your ZIP"** 
+5. Select **"Download your ZIP"** 
 
     * This can take a while depending on your Internet speed and latency. Be patient.
     
-7. Save the resulting ZIP if your browser does not do so automatically.
+6. Save the resulting ZIP if your browser does not do so automatically.
 
 ........
 

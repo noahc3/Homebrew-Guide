@@ -25,7 +25,7 @@ What is Custom Firmware?
 
 Custom Firmware (CFW) gives homebrew more access to the system than standard userland homebrew most commonly available on most systems. 
 
-Currently, all Nintendo Switches sold before July 2018 can run custom firmware. Switches sold after this point may not be exploitable right now. This guide will include checking if your system is vulnerable.
+Currently, all Nintendo Switches sold before July 2018 can run custom firmware. Switches sold after this point may only be exploitable if they are on firmware 4.1.0. This guide will include checking if your system is vulnerable.
 
 ........
 
@@ -50,7 +50,7 @@ Deja-vu
 
 The secondary exploit group is called deja-vu, which takes advantage of an oversight in the Nintendo Switch's warmboot firmware (the code that runs when you put your Switch to sleep and wake it up). This exploit also allows for a full system takeover, as we can reboot the system into a state with the same posibilities that fusee-gelee provides. **Deja-vu is a browser-based, software only exploit. You must launch the exploit through the browser every time you reboot your system into stock firmware.**
 
-Deja-vu currently only has implementations available from firmwares 1.0.0 - 3.0.0, however the exploit theoretically works up to firmware 7.0.1 (the exploit was patched in firmware 8.0.0) and support for these higher firmwares should be added in the future. The current deja-vu implementations are **Nereba** for firmware 1.0.0, and **Caffeine** for firmwares 2.0.0-3.0.0.
+Deja-vu currently only has implementations available from firmwares 1.0.0 - 3.0.0 and 4.0.1 - 4.1.0, however the exploit theoretically works up to firmware 7.0.1 (the exploit was patched in firmware 8.0.0) and support for these higher firmwares should be added in the future. The current deja-vu implementations are **Nereba** for firmware 1.0.0, and **Caffeine** for firmwares 2.0.0-3.0.0 and 4.0.1 - 4.1.0.
 
 Custom Firmware
 ^^^^^^^^^^^^^^^
@@ -63,12 +63,12 @@ Atmosphere provides most things you might expect in a custom firmware, including
 
 .. danger::
 	* Nintendo is taking no chances with the Nintendo Switch. Permanent console bans can and often do happen. This guide will take many precautions to avoid getting banned, but this site assumes no responsibility if your system is banned.
-	* There is always a chance that your Nintendo Switch will brick. This is very rare, and often recoverable thanks to the level of access these exploits provide, but unrecoverable bricks CAN happen.
+	* There is always a chance that your Nintendo Switch will brick. This is very rare, and often recoverable on fusee-gelee vulnerable Switches. For unpatched Switches, extra precautions will be taken to avoid bricking as much as possible.
 	* Due to the level of access these exploits provide, malicious homebrew exists. These can brick your Switch or otherwise render your Switch inoperable. You should only ever run homebrew from trusted sources.
 	* Follow the guide and everything should be fine.
 	
 .. note::
-	This guide will work on **all firmware versions** as long as fusee-gelee is not patched on the Switch. The guide will include a step for checking if fusee-gelee is patched or not.
+	This guide will work on **all firmware versions** as long as fusee-gelee is not patched on the Switch. The guide will include a step for checking if fusee-gelee is patched or not. If fusee-gelee is patched, this guide will only work on patched Switches running firmware 4.1.0.
 
     
 ........

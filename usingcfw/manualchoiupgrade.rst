@@ -10,6 +10,16 @@ This guide will teach you how to upgrade or downgrade to any firmware version of
 
 **Read every warning before starting.**
 
+.. raw:: html
+
+    <div class="admonition danger" style="color:#C42525" align="center">
+		<h1 style="margin-bottom:0.5rem;margin-top:0.5rem;font-size:2.5rem">WARNING</h1>
+        <h2>Do not follow this guide on an IPATCHED Switch.</h2>
+        <p>This guide is only intended to be used on consoles with a vulnerable RCM. It is <b>very very dangerous</b> to follow this guide without the ability to launch payloads via the Switches RCM mode using fusee-gelee.
+        <h2 style="margin-bottom:0.5rem">If you cannot run payloads from RCM with fusee-gelee, <b>DO NOT FOLLOW THIS GUIDE.</b></h2>
+        <h2>Failure to heed this warning <b>will</b> result in a bricked Switch.</h2>
+	</div>
+
 .. note:: 
    If something goes wrong or you need help, check `troubleshooting </troubleshooting.html>`_.
    

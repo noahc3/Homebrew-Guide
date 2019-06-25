@@ -31,11 +31,10 @@ By backing up your NAND (the Switch's internal memory), you will later be able t
 
 6. If you weren't required to copy files during the backup process, once again copy the 'backup' folder off of your SD card and put it in a safe location on your PC. Delete the 'backup' folder on your SD card.
 7. Go back to the main menu
-8. Select **Launch > Payloads > biskeydump.bin** (if you do not have this payload, you can obtain it `from sshnuke <https://switchtools.sshnuke.net/>`_ and place it at **sd:/bootloader/payloads/biskeydump.bin** ).
-9. Press **Vol-** to save the keys to your SD card.
-10. Press the power button to shutdown.
-11. Insert your SD card into your PC.
-12. Copy the **device.keys** file to a safe location.
+8. Select **Launch > Payloads > lockpick_RCM.bin** (if you do not have this payload, you can obtain it `from GitHub <https://github.com/shchmue/Lockpick_RCM/releases/>`_ and place it at **sd:/bootloader/payloads/lockpick_RCM.bin** ).
+9. Press the power button to shutdown.
+10. Insert your SD card into your PC.
+11. Copy the **/switch/prod.keys** file to a safe location.
 
 .. warning::
     It is highly recommended that you store these backups and keys in multiple locations (ex. cloud storage, external harddrive, etc) as they may be critical to restoring your Switch if anything goes wrong in the future.

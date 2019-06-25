@@ -8,7 +8,7 @@ Caffeine
 
 .. raw:: html
 
-	<script>window.location.href = "/hacking/caffeine/sdsetup";</script>
+	<script>window.location.href = "/hacking/caffeine/forewarning";</script>
     
 
 .. toctree::
@@ -16,6 +16,7 @@ Caffeine
    :caption: Contents:
    :hidden:
    
+   /hacking/caffeine/forewarning
    /hacking/caffeine/sdsetup
    /hacking/caffeine/pegascape
    /hacking/caffeine/safetyprecautions

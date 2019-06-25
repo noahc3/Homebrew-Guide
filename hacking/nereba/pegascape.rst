@@ -21,12 +21,14 @@ Step 1: Configuring PegaScape DNS Settings
 
 1. Power on your Switch normally.
 2. Open settings and go to the Internet tab
-3. Configure a WiFi connection if you have not already done so
-4. Select your WiFi network and pick Change Settings
-5. Set DNS Settings to Manual
-6. Set **'Primary DNS'** to **'<insert pegascape fake news dns ip>'**
-7. Set **'Secondary DNS'** to **'163.172.141.219'**
-8. Save and perform the connection test. **The connection test should pass.**
+3. Delete your existing WiFi connection if you have one for the network you want to connect to
+4. Add your WiFi network, **but type in a long, wrong password** to fail the connection test.
+5. After the connection test fails, choose to change settings.
+6. Set DNS Settings to Manual
+7. Set **'Primary DNS'** to **'<insert pegascape fake news dns ip>'**
+8. Set **'Secondary DNS'** to **'163.172.141.219'**
+9. Re-enter your WiFi password, correctly this time.
+10. Save and perform the connection test. **The connection test should pass.**
 
 
 Understanding Switch Browser Entrypoints
@@ -64,6 +66,13 @@ Step 2 Option A: Injecting Fake News (JP Puyo Puyo Tetris)
 3. Press A, then press R, then press A.
 4. Touch the bottom-most menu item labelled “お問い合わせ先”
 5. Touch the SEGA logo in the bottom-left corner. This will launch the browser. Wait for the PegaScape page to load.
+
+    * If you are told you must update your system to use WiFi, your system has been hit with "supernag". Your console previously connected to the internet, discovered an update was available, and will not let you use the Internet browser until you update.
+
+    * At this stage, you will want to instead use RCM to install Fake-News. Jump to `Injecting Fake News (Atmosphere via RCM) <#step-2-option-b-injecting-fake-news-atmosphere-via-rcm>`_
+
+    * Afterwards, use `Gag-Order <https://github.com/Adubbz/Gag-Order>`_ to remove supernag the same way you ran fakenews-injector (place the .NRO in **/switch**, launch it through hbmenu).
+
 6. Touch the **"hbmenu"** icon.
 7. Press **HOME**.
 8. Tap the **Album** icon, hbmenu should load.
@@ -83,11 +92,11 @@ Step 3: Rebooting to Hekate (Nereba)
 ------------------------------------
 
 1. On the HOME menu, tap the **News** icon.
-2. Select the new **"Launch PegaScape"** news entry.
-3. Tap the video to load PegaScape.
+2. Select the new **"Launch PegaSwitch"** news entry.
+3. Tap the "ReSwitched" video to load PegaScape.
 4. Once PegaScape loads, select the **Nereba** icon.
 
-    * If the exploit fails, press the HOME button, repeat the connection test in Internet settings, and try again.
+    * If the exploit fails, press the HOME button, reopen the browser through Fake News and try again.
 
 .. important::
 

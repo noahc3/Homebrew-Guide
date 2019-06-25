@@ -27,16 +27,15 @@ This guide will walk you through the process of using the website SDSetup to pre
 
     * If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, Homebrew Menu, Fake News Injector, Hekate, and the Nereba PegaScape payload.
     
-4. Select the **"biskeydump"** payload under **Extras > Payloads > biskeydump** 
-5. Select any additional homebrew packages you wish.
+4. Select any additional homebrew packages you wish.
 
     * On desktop, you can hover over the homebrew names to get a description of what they do.
     
-6. Select **"Download your ZIP"** 
+5. Select **"Download your ZIP"** 
 
     * This can take a while depending on your Internet speed and latency. Be patient.
     
-7. Save the resulting ZIP if your browser does not do so automatically.
+6. Save the resulting ZIP if your browser does not do so automatically.
 
 ........
 
@@ -46,9 +45,9 @@ Step 2: Preparing Software
 Extract the ZIP file from SDSetup to a folder on your PC.
 
 * The **'sd'** folder contains all of the files that should go on your SD card. **Copy all of the contents of this folder to the root of your SD card.**
-* The **'payloads'** folder contains all of the payloads which can be launched with TegraRcmGui/Rekado/fusee-launcher/etc or Hekate that you selected.
+* The **'payloads'** folder contains all of the payloads which can be launched with TegraRcmGui/Rekado/fusee-launcher/etc, PegaScape or Hekate that you selected.
 
-    * In this folder, there should be a file named something similar to **biskeydump.bin**. Move this to **sd:/bootloader/payloads/biskeydump.bin** on your SD card, it will be used later.
+    * In this folder, there should be a file named **lockpick_RCM.bin**. Move this to **sd:/bootloader/payloads/lockpick_RCM.bin** on your SD card, it will be used later.
 
 * The **'pc'** folder contains all of the PC tools that you selected.
 * The **'android'** folder contains all of the Android tools you selected.

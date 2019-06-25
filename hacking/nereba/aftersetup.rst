@@ -30,6 +30,10 @@ Hekate will now autoboot Atmosphere. Note that Atmosphere CFW does not look fund
 
 .. important::
 
+    It is safe to remove and reinsert the SD card while in Hekate.
+
+.. important::
+
     PegaScape will not work in Atmosphere. You must shutdown your switch and turn it on to enter stock firmware to use PegaScape.
 
 Accessing the Homebrew Menu

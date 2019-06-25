@@ -13,7 +13,7 @@ RCM is the best way to run CFW as it supports all firmwares. Even if you plan to
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">If you already have access to RCM and can launch payloads, continue to <a href="/gettingstarted/choosinganexploit">Choosing an Exploit</a></p>
+		<p class="last">If you know whether or not your system has a vulnerable RCM, continue to <a href="/gettingstarted/choosinganexploit">Choosing an Exploit</a></p>
 	</div>
 	
 ........
@@ -46,7 +46,7 @@ Step 0: What You Will Need
 
 * A Micro SD Card
 
-    * You should have an SD card at least 4GB in size (32GB or higher is recommended, however). A small SD card is enough to get CFW running, but larger ones are preferred for installing games and performing NAND backups efficiently.
+    * You should have an SD card at least 4GB in size (64GB or higher is recommended, however). A small SD card is enough to get CFW running, but larger ones are preferred for installing gamesm, performing NAND backups efficiently, and creating emuMMCs.
 
 * This `test payload <https://drive.google.com/open?id=1Bzku9r9GJ4F_3BoCBa-9QsPUav2-_2V4>`_ downloaded to your payload sender device to verify if your Switch is vulnerable to fusee-gelee.
 
@@ -57,7 +57,7 @@ Step 1: Accessing RCM:
 
 It's time to get into recovery mode.
 
-1. Completely power off your Switches
+1. Completely power off your Switch
 
     * Hold the power button on your Switch for 3 seconds and choose to power down in the menu
     
@@ -109,7 +109,9 @@ Time to find out if any of this prep was worth it.
     
 .. error::
 
-    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. You will not be able to run CFW at this time. **You should try a few more times to be certain.**
+    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. **You should try a few more times to be certain, and consider trying another USB cable.**
+    If your Switch is patched and running firmware 4.1.0, you can still access CFW.
+    If your Switch is patched and running a higher firmware version, unfortunately your Switch cannot be hacked right now.
 
 ........
 
@@ -129,7 +131,9 @@ Time to find out if any of this prep was worth it.
     
 .. error::
 
-    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. You will not be able to run CFW at this time. **You should try a few more times to be certain.**
+    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. **You should try a few more times to be certain, and consider trying another USB cable.**
+    If your Switch is patched and running firmware 4.1.0, you can still access CFW.
+    If your Switch is patched and running a higher firmware version, unfortunately your Switch cannot be hacked right now.
 
 ........
 
@@ -148,11 +152,13 @@ Time to find out if any of this prep was worth it.
     
 .. error::
 
-    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. You will not be able to run CFW at this time. **You should try a few more times to be certain.**
-    
+    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. **You should try a few more times to be certain, and consider trying another USB cable.**
+    If your Switch is patched and running firmware 4.1.0, you can still access CFW.
+    If your Switch is patched and running a higher firmware version, unfortunately your Switch cannot be hacked right now.
+
 ........
 
-Wait for your Switch to shutdown before continuing. This should happen automatically.
+Wait for your Switch to shutdown before continuing. This should happen automatically. If the payload failed to launch, hold the power button for 15 seconds to be sure.
 
 ........
 
