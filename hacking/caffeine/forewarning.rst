@@ -22,11 +22,11 @@ Your access to homebrew and recovery tools primarily depends on the Switch's nor
 
 Upon using PegaScape to reboot into CFW for the first time, we will immediately create a NAND backup and dump system keys. **These steps are not optional** and will provide you at least one (tedious) hardware recovery method should anything ever go wrong.
 
-Additionally, you should **never connect to the internet without PegaScape or 90dns configured** on your sysNAND as doing so can make your Switch **force you to update to use the browser**, which is required for this exploit. It is uncertain if a factory reset removes the nag at this time.
+Additionally, you should **never connect to the internet without PegaScape or 90DNS configured on your sysNAND, even for a second,** as doing so can make your Switch **force you to update to use the browser**, which is required for this exploit. **There is currently no known way of removing supernag, so supernag may permanently block you from accessing CFW.**
 
 The guide will soon be updated with instructions on using emuMMC, which redirects all read and write operations on the internal memory to the SD card. With this, even if you accidentally brick within CFW, your Switch will still function properly. **If any of the above scares you, strongly consider waiting for the guide to be updated with emuMMC information.**
 
-This guide and nobody in this community is responsible should anything happen to your Switch.
+Neither this guide nor anybody in this community is responsible should anything happen to your Switch.
 
 .. raw:: html
 

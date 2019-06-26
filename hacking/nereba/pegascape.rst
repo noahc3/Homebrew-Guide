@@ -21,7 +21,7 @@ Step 1: Configuring PegaScape DNS Settings
 
 1. Power on your Switch normally.
 2. Open settings and go to the Internet tab
-3. Delete your existing WiFi connection if you have one for the network you want to connect to
+3. Delete your existing WiFi connection configuration if you have one for the network you want to connect to
 4. Add your WiFi network, **but type in a long, wrong password** to fail the connection test.
 5. After the connection test fails, choose to change settings.
 6. Set DNS Settings to Manual
@@ -74,10 +74,15 @@ Step 2 Option A: Injecting Fake News (JP Puyo Puyo Tetris)
     * Afterwards, use `Gag-Order <https://github.com/Adubbz/Gag-Order>`_ to remove supernag the same way you ran fakenews-injector (place the .NRO in **/switch**, launch it through hbmenu).
 
 6. Touch the **"hbmenu"** icon.
+    
+    * If the exploit fails, press the HOME button, reopen the browser through Puyo Puyo Tetris and try again.
+
 7. Press **HOME**.
 8. Tap the **Album** icon, hbmenu should load.
 9. Launch the **"Fake News Injector"** homebrew.
 10. Press **+** to reboot once finished.
+
+Jump to `Step 3: Rebooting to Hekate (Nereba) <#id1>`_
 
 Step 2 Option B: Injecting Fake News (Atmosphere via RCM)
 ---------------------------------------------------------
@@ -100,7 +105,7 @@ Step 3: Rebooting to Hekate (Nereba)
 
 .. important::
 
-    After a few seconds, your Switch should reboot into Hekate, and you will see the **Kosmos** splash screen. Congratulations! You can now reboot into CFW from PegaScape.
+    After a few seconds, your Switch should reboot into Hekate, and you will see the **Kosmos** splash screen. Congratulations! You can now reboot into CFW from PegaScape. You are currently in Atmosphere CFW.
     
 .. error::
 

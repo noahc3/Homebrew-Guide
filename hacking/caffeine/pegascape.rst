@@ -36,7 +36,7 @@ Step 1: Configuring PegaScape (Wifi Authentication Prompt)
 
 1. Power on your Switch normally.
 2. Open settings and go to the Internet tab
-3. Delete your existing WiFi connection if you have one for the network you want to connect to
+3. Delete your existing WiFi connection configuration if you have one for the network you want to connect to
 4. Add your WiFi network, **but type in a long, wrong password** to fail the connection test.
 5. After the connection test fails, choose to change settings.
 6. Set DNS Settings to Manual
@@ -49,7 +49,7 @@ Step 1: Configuring PegaScape (Wifi Authentication Prompt)
 
         * **Immediately delete the WiFi connection setting.** It is possible that your router is overriding the Switch's DNS settings with its own. You will need to determine how to disable this settings on your router, or set the PegaScape DNS settings on your router.
 
-            * Not fixing this on your router will not only cause PegaScape to not work, but you could get "supernag" which prevents you from launching the browser, potentially blocking you from using PegaScape.
+            * Not fixing this on your router will not only cause PegaScape to not work, but you could get "supernag" which prevents you from launching the browser, which would permanently block you from using PegaScape.
 
             * Every router is different so unfortunately we can not help with this step.
 
@@ -57,13 +57,7 @@ Step 1: Configuring PegaScape (Wifi Authentication Prompt)
 
         * If your console is IPATCHED:
 
-            * At this stage, you can attempt a factory reset to try to clear the supernag. It is unknown if this works at this time.
-
-            * You should follow `this guide <http://www.nintendoswitchguides.com/2018/03/how-to-initialize-nintendo-switch-without-deleting-save-data.html>`_, but make sure to select **Initialize Console** instead of **Initialize Console Without Deleting Save Data**
-
-            * You will lose access to **all save data and installed games** by doing this. Rememeber that **this has not been tested and may not work**, consider waiting for someone else to test this if you have save data you wish to keep.
-
-            * Repeat this step afterwards.
+            * At this stage, your console cannot use the internet browser, and is therefore locked out of PegaScape. You unfortunately cannot use CFW at this time as there is no known way to remove the supernag.
 
         * If your console can launch payloads through RCM with fusee-gelee:
 

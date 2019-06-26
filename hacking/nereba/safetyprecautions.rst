@@ -18,7 +18,10 @@ Step 1: Backing up your NAND and BIS keys
 
 By backing up your NAND (the Switch's internal memory), you will later be able to restore it in the event that anything goes wrong, essentially rewinding it back to a previous state. BIS keys are also good to backup so you can reinstall any firmware version manually should your NAND backup become corrupted or lost.
 
-1. Reboot into Hekate with PegaScape. After pressing the power button to enter sleep mode, **immediately hold the Vol- button to access the Hekate menu**.
+1. From within Atmosphere, hold the POWER button, select **'Power Options > Restart'** and then **immediately hold the Vol- button to access the Hekate menu**.
+
+    * If you are not in Atmosphere, use PegaScape to reboot to Hekate, and **immediately hold the Vol- button to access the Hekate menu** after tapping the Nereba icon.
+
 2. In Hekate, select **'Tools > Backup > Backup eMMC BOOT0/1'**
 
     * Use Volume +/- to change menu selection and Power to select an option.
