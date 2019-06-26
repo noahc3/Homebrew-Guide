@@ -28,10 +28,17 @@ This guide will walk you through all of the steps required to getting homebrew a
    :hidden:
    
    /gettingstarted/beforestarting
-   /gettingstarted/accessingrcm
-   /gettingstarted/sdsetup
-   /gettingstarted/safetyprecautions
-   /gettingstarted/aftersetup
+   /gettingstarted/checkingrcm
+   /gettingstarted/choosinganexploit
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Hacking Your Switch
+   :hidden:
+   
+   /hacking/fuseegelee
+   /hacking/nereba
+   /hacking/caffeine
    
 .. toctree::
    :maxdepth: 2
@@ -51,6 +58,7 @@ This guide will walk you through all of the steps required to getting homebrew a
    /comparingcfws
    /troubleshooting
    /faq
+   /wiiu
    /credits
    /donate
    

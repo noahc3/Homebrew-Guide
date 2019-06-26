@@ -28,3 +28,11 @@
 ul .simple {
     margin: -5px;
 }
+
+.wy-table-responsive {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}

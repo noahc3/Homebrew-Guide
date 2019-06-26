@@ -15,8 +15,20 @@ You can also use this guide as a way to upgrade your Switch if your Switch does 
 .. note:: 
    If something goes wrong or you need help, check `troubleshooting </troubleshooting.html>`_.
 
+.. raw:: html
+
+    <div class="admonition danger" style="color:#C42525" align="center">
+		<h1 style="margin-bottom:0.5rem;margin-top:0.5rem;font-size:2.5rem">WARNING</h1>
+        <h2>Never enable AutoRCM on an IPATCHED Switch</h2>
+        <p>This is only intended to be used on consoles with a vulnerable RCM. Enabling AutoRCM on an IPATCHED Switch will <b>literally BRICK your Switch.</b>
+        <h2 style="margin-bottom:0.5rem">If you cannot run payloads from RCM with fusee-gelee, <b>DO NOT ENABLE AUTORCM.</b></h2>
+        <h2>Failure to heed this warning <b>will</b> result in a bricked Switch.</h2>
+	</div>
+
 .. danger::
-    **A later step will give you the option to enable or disable AutoRCM.** AutoRCM is a software method of forcing your Switch to go into RCM on every launch, without the need of a jig or hardmod. Essentially, you are purposefully bricking your Switch in a controlled matter that forces it to launch into recovery. This might sound scary but is not actually dangerous, and can be undone at any time.
+    **A later step will give you the option to enable or disable AutoRCM.** AutoRCM is a software method of forcing your Switch to go into RCM on every launch, without the need of a jig or hardmod. Essentially, you are purposefully bricking your Switch in a controlled matter that forces it to launch into recovery. This might sound scary but is not actually dangerous on unpatched Switches, and can be undone at any time.
+
+    * **NEVER EVER EVER ENABLE AUTORCM ON AN IPATCHED SWITCH. THIS IS EQUIVALENT TO BRICKING YOUR SWITCH.**
 
     AutoRCM has the following benefits:
 
@@ -74,10 +86,7 @@ Step 3: Installing the New Firmware Version
 -------------------------------------------
 
 1. Insert your SD card into your Switch
-2. Run Hekate using your payload sender of choice 
-
-    * If you are using Kosmos, Hekate will now autoboot Atmosphere.
-    * If Atmosphere does not autoboot, select **Launch > CFW** in Hekate
+2. Launch Atmosphere CFW
     
 4. **IMPORTANT: Plug your Switch in to prevent the Switch from dying midway through the install process**
 5. Enter the Homebrew Menu through Album while holding the R button
@@ -86,6 +95,9 @@ Step 3: Installing the New Firmware Version
 8. After processing, select **[x.x.x] (exFAT)** where [x.x.x] is the firmware version you chose
 9. After verification, choose **Select Firmware**
 10. Choose whether you want to enable or disable AutoRCM (see above for more information). **This will override an existing AutoRCM settings you have, so make sure to pick which you want.**
+
+    * If you are on an IPATCHED Switch and are given the option to enable AutoRCM, **DISABLE IT**. Enabling AutoRCM is equivalent to bricking your Switch.
+
 11. Choose **Start installation**
 12. Wait for the firmware update to finish
 

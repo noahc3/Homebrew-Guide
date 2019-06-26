@@ -40,7 +40,8 @@ release = ''
 # ones.
 extensions = [
     'button',
-    'sphinxcontrib.googleanalytics'
+    'sphinxcontrib.googleanalytics',
+    'cloud_sptheme.ext.table_styling'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -78,6 +79,7 @@ pygments_style = None
 #
 html_theme = 'sphinx_rtd_theme'
 
+html_favicon = '_static/favicon.ico'
 
 
 # Theme options are theme-specific and customize the look and feel of a theme

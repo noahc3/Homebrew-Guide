@@ -37,10 +37,12 @@ There are 2 ways to accomplish this, you can either run a browser exploit everyt
 You can also install Coldboot Haxchi, **however** this guide will not guide you through that due to multiple issues that Coldboot Haxchi can cause.
 
 .. danger::
+
 	* There is always a chance that your Wii U will brick. This is very rare, and often recoverable, but unrecoverable bricks CAN happen.
 	* Follow the guide and everything should be fine.
 	
 .. note::
+
 	While this guide was written for the newest firmware version, it does theoretically support all firmware versions
 
     
@@ -49,7 +51,7 @@ You can also install Coldboot Haxchi, **however** this guide will not guide you 
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">Continue to <a href="wiiu/preperation.html">Preperation</a></p>
+		<p class="last">Continue to <a href="/wiiu/preperation">Preperation</a></p>
 	</div>
 
 .. toctree::

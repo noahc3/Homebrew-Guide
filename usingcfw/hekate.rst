@@ -16,8 +16,7 @@ Launching Atmosphere CFW
 
 Atmosphere is currently the CFW with the largest feature set. It enables game modding, homebrew, backup installs, and more. To launch Atmosphere:
 
-1. Enter RCM on your Switch
-2. Push the Hekate payload to your Switch
+1. Enter Hekate through RCM or with PegaScape.
 
 Hekate will now autoboot Atmosphere.
 
@@ -52,6 +51,16 @@ If you need to get back into the menu, hold **Volume Down** when sending the Hek
 
 Enabling AutoRCM
 ----------------
+
+.. raw:: html
+
+    <div class="admonition danger" style="color:#C42525" align="center">
+		<h1 style="margin-bottom:0.5rem;margin-top:0.5rem;font-size:2.5rem">WARNING</h1>
+        <h2>Never enable AutoRCM on an IPATCHED Switch</h2>
+        <p>This section is only intended to be used on consoles with a vulnerable RCM. Enabling AutoRCM on an IPATCHED Switch will <b>literally BRICK your Switch.</b>
+        <h2 style="margin-bottom:0.5rem">If you cannot run payloads from RCM with fusee-gelee, <b>DO NOT ENABLE AUTORCM.</b></h2>
+        <h2>Failure to heed this warning <b>will</b> result in a bricked Switch.</h2>
+	</div>
 
 AutoRCM is an optional software method of forcing your Switch to go into RCM on every launch, without the need of a jig or hardmod. Essentially, you are purposefully bricking your Switch in a controlled matter that forces it to launch into recovery. This might sound scary but is not actually dangerous, and can be undone at any time.
 
