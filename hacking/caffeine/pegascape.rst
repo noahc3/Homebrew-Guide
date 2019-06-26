@@ -40,7 +40,7 @@ Step 1: Configuring PegaScape (Wifi Authentication Prompt)
 4. Add your WiFi network, **but type in a long, wrong password** to fail the connection test.
 5. After the connection test fails, choose to change settings.
 6. Set DNS Settings to Manual
-7. Set **'Primary DNS'** to **'<insert pegascape wifi auth dns ip>'**
+7. Set **'Primary DNS'** to **'51.15.245.41'**
 8. Set **'Secondary DNS'** to **'163.172.141.219'**
 9. Save and perform the connection test. 
 10. **You should be told that the WiFi network requires registration.** Click Next.
@@ -88,7 +88,7 @@ Step 3: Configuring PegaScape (Fake News)
 
 1. Open settings and go to the Internet tab
 2. Select your WiFi network and pick Change Settings
-3. Set **'Primary DNS'** to **'<insert pegascape fake news dns ip>'**
+3. Set **'Primary DNS'** to **'163.172.181.170'**
 4. Save and perform the connection test. 
 5. **The connection test should pass without any registration prompt.** Press HOME.
 6. Tap the **News** icon.

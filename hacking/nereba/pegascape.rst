@@ -25,7 +25,7 @@ Step 1: Configuring PegaScape DNS Settings
 4. Add your WiFi network, **but type in a long, wrong password** to fail the connection test.
 5. After the connection test fails, choose to change settings.
 6. Set DNS Settings to Manual
-7. Set **'Primary DNS'** to **'<insert pegascape fake news dns ip>'**
+7. Set **'Primary DNS'** to **'163.172.181.170'**
 8. Set **'Secondary DNS'** to **'163.172.141.219'**
 9. Re-enter your WiFi password, correctly this time.
 10. Save and perform the connection test. **The connection test should pass.**
