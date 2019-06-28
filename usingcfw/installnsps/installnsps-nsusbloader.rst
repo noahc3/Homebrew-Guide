@@ -100,7 +100,7 @@ Step 2: Install NSP with NS-USBLoader
 
 11. Wait for the installation process to complete
 
-12. Repeat steps 3.8 through 3.11 for each NSP being installed.
+12. Repeat steps 2.8 through 2.11 for each NSP being installed.
 
 
 Your NSP(s) should now be installed on your Switch!
