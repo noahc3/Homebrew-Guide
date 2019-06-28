@@ -20,7 +20,7 @@ By backing up your NAND (the Switch's internal memory), you will later be able t
 
 1. From within Atmosphere, hold the POWER button, select **'Power Options > Restart'** and then **immediately hold the Vol- button to access the Hekate menu**.
 
-    * If you are not in Atmosphere, use PegaScape to reboot to Hekate, and **immediately hold the Vol- button to access the Hekate menu** after tapping the Nereba icon.
+    * If you are not in Atmosphere, use PegaScape to reboot to Hekate, and **immediately hold the Vol- button to access the Hekate menu** after tapping the Caffeine icon.
 
 2. In Hekate, select **'Tools > Backup > Backup eMMC BOOT0/1'**
 
