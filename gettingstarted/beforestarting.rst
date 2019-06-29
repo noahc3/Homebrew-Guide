@@ -16,8 +16,15 @@ This section of the guide will teach you basic information about terminology use
 BACK UP YOUR NAND
 -----------------
 
-.. important:: IT IS INCREDIBLY IMPORTANT THAT YOU ARE AWARE BEFORE WE START THAT YOU HAVE TO BACK UP YOUR NAND BEFORE EVEN ATTEMPTING YOUR ADVENTURE INTO CUSTOM FIRMWARE. IF YOU BACK UP YOUR NAND YOU WILL ALWAYS BE SAFE IN CASE OF BRICKING YOUR SWITCH. IF YOU DO NOT HAVE A NAND BACK UP AND YOU BRICK YOUR SWITCH, IT IS INCREDIBLY DIFFICULT TO FIX IT. BE WARNED!
+.. raw:: html
 
+    <div class="admonition danger" style="color:#C42525" align="center">
+		<h1 style="margin-bottom:0.5rem;margin-top:0.5rem;font-size:2.5rem">WARNING</h1>
+        <h2>Make a NAND back up immediately</h2>
+        <p>When doing anything to your Switch that it was intended for, you always run the risk of it bricking, albeit a very slim chance</b>
+        <h2 style="margin-bottom:0.5rem">If you do not back up your NAND and you brick your Switch, you can be screwed.</b></h2>
+        <h2>This is <b>not</b> optional. Always make a back up and store it somewhere safe. If anything happens you can always fix it with this back up.</h2>
+	</div>
 ........
    
 What is Homebrew?
