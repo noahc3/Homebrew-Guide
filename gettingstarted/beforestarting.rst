@@ -21,6 +21,7 @@ This section of the guide will teach you basic information about terminology use
         <p>When doing anything to your Switch that it was intended for, you always run the risk of it bricking, albeit a very slim chance</b>
         <h2 style="margin-bottom:0.5rem">If you do not back up your NAND and you brick your Switch, you can be screwed.</b></h2>
         <h2>This is <b>not</b> optional. Always make a back up and store it somewhere safe. If anything happens you can always fix it with this back up.</h2>
+	<h2 style="margin-bottom:0.5rem">Don't worry, we will show you exactly how to do this in the guide.</b></h2>
 	</div>
 ........
    
