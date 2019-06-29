@@ -22,6 +22,22 @@ This is usually due to an archive metadata bit used by some OS's that Horizon si
 
 ........
 
+Homebrew Launcher only launches album?
+--------------------------------------
+
+Make sure you hold the R button while launching Album or any game. Homebrew Launcher should load now.
+
+........
+
+I've injected the payload but there's a black screen after booting?
+-------------------------------------------------------------------
+
+Try again. 
+
+Remove everything from your SD card EXCEPT the Nintendo folder. Start the process of installing Atmosphere/Kosmos again.
+
+........
+
 .. tip::
     If this page doesn't solve your problem, feel free to ask for help in the support channel on the `Team AtlasNX Discord <https://discord.teamatlasnx.com/>`_.
 
