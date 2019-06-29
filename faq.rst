@@ -5,6 +5,15 @@
 
 Frequently Asked Questions
 ==========================
+
+Is it safe to update to the latest firmware version?
+----------------------------------------------------
+
+When a new firmware update is released, you should always wait for SDSetup and/or SDFilesSwitch to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.
+
+**As of writing, the latest firmware version is 8.1.0. It is currently completely safe to update as long as you are using Atmosphere v0.9.1 or a bundle from SDSetup downloaded after June 26th 2019.**
+    
+........
    
 Should I disable WiFi?
 ----------------------
@@ -15,10 +24,35 @@ Using 90DNS (163.172.141.219 or 45.248.48.62) or enabling GDPR protections is us
 
 ........
 
-Can't load Homebrew Launcher?
------------------------------
+I can't load Homebrew Launcher?
+-------------------------------
 
 When trying to access Album, or any game, hold the R button and this will launch Homebrew Launcher.
+
+........
+
+What is AutoRCM? I heard it drains the battery too?
+---------------------------------------------------
+
+.. important:: UNDER NO CIRCUMSTANCES SHOULD YOU ENABLE AUTORCM ON AN IPATCHED SWITCH. THIS WILL CAUSE YOU TO BRICK YOUR SWITCH AS YOU CANNOT GET OUT OF IT!
+
+AutoRCM essentially corrupts part of your boot sector in order to force your Switch to always boot into RCM mode. This is incredibly handy for two reason:
+
+* You no longer need a jig to access RCM 
+* It stops you from accidently burning fuses
+
+AutoRCM will only drain your battery if you leave your Switch in RCM mode, which is a black screen but your Switch is still "on". To stop this, make sure you shut your Switch down properly, or hold power for 12 seconds.
+
+........
+
+FAT32 or ExFAT?
+-----------------------------
+
+Unfortunately ExFAT on the Switch, specifically with Custom Firmware, has terrible drivers. This can easy corruption and force you to start again if this happens.
+
+We highly recommend you stay with FAT32 as it almost never corrupts, and there is no draw backs since the Switch automatically splits it's games on FAT32, and Hekate splits NAND back ups for you.
+
+In order to format an SD Card on Windows above 32GB, use GuiFormat.
 
 ........
 
@@ -32,14 +66,7 @@ Using ES or FS patches are not supported by Atmosphere or Kosmos and never will 
 
 ........
 
-Is it safe to update to the latest firmware version?
-----------------------------------------------------
 
-When a new firmware update is released, you should always wait for SDSetup and/or SDFilesSwitch to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.
-
-**As of writing, the latest firmware version is 8.1.0. It is currently completely safe to update as long as you are using Atmosphere v0.9.1 or a bundle from SDSetup downloaded after June 26th 2019.**
-    
-........
     
 What does 'burning fuses' mean? / Can I downgrade my Nintendo Switch?
 ----------------------------------------------------------------------
