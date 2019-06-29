@@ -20,6 +20,9 @@ What are sigpatches?
 
 Sigpatches allow your Switch to install and run unofficial NSP files (digital titles that appear on the home menu). Note that you must use CFW to launch these applications even after installation as sigpatches are always required to do so.
 
+.. important:: 
+Using ES or FS patches are not supported by Atmosphere or Kosmos and never will be. Please use Google to answer any questions regarding this.
+
 ........
 
 Is it safe to update to the latest firmware version?
@@ -27,7 +30,7 @@ Is it safe to update to the latest firmware version?
 
 When a new firmware update is released, you should always wait for SDSetup and/or SDFilesSwitch to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.
 
-**As of writing, the latest firmware version is 6.2.0. It is currently completely safe to update as long as you are using Kosmos/SDFiles v11.5+ or a bundle from SDSetup downloaded after December 8th 2018.**
+**As of writing, the latest firmware version is 8.1.0. It is currently completely safe to update as long as you are using Atmosphere v0.9.1 or a bundle from SDSetup downloaded after June 26th 2019.**
     
 ........
     
