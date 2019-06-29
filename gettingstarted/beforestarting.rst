@@ -12,6 +12,13 @@ This section of the guide will teach you basic information about terminology use
    This is a lot of info to take in, but if you are a complete noob to the Switch scene, you should seriously consider reading all of it. The Switch scene is very different from the 3DS/WiiU/Wii.
 
 ........
+
+BACK UP YOUR NAND
+-----------------
+
+.. important:: IT IS INCREDIBLY IMPORTANT THAT YOU ARE AWARE BEFORE WE START THAT YOU HAVE TO BACK UP YOUR NAND BEFORE EVEN ATTEMPTING YOUR ADVENTURE INTO CUSTOM FIRMWARE. IF YOU BACK UP YOUR NAND YOU WILL ALWAYS BE SAFE IN CASE OF BRICKING YOUR SWITCH. IF YOU DO NOT HAVE A NAND BACK UP AND YOU BRICK YOUR SWITCH, IT IS INCREDIBLY DIFFICULT TO FIX IT. BE WARNED!
+
+........
    
 What is Homebrew?
 -----------------
