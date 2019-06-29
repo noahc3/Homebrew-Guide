@@ -15,6 +15,13 @@ Using 90DNS (163.172.141.219 or 45.248.48.62) or enabling GDPR protections is us
 
 ........
 
+Can't load Homebrew Launcher?
+-----------------------------
+
+When trying to access Album, or any game, hold the R button and this will launch Homebrew Launcher.
+
+........
+
 What are sigpatches?
 --------------------
 
