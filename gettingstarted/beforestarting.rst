@@ -13,9 +13,6 @@ This section of the guide will teach you basic information about terminology use
 
 ........
 
-BACK UP YOUR NAND
------------------
-
 .. raw:: html
 
     <div class="admonition danger" style="color:#C42525" align="center">
