@@ -28,7 +28,8 @@ What are sigpatches?
 Sigpatches allow your Switch to install and run unofficial NSP files (digital titles that appear on the home menu). Note that you must use CFW to launch these applications even after installation as sigpatches are always required to do so.
 
 .. important:: 
-Using ES or FS patches are not supported by Atmosphere or Kosmos and never will be. Please use Google to answer any questions regarding this.
+
+    Using ES or FS patches are not supported by Atmosphere or Kosmos and never will be. Please use Google to answer any questions regarding this.
 
 ........
 
