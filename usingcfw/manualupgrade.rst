@@ -88,22 +88,22 @@ Step 3: Installing the New Firmware Version
 1. Insert your SD card into your Switch
 2. Launch Atmosphere CFW
     
-4. **IMPORTANT: Plug your Switch in to prevent the Switch from dying midway through the install process**
-5. Enter the Homebrew Menu through Album while holding the R button
-6. Select **ChoiDujourNX**
-7. In ChoiDujourNX, enter the **/firmware** you created earlier and select Choose
-8. After processing, select **[x.x.x] (exFAT)** where [x.x.x] is the firmware version you chose
-9. After verification, choose **Select Firmware**
-10. Choose whether you want to enable or disable AutoRCM (see above for more information). **This will override an existing AutoRCM settings you have, so make sure to pick which you want.**
+3. **IMPORTANT: Plug your Switch in to prevent the Switch from dying midway through the install process**
+4. Enter the Homebrew Menu through Album while holding the R button
+5. Select **ChoiDujourNX**
+6. In ChoiDujourNX, enter the **/firmware** you created earlier and select Choose
+7. After processing, select **[x.x.x] (exFAT)** where [x.x.x] is the firmware version you chose
+8. After verification, choose **Select Firmware**
+9. Choose whether you want to enable or disable AutoRCM (see above for more information). **This will override an existing AutoRCM settings you have, so make sure to pick which you want.**
 
     * If you are on an IPATCHED Switch and are given the option to enable AutoRCM, **DISABLE IT**. Enabling AutoRCM is equivalent to bricking your Switch.
 
-11. Choose **Start installation**
-12. Wait for the firmware update to finish
+10. Choose **Start installation**
+11. Wait for the firmware update to finish
 
     * This can be take little time or a long time depending on the situation. Be patient, and don't worry if it finishes very quickly.
 
-13. After installation, select **Reboot** and then **Shutdown Now!**
+12. After installation, select **Reboot** and then **Shutdown Now!**
 
 You can now delete the **/firmware** folder on your SD card.
 

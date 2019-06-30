@@ -22,7 +22,9 @@ To launch Atmosphere:
 
 1. Reboot to Hekate using PegaScape.
 
-Hekate will now autoboot Atmosphere. Note that Atmosphere CFW does not look fundamentaly different to the normal Switch operating system. You can verify you are in Atmosphere by trying to load the Homebrew Menu (see below) or checking if the system version string in System Settings contains **(AMS x.x.x)**.
+2. Tap Launch > CFW
+
+Note that Atmosphere CFW does not look fundamentaly different to the normal Switch operating system. You can verify you are in Atmosphere by trying to load the Homebrew Menu (see below) or checking if the system version string in System Settings contains **(AMS x.x.x)**.
 
 .. important::
 
@@ -30,7 +32,7 @@ Hekate will now autoboot Atmosphere. Note that Atmosphere CFW does not look fund
 
 .. important::
 
-    It is safe to remove and reinsert the SD card while in Hekate.
+    It is safe to remove and reinsert the SD card while in Hekate as long as you do not navigate through menus.
 
 .. important::
 

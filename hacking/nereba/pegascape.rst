@@ -105,7 +105,7 @@ Step 3: Rebooting to Hekate (Nereba)
 
 .. important::
 
-    After a few seconds, your Switch should reboot into Hekate, and you will see the **Kosmos** splash screen. Congratulations! You can now reboot into CFW from PegaScape. You are currently in Atmosphere CFW.
+    After a few seconds, your Switch should reboot into Hekate. Congratulations! You can now reboot into Hekate from PegaScape.
     
 .. error::
 

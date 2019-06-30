@@ -18,20 +18,17 @@ Step 1: Backing up your NAND and BIS keys
 
 By backing up your NAND (the Switch's internal memory), you will later be able to restore it in the event that anything goes wrong, essentially rewinding it back to a previous state. BIS keys are also good to backup so you can reinstall any firmware version manually should your NAND backup become corrupted or lost.
 
-1. Enter RCM but this time send the Hekate payload provided in the SDSetup download to your Switch **while holding Vol-** (refer to Section 1: Accessing RCM if you've forgotten how)
-2. In Hekate, select **'Tools > Backup > Backup eMMC BOOT0/1'**
-
-    * Use Volume +/- to change menu selection and Power to select an option.
-
+1. Enter RCM but this time send the Hekate payload provided in the SDSetup download to your Switch (refer to Section 1: Accessing RCM if you've forgotten how)
+2. In Hekate, select **'Tools > Backup eMMC > eMMC BOOT0 & BOOT1'**
 3. When finished, remove your SD card (you don't need to shutdown Hekate), insert it into your PC, and copy the 'backup' folder to a safe location on your PC. Afterwards, delete the 'backup' folder on your SD card.
 4. Insert your SD card back into your Switch
-5. In Hekate, select **'Backup eMMC RAW GPP'**
+5. In Hekate, select **'eMMC RAW GPP'**
 
     * If your SD card has less than ~32GB free space, Hekate will provide additional instructions every few minutes about pulling files off of your SD card so it can continue.
 
 6. If you weren't required to copy files during the backup process, once again copy the 'backup' folder off of your SD card and put it in a safe location on your PC. Delete the 'backup' folder on your SD card.
-7. Go back to the main menu and select 'Reboot (RCM)'
-8. Send the **"lockpick_RCM.bin"** payload provided in the SDSetup download to your Switch (if you do not have this payload, you can obtain it `from GitHub <https://github.com/shchmue/Lockpick_RCM/releases/>`_.
+7. Close the Backup menu, go back to the Home tab and tap **'Reboot > RCM'**
+8. Send the **"Lockpick_RCM.bin"** payload provided in the SDSetup download to your Switch (if you do not have this payload, you can obtain it `from GitHub <https://github.com/shchmue/Lockpick_RCM/releases/>`_.
 9. Press the power button to shutdown once finished.
 10. Insert your SD card into your PC.
 11. Copy the **/switch/prod.keys** file to a safe location.
@@ -60,7 +57,7 @@ You can configure your WiFi settings to use a custom DNS server that blocks all 
 
 **Doing this will make games unable to be played online, block eShop, game updates and system updates.** If you are OK with this, follow these instructions:
 
-1. Power on your Switch normally (no CFW).
+1. Boot your Switch with or without CFW.
 2. Open settings and go to the Internet tab
 3. Configure a WiFi connection if you have not already done so
 4. Select your Wifi network and pick Change Settings

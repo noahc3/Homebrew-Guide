@@ -15,8 +15,8 @@ The Homebrew Menu doesn't show anything!
 
 This is usually due to an archive metadata bit used by some OS's that Horizon simply can't deal with. Here's how to fix it:
 
-1. Launch into Hekate
-2. Select **'Tools > Unset archive bit (all except Nintendo folder)'**
+1. Enter Hekate through RCM or PegaScape
+2. Select **'Tools > Archive Bit - AutoRCM > Unset archive bit'**
 
     * This might take a while, be patient.
 

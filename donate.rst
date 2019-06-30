@@ -24,9 +24,11 @@ Ko-fi is used as a frontend for PayPal. You can send money through Ko-fi using P
 
 **Bitcoin**
 
-bc1qlw084ezjld5kw2rmh40ljuf20fulxp8j2fqd2z
+Segwit: bc1qlw084ezjld5kw2rmh40ljuf20fulxp8j2fqd2z
+Legacy: 17LYnMwmdVAZnCLZtGqZhSsN5kPnS5Zsp7
 
 
+**If you donate one time through PayPal or Bitcoin and would like access to donator exclusive channels, please contact noahc3#5728 with your Bitcoin/PayPal transaction ID or your PayPal email address.**
 
 .. toctree::
    :maxdepth: 2

@@ -113,7 +113,7 @@ Step 4: Rebooting to Hekate (Caffeine)
 
 .. important::
 
-    After a few seconds, your Switch should reboot into Hekate, and you will see the **Kosmos** splash screen. Congratulations! You can now reboot into CFW from PegaScape.
+    After a few seconds, your Switch should reboot into Hekate. Congratulations! You can now reboot into Hekate from PegaScape.
     
 .. error::
 

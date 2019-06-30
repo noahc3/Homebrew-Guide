@@ -35,7 +35,7 @@ Using ES or FS patches are not supported by Atmosphere or Kosmos and never will 
 Is it safe to update to the latest firmware version?
 ----------------------------------------------------
 
-When a new firmware update is released, you should always wait for SDSetup and/or SDFilesSwitch to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.
+When a new firmware update is released, you should always wait for SDSetup and/or Kosmos to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.
 
 **As of writing, the latest firmware version is 8.1.0. It is currently completely safe to update as long as you are using Atmosphere v0.9.1 or a bundle from SDSetup downloaded after June 26th 2019.**
     

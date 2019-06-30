@@ -9,7 +9,7 @@ Credits
 * Plailect for starting this guide trend and providing a basis for this guide.
 * SciresM and ReSwitched for Atmosphere
 * CTCaer and naehrwert for Hekate
-* tomGER for SDFilesSwitch/Kosmos
+* tomGER and Team AtlasNX for Kosmos
 * ReiNX Team for ReiNX and the first sections of https://reinx.guide
 
 
