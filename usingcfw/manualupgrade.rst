@@ -105,7 +105,7 @@ Step 3: Installing the New Firmware Version
 
 12. After installation, select **Reboot** and then **Shutdown Now!**
 
-You can now delete the **/firmware** folder on your SD card.
+You can now delete the **/firmware** folder and the file **hbl_bis_write.flag** in **/atmosphere** from your SD card.
 
 .. toctree::
    :maxdepth: 2
