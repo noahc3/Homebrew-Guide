@@ -39,6 +39,7 @@ This guide will walk you through all of the steps required to getting homebrew a
    /hacking/fuseegelee
    /hacking/nereba
    /hacking/caffeine
+   /hacking/emummc
    
 .. toctree::
    :maxdepth: 2

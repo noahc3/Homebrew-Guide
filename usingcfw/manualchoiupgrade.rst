@@ -108,7 +108,7 @@ By backing up your NAND (the Switch's internal memory), you will later be able t
 
 **If anything goes wrong during this guide, you can always restore this backup with Hekate and restart**
 
-1. Enter RCM and send the **"hekate-ctcaer-5.0.bin"** payload
+1. Enter RCM and send the **"hekate-ctcaer-5.0.1.bin"** payload
 2. In Hekate, select **'Tools > Backup eMMC > eMMC BOOT0 & BOOT1'**
 3. When finished, remove your SD card (you don't need to shutdown Hekate), insert it into your PC, and copy the 'backup' folder to a safe location on your PC. Afterwards, delete the 'backup' folder on your SD card.
 4. Insert your SD card back into your Switch
@@ -273,18 +273,18 @@ Step 8: Recovering your BIS Keys
     
 1. Close HacDiskMount
 2. Hold the power button on your Switch to shut down
-3. Put your Switch into RCM and send the **"hekate-ctcaer-5.0.bin"** payload you downloaded earlier **while holding Vol-** to skip autoboot and enter the menu
-4. In Hekate, navigate to **Console Info > kFuses**
+3. Put your Switch into RCM and send the **"hekate-ctcaer-5.0.1.bin"** payload you downloaded earlier **while holding Vol-** to skip autoboot and enter the menu
+4. In Hekate, navigate to **Console Info > Fuses**
 5. Tap **Dump Fuses**, press **OK**.
 6. Close the menu
 7. Tap **TSEC Keys**
-8. Tap **Dump Fuses**, press **OK**
+8. Tap **Dump Keys**, press **OK**
 9. Exit the menu
 10. Go back to the Main tab and tap **Reboot > RCM**
 11. Insert your SD Card into your PC
 12. Go to `www.sdsetup.com/biskeygen <https://www.sdsetup.com/biskeygen>`_
-13. Under **"Upload Hekate fuses.bin",** click **Choose File**
-14. Browse for **"[SD]/backup/[8 character folder]/dumps/fuses.bin"**
+13. Under **"Upload Hekate fuse_cached.bin",** click **Choose File**
+14. Browse for **"[SD]/backup/[8 character folder]/dumps/fuse_cached.bin"**
 15. Under **"Upload Hekate tsec_keys.bin",** click **Choose File**
 16. Browse for **"[SD]/backup/[8 character folder]/dumps/tsec_keys.bin"**
 17. Press **"Derive BIS Keys"**
@@ -477,7 +477,7 @@ Step 13: Launching the First Time After Downgrading
 5. Copy the **"FSXXX-exfat_nocmac_nogc.kip1"** file to the root of your SD card
 6. Copy the **"hekate_ipl.ini"** file to the **"/bootloader"** folder on your SD card
 7. Safely eject your SD card and insert it into your Switch
-8. Enter RCM and send the **"hekate-ctcaer-5.0.bin"** payload
+8. Enter RCM and send the **"hekate-ctcaer-5.0.1.bin"** payload
 9. In Hekate, navigate to **Tools > Archive bit - AutoRCM > Unset archive bit**
 10. Return to the main menu, then select **'Launch > FS_XXX-exfat_nocmac_nogc'** where **XXX** is the firmware version you downgraded to.
 11. Make sure your system successfully boots
@@ -492,7 +492,7 @@ Step 13: Launching the First Time After Downgrading
 15. Delete the **"hekate_ipl.ini"** file
 16. Rename the **"hekate_bak.ini"** file to **"hekate_ipl.ini"**
 17. Safely eject your SD card and insert it into your Switch
-18. Enter RCM and send the **"hekate-ctcaer-5.0.bin"** payload
+18. Enter RCM and send the **"hekate-ctcaer-5.0.1.bin"** payload
 19. Select **'Launch > CFW'**    
 20. Make sure your system successfully boots
 
