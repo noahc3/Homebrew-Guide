@@ -49,7 +49,13 @@ Access the Homebrew Menu by holding the **R** button while opening **any game, a
 What's Next?
 ------------------------
 
-Check the sidebar for more information about using Custom Firmware.
+It is very highly recommended that you setup emuMMC to protect your Switch from bricking, and so you can use the latest firmware version for online play and games without losing access to CFW.
+
+.. raw:: html
+
+	<div class="admonition warning">
+		<p class="last">To setup emuMMC, continue to <a href="/hacking/emummc">emuMMC</a></p>
+	</div>
 
 
 .. toctree::

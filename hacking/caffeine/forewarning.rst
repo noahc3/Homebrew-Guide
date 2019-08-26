@@ -24,7 +24,7 @@ Upon using PegaScape to reboot into CFW for the first time, we will immediately 
 
 Additionally, you should **never connect to the internet without PegaScape or 90DNS configured on your sysNAND, even for a second,** as doing so can make your Switch **force you to update to use the browser**, which is required for this exploit. **There is currently no known way of removing supernag, so supernag may permanently block you from accessing CFW.**
 
-The guide will soon be updated with instructions on using emuMMC, which redirects all read and write operations on the internal memory to the SD card. With this, even if you accidentally brick within CFW, your Switch will still function properly. **If any of the above scares you, strongly consider waiting for the guide to be updated with emuMMC information.**
+The guide also includes instructions on using emuMMC, which redirects all read and write operations on the internal memory to the SD card. With this, even if you accidentally brick within an emuMMC, your Switch will still function properly.
 
 Neither this guide nor anybody in this community is responsible should anything happen to your Switch.
 
