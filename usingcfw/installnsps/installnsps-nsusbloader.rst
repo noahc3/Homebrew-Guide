@@ -6,7 +6,7 @@
 Install NSPs over USB (NS-USBLoader)
 ====================================
 
-This guide will teach you how to setup the unofficial NS-USBLoader USB installer for Goldleaf. This guide requires Java, but the end result is much better than standard Goldtree. NS-USBLoader will work on Windows, OSX and Linux.
+This guide will teach you how to setup the unofficial NS-USBLoader USB installer for Goldleaf. This guide requires Java, but the end result is better than standard Goldtree. NS-USBLoader will work on Windows, OSX and Linux.
 
 .. note:: 
    If something goes wrong or you need help, check `troubleshooting </troubleshooting.html>`__.
@@ -49,58 +49,50 @@ Step 1 (Windows Only): Installing libusbk Driver
 
 3. Run Goldleaf on your Switch.
 
-4. Choose **USB installation** and choose **Start**.
+4. On your PC, open the Zadig application and complete the installation if prompted.
 
-5. On your PC, open the Zadig application and complete the installation if prompted.
-
-6. In the dropdown box, look for either **'libnx usb comms'** or **'Nintendo Switch'** and select it.
+5. In the dropdown box, look for either **'libnx usb comms'** or **'Nintendo Switch'** and select it.
 
     * If you cannot see either one, enable **'List All Devices'** under the options menu item.
     
-7. Set driver to **'libusbK (v3.0.7.0)'**
+6. Set driver to **'libusbK (v3.0.7.0)'**
 
 .. image::  https://puu.sh/CKNk1/86e21a92e5.png
 
-8. Choose **'Install Driver'** or **'Replace Driver'** or **'Reinstall Driver'** (the big button). Wait for this process to finish.
+7. Choose **'Install Driver'** or **'Replace Driver'** or **'Reinstall Driver'** (the big button). Wait for this process to finish.
 
-9. Close Zadig.
+8. Close Zadig.
 
-10. Disconnect and reconnect your Switch
-
-    * Goldleaf should now say 'USB connection detected'. If it doesn't, close Goldleaf and try again.
+9. Disconnect and reconnect your Switch
 
 Step 2: Install NSP with NS-USBLoader
 -------------------------------------
 
-1. Disconnect your Switch from your PC if it is connected.
-
-2. Open the NS-USBLoader JAR file downloaded earlier on your PC.
+1. Open the NS-USBLoader JAR file downloaded earlier on your PC.
 
     * Double click the file in Explorer on Windows and Mac
     
     * On Linux, or if the above does not work, run `java -jar /path/to/NS-USBloader.jar` in your command terminal
 
-3. Make sure **'Goldleaf'** is selected in the dropdown menu in the top left corner of the application.
+2. Make sure **'Goldleaf'** is selected in the dropdown menu in the top left corner of the application.
 
-4. Click **'Select .NSP files** and pick which NSP(s) you want to install
+3. Click **'Select .NSP files** and pick which NSP(s) you want to install
 
     * You can select as many NSP files as you wish.
 
-5. Choose **'Upload to NS'**
+4. Choose **'Upload to NS'**
 
-6. Connect your Switch to your PC.
-
-7. In Goldleaf, choose **'USB Installations'**
+5. On your Switch in Goldleaf, choose **'Explore Content > Remote PC (via USB)**.
     
-8. Choose Install.
+6. Choose **'Virtual (VIRT:\\)'**.
 
-9. Pick where you want to install the NSP (Note: SD Card is always recommended to prevent issues with corruption)
+7. The NSPs you selected will be shown here. Select the NSP you wish to install and choose where to install it.
 
-10. If the NSP you are installing usually requires a firmware version higher than yours, choose **'Yes'** to ignore required firmware version. Otherwise, choose **'No'**
+8. If asked, select **'Install'** to confirm the installation.
 
-11. Wait for the installation process to complete
+9. Wait for the installation process to complete
 
-12. Repeat steps 2.8 through 2.11 for each NSP being installed.
+10. Repeat steps 2.7 through 2.9 for each NSP being installed.
 
 
 Your NSP(s) should now be installed on your Switch!

@@ -38,41 +38,39 @@ Step 1: Installing libusbk Driver
 
 3. Run Goldleaf on your Switch.
 
-4. Choose **USB installation** and choose **Start**.
+4. On your PC, open the Zadig application and complete the installation if prompted.
 
-5. On your PC, open the Zadig application and complete the installation if prompted.
-
-6. In the dropdown box, look for either **'libnx usb comms'** or **'Nintendo Switch'** and select it.
+5. In the dropdown box, look for either **'libnx usb comms'** or **'Nintendo Switch'** and select it.
 
     * If you cannot see either one, enable **'List All Devices'** under the options menu item.
     
-7. Set driver to **'libusbK (v3.0.7.0)'**
+6. Set driver to **'libusbK (v3.0.7.0)'**
 
 .. image::  https://puu.sh/CKNk1/86e21a92e5.png
 
-8. Choose **'Install Driver'** or **'Replace Driver'** or **'Reinstall Driver'** (the big button). Wait for this process to finish.
+7. Choose **'Install Driver'** or **'Replace Driver'** or **'Reinstall Driver'** (the big button). Wait for this process to finish.
 
-9. Close Zadig.
+8. Close Zadig.
 
-10. Disconnect and reconnect your Switch
-
-    * Goldleaf should now say 'USB connection detected'. If it doesn't, close Goldleaf and try again.
+9. Disconnect and reconnect your Switch
 
 
 Step 2: Install NSP with Goldtree
 ---------------------------------
 
-1. Make sure your Switch is still connected to your PC with Goldleaf in USB installation mode.
+1. Make sure your Switch is still connected to your PC.
 
-2. Open Goldtree downloaded earlier on your PC.
+2. On your Switch in Goldleaf, choose **'Explore Content > Remote PC (via USB)**.
 
-3. You will be asked to select the NSP you wish to install. Navigate to and select it.
+    * The Switch may appear to freeze. This is normal.
 
-4. On your Switch, choose Install.
+3. Open Goldtree downloaded earlier on your PC.
 
-5. Pick where you want to install the NSP (Note: SD Card is always recommended to prevent issues with corruption)
+4. You can now browse your PC's files on your Switch. Browse for the NSP file you wish to install.
 
-6. If the NSP you are installing usually requires a firmware version higher than yours, choose **'Yes'** to ignore required firmware version. Otherwise, choose **'No'**
+5. Select the NSP file you want to install and choose where you want to install it.
+
+6. If asked, select **'Install'** to confirm the installation.
 
 7. Wait for the installation process to complete
 
