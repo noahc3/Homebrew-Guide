@@ -95,7 +95,7 @@ html_context = {
     "display_github": True,
     "github_user": "AtlasNX",
     "github_repo": "Homebrew-Guide",
-    "github_version": "new",
+    "github_version": "master",
     "conf_py_path": "/"
 }
 
