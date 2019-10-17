@@ -6,7 +6,7 @@
 Safety Precautions (fusee-gelee)
 ================================
 
-You are now able to run Hekate on your Nintendo Switch to launch the Atmosphere (Kosmos) custom firmware. These next steps will make sure your being as careful as possible in regards to keeping your Switch from bricking and getting banned. These steps are optional but highly recommended
+You are now able to run Hekate on your Nintendo Switch to launch the Atmosphere (Kosmos) custom firmware. These next steps will make sure you're being as careful as possible in regards to keeping your Switch from bricking and getting banned. These steps are optional but highly recommended
 
 .. note:: 
    If something goes wrong or you need help, check `troubleshooting </troubleshooting.html>`_.
