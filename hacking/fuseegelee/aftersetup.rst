@@ -32,7 +32,9 @@ Accessing the Homebrew Menu
 
 Homebrew installed by placing an **NRO** file into the **/switch** folder on your SD card can be launched through the Homebrew Menu.
 
-Access the Homebrew Menu by holding the **R** button while opening **any game, app or the album**. Note that for games, you need to hold **R** *after* choosing a user (if applicable).
+Access the Homebrew Menu by holding the **R** button while opening **any game or app** or by simply opening the **album**. Note that for games, you need to hold **R** *after* choosing a user (if applicable). Also note that not all Homebrew work by launching them through the Album and require you to run them through a game.
+
+To use the Album again in CFW, hold down the **R** button while clicking on the Album icon.
 
 ........
 
