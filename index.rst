@@ -39,7 +39,6 @@ This guide will walk you through all of the steps required to getting homebrew a
    /hacking/fuseegelee
    /hacking/nereba
    /hacking/caffeine
-   /hacking/emummc
    
 .. toctree::
    :maxdepth: 2
@@ -50,6 +49,15 @@ This guide will walk you through all of the steps required to getting homebrew a
    /usingcfw/installnsps
    /usingcfw/manualupgrade
    /usingcfw/manualchoiupgrade
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Creating an emuMMC
+   :hidden:
+   
+   /emummc/windows
+   /emummc/linux
+   /emummc/mac
    
 .. toctree::
    :maxdepth: 2
