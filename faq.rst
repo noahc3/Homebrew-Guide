@@ -38,8 +38,8 @@ Is it safe to update to the latest firmware version?
 
 When a new firmware update is released, you should always wait for SDSetup and/or Kosmos to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.
 
-**As of writing, the latest firmware version is 8.1.0. It is currently completely safe to update as long as you are using Atmosphere v0.9.1 or a bundle from SDSetup downloaded after June 26th 2019.**
-    
+**As of writing, the latest firmware version is 9.1.0. It is currently completely safe to update as long as you are using Atmosphere v0.10.0+, Kosmos v15+ or a bundle from SDSetup downloaded after December 7th 2019.**
+
 ........
     
 What does 'burning fuses' mean? / Can I downgrade my Nintendo Switch?
@@ -53,7 +53,7 @@ The Switch uses a common anti-downgrade technique that utilizes microscopic (ie.
 * If there are too many fuses burnt, your Switch will shutdown, not allowing the firmware to boot.
 
 The fusee-gelee exploit happens before any of these checks occur, meaning these checks can be bypassed. **Hekate, ReiNX, and SX OS all block fuses from being burnt and bypass the fuse check**, meaning you can keep your Switch in a downgradable state if you update your firmware manually.
-    
+
 ........
 
 How can I load .XCI cartridge backups?
