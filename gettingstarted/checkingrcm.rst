@@ -67,7 +67,7 @@ It's time to get into recovery mode.
     
 3. Press **Volume Up + Power**
 
-    * While your grounding pin 10, hold down Volume Up and then hold down Power.
+    * While you're grounding pin 10, hold down Volume Up and then hold down Power.
     
         * You will know you are successful if the Switch **seemingly does not turn on.**
         * If your Switch turns on, try again. **This does not mean fusee-gelee is patched** as RCM is still available on patched Switches.
