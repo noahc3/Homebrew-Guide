@@ -26,7 +26,7 @@ Step 0: What You Will Need
     * To access RCM, you must hold down volume up, power and the home button. **The home button described here is not the home button on the joycon,** but instead a hardware home button (think of the physical home button found on smartphones). The Nintendo Switch doesn't have this button, but you can simulate pressing it down by grounding pin 10 of the right joycon rail.
     * There are many ways to do this. You can pick any method `listed here. <https://gbatemp.net/threads/the-ultimate-list-of-mods-to-enter-rcm.502145/>`_ Some of these options are permanent hardmods, others are temporary. Later in the guide, you will learn of a way to have the Switch automatically enter RCM on every boot through a software mod, so don't worry about hardmodding or purchasing anything if you don't want to.
 
-* A payload sender
+* A device to send a payload
 
     * This guide will cover options for Windows, OSX, Linux and Android, though note that options exist for Chromebooks and jailbroken iOS devices.
     * You can also use a dedicated payload sending device (a "dongle" or modchip) if you have one. Intructions will not be provided on how to use these as each device is different. Check the manufacturers website.
