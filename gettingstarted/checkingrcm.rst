@@ -109,9 +109,13 @@ Time to find out if any of this prep was worth it.
     
 .. error::
 
-    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. **You should try a few more times to be certain, and consider trying another USB cable.**
+    If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched.  **You should try a few more times to be certain, and consider trying another USB cable.**
     If your Switch is patched and running firmware 4.1.0, you can still access CFW.
     If your Switch is patched and running a higher firmware version, unfortunately your Switch cannot be hacked right now.
+
+.. error::
+
+    TegraRcmGUI reporting the line "Smashed the stack with a 0x0000 byte SETUP request!" (specifically 0x0000 instead of some other number) is a reliable indicator that your Switch is patched. **You should try a few more times to be certain, and consider trying another USB cable.**
 
 ........
 
