@@ -96,3 +96,7 @@ ul .simple {
 th {
     text-align: center;
 }
+
+p.caption {
+    color: #FFFFFF !important;
+}

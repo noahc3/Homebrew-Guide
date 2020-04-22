@@ -109,3 +109,7 @@ th {
 .rst-content div.highlight pre {
     background-color: #2d2d2d;
 }
+
+p.caption {
+    color: #FFFFFF !important;
+}
