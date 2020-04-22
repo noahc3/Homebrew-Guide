@@ -28,7 +28,7 @@ Step 1: Configuring PegaScape DNS Settings
 7. Set **'Primary DNS'** to **'163.172.181.170'**
 8. Set **'Secondary DNS'** to **'163.172.141.219'**
 9. Re-enter your WiFi password, correctly this time.
-10. Save and perform the connection test. **The connection test should pass.**
+10. Save and perform the connection test by connecting to the network. **The connection test should pass.**
 
 
 Understanding Switch Browser Entrypoints

@@ -64,7 +64,7 @@ You can configure your WiFi settings to use a custom DNS server that blocks all 
 5. Set DNS Settings to Manual
 6. Set **'Primary DNS'** to **'163.172.141.219'**
 7. Set **'Secondary DNS'** to **'45.248.48.62'**
-8. Save and perform the connection test
+8. Save and perform a connection test by connecting to the network. **The connection test should pass.**
     
 ........
 

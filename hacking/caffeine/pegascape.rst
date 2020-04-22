@@ -43,7 +43,7 @@ Step 1: Configuring PegaScape (Wifi Authentication Prompt)
 7. Set **'Primary DNS'** to **'51.15.245.41'**
 8. Set **'Secondary DNS'** to **'163.172.141.219'**
 9. Re-enter your WiFi password, correctly this time.
-10. Save and perform the connection test. 
+10. Save and perform a connection test by connecting to the network. 
 11. **You should be told that the WiFi network requires registration.** Click Next.
 
     * If the connection test passes without the registration prompt:
