@@ -1,5 +1,12 @@
 {% extends "!layout.html" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-124060019-2');
+</script>
 {%- block extrahead %}
 <meta name="sourcename" content="{{ sourcename }}" />
 {% if "index" in sourcename %}

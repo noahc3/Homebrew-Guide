@@ -40,7 +40,6 @@ release = ''
 # ones.
 extensions = [
     'button',
-    'sphinxcontrib.googleanalytics',
     'cloud_sptheme.ext.table_styling'
 ]
 
@@ -128,7 +127,7 @@ def setup(app):
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'HomebrewGuidedoc'
+htmlhelp_basename = 'HomebrewGuide'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -155,7 +154,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'HomebrewGuide.tex', 'Homebrew Guide Documentation',
+    (master_doc, 'HomebrewGuide.tex', 'Homebrew Guide',
      'noahc3, Team AtlasNX', 'manual'),
 ]
 
@@ -165,7 +164,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'homebrewguide', 'Homebrew Guide Documentation',
+    (master_doc, 'homebrewguide', 'Homebrew Guide',
      [author], 1)
 ]
 
@@ -176,8 +175,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'HomebrewGuide', 'Homebrew Guide Documentation',
-     author, 'HomebrewGuide', 'One line description of project.',
+    (master_doc, 'HomebrewGuide', 'Homebrew Guide',
+     author, 'HomebrewGuide', 'The Ultimate Noob Guide for Hacking your Nintendo Switch.',
      'Miscellaneous'),
 ]
 
@@ -198,8 +197,3 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
-
-#google analytics
-
-googleanalytics_id = 'UA-124060019-2'
