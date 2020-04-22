@@ -16,3 +16,7 @@ jobs:
       with:
         docs-folder: "."
         pre-build-command: "pip install cloud_sptheme sphinx_rtd_theme"
+    - uses: actions/upload-artifact@v1
+      with:
+        name: build-result
+        path: ./_build
