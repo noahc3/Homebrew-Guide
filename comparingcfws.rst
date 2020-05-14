@@ -37,7 +37,7 @@ Relevant Guide                   `nh switch guide <https://nh-server.github.io/s
 .........
 
 .. tip::
-    If this page doesn't answer your question, feel free to ask on the `Team AtlasNX Discord <https://discord.teamatlasnx.com/>`_.
+    If this page doesn't answer your question, feel free to ask on the `Behemoth's discord: <https://discord.gg/a4VeH8Z>`_.
 
 .. toctree::
    :maxdepth: 2

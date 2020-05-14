@@ -20,8 +20,8 @@ sys.path.insert(0, os.path.abspath('_extensions'))
 # -- Project information -----------------------------------------------------
 
 project = 'Homebrew Guide'
-copyright = '2019, noahc3, Team AtlasNX'
-author = 'noahc3, Team AtlasNX'
+copyright = '2019-2020, noahc3 and friends'
+author = 'noahc3 and friends'
 
 # The short X.Y version
 version = ''
@@ -92,7 +92,7 @@ html_theme_options = {
 
 html_context = {
     "display_github": True,
-    "github_user": "AtlasNX",
+    "github_user": "noahc3",
     "github_repo": "Homebrew-Guide",
     "github_version": "master",
     "conf_py_path": "/"

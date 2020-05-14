@@ -12,7 +12,7 @@ At this point, you've verified that you can exploit fusee-gelee to run CFW. You 
    If something goes wrong or you need help, check `troubleshooting </troubleshooting.html>`_.
    
 .. note:: 
-   This guide will assume you want to use `https://www.sdsetup.com <http://www.sdsetup.com>`_ to get your homebrew setup, and will guide you on doing so. You can alternatively directly use `Team AtlasNX's Kosmos <https://www.github.com/atlasnx/kosmos>`_, or obtain and setup CFW software on your own (not recommended).
+   This guide will assume you want to use `https://www.sdsetup.com <http://www.sdsetup.com>`_ to get your homebrew setup, and will guide you on doing so.
 
 ........
    

@@ -95,7 +95,7 @@ The Wii U needs a FAT32 formatted SD card. However unlike the Switch, **only FAT
 Step 2: Download Kosmos Wii U
 -----------------------------
 
-1. Grab the latest version of Kosmos-WiiU from `https://github.com/AtlasNX/WiiU-Kosmos/releases <https://github.com/AtlasNX/WiiU-Kosmos/releases>`_
+1. Grab the latest version of Kosmos-WiiU from `https://github.com/NicholeMattera/WiiU-Kosmos/releases <https://github.com/NicholeMattera/WiiU-Kosmos/releases>`_
 2. Insert your SD card into your PC
 3. Open **`Kosmos-WiiU-vX.zip`** with a ZIP Archiver of your choice
 4. Copy the content of the ZIP onto your SD

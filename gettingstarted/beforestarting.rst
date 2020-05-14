@@ -55,7 +55,7 @@ Deja-vu currently only has implementations available from firmwares 1.0.0 - 3.0.
 Custom Firmware
 ^^^^^^^^^^^^^^^
 
-This guide will focus on using a configuration of the Hekate custom bootloader, as well as the Atmosphere custom firmware, both provided by Team AtlasNX's Kosmos. You can also install ReiNX along the way if you wish to use that instead, however this guide will assume you are using Hekate and Atmosphere, and will not walk you through using ReiNX.
+This guide will focus on using a configuration of the Hekate custom bootloader, as well as the Atmosphere custom firmware, both provided through SDSetup. You can also install ReiNX along the way if you wish to use that instead, however this guide will assume you are using Hekate and Atmosphere, and will not walk you through using ReiNX.
 
 Atmosphere provides most things you might expect in a custom firmware, including homebrew, cheats, game mods, emuNAND (referred to as emuMMC on Switch), and more.
 

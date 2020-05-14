@@ -15,7 +15,7 @@ Before getting started you will need the following:
 
 * An SD Card that is 32GB or larger.
 
-* Latest version of `Atmosphere <https://github.com/Atmosphere-NX/Atmosphere/releases/latest>`_ and `Hekate <https://github.com/CTCaer/hekate/releases/latest>`_ -or- the latest version of `Kosmos <https://github.com/AtlasNX/Kosmos/releases/latest>`_.
+* Latest version of `Atmosphere <https://github.com/Atmosphere-NX/Atmosphere/releases/latest>`_ and `Hekate <https://github.com/CTCaer/hekate/releases/latest>`_.
 
 * Mac OS Catalina
 

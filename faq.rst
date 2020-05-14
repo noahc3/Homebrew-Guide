@@ -65,7 +65,7 @@ Currently only SX OS is able to emulate cartridges using XCI files. SX OS is a p
 .........
 
 .. tip::
-    If this page doesn't answer your question, feel free to ask on the `Team AtlasNX Discord <https://discord.teamatlasnx.com/>`_.
+    If this page doesn't answer your question, feel free to ask on the `Behemoth's discord: <https://discord.gg/a4VeH8Z>`_.
 
 .. toctree::
    :maxdepth: 2

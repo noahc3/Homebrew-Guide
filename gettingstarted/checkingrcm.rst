@@ -48,7 +48,7 @@ Step 0: What You Will Need
 
     * You should have an SD card at least 4GB in size (64GB or higher is recommended, however). A small SD card is enough to get CFW running, but larger ones are preferred for installing gamesm, performing NAND backups efficiently, and creating emuMMCs.
 
-* This `test payload <https://github.com/AtlasNX/Homebrew-Guide/files/3890384/fusee-test.zip>`_ downloaded to your payload sender device to verify if your Switch is vulnerable to fusee-gelee.
+* This `test payload <https://github.com/noahc3/Homebrew-Guide/files/3890384/fusee-test.zip>`_ downloaded to your payload sender device to verify if your Switch is vulnerable to fusee-gelee.
 
 ........
 

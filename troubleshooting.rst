@@ -23,7 +23,7 @@ This is usually due to an archive metadata bit used by some OS's that Horizon si
 ........
 
 .. tip::
-    If this page doesn't solve your problem, feel free to ask for help in the support channel on the `Team AtlasNX Discord <https://discord.teamatlasnx.com/>`_.
+    If this page doesn't answer your question, feel free to ask on the `Behemoth's discord: <https://discord.gg/a4VeH8Z>`_.
 
 .. toctree::
    :maxdepth: 2
