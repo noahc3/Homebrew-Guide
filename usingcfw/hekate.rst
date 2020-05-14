@@ -44,7 +44,7 @@ By configuring Auto-Boot, each time you run Hekate, instead of seeing the menu, 
 3. Select **'Options > Auto boot'**
 4. Select your launch configuration of choice
 
-If you need to get back into the menu with autoboot enabled, hold **VOL-** immediately when the Kosmos bootlogo appears when entering Hekate.
+If you need to get back into the menu with autoboot enabled, hold **VOL-** immediately when the bootlogo appears when entering Hekate.
 
 ........
 

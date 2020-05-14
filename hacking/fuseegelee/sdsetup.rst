@@ -23,7 +23,7 @@ This guide will walk you through the process of using the website SDSetup to pre
 
 1. Go to https://www.sdsetup.com
 2. Select **Nintendo Switch** 
-3. Select the **"Kosmos Defaults"** package
+3. Select the **"Recommended Defaults"** package
 
     * If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, Homebrew Menu, Hekate and Lockpick_RCM.
     
