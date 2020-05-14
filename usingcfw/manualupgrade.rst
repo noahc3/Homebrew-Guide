@@ -67,7 +67,7 @@ Step 2: Allow ChoiDujourNX to write to BIS
 ------------------------------------------
 
 .. note:: 
-   If you are not using Atmosphere or Kosmos, skip to step 3.
+   If you are not using Atmosphere, skip to step 3.
 
 A new security feature in Atmosphere requires you to explicitly allow applications to write to BIS, something ChoiDujourNX needs to do to upgrade the firmware.
    

@@ -7,7 +7,7 @@ Comparing Custom Firmwares
 ==========================
    
 ================================ ===============================================================  ================================================  ==================================== ========================================== ==========================================================
-Features                         Stock Atmosphere                                                 Kosmos                                            ReiNX                                SX OS                                      Notes
+Features                         Stock Atmosphere                                                 SDSetup Hekate + Atmosphere Bundle                ReiNX                                SX OS                                      Notes
 ================================ ===============================================================  ================================================  ==================================== ========================================== ==========================================================
 Free                             ✓                                                                ✓                                                 ✓                                     ✖ (~$25 USD)                                         
 Open Source                      ✓                                                                ✓                                                 ✓                                     ✖                                          
@@ -16,7 +16,7 @@ Supports Custom Sysmodules       ✓                                            
 Supports Game Modding            ✓                                                                ✓                                                 ✓                                     ✓
 Homebrew Support                 ✓                                                                ✓                                                 ✓                                     ‒                                         SX OS has compatibility issues with many homebrew
 FS Patches                       ✓                                                                ✓                                                 ✓                                     ✓                                         
-ES Patches                       ‒                                                                ‒                                                 ✓                                     ✓                                         Atmosphere & Kosmos Sigpatches must be installed manually
+ES Patches                       ‒                                                                ‒                                                 ✓                                     ✓                                         Atmosphere & SDSetup Bundle Sigpatches must be installed manually
 Configuration Tools              ✖                                                                ✓                                                 ✓                                     ✓                                         
 Reboot to Payload                ✓                                                                ✓                                                 ✓                                     ✓
 Proper Shutdown w/ AutoRCM       ✓                                                                ✓                                                 ✖                                     ✖

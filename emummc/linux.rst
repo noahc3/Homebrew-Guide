@@ -120,7 +120,7 @@ Once you are ready, follow the guide below:
 #. Tap on "Close" on the top right, tap on "Launch", and boot into your emuMMC.
 
     .. note::
-        If you downloaded Hekate by itself then you needed to create a hekate_ipl.ini file in your bootloader folder. That is outside the scope of this guide. If you don't know how to do that then use Kosmos.
+        If you downloaded Hekate by itself then you needed to create a hekate_ipl.ini file in your bootloader folder. That is outside the scope of this guide. If you don't know how to do that then use the SDSetup bundle.
 
     .. image:: ../images/HekateStep7.png
 

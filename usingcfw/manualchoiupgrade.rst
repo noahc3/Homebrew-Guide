@@ -70,7 +70,7 @@ Step 0: Before Starting
 -----------------------
 
 1. You need a Windows PC capable of pushing payloads **(you NEED a Windows PC to follow this guide)**
-2. You should have the latest version of Hekate and a working Hekate setup on your SD card (ex. Kosmos). If you do not, follow `SD Card Setup (fusee-gelee) </hacking/fuseegelee/sdsetup>`_ and then return back to this page.
+2. You should have the latest version of Hekate and a working Hekate setup on your SD card. If you do not, follow `SD Card Setup (fusee-gelee) </hacking/fuseegelee/sdsetup>`_ and then return back to this page.
 3. You need the firmware files for the firmware version you want to upgrade/downgrade to. These cannot be shared here as they are copyrighted. Google is your friend.
 
     * You cannot use files for firmwares 6.2.0-9.1.0 as the ChoiDujour PC application does not support these versions. If you want to specifically upgrade/downgrade to one of these versions, you must first downgrade to any other firmware version and then upgrade to one of these versions using the ChoiDujourNX Switch application afterwards.

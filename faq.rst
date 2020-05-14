@@ -29,16 +29,16 @@ Sigpatches allow your Switch to install and run unofficial NSP files (digital ti
 
 .. important:: 
 
-    Using ES or FS patches are not supported by Atmosphere or Kosmos and never will be. Please use Google to answer any questions regarding this.
+    Using ES or FS patches are not supported by Atmosphere and never will be. Please use Google to answer any questions regarding this.
 
 ........
 
 Is it safe to update to the latest firmware version?
 ----------------------------------------------------
 
-When a new firmware update is released, you should always wait for SDSetup and/or Kosmos to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.
+When a new firmware update is released, you should always wait for SDSetup to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.
 
-**As of writing, the latest firmware version is 9.1.0. It is currently completely safe to update as long as you are using Atmosphere v0.10.0+, Kosmos v15+ or a bundle from SDSetup downloaded after December 7th 2019.**
+**As of writing, the latest firmware version is 10.0.2. It is currently completely safe to update as long as you are using Atmosphere v0.12.0+ or a bundle from SDSetup downloaded after May 1st 2020.**
 
 ........
     
