@@ -106,9 +106,6 @@ html_static_path = ['_static']
 html_logo = "_static/logo.png"
 
 html_show_sourcelink = False
-
-def setup(app):
-   app.add_stylesheet("theme.css")
   
 
 
