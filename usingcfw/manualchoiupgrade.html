@@ -1,0 +1,889 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Upgrading/Downgrading Manually With a PC &mdash; Homebrew Guide  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Create an emuMMC on Windows" href="../emummc/windows.html" />
+    <link rel="prev" title="Updating/Downgrading Manually" href="manualupgrade.html" />
+<meta name="sourcename" content="usingcfw/manualchoiupgrade.rst.txt" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124060019-2');
+</script>
+<script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    var head = document.getElementsByTagName('HEAD')[0];  
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet';  
+    link.type = 'text/css'; 
+    var theme = getCookie('user_theme');
+    if (theme == "dark") {
+        link.href = '/_static/theme-dark.css';
+    } else {
+        link.href = '/_static/theme-light.css';
+    }
+    head.appendChild(link);
+</script>
+
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/beforestarting.html">Before Starting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/checkingrcm.html">Checking RCM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/choosinganexploit.html">Choosing an Exploit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hacking Your Switch</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/fuseegelee.html">fusee-gelee</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/nereba.html">Nereba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/caffeine.html">Caffeine</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CFW</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="hekate.html">Using and Configuring Hekate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manualupgrade.html">Updating/Downgrading Manually</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Upgrading/Downgrading Manually With a PC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-0-before-starting">Step 0: Before Starting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-preparing-files">Step 1: Preparing Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-backing-up-your-nand">Step 2: Backing up your NAND</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-3-preparing-sd-card">Step 3: Preparing SD card</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-4-converting-firmware-files">Step 4: Converting Firmware Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-5-transferring-boot0-to-your-switch">Step 5: Transferring boot0 to your Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-6-transferring-boot1-to-your-switch">Step 6: Transferring boot1 to your Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-7-transferring-bcpkg2-images-to-your-switch">Step 7: Transferring BCPKG2 images to your Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-8-recovering-your-bis-keys">Step 8: Recovering your BIS Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-9-configuring-hacdiskmount-bis-keys">Step 9: Configuring HacDiskMount BIS Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-10-transferring-safe">Step 10: Transferring SAFE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-11-transferring-system">Step 11: Transferring SYSTEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-12-transferring-user">Step 12: Transferring USER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-13-launching-the-first-time-after-downgrading">Step 13: Launching the First Time After Downgrading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-14-first-launch-failed">Step 14: First Launch Failed</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/windows.html">Create an emuMMC on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/linux.html">Create an emuMMC on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/mac.html">Create an emuMMC on Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Homebrew Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/introduction.html">Introduction to Homebrew development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/app_dev.html">Homebrew app development</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comparingcfws.html">Comparing Custom Firmwares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wiiu.html">Wii U Homebrew Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate.html">Donate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../switch-theme.html">Switch Theme (Light &lt;–&gt; Dark)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Homebrew Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Upgrading/Downgrading Manually With a PC</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/usingcfw/manualchoiupgrade.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upgrading-downgrading-manually-with-a-pc">
+<h1>Upgrading/Downgrading Manually With a PC<a class="headerlink" href="#upgrading-downgrading-manually-with-a-pc" title="Permalink to this headline">¶</a></h1>
+<p>This guide will teach you how to upgrade or downgrade to any firmware version of your choosing using the ChoiDujour Windows application. <strong>Your Switch does not need to be booting to perform this guide, and as such it is also useful for unbricking a Switch.</strong></p>
+<p><strong>Read every warning before starting.</strong></p>
+<div class="admonition danger" style="color:#C42525" align="center">
+            <h1 style="margin-bottom:0.5rem;margin-top:0.5rem;font-size:2.5rem">WARNING</h1>
+    <h2>Do not follow this guide on an IPATCHED Switch.</h2>
+    <p>This guide is only intended to be used on consoles with a vulnerable RCM. It is <b>very very dangerous</b> to follow this guide without the ability to launch payloads via the Switches RCM mode using fusee-gelee.
+    <h2 style="margin-bottom:0.5rem">If you cannot run payloads from RCM with fusee-gelee, <b>DO NOT FOLLOW THIS GUIDE.</b></h2>
+    <h2>Failure to heed this warning <b>will</b> result in a bricked Switch.</h2>
+    </div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If something goes wrong or you need help, check <a class="reference external" href="/troubleshooting.html">troubleshooting</a>.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This guide is only intended to be used with RCM. It is <strong>very very dangerous</strong> to follow this guide without the ability to launch payloads via RCM. <strong>Do not follow this guide if you cannot launch RCM payloads!</strong></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><strong>This guide will likely take you 30-60 minutes to complete if it is your first time.</strong> If you decide to stop half way through, or if anything goes wrong, you must restore your NAND backup that you will create with Hekate to make your Switch work again.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>When downgrading across major firmware versions (ex. 7.0.0 -&gt; 6.2.0, 6.1.0 -&gt; 4.1.0), you may be required to lose access to <strong>all user content on your Switch including users, game saves and installed games.</strong> If this turns out to be the case, you will have the option to either restore your Switch back to it’s original state, retaining all of your data, or continue with a full wipe to complete the downgrade. This will happen very late in the guide, and as such you may find all of your effort was for nothing if you do not want to lose system data. <strong>Upgrading will never require a wipe, only downgrading.</strong></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><strong>This guide is only for who do not have access to CFW on their latest firmware version and do not have a working NAND backup from a lower firmware version.</strong> If you have access to CFW, follow <a class="reference external" href="/usingcfw/manualupgrade">Manually Updating/Downgrading</a> instead. If you have a working NAND backup, you can restore that with Hekate instead to downgrade to whatever firmware version that NAND backup was made on. In all cases, the side-effects below might still apply.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><strong>You cannot upgrade or downgrade directly to any firmwares from 6.2.0-9.1.0</strong> as the ChoiDujour PC application does not support these firmware versions. You must upgrade/downgrade to any other firmware version first and then upgrade to these higher firmware versions with the ChoiDujourNX Switch application if you specifically want one of these firmware versions.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This process is very complex and contains many steps. Make sure to read everything carefully, <strong>as any missteps can lead to a bricked Switch.</strong> You have been warned.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><strong>AutoRCM is required while your Switch is downgraded.</strong> AutoRCM is a software method of forcing your Switch to go into RCM on every launch, without the need of a jig or hardmod. Essentially, you are purposefully bricking your Switch in a controlled matter that forces it to launch into recovery. This might sound scary but is not actually dangerous, and can be undone at any time.</p>
+<p>AutoRCM has the following benefits:</p>
+<ul class="simple">
+<li><p>You will be able to bypass the normally required fuse count, allowing you to launch any firmware version of your choosing.</p></li>
+<li><p>The Switch will not burn any fuses, meaning you can downgrade your Switch to a lower firmware version in the future should the need arise.</p></li>
+<li><p>You will never accidentally boot stock firmware, meaning you can avoid having telemetry data accidentally sent to Nintendo.</p></li>
+</ul>
+<p>AutoRCM has the following disadvantages:</p>
+<ul class="simple">
+<li><p>You will not be able to boot your Switch at all without a payload sender.</p></li>
+</ul>
+<p>If you are downgrading, your fuse count will be incorrect for that firmware version. Because of this, <strong>AutoRCM is required to boot your Switch</strong> until you upgrade again.</p>
+<p>AutoRCM can always be disabled Hekate &gt; Tools &gt; AutoRCM</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In the past, downgrading below your fuse count would mean you could no longer use sleep mode. This is no longer the case, as Hekate and Atmosphere both support sleep mode while downgraded.</p>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This guide will allow you to recover your BIS keys if you do not already have them.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-0-before-starting">
+<h2>Step 0: Before Starting<a class="headerlink" href="#step-0-before-starting" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>You need a Windows PC capable of pushing payloads <strong>(you NEED a Windows PC to follow this guide)</strong></p></li>
+<li><p>You should have the latest version of Hekate and a working Hekate setup on your SD card. If you do not, follow <a class="reference external" href="/hacking/fuseegelee/sdsetup">SD Card Setup (fusee-gelee)</a> and then return back to this page.</p></li>
+<li><p>You need the firmware files for the firmware version you want to upgrade/downgrade to. These cannot be shared here as they are copyrighted. Google is your friend.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You cannot use files for firmwares 6.2.0-9.1.0 as the ChoiDujour PC application does not support these versions. If you want to specifically upgrade/downgrade to one of these versions, you must first downgrade to any other firmware version and then upgrade to one of these versions using the ChoiDujourNX Switch application afterwards.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal. Google is your friend.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ChoiDujour is very picky about the keys file you use. If you have one generated from Lockpick or HACGUI, use that.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-1-preparing-files">
+<h2>Step 1: Preparing Files<a class="headerlink" href="#step-1-preparing-files" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Make sure your SD card includes a basic Hekate/Atmosphere setup (such as the one installed when following this guide)</p></li>
+<li><p>Insert your SD card into your PC</p></li>
+<li><p>Go to <a class="reference external" href="https://switchtools.sshnuke.net">switchtools.sshnuke.net</a></p></li>
+<li><p>Download the latest version of <strong>ChoiDujour (NOT ChoiDujourNX)</strong> by rajkosto</p></li>
+<li><p>Download the latest version of <strong>HacDiskMount</strong> by rajkosto</p></li>
+<li><p>Download the latest version of <strong>memloader</strong> by rajkosto</p></li>
+<li><p>Extract each downloaded .ZIP file to separate folders on your PC</p></li>
+<li><p>Copy your hactool <strong>keys.txt</strong> into the ChoiDujour folder</p></li>
+<li><p>Create a folder named <strong>“fw”</strong> inside of your ChoiDujour folder</p></li>
+<li><p>Extract the contents of your firmware .ZIP file to the newly created <strong>“fw”</strong> folder</p></li>
+<li><p>Go to <a class="reference external" href="https://www.balena.io/etcher/">www.balena.io/etcher/</a>, download and install Etcher for your system</p></li>
+<li><p>In File Explorer, make sure Hidden Files are set to be shown</p></li>
+</ol>
+<img alt="https://puu.sh/C65Ri/a4bf21e2f4.png" src="https://puu.sh/C65Ri/a4bf21e2f4.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="step-2-backing-up-your-nand">
+<h2>Step 2: Backing up your NAND<a class="headerlink" href="#step-2-backing-up-your-nand" title="Permalink to this headline">¶</a></h2>
+<p>By backing up your NAND (the Switch’s internal memory), you will later be able to restore it in the event that anything goes wrong, essentially rewinding it back to a previous state.</p>
+<p><strong>If anything goes wrong during this guide, you can always restore this backup with Hekate and restart</strong></p>
+<ol class="arabic">
+<li><p>Enter RCM and send the <strong>“hekate-ctcaer-5.0.1.bin”</strong> payload</p></li>
+<li><p>In Hekate, select <strong>‘Tools &gt; Backup eMMC &gt; eMMC BOOT0 &amp; BOOT1’</strong></p></li>
+<li><p>When finished, remove your SD card (you don’t need to shutdown Hekate), insert it into your PC, and copy the ‘backup’ folder to a safe location on your PC. Afterwards, delete the ‘backup’ folder on your SD card.</p></li>
+<li><p>Insert your SD card back into your Switch</p></li>
+<li><p>In Hekate, select <strong>‘eMMC RAW GPP’</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If your SD card has less than ~32GB free space, Hekate will provide additional instructions every few minutes about pulling files off of your SD card so it can continue.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>If you weren’t required to copy files during the backup process, once again copy the ‘backup’ folder off of your SD card and put it in a safe location on your PC. Delete the ‘backup’ folder on your SD card.</p></li>
+<li><p>Close the Backup menu, go back to the Home tab and tap <strong>‘Reboot &gt; RCM’</strong></p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It is highly recommended that you store these backups in multiple locations (ex. cloud storage, external harddrive, etc) as they may be critical to restoring your Switch if anything goes wrong in the future.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-3-preparing-sd-card">
+<h2>Step 3: Preparing SD card<a class="headerlink" href="#step-3-preparing-sd-card" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Insert your SD card into your PC</p></li>
+<li><p>Navigate to where you extracted memloader earlier</p></li>
+<li><p>Copy <strong>the contents</strong> of the <strong>“/sample”</strong> folder to the <strong>root</strong> of your SD card</p></li>
+<li><p>Safely eject your SD card from your PC and put it into your Switch</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-4-converting-firmware-files">
+<h2>Step 4: Converting Firmware Files<a class="headerlink" href="#step-4-converting-firmware-files" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Navigate to your ChoiDujour folder with File Explorer</p></li>
+<li><p>In the address bar at the top, type <strong>“cmd”</strong> and press enter. A command prompt should open.</p></li>
+</ol>
+<img alt="https://puu.sh/C652v/857f93f5ed.png" src="https://puu.sh/C652v/857f93f5ed.png" />
+<ol class="arabic" start="3">
+<li><p>In the command prompt, type <strong>“ChoiDujour.exe --keyset=keys.txt fw”</strong> without quotes</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If ChoiDujour says it cannot find firmware files or keys.txt, you likely put keys.txt or the firmware files in the wrong location. Try steps 1.9-1.13 again.</p></li>
+<li><p>If the script fails otherwise, your keys.txt may be incompatible with ChoiDujour.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Once finished, you should see a message similar to <strong>“All files verified! Prepared firmware update is in folder NX-X.X.X”</strong> in the command prompt. Make sure you can find this folder, it will be used later.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-5-transferring-boot0-to-your-switch">
+<h2>Step 5: Transferring boot0 to your Switch<a class="headerlink" href="#step-5-transferring-boot0-to-your-switch" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>In this step, <strong>NEVER NEVER EVER SELECT FORMAT DISK WHEN WINDOWS ASKS OR YOUR SWITCH WILL BRICK. Always select “Cancel”.</strong></p>
+<img alt="https://puu.sh/C65yy/8d4a4708fd.png" src="https://puu.sh/C65yy/8d4a4708fd.png" />
+</div>
+<ol class="arabic">
+<li><p>Press <strong>Windows Key + R</strong></p></li>
+<li><p>In the <strong>“Run”</strong> dialogue, type <strong>“devmgmt.msc”</strong> without quotes and press enter to open Device Manager</p></li>
+<li><p>Put your Switch into RCM and send the <strong>“memloader.bin”</strong> payload you downloaded earlier</p></li>
+<li><p>On your Switch, using volume buttons, navigate to <strong>“ums_boot0.ini”</strong> and select it with power</p></li>
+<li><p>The disk should now connect to your PC. In Device Manager, make sure you can see <strong>“LINUX UMS DISK 0”</strong> under <strong>“Disk Drives”</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you see “USB Download Gadget”, right click the entry and choose Uninstall.</p></li>
+<li><p>If you cannot see this, look through Device Manager for any devices with a yellow warning icon. Right click and choose uninstall.</p></li>
+<li><p>After doing the above, choose “Scan for hardware changes” in the Device Manager toolbar</p></li>
+<li><p>If you still cannot see “LINUX UMS DISK 0” under “Disk Drives”, STOP! Press and hold the power button to shutdown the Switch and try steps 5.3-5.5 again. You cannot continue until you see this device.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Open Etcher.</p></li>
+<li><p>Click <strong>“Select image”,</strong> browse for <strong>“BOOT0.BIN”</strong> which was generated within the <strong>NX-X.X.X</strong> folder you created earlier with ChoiDujour</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Etcher may say that <strong>BOOT0.BIN</strong> is not a bootable image. <strong>Select “Continue” anyways.</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Make sure the target is <strong>“Linux UMS USB Device”</strong> if it is not already chosen</p></li>
+<li><p><strong>“BOOT0.BIN” MUST SHOW AS 1.57MB. “Linux UMS USB Device” MUST SHOW AS 4.19MB.</strong> If any of the sizes are incorrect, <strong>STOP! You cannot continue!</strong> Repeat steps 1.11-1.13, 4.1-4.4, and 5.3-5.9.</p></li>
+</ol>
+<img alt="https://puu.sh/C66TN/97d03d8ae3.png" src="https://puu.sh/C66TN/97d03d8ae3.png" />
+<ol class="arabic simple" start="10">
+<li><p>If everything looks alright, press <strong>“Flash!”</strong> and wait for the process to complete.</p></li>
+<li><p>Once finished, hold the power button to shutdown your Switch.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-6-transferring-boot1-to-your-switch">
+<h2>Step 6: Transferring boot1 to your Switch<a class="headerlink" href="#step-6-transferring-boot1-to-your-switch" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>In this step, <strong>NEVER NEVER EVER SELECT FORMAT DISK WHEN WINDOWS ASKS OR YOUR SWITCH WILL BRICK. Always select “Cancel”.</strong></p>
+<img alt="https://puu.sh/C65yy/8d4a4708fd.png" src="https://puu.sh/C65yy/8d4a4708fd.png" />
+</div>
+<ol class="arabic">
+<li><p>Put your Switch into RCM and send the <strong>“memloader.bin”</strong> payload you downloaded earlier</p></li>
+<li><p>On your Switch, using volume buttons, navigate to <strong>“ums_boot1.ini”</strong> and select it with power</p></li>
+<li><p>The disk should now connect to your PC. In Device Manager, make sure you can see <strong>“LINUX UMS DISK 0”</strong> under <strong>“Disk Drives”</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you see “USB Download Gadget”, right click the entry and choose Uninstall.</p></li>
+<li><p>If you cannot see this, look through Device Manager for any devices with a yellow warning icon. Right click and choose uninstall.</p></li>
+<li><p>After doing the above, choose “Scan for hardware changes” in the Device Manager toolbar</p></li>
+<li><p>If you still cannot see “LINUX UMS DISK 0” under “Disk Drives”, STOP! Press and hold the power button to shutdown the Switch and try steps 5.3-5.5 again. You cannot continue until you see this device.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Click <strong>“Select image”,</strong> browse for <strong>“BOOT1.BIN”</strong> which was generated within the <strong>NX-X.X.X</strong> folder you created earlier with ChoiDujour</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Etcher may say that <strong>BOOT0.BIN</strong> is not a bootable image. <strong>Select “Continue” anyways.</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Make sure the target is <strong>“Linux UMS USB Device”</strong> if it is not already chosen</p></li>
+<li><p><strong>“BOOT0.BIN” MUST SHOW AS 524.29KB. “Linux UMS USB Device” MUST SHOW AS 4.19MB.</strong> If any of the sizes are incorrect, <strong>STOP! You cannot continue!</strong> Repeat steps 1.11-1.13, 4.1-4.4, and 5.1-5.7.</p></li>
+</ol>
+<img alt="https://puu.sh/C676E/3dc60b58bb.png" src="https://puu.sh/C676E/3dc60b58bb.png" />
+<ol class="arabic simple" start="8">
+<li><p>If everything looks alright, press <strong>“Flash!”</strong> and wait for the process to complete.</p></li>
+<li><p>Once finished, hold the power button to shutdown your Switch.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-7-transferring-bcpkg2-images-to-your-switch">
+<h2>Step 7: Transferring BCPKG2 images to your Switch<a class="headerlink" href="#step-7-transferring-bcpkg2-images-to-your-switch" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>In this step, <strong>NEVER NEVER EVER SELECT FORMAT DISK WHEN WINDOWS ASKS OR YOUR SWITCH WILL BRICK. Always select “Cancel”.</strong></p>
+<img alt="https://puu.sh/C65yy/8d4a4708fd.png" src="https://puu.sh/C65yy/8d4a4708fd.png" />
+</div>
+<ol class="arabic">
+<li><p>Put your Switch into RCM and send the <strong>“memloader.bin”</strong> payload you downloaded earlier</p></li>
+<li><p>On your Switch, using volume buttons, navigate to <strong>“ums_emmc.ini”</strong> and select it with power</p></li>
+<li><p>The disk should now connect to your PC. In Device Manager, make sure you can see <strong>“LINUX UMS DISK 0”</strong> under <strong>“Disk Drives”</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you see “USB Download Gadget”, right click the entry and choose Uninstall.</p></li>
+<li><p>If you cannot see this, look through Device Manager for any devices with a yellow warning icon. Right click and choose uninstall.</p></li>
+<li><p>After doing the above, choose “Scan for hardware changes” in the Device Manager toolbar</p></li>
+<li><p>If you still cannot see “LINUX UMS DISK 0” under “Disk Drives”, STOP! Press and hold the power button to shutdown the Switch and try steps 5.3-5.5 again. You cannot continue until you see this device.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Locate HacDiskMount which you extracted earlier</p></li>
+<li><p>Right click <strong>HacDiskMount.exe</strong> and choose <strong>“Run as Administrator”</strong></p></li>
+<li><p>Choose <strong>File &gt; Open Physical Drive</strong> from the menu bar</p></li>
+<li><p>Choose <strong>Linux UMS disk 0 (29.121GiB).</strong> If you do not see this device <strong>with the exact name, STOP! You cannot continue.</strong> Close HacDiskMount and hold the power button on your Switch to shut down. Repeat steps 7.1-7.7</p></li>
+<li><p>Make sure you see a list of partitions as shown below</p></li>
+</ol>
+<img alt="https://puu.sh/C67nN/a471896603.png" src="https://puu.sh/C67nN/a471896603.png" />
+<ol class="arabic simple" start="9">
+<li><p>Double-click <strong>“BCPKG2-1-Normal-Main”</strong></p></li>
+<li><p>Make sure both BIS key text boxes are BLANK. Clear them and press <strong>“Test”</strong> if they are not.</p></li>
+<li><p>In the <strong>“Restore from file”</strong> section, select <strong>“Browse”</strong> and search for the <strong>“BCPKG2-1-Normal-Main.bin”</strong> file inside of the <strong>NX-X.X.X</strong> folder generated earlier with ChoiDujour.</p></li>
+<li><p>Select <strong>“Start”</strong> and wait for the process to complete.</p></li>
+<li><p>Close the <strong>“Operations on BCPKG2-1-Normal-Main”</strong> window</p></li>
+<li><p>Repeat steps 7.9-7.13 for each of the following partitions, <strong>making sure to select the appropriately named paritions and filenames for each:</strong></p>
+<ul class="simple">
+<li><p>BCPKG2-2-Normal-Sub</p></li>
+<li><p>BCPKG2-3-SafeMode-Main</p></li>
+<li><p>BCPKG2-4-SafeMode-Sub</p></li>
+<li><p>For example, for “BCPKG2-3-SafeMode-Main” you would double click the “BCPKG2-3-SafeMode-Main” partition, and use the “BCPKG2-3-SafeMode-Main.bin” file when restoring.</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-8-recovering-your-bis-keys">
+<h2>Step 8: Recovering your BIS Keys<a class="headerlink" href="#step-8-recovering-your-bis-keys" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>BIS, TSEC and SBK keys are console unique. <strong>You cannot use someone else’s BIS, TSEC or SBK keys.</strong> Make sure you are using/dumping your own.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you already have your BIS keys, skip to <strong>Step 9</strong></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you already have a backup of <strong>your own console unique</strong> fuses.bin and tsec_keys.bin, skip to step <strong>8.12</strong></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can follow this step even if you have already updated to the newest firmware.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Close HacDiskMount</p></li>
+<li><p>Hold the power button on your Switch to shut down</p></li>
+<li><p>Put your Switch into RCM and send the <strong>“hekate-ctcaer-5.0.1.bin”</strong> payload you downloaded earlier <strong>while holding Vol-</strong> to skip autoboot and enter the menu</p></li>
+<li><p>In Hekate, navigate to <strong>Console Info &gt; Fuses</strong></p></li>
+<li><p>Tap <strong>Dump Fuses</strong>, press <strong>OK</strong>.</p></li>
+<li><p>Close the menu</p></li>
+<li><p>Tap <strong>TSEC Keys</strong></p></li>
+<li><p>Tap <strong>Dump Keys</strong>, press <strong>OK</strong></p></li>
+<li><p>Exit the menu</p></li>
+<li><p>Go back to the Main tab and tap <strong>Reboot &gt; RCM</strong></p></li>
+<li><p>Insert your SD Card into your PC</p></li>
+<li><p>Go to <a class="reference external" href="https://www.sdsetup.com/biskeygen">www.sdsetup.com/biskeygen</a></p></li>
+<li><p>Under <strong>“Upload Hekate fuse_cached.bin”,</strong> click <strong>Choose File</strong></p></li>
+<li><p>Browse for <strong>“[SD]/backup/[8 character folder]/dumps/fuse_cached.bin”</strong></p></li>
+<li><p>Under <strong>“Upload Hekate tsec_keys.bin”,</strong> click <strong>Choose File</strong></p></li>
+<li><p>Browse for <strong>“[SD]/backup/[8 character folder]/dumps/tsec_keys.bin”</strong></p></li>
+<li><p>Press <strong>“Derive BIS Keys”</strong></p></li>
+<li><p>The <strong>“Output”</strong> textbox should now be filled with 8 keys as shown below.</p></li>
+</ol>
+<img alt="https://puu.sh/C68E1/e7692c881a.png" src="https://puu.sh/C68E1/e7692c881a.png" />
+<ol class="arabic simple" start="19">
+<li><p>Store these keys somewhere safe, they will be used in the next step.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-9-configuring-hacdiskmount-bis-keys">
+<h2>Step 9: Configuring HacDiskMount BIS Keys<a class="headerlink" href="#step-9-configuring-hacdiskmount-bis-keys" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>In this step, <strong>NEVER NEVER EVER SELECT FORMAT DISK WHEN WINDOWS ASKS OR YOUR SWITCH WILL BRICK. Always select “Cancel”.</strong></p>
+<img alt="https://puu.sh/C65yy/8d4a4708fd.png" src="https://puu.sh/C65yy/8d4a4708fd.png" />
+</div>
+<ol class="arabic">
+<li><p>If you closed memloader and HacDiskMount in the last step:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Put your Switch into RCM and send the <strong>“memloader.bin”</strong> payload you downloaded earlier</p></li>
+<li><p>On your Switch, using volume buttons, navigate to <strong>“ums_emmc.ini”</strong> and select it with power</p></li>
+<li><p>The disk should now connect to your PC. In Device Manager, make sure you can see <strong>“LINUX UMS DISK 0”</strong> under <strong>“Disk Drives”</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you see <strong>“USB Download Gadget”,</strong> right click the entry and choose <strong>Uninstall.</strong></p></li>
+<li><p>If you cannot see this, look through Device Manager for any devices with a yellow warning icon. Right click and choose <strong>uninstall.</strong></p></li>
+<li><p>After doing the above, choose <strong>“Scan for hardware changes”</strong> in the Device Manager toolbar</p></li>
+<li><p>If you still cannot see <strong>“LINUX UMS DISK 0”</strong> under <strong>“Disk Drives”, STOP!</strong> Press and hold the <strong>power button</strong> to shutdown the Switch and try steps 5.3-5.5 again. You cannot continue until you see this device.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Locate <strong>HacDiskMount</strong> which you extracted earlier</p></li>
+<li><p>Right click <strong>HacDiskMount.exe</strong> and choose <strong>“Run as Administrator”</strong></p></li>
+<li><p>Choose <strong>File &gt; Open Physical Drive</strong> from the menu bar</p></li>
+<li><p>Choose <strong>Linux UMS disk 0 (29.121GiB).</strong> If you do not see this device <strong>with the exact name, STOP! You cannot continue.</strong> Close HacDiskMount and hold the <strong>power button</strong> on your Switch to shut down. Repeat steps 7.1-7.7</p></li>
+<li><p>Make sure you see a list of partitions as before</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Double-click the <strong>“PRODINFO”</strong> partition</p></li>
+<li><p>Copy the 32 character <strong>“BIS Key 0 (Crypt)”</strong> key you obtained earlier into the <strong>Crypto (Upper)</strong> text box</p></li>
+<li><p>Copy the 32 character <strong>“BIS Key 0 (Tweak)”</strong> key you obtained earlier into the <strong>Tweak (Lower)</strong> text box</p></li>
+<li><p>Press <strong>“Save”</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You should see a green message with <strong>“OK!”</strong> next to the <strong>“Save”</strong> button like shown in the picture below.</p></li>
+<li><p>If the message is red, <strong>STOP! Your keys are WRONG! You cannot continue.</strong> Make sure you put in the correct keys, and otherwise repeat step 8.</p></li>
+</ul>
+<img alt="https://puu.sh/C693m/8de28d2b24.png" src="https://puu.sh/C693m/8de28d2b24.png" />
+</div></blockquote>
+</li>
+<li><p>Close the <strong>“Operations on PRODINFO”</strong> window</p></li>
+<li><p>Double-click the <strong>“PRODINFOF”</strong> partition</p></li>
+<li><p>Make sure the keys are prefilled</p></li>
+<li><p>Press <strong>“Test”</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You should see a green message with <strong>“OK!”</strong> next to the <strong>“Save”</strong> button like before.</p></li>
+<li><p>If the message is red, <strong>STOP! Your keys are WRONG! You cannot continue.</strong> Make sure you put in the correct keys in the last step, and otherwise repeat step 8.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Close the <strong>“Operations on PRODINFOF”</strong> window</p></li>
+<li><p>Double-click the <strong>“SAFE”</strong> partition</p></li>
+<li><p>Copy the 32 character <strong>“BIS Key 1 (Crypt)”</strong> key you obtained earlier into the <strong>Crypto (Upper)</strong> text box</p></li>
+<li><p>Copy the 32 character <strong>“BIS Key 1 (Tweak)”</strong> key you obtained earlier into the <strong>Tweak (Lower)</strong> text box</p></li>
+<li><p>Press <strong>“Save”</strong></p>
+<ul class="simple">
+<li><p>You should see a green message with <strong>“OK!”</strong> next to the <strong>“Save”</strong> button like before.</p></li>
+<li><p>If the message is red, <strong>STOP! Your keys are WRONG! You cannot continue.</strong> Make sure you put in the correct keys, and otherwise repeat step 8.</p></li>
+</ul>
+</li>
+<li><p>Close the <strong>“Operations on SAFE”</strong> window</p></li>
+<li><p>Double-click the <strong>“SYSTEM”</strong> partition</p></li>
+<li><p>Copy the 32 character <strong>“BIS Key 2 (Crypt)”</strong> key you obtained earlier into the <strong>Crypto (Upper)</strong> text box</p></li>
+<li><p>Copy the 32 character <strong>“BIS Key 2 (Tweak)”</strong> key you obtained earlier into the <strong>Tweak (Lower)</strong> text box</p></li>
+<li><p>Press <strong>“Save”</strong></p>
+<ul class="simple">
+<li><p>You should see a green message with <strong>“OK!”</strong> next to the <strong>“Save”</strong> button like before.</p></li>
+<li><p>If the message is red, <strong>STOP! Your keys are WRONG! You cannot continue.</strong> Make sure you put in the correct keys, and otherwise repeat step 8.</p></li>
+</ul>
+</li>
+<li><p>Close the <strong>“Operations on SYSTEM”</strong> window</p></li>
+<li><p>Double-click the <strong>“USER”</strong> partition</p></li>
+<li><p>Copy the 32 character <strong>“BIS Key 3 (Crypt)”</strong> key you obtained earlier into the <strong>Crypto (Upper)</strong> text box</p></li>
+<li><p>Copy the 32 character <strong>“BIS Key 3 (Tweak)”</strong> key you obtained earlier into the <strong>Tweak (Lower)</strong> text box</p></li>
+<li><p>Press <strong>“Save”</strong></p>
+<ul class="simple">
+<li><p>You should see a green message with <strong>“OK!”</strong> next to the <strong>“Save”</strong> button like before.</p></li>
+<li><p>If the message is red, <strong>STOP! Your keys are WRONG! You cannot continue.</strong> Make sure you put in the correct keys, and otherwise repeat step 8.</p></li>
+</ul>
+</li>
+<li><p>Close the <strong>“Operations on USER”</strong> window</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-10-transferring-safe">
+<h2>Step 10: Transferring SAFE<a class="headerlink" href="#step-10-transferring-safe" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>In this step, <strong>NEVER NEVER EVER SELECT FORMAT DISK WHEN WINDOWS ASKS OR YOUR SWITCH WILL BRICK. Always select “Cancel”.</strong></p>
+<img alt="https://puu.sh/C65yy/8d4a4708fd.png" src="https://puu.sh/C65yy/8d4a4708fd.png" />
+</div>
+<ol class="arabic">
+<li><p>Double-click <strong>“SAFE”</strong> in HacDiskMount</p></li>
+<li><p>Make sure both BIS key text boxes are FILLED as they should have been in Step 9. Press <strong>“Test”</strong> and make sure they are green as before.</p></li>
+<li><p>Under <strong>“Virtual Drive”,</strong> if the driver status shows up as <strong>“Driver not installed”,</strong> click <strong>“Install”</strong> to install it.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You may see driver signature verification dialogs. <strong>Accept all of them.</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Make sure the text now says <strong>“Driver (ver xxxx.x.x.xx) installed, service is running”</strong> as shown in the image below.</p></li>
+</ol>
+<img alt="https://puu.sh/C69Sg/e203765548.png" src="https://puu.sh/C69Sg/e203765548.png" />
+<ol class="arabic simple" start="5">
+<li><p>Under <strong>“Virtual drive”,</strong> select an unused drive letter</p></li>
+<li><p>Make sure <strong>“Passthrough zeroes”</strong> is checked</p></li>
+<li><p>Press <strong>“Mount”</strong></p></li>
+<li><p><strong>MAKE SURE YOU DO NOT FORMAT THE DRIVE AS PER THE WARNING ABOVE. You will not be warned again.</strong></p></li>
+<li><p>Navigate to the newly mounted drive in File Explorer</p></li>
+<li><p>If you see any files/folders in this drive, delete ALL of them. <strong>Make sure the drive is EMPTY before continuing.</strong></p>
+<ul class="simple">
+<li><p>It is normal to not see any. If there are no files/folders, skip this step.</p></li>
+</ul>
+</li>
+<li><p>Navigate to <strong>“/NX-X.X.X/SAFE”</strong> folder which was generated with ChoiDujour.</p></li>
+<li><p>If you see any files/folders in this folder, copy ALL OF THEM to the mounted drive.</p>
+<ul class="simple">
+<li><p>It is normal to not see any. If there are no files/folders, skip this step.</p></li>
+</ul>
+</li>
+<li><p>In HacDiskMount, under <strong>“Virtual drive”,</strong> press <strong>“Unmount”</strong></p></li>
+<li><p>Close the <strong>“Operations on SAFE”</strong> window.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-11-transferring-system">
+<h2>Step 11: Transferring SYSTEM<a class="headerlink" href="#step-11-transferring-system" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>In this step, <strong>NEVER NEVER EVER SELECT FORMAT DISK WHEN WINDOWS ASKS OR YOUR SWITCH WILL BRICK. Always select “Cancel”.</strong></p>
+<img alt="https://puu.sh/C65yy/8d4a4708fd.png" src="https://puu.sh/C65yy/8d4a4708fd.png" />
+</div>
+<ol class="arabic">
+<li><p>Double-click <strong>“SYSTEM”</strong> in HacDiskMount</p></li>
+<li><p>Make sure both BIS key text boxes are FILLED as they should have been in Step 9. Press <strong>“Test”</strong> and make sure they are green as before.</p></li>
+<li><p>Under <strong>“Virtual drive”,</strong> select an unused drive letter</p></li>
+<li><p>Make sure <strong>“Passthrough zeroes”</strong> is checked</p></li>
+<li><p>Press <strong>“Mount”</strong></p></li>
+<li><p>Navigate to the newly mounted drive in File Explorer</p></li>
+<li><p>Delete the <strong>“Contents”</strong> folder</p></li>
+<li><p>If it exists, delete the <strong>“PRF2SAFE.RCV”</strong> file</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>It is normal to not see this. If this file is not there, skip this step.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Navigate to <strong>“/NX-X.X.X/SYSTEM”</strong> folder which was generated with ChoiDujour.</p></li>
+<li><p>Copy ALL of the files/folders in this directory to the newly mounted drive</p>
+<ul class="simple">
+<li><p>Make sure to <strong>copy and replace</strong> all duplicate files.</p></li>
+</ul>
+</li>
+<li><p>In HacDiskMount, under <strong>“Virtual drive”,</strong> press <strong>“Unmount”</strong></p></li>
+<li><p>Close the <strong>“Operations on SYSTEM”</strong> window.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-12-transferring-user">
+<h2>Step 12: Transferring USER<a class="headerlink" href="#step-12-transferring-user" title="Permalink to this headline">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>In this step, <strong>NEVER NEVER EVER SELECT FORMAT DISK WHEN WINDOWS ASKS OR YOUR SWITCH WILL BRICK. Always select “Cancel”.</strong></p>
+<img alt="https://puu.sh/C65yy/8d4a4708fd.png" src="https://puu.sh/C65yy/8d4a4708fd.png" />
+</div>
+<ol class="arabic">
+<li><p>Double-click <strong>“USER”</strong> in HacDiskMount</p></li>
+<li><p>Make sure both BIS key text boxes are FILLED as they should have been in Step 9. Press <strong>“Test”</strong> and make sure they are green as before.</p></li>
+<li><p>Under <strong>“Virtual drive”,</strong> select an unused drive letter</p></li>
+<li><p>Make sure <strong>“Passthrough zeroes”</strong> is checked</p></li>
+<li><p>Press <strong>“Mount”</strong></p></li>
+<li><p>Navigate to <strong>“/NX-X.X.X/USER”</strong> folder which was generated with ChoiDujour.</p></li>
+<li><p>Copy ALL of the files/folders in this directory to the newly mounted drive</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Make sure to <strong>copy and replace</strong> all duplicate files.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>In HacDiskMount, under <strong>“Virtual drive”,</strong> press <strong>“Unmount”</strong></p></li>
+<li><p>Close the <strong>“Operations on USER”</strong> window.</p></li>
+<li><p><strong>DO NOT CLOSE HacDiskMount.</strong> It may be required if the next step fails.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-13-launching-the-first-time-after-downgrading">
+<h2>Step 13: Launching the First Time After Downgrading<a class="headerlink" href="#step-13-launching-the-first-time-after-downgrading" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Insert your SD card into your PC</p></li>
+<li><p>Navigate to the <strong>“/bootloader”</strong> folder on your SD card</p></li>
+<li><p>Rename <strong>“hekate_ipl.ini”</strong> to <strong>“hekate_bak.ini”</strong></p></li>
+<li><p>Navigate to <strong>“/NX-X.X.X/microSD”</strong> folder which was generated with ChoiDujour.</p></li>
+<li><p>Copy the <strong>“FSXXX-exfat_nocmac_nogc.kip1”</strong> file to the root of your SD card</p></li>
+<li><p>Copy the <strong>“hekate_ipl.ini”</strong> file to the <strong>“/bootloader”</strong> folder on your SD card</p></li>
+<li><p>Safely eject your SD card and insert it into your Switch</p></li>
+<li><p>Enter RCM and send the <strong>“hekate-ctcaer-5.0.1.bin”</strong> payload</p></li>
+<li><p>In Hekate, navigate to <strong>Tools &gt; Archive bit - AutoRCM &gt; Unset archive bit</strong></p></li>
+<li><p>Return to the main menu, then select <strong>‘Launch &gt; FS_XXX-exfat_nocmac_nogc’</strong> where <strong>XXX</strong> is the firmware version you downgraded to.</p></li>
+<li><p>Make sure your system successfully boots</p>
+<ul class="simple">
+<li><p>Your system may say it was unable to read the gamecard. This is normal.</p></li>
+<li><p>If your system <strong>does not boot,</strong> make 100% sure you are using the latest version of Hekate and have correctly copied the hekate_ipl.ini file.</p></li>
+<li><p>If your system <strong>still does not boot,</strong> and you are <strong>downgrading your system from a higher firmware to a lower one</strong> skip to <strong>Step 14: First Launch Failed</strong></p></li>
+</ul>
+</li>
+<li><p>Shutdown</p></li>
+<li><p>Insert your SD card into your PC</p></li>
+<li><p>Navigate to the <strong>/bootloader</strong> folder on your SD card</p></li>
+<li><p>Delete the <strong>“hekate_ipl.ini”</strong> file</p></li>
+<li><p>Rename the <strong>“hekate_bak.ini”</strong> file to <strong>“hekate_ipl.ini”</strong></p></li>
+<li><p>Safely eject your SD card and insert it into your Switch</p></li>
+<li><p>Enter RCM and send the <strong>“hekate-ctcaer-5.0.1.bin”</strong> payload</p></li>
+<li><p>Select <strong>‘Launch &gt; CFW’</strong></p></li>
+<li><p>Make sure your system successfully boots</p></li>
+</ol>
+<hr class="docutils" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you successfully completed step 13 and your system boots, congrats! Your Switch is now running the firmware version of your choosing. You can close HacDiskMount.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-14-first-launch-failed">
+<h2>Step 14: First Launch Failed<a class="headerlink" href="#step-14-first-launch-failed" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This next step is <strong>only to be followed if your Switch did not boot during step 13.12 and you are trying to downgrade your Switch!</strong> Do not follow it for any other reason.</p>
+</div>
+<p>If your Switch fails to launch during step 13, and you were trying to downgrade from a higher firmware version to a lower one, it is likely that there were incompatible changes made to system save data across firmware versions. Because of this, the only way to complete the downgrade is to wipe all system save data, <strong>which will also delete all users, save data, installed games, and other system data.</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to keep your data and abort the downgrade, you must now restore the NAND backup you created in Step 2 through Hekate.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>If you understand that you will lose access to <strong>all users, save data, installed games, and other system data.</strong> and will want to complete the downgrade, proceed with the steps below.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>In this step, <strong>NEVER NEVER EVER SELECT FORMAT DISK WHEN WINDOWS ASKS OR YOUR SWITCH WILL BRICK. Always select “Cancel”.</strong></p>
+<img alt="https://puu.sh/C65yy/8d4a4708fd.png" src="https://puu.sh/C65yy/8d4a4708fd.png" />
+</div>
+<ol class="arabic simple">
+<li><p>Put your Switch into RCM and send the <strong>“memloader.bin”</strong> payload you downloaded earlier</p></li>
+<li><p>On your Switch, using volume buttons, navigate to <strong>“ums_emmc.ini”</strong> and select it with power</p></li>
+<li><p>The disk should now connect to your PC. In Device Manager, make sure you can see <strong>“LINUX UMS DISK 0”</strong> under <strong>“Disk Drives”</strong></p></li>
+<li><p>Double-click <strong>“SYSTEM”</strong> in HacDiskMount</p></li>
+<li><p>Make sure both BIS key text boxes are FILLED as they should have been in Step 9. Press <strong>“Test”</strong> and make sure they are green as before.</p></li>
+<li><p>Under <strong>“Virtual drive”,</strong> select an unused drive letter</p></li>
+<li><p>Make sure <strong>“Passthrough zeroes”</strong> is checked</p></li>
+<li><p>Press <strong>“Mount”</strong></p></li>
+<li><p>Navigate to the newly mounted drive in File Explorer</p></li>
+<li><p>Delete EVERYTHING in this drive. <strong>By doing this, you accept that you will lose access to all users, save data, installed games, and other system data.</strong></p></li>
+<li><p>Navigate to <strong>“/NX-X.X.X/SYSTEM”</strong> folder which was generated with ChoiDujour.</p></li>
+<li><p>Copy ALL of the files/folders in this directory to the newly mounted drive</p></li>
+<li><p>In HacDiskMount, under <strong>“Virtual drive”,</strong> press <strong>“Unmount”</strong></p></li>
+<li><p>Close the <strong>“Operations on SYSTEM”</strong> window.</p></li>
+<li><p>Return to and repeat <strong>Step 13.</strong> Your Switch should now boot where it previously did not.</p></li>
+</ol>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, noahc3 and friends
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

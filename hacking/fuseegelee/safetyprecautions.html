@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Safety Precautions (fusee-gelee) &mdash; Homebrew Guide  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/table_styling.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="After Setup (fusee-gelee)" href="aftersetup.html" />
+    <link rel="prev" title="SD Card Setup (fusee-gelee)" href="sdsetup.html" />
+<meta name="sourcename" content="hacking/fuseegelee/safetyprecautions.rst.txt" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124060019-2');
+</script>
+<script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    var head = document.getElementsByTagName('HEAD')[0];  
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet';  
+    link.type = 'text/css'; 
+    var theme = getCookie('user_theme');
+    if (theme == "dark") {
+        link.href = '/_static/theme-dark.css';
+    } else {
+        link.href = '/_static/theme-light.css';
+    }
+    head.appendChild(link);
+</script>
+
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted/beforestarting.html">Before Starting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted/checkingrcm.html">Checking RCM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted/choosinganexploit.html">Choosing an Exploit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hacking Your Switch</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../fuseegelee.html">fusee-gelee</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sdsetup.html">SD Card Setup (fusee-gelee)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Safety Precautions (fusee-gelee)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-backing-up-your-nand-and-bis-keys">Step 1: Backing up your NAND and BIS keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-eu-only-enabling-gdpr-protections">Step 2: (EU Only) Enabling GDPR Protections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-blocking-updates-telemetry-with-90dns">Step 3: Blocking Updates &amp; Telemetry with 90DNS</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="aftersetup.html">After Setup (fusee-gelee)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../nereba.html">Nereba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../caffeine.html">Caffeine</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CFW</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../usingcfw/hekate.html">Using and Configuring Hekate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usingcfw/manualupgrade.html">Updating/Downgrading Manually</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usingcfw/manualchoiupgrade.html">Upgrading/Downgrading Manually With a PC</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../emummc/windows.html">Create an emuMMC on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../emummc/linux.html">Create an emuMMC on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../emummc/mac.html">Create an emuMMC on Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Homebrew Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../homebrew_dev/introduction.html">Introduction to Homebrew development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homebrew_dev/app_dev.html">Homebrew app development</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../comparingcfws.html">Comparing Custom Firmwares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wiiu.html">Wii U Homebrew Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donate.html">Donate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../switch-theme.html">Switch Theme (Light &lt;–&gt; Dark)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Homebrew Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../fuseegelee.html">fusee-gelee</a> &raquo;</li>
+        
+      <li>Safety Precautions (fusee-gelee)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/hacking/fuseegelee/safetyprecautions.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="safety-precautions-fusee-gelee">
+<h1>Safety Precautions (fusee-gelee)<a class="headerlink" href="#safety-precautions-fusee-gelee" title="Permalink to this headline">¶</a></h1>
+<p>You are now able to run Hekate on your Nintendo Switch to launch the Atmosphere custom firmware. These next steps will make sure you’re being as careful as possible in regards to keeping your Switch from bricking and getting banned. These steps are optional but highly recommended</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If something goes wrong or you need help, check <a class="reference external" href="/troubleshooting.html">troubleshooting</a>.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-1-backing-up-your-nand-and-bis-keys">
+<h2>Step 1: Backing up your NAND and BIS keys<a class="headerlink" href="#step-1-backing-up-your-nand-and-bis-keys" title="Permalink to this headline">¶</a></h2>
+<p>By backing up your NAND (the Switch’s internal memory), you will later be able to restore it in the event that anything goes wrong, essentially rewinding it back to a previous state. BIS keys are also good to backup so you can reinstall any firmware version manually should your NAND backup become corrupted or lost.</p>
+<ol class="arabic">
+<li><p>Enter RCM and send the Hekate payload provided in the SDSetup download to your Switch (refer to Section 1: Accessing RCM for instructions about sending the Hekate payload)</p></li>
+<li><p>In Hekate, select <strong>‘Tools &gt; Backup eMMC &gt; eMMC BOOT0 &amp; BOOT1’</strong></p></li>
+<li><p>When finished, remove your SD card (you don’t need to shutdown Hekate), insert it into your PC, and copy the ‘backup’ folder to a safe location on your PC. Afterwards, delete the ‘backup’ folder on your SD card.</p></li>
+<li><p>Insert your SD card back into your Switch</p></li>
+<li><p>In Hekate, select <strong>‘eMMC RAW GPP’</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If your SD card has less than ~32GB free space, Hekate will provide additional instructions every few minutes about pulling files off of your SD card so it can continue.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>If you weren’t required to copy files during the backup process, once again copy the ‘backup’ folder off of your SD card and put it in a safe location on your PC. Delete the ‘backup’ folder on your SD card.</p></li>
+<li><p>Close the Backup menu, go back to the Home tab and tap <strong>‘Reboot &gt; RCM’</strong></p></li>
+<li><p>Send the <strong>“Lockpick_RCM.bin”</strong> payload provided in the SDSetup download to your Switch (if you do not have this payload, you can obtain it <a class="reference external" href="https://github.com/shchmue/Lockpick_RCM/releases/">from GitHub</a>.</p></li>
+<li><p>Select <cite>Dump from SysNAND</cite> and press Power to confirm; press again Power when finished to go back to the Lockpick menu</p></li>
+<li><p>Select poweroff from the menu once finished.</p></li>
+<li><p>Insert your SD card into your PC.</p></li>
+<li><p>Copy the <strong>/switch/prod.keys</strong> file to a safe location.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is highly recommended that you store these backups and keys in multiple locations (ex. cloud storage, external harddrive, etc) as they may be critical to restoring your Switch if anything goes wrong in the future.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-2-eu-only-enabling-gdpr-protections">
+<h2>Step 2: (EU Only) Enabling GDPR Protections<a class="headerlink" href="#step-2-eu-only-enabling-gdpr-protections" title="Permalink to this headline">¶</a></h2>
+<p>Users with EU Nintendo Network accounts have the option of enabling GDPR protections in their account settings. Doing so has been confirmed to disable lots of telemetry that can get you banned. This setting will not appear if your account is not from the EU.</p>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://accounts.nintendo.com/setting">https://accounts.nintendo.com/setting</a></p></li>
+<li><p>Login with your NNID</p></li>
+<li><p>Under <strong>‘Other settings’</strong>, Edit <strong>‘Usage information’</strong> and set it to <strong>‘Don’t share’</strong></p></li>
+<li><p>Save your changes</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-3-blocking-updates-telemetry-with-90dns">
+<h2>Step 3: Blocking Updates &amp; Telemetry with 90DNS<a class="headerlink" href="#step-3-blocking-updates-telemetry-with-90dns" title="Permalink to this headline">¶</a></h2>
+<p>You can configure your WiFi settings to use a custom DNS server that blocks all connections to Nintendo servers (except the internet connection test server).</p>
+<p><strong>Doing this will make games unable to be played online, block eShop, game updates and system updates.</strong> If you are OK with this, follow these instructions:</p>
+<ol class="arabic simple">
+<li><p>Boot your Switch with or without CFW.</p></li>
+<li><p>Open settings and go to the Internet tab</p></li>
+<li><p>Configure a WiFi connection if you have not already done so</p></li>
+<li><p>Select your Wifi network and pick Change Settings</p></li>
+<li><p>Set DNS Settings to Manual</p></li>
+<li><p>Set <strong>‘Primary DNS’</strong> to <strong>‘163.172.141.219’</strong></p></li>
+<li><p>Set <strong>‘Secondary DNS’</strong> to <strong>‘45.248.48.62’</strong></p></li>
+<li><p>Save and perform a connection test by connecting to the network. <strong>The connection test should pass.</strong></p></li>
+</ol>
+<hr class="docutils" />
+<div class="admonition warning">
+        <p class="last">Continue to <a href="/hacking/fuseegelee/aftersetup">After Setup (fusee-gelee)</a></p>
+</div><div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, noahc3 and friends
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

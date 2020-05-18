@@ -1,0 +1,486 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Homebrew app development &mdash; Homebrew Guide  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Comparing Custom Firmwares" href="../comparingcfws.html" />
+    <link rel="prev" title="Introduction to Homebrew development" href="introduction.html" />
+<meta name="sourcename" content="homebrew_dev/app_dev.rst.txt" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124060019-2');
+</script>
+<script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    var head = document.getElementsByTagName('HEAD')[0];  
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet';  
+    link.type = 'text/css'; 
+    var theme = getCookie('user_theme');
+    if (theme == "dark") {
+        link.href = '/_static/theme-dark.css';
+    } else {
+        link.href = '/_static/theme-light.css';
+    }
+    head.appendChild(link);
+</script>
+
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/beforestarting.html">Before Starting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/checkingrcm.html">Checking RCM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/choosinganexploit.html">Choosing an Exploit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hacking Your Switch</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/fuseegelee.html">fusee-gelee</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/nereba.html">Nereba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/caffeine.html">Caffeine</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CFW</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/hekate.html">Using and Configuring Hekate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualupgrade.html">Updating/Downgrading Manually</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualchoiupgrade.html">Upgrading/Downgrading Manually With a PC</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/windows.html">Create an emuMMC on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/linux.html">Create an emuMMC on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/mac.html">Create an emuMMC on Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Homebrew Development</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction to Homebrew development</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Homebrew app development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-code-completion-for-libnx">Setup code completion for libnx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-the-makefile">Configuring the Makefile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-the-nro">Building the NRO</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#actually-writing-code">Actually writing code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#command-line-interfaces">Command line interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#button-input">Button input</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#printf-debugging-through-nxlink">Printf debugging through nxlink</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interpreting-fatal-error-screens">Interpreting fatal error screens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#twili">Twili</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comparingcfws.html">Comparing Custom Firmwares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wiiu.html">Wii U Homebrew Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate.html">Donate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../switch-theme.html">Switch Theme (Light &lt;–&gt; Dark)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Homebrew Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Homebrew app development</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/homebrew_dev/app_dev.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="homebrew-app-development">
+<h1>Homebrew app development<a class="headerlink" href="#homebrew-app-development" title="Permalink to this headline">¶</a></h1>
+<p>A homebrew app is a program that can be launched through the hbmenu when running a CFW on the Switch.
+Common examples are <a class="reference external" href="https://github.com/WerWolv/EdiZon">EdiZon</a>, <a class="reference external" href="https://github.com/XorTroll/Goldleaf">Goldleaf</a> or <a class="reference external" href="https://github.com/joel16/NX-Shell">NX-Shell</a>.
+These are the easiest to develop kind of homebrew as prototyping is fast and debugging is pretty easy with some good
+C/C++ knowledge.</p>
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>The first thing you’ll need to get to start a project is a Makefile. These files are used to tell <code class="docutils literal notranslate"><span class="pre">make</span></code> how to turn your code into
+a executable .nro file. Luckily there’s a <a class="reference external" href="https://github.com/switchbrew/switch-examples/tree/master/templates/application">premade template project</a>
+that can be used for this purpose.</p>
+<p>Download the whole application folder from the GitHub repo and put it somewhere on your computer.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure the path is not too long and doesn’t contain any spaces! Placing it in a OneDrive/GDrive sync folder is a terrible idea too.</p>
+</div>
+<p>Once you’re done, rename the application folder to whatever your project should be called and open in in VSCode.</p>
+</div>
+<div class="section" id="setup-code-completion-for-libnx">
+<h2>Setup code completion for libnx<a class="headerlink" href="#setup-code-completion-for-libnx" title="Permalink to this headline">¶</a></h2>
+<p>To use code completion in VSCode for libnx functions, the libnx include file path has to be added to the c_cpp_properties.json
+config file. To do this, first you need the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">C/C++ extension</a>
+from the market place. After a reload open the <code class="docutils literal notranslate"><span class="pre">.vscode</span></code> folder that got created in your project directory (If it isn’t there, just create it).
+In that folder create a file called <code class="docutils literal notranslate"><span class="pre">c_cpp_properties.json</span></code> and paste the following code into it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;configurations&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;DKP aarch64&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;includePath&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;/path/to/devkitPro/devkitA64/aarch64-none-elf/include/**&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;/path/to/devkitPro/devkitA64/lib/gcc/aarch64-none-elf/8.3.0/include/**&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;/path/to/devkitPro/libnx/include/**&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;/path/to/devkitPro/portlibs/switch/include/**&quot;</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;defines&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;SWITCH&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;__SWITCH__&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;DEBUG&quot;</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;compilerPath&quot;</span><span class="p">:</span> <span class="s2">&quot;/path/to/devkitPro/devkitA64/bin/aarch64-none-elf-g++&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;cStandard&quot;</span><span class="p">:</span> <span class="s2">&quot;c11&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;cppStandard&quot;</span><span class="p">:</span> <span class="s2">&quot;c++17&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;intelliSenseMode&quot;</span><span class="p">:</span> <span class="s2">&quot;gcc-x64&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="mi">4</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Now replace all the <code class="docutils literal notranslate"><span class="pre">/path/to</span></code> with the actual path to your devkitPro folder.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On windows this is usually C:/devkitPro, on Linux it’s /opt/devkitpro</p>
+</div>
+</div>
+<div class="section" id="configuring-the-makefile">
+<h2>Configuring the Makefile<a class="headerlink" href="#configuring-the-makefile" title="Permalink to this headline">¶</a></h2>
+<p>To give the app a name, author and version you’ll have to define <code class="docutils literal notranslate"><span class="pre">APP_TITLE</span></code>, <code class="docutils literal notranslate"><span class="pre">APP_AUTHOR</span></code> and <code class="docutils literal notranslate"><span class="pre">APP_VERSION</span></code>
+in the Makefile. These three strings will later get displayed in the hbmenu.</p>
+<img alt="https://totallynotavir.us/i/nv51r8hm.png" src="https://totallynotavir.us/i/nv51r8hm.png" />
+<p>Most apps also need an icon. For this, draw a 256x256 pixel JPG image, name it icon.jpg and place it in the root of your project folder
+(the same location where your Makefile lies).</p>
+</div>
+<div class="section" id="building-the-nro">
+<h2>Building the NRO<a class="headerlink" href="#building-the-nro" title="Permalink to this headline">¶</a></h2>
+<p>If everything was setup correctly simply open a shell in your project directory and type <code class="docutils literal notranslate"><span class="pre">make</span></code>.
+(Use msys2 that got installed by devkitPro on Windows)
+If everything has been setup correctly up to this point, it will build successfully and you’ll end up with a .nro file.</p>
+<p>Simply copy the file into your /switch folder on your SD card and run it using the hbmenu. If it’s working it will display
+<code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">World</span></code> on the screen and wait until you press the PLUS button on your joycon and then exits back to the hbmenu.</p>
+<div class="section" id="actually-writing-code">
+<h3>Actually writing code<a class="headerlink" href="#actually-writing-code" title="Permalink to this headline">¶</a></h3>
+<p>Now that your project is up and running you probably want to start writing some code. Here are the most
+common things that you’ll most likely use in your project.</p>
+</div>
+</div>
+<div class="section" id="command-line-interfaces">
+<h2>Command line interfaces<a class="headerlink" href="#command-line-interfaces" title="Permalink to this headline">¶</a></h2>
+<p>A command line interface is the most basic way to return information to the user in form of a text-based UI:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">main</span><span class="p">(</span><span class="nb">int</span> <span class="n">argc</span><span class="p">,</span> <span class="n">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+    <span class="n">consoleInit</span><span class="p">(</span><span class="n">NULL</span><span class="p">);</span>              <span class="o">//</span> <span class="n">Initialize</span> <span class="n">the</span> <span class="n">console</span><span class="p">;</span> <span class="n">redirect</span> <span class="n">printf</span> <span class="n">to</span> <span class="n">the</span> <span class="n">console</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Hello World!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>       <span class="o">//</span> <span class="n">Print</span> <span class="n">Hello</span> <span class="n">World</span> <span class="n">to</span> <span class="n">the</span> <span class="n">console</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="n">appletMainLoop</span><span class="p">())</span> <span class="p">{</span>      <span class="o">//</span> <span class="k">while</span> <span class="n">the</span> <span class="n">application</span> <span class="n">hasn</span><span class="s1">&#39;t received an exit request...</span>
+        <span class="n">consoleUpdate</span><span class="p">(</span><span class="n">NULL</span><span class="p">);</span>        <span class="o">//</span> <span class="n">Update</span> <span class="n">the</span> <span class="n">screen</span>
+    <span class="p">}</span>
+
+    <span class="n">consoleExit</span><span class="p">(</span><span class="n">NULL</span><span class="p">);</span>              <span class="o">//</span> <span class="n">Clean</span> <span class="n">up</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The above code should seem fairly familiar to you. It’s the same as in the template project.
+If you want colorful text, the normal <a class="reference external" href="http://www.andrewnoske.com/wiki/Bash_-_adding_color">ANSI color commands</a> can be used.</p>
+</div>
+<div class="section" id="button-input">
+<h2>Button input<a class="headerlink" href="#button-input" title="Permalink to this headline">¶</a></h2>
+<p>To get input from the joycon controllers, the hid interface from libnx can be used.
+First of all the controllers have to be polled. This should happen once every frame by calling <code class="docutils literal notranslate"><span class="pre">hidScanInput()</span></code>
+inside the <code class="docutils literal notranslate"><span class="pre">while(appletMainLoop())</span></code> loop.</p>
+<p>To actually read the input, the following functions are available:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hidKeysDown(CONTROLLER_P1_AUTO)</span></code>: Returns the buttons that are pressed right now but weren’t in the last frame.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hidKeysHeld(CONTROLLER_P1_AUTO)</span></code>: Returns the buttons that are pressed right now.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hidKeysUp(CONTROLLER_P1_AUTO)</span></code>: Returns the buttons that aren’t pressed anymore right now but were in the last frame.</p></li>
+</ul>
+<p>The value that gets returned from these functions is a bitmap with the appropriate bits set to one.
+To check if e.g the A button has been pressed, the following code can be used:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hidScanInput</span><span class="p">();</span>
+
+<span class="n">u64</span> <span class="n">kdown</span> <span class="o">=</span> <span class="n">hidKeysDown</span><span class="p">(</span><span class="n">CONTROLLER_P1_AUTO</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">kdown</span> <span class="o">&amp;</span> <span class="n">KEY_A</span><span class="p">)</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;The A button was pressed&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>If you want to check for other buttons, you can find the enum with all the button values <a class="reference external" href="https://github.com/switchbrew/libnx/blob/master/nx/include/switch/services/hid.h#L243-L290">in hid.h on the libnx GitHub</a>.</p>
+<p>Keep in mind that homebrews usually don’t do automatic controller switching. Passing <code class="docutils literal notranslate"><span class="pre">CONTROLLER_P1_AUTO</span></code> to the hidKeys functions
+is the closest you can get to the default behaviour. If no external controller is connected, it will read the input from the attached
+joycons. Otherwise it will read input from the first controller.</p>
+<div class="section" id="debugging">
+<h3>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h3>
+<p>For homebrew apps, there are three main ways to debug your code.</p>
+</div>
+</div>
+<div class="section" id="printf-debugging-through-nxlink">
+<h2>Printf debugging through nxlink<a class="headerlink" href="#printf-debugging-through-nxlink" title="Permalink to this headline">¶</a></h2>
+<p>Nxlink is a command line tool that comes with devkitpro:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Usage</span><span class="p">:</span> <span class="n">nxlink</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="n">nrofile</span>
+
+<span class="o">--</span><span class="n">help</span><span class="p">,</span>    <span class="o">-</span><span class="n">h</span>   <span class="n">Display</span> <span class="n">this</span> <span class="n">information</span>
+<span class="o">--</span><span class="n">address</span><span class="p">,</span> <span class="o">-</span><span class="n">a</span>   <span class="n">Hostname</span> <span class="ow">or</span> <span class="n">IPv4</span> <span class="n">address</span> <span class="n">of</span> <span class="n">Switch</span>
+<span class="o">--</span><span class="n">retries</span><span class="p">,</span> <span class="o">-</span><span class="n">r</span>   <span class="n">number</span> <span class="n">of</span> <span class="n">times</span> <span class="n">to</span> <span class="n">ping</span> <span class="n">before</span> <span class="n">giving</span> <span class="n">up</span>
+<span class="o">--</span><span class="n">path</span>   <span class="p">,</span> <span class="o">-</span><span class="n">p</span>   <span class="nb">set</span> <span class="n">upload</span> <span class="n">path</span> <span class="k">for</span> <span class="n">file</span>
+<span class="o">--</span><span class="n">args</span>          <span class="n">args</span> <span class="n">to</span> <span class="n">send</span> <span class="n">to</span> <span class="n">nro</span>
+<span class="o">--</span><span class="n">server</span> <span class="p">,</span> <span class="o">-</span><span class="n">s</span>   <span class="n">start</span> <span class="n">server</span> <span class="n">after</span> <span class="n">completed</span> <span class="n">upload</span>
+</pre></div>
+</div>
+<p>If setup correctly inside the homebrew it can be used to redirect printf output to the computer over TCP.
+Setting up is done as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">socketInitializeDefault</span><span class="p">();</span>              <span class="o">//</span> <span class="n">Initialize</span> <span class="n">sockets</span>
+<span class="n">nxlinkStdio</span><span class="p">();</span>                          <span class="o">//</span> <span class="n">Redirect</span> <span class="n">stdout</span> <span class="ow">and</span> <span class="n">stderr</span> <span class="n">over</span> <span class="n">the</span> <span class="n">network</span> <span class="n">to</span> <span class="n">nxlink</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">appletMainLoop</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Hello from the switch!&quot;</span><span class="p">);</span>   <span class="o">//</span> <span class="n">Will</span> <span class="n">get</span> <span class="n">sent</span> <span class="n">to</span> <span class="n">nxlink</span>
+<span class="p">}</span>
+
+<span class="n">socketExit</span><span class="p">();</span>                           <span class="o">//</span> <span class="n">Cleanup</span>
+</pre></div>
+</div>
+<p>To launch the application and attach to it now, open the hbmenu and press the Y button. You’re now in NetLoader mode.
+On the computer open a command line and type <code class="docutils literal notranslate"><span class="pre">nxlink</span> <span class="pre">-s</span> <span class="pre">path/to/homebrew.nro</span></code>. If nxlink can’t find the switch
+because of the network setup, <code class="docutils literal notranslate"><span class="pre">-a</span> <span class="pre">xxx.xxx.xxx.xxx</span></code> can be used to manually specify the IP of the switch.
+This will send the specified NRO to the switch, launches it and attaches to its opened TCP socket.</p>
+<p>If the switch crashes with a <strong>2347-0005 (0xb5b)</strong> fatal error, make sure you passed the .nro file to nxlink.
+.elf, .nso or .ncap will <strong>NOT</strong> work!</p>
+</div>
+<div class="section" id="interpreting-fatal-error-screens">
+<h2>Interpreting fatal error screens<a class="headerlink" href="#interpreting-fatal-error-screens" title="Permalink to this headline">¶</a></h2>
+<p>The fatal error screen is incredibly useful to find errors that manage to crash the switch.
+The following image shows a typical fatal screen.</p>
+<img alt="https://totallynotavir.us/i/bz838pwl.png" src="https://totallynotavir.us/i/bz838pwl.png" />
+<p><strong>Error Code</strong></p>
+<p>This is the reason why a fatal error was issued. Most common ones are</p>
+<ul class="simple">
+<li><p>2168-0002: Segmentation Fault (Reading or Writing from or to a bad address)</p></li>
+<li><p>2168-0001: Prefetch-abort (Program counter tries to execute non-executable memory)</p></li>
+</ul>
+<p>For any error codes that are not specified in the list above, check <a class="reference external" href="https://switchbrew.org/wiki/Error_codes">switchbrew’s error codes page</a></p>
+<p><strong>Title</strong></p>
+<p>The title in which the crash occured. <code class="docutils literal notranslate"><span class="pre">010000000000100D</span></code> is the titleID of the album and therefor of your homebrew app.
+If there’s a different titleID mentioned, an action in your homebrew probably managed to crash a sysmodule and you should check
+your IPC/svc calls.</p>
+<p><strong>PC and Backtrace</strong></p>
+<p>This is the most useful information because these addresses can be used to find <strong>the exact line the crash happened on</strong>.
+First the address relative to the start of your homebrew has to be calculated. For this, take either the value next to PC or
+the values on the backtrace stack (if you need to know the exact path the program took) and subtract the <strong>Backtrace - Start Address</strong>
+value from it. Next use <code class="docutils literal notranslate"><span class="pre">aarch64-none-elf-addr2line</span> <span class="pre">-e</span> <span class="pre">/path/to/homebrew.elf</span> <span class="pre">-f</span> <span class="pre">-p</span> <span class="pre">-C</span> <span class="pre">-a</span> <span class="pre">0xCAFEBABE</span></code> (replace 0xCAFEBABE with your calculated value)
+to find the exact line in your program. Make sure to pass the .elf file to addr2line and <strong>NOT</strong> the .nro!</p>
+</div>
+<div class="section" id="twili">
+<h2>Twili<a class="headerlink" href="#twili" title="Permalink to this headline">¶</a></h2>
+<p>Twili is a debug monitor with <strong>A TON</strong> of great features. If you’re interested in how to setup and use it, check out the
+<a class="reference external" href="https://github.com/misson20000/twili">GitHub page</a></p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, noahc3 and friends
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

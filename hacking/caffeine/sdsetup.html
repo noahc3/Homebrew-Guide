@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SD Card Setup (Caffeine) &mdash; Homebrew Guide  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/table_styling.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Using PegaScape (Caffeine)" href="pegascape.html" />
+    <link rel="prev" title="Forewarning (Caffeine)" href="forewarning.html" />
+<meta name="sourcename" content="hacking/caffeine/sdsetup.rst.txt" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124060019-2');
+</script>
+<script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    var head = document.getElementsByTagName('HEAD')[0];  
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet';  
+    link.type = 'text/css'; 
+    var theme = getCookie('user_theme');
+    if (theme == "dark") {
+        link.href = '/_static/theme-dark.css';
+    } else {
+        link.href = '/_static/theme-light.css';
+    }
+    head.appendChild(link);
+</script>
+
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted/beforestarting.html">Before Starting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted/checkingrcm.html">Checking RCM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted/choosinganexploit.html">Choosing an Exploit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hacking Your Switch</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../fuseegelee.html">fusee-gelee</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nereba.html">Nereba</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../caffeine.html">Caffeine</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="forewarning.html">Forewarning (Caffeine)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SD Card Setup (Caffeine)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-downloading-software">Step 1: Downloading Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-preparing-software">Step 2: Preparing Software</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pegascape.html">Using PegaScape (Caffeine)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="safetyprecautions.html">Safety Precautions (Caffeine)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aftersetup.html">After Setup (Caffeine)</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Using CFW</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../usingcfw/hekate.html">Using and Configuring Hekate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usingcfw/manualupgrade.html">Updating/Downgrading Manually</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usingcfw/manualchoiupgrade.html">Upgrading/Downgrading Manually With a PC</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../emummc/windows.html">Create an emuMMC on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../emummc/linux.html">Create an emuMMC on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../emummc/mac.html">Create an emuMMC on Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Homebrew Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../homebrew_dev/introduction.html">Introduction to Homebrew development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homebrew_dev/app_dev.html">Homebrew app development</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../comparingcfws.html">Comparing Custom Firmwares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wiiu.html">Wii U Homebrew Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donate.html">Donate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../switch-theme.html">Switch Theme (Light &lt;–&gt; Dark)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Homebrew Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../caffeine.html">Caffeine</a> &raquo;</li>
+        
+      <li>SD Card Setup (Caffeine)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/hacking/caffeine/sdsetup.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sd-card-setup-caffeine">
+<h1>SD Card Setup (Caffeine)<a class="headerlink" href="#sd-card-setup-caffeine" title="Permalink to this headline">¶</a></h1>
+<p>At this point, you’ve decided that you want to use the Caffeine browser exploit to launch CFW. You will now prepare your SD card with the necessary software.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If something goes wrong or you need help, check <a class="reference external" href="/troubleshooting.html">troubleshooting</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This guide will assume you want to use <a class="reference external" href="http://www.sdsetup.com">https://www.sdsetup.com</a> to get your homebrew setup, and will guide you on doing so.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-1-downloading-software">
+<h2>Step 1: Downloading Software<a class="headerlink" href="#step-1-downloading-software" title="Permalink to this headline">¶</a></h2>
+<p>This guide will walk you through the process of using the website SDSetup to prepare your SD card. This website allows you to easily select which homebrew you want and will automatically prepare a ZIP file with the correct file structure for your SD card.</p>
+<ol class="arabic">
+<li><p>Go to <a class="reference external" href="https://www.sdsetup.com">https://www.sdsetup.com</a></p></li>
+<li><p>Select <strong>Nintendo Switch</strong></p></li>
+<li><p>Select the <strong>“Recommended Defaults + PegaScape”</strong> package</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, Homebrew Menu, Fake News Injector, Hekate, Lockpick_RCM, and the Caffeine PegaScape payload.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Select any additional homebrew packages you wish.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>On desktop, you can hover over the homebrew names to get a description of what they do.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Select <strong>“Download your ZIP”</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This can take a while depending on your Internet speed and latency. Be patient.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Save the resulting ZIP if your browser does not do so automatically.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-2-preparing-software">
+<h2>Step 2: Preparing Software<a class="headerlink" href="#step-2-preparing-software" title="Permalink to this headline">¶</a></h2>
+<p>Extract the ZIP file from SDSetup to a folder on your PC.</p>
+<ul>
+<li><p>The <strong>‘sd’</strong> folder contains all of the files that should go on your SD card. <strong>Copy all of the contents of this folder to the root of your SD card.</strong></p></li>
+<li><p>The <strong>‘payloads’</strong> folder contains all of the payloads which can be launched with TegraRcmGui/Rekado/fusee-launcher/etc or Hekate that you selected.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>In this folder, there should be a file named <strong>lockpick_RCM.bin</strong>. Move this to <strong>sd:/bootloader/payloads/lockpick_RCM.bin</strong> on your SD card, it will be used later.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The <strong>‘pc’</strong> folder contains all of the PC tools that you selected.</p></li>
+<li><p>The <strong>‘android’</strong> folder contains all of the Android tools you selected.</p></li>
+<li><p>The <strong>‘licenses’</strong> folder contains distribution licenses for downloaded applications</p></li>
+<li><p>The <strong>‘readmes’</strong> folder contains readmes for selected applications, if one was provided.</p></li>
+</ul>
+<p>After copying the SD card files to your SD card, insert it back into your Switch.</p>
+<hr class="docutils" />
+<div class="admonition warning">
+        <p class="last">Continue to <a href="/hacking/caffeine/pegascape">Using PegaScape (Caffeine)</a></p>
+</div><div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, noahc3 and friends
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

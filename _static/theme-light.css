@@ -1,0 +1,42 @@
+.wy-side-nav-search {
+	background-color: #E53937;
+}
+
+.wy-nav-side {
+	background: #C42525;
+	color: #FDFFFF;
+}
+
+.wy-nav-top {
+	background: #E84843;
+	color: #FDFFFF;
+}
+
+.wy-nav-content {
+	max-width: 85%;
+}
+
+.toctree-l1>a:hover { 
+  color: #FDFFFF !important;
+  background-color: #EA645D !important;
+}
+
+.wy-side-nav-search input[type=text] {
+   border-color:#EA645D !important;
+}
+
+ul .simple {
+    margin: -5px;
+}
+
+.wy-table-responsive {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+p.caption {
+    color: #FFFFFF !important;
+}

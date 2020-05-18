@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Before Starting &mdash; Homebrew Guide  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Preparations" href="preperation.html" />
+    <link rel="prev" title="Wii U Homebrew Guide" href="../wiiu.html" />
+<meta name="sourcename" content="wiiu/wiiubefore.rst.txt" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124060019-2');
+</script>
+<script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    var head = document.getElementsByTagName('HEAD')[0];  
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet';  
+    link.type = 'text/css'; 
+    var theme = getCookie('user_theme');
+    if (theme == "dark") {
+        link.href = '/_static/theme-dark.css';
+    } else {
+        link.href = '/_static/theme-light.css';
+    }
+    head.appendChild(link);
+</script>
+
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/beforestarting.html">Before Starting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/checkingrcm.html">Checking RCM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/choosinganexploit.html">Choosing an Exploit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hacking Your Switch</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/fuseegelee.html">fusee-gelee</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/nereba.html">Nereba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/caffeine.html">Caffeine</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CFW</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/hekate.html">Using and Configuring Hekate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualupgrade.html">Updating/Downgrading Manually</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualchoiupgrade.html">Upgrading/Downgrading Manually With a PC</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/windows.html">Create an emuMMC on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/linux.html">Create an emuMMC on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/mac.html">Create an emuMMC on Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Homebrew Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/introduction.html">Introduction to Homebrew development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/app_dev.html">Homebrew app development</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../comparingcfws.html">Comparing Custom Firmwares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../wiiu.html">Wii U Homebrew Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Before Starting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-homebrew">What is Homebrew?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-custom-firmware">What is Custom Firmware?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-will-i-get-by-following-this-guide">What will I get by following this guide?</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="preperation.html">Preparations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="browserexp.html">Exploits and You</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate.html">Donate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../switch-theme.html">Switch Theme (Light &lt;–&gt; Dark)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Homebrew Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../wiiu.html">Wii U Homebrew Guide</a> &raquo;</li>
+        
+      <li>Before Starting</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/wiiu/wiiubefore.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="before-starting">
+<h1>Before Starting<a class="headerlink" href="#before-starting" title="Permalink to this headline">¶</a></h1>
+<p>This section of the guide will teach you basic information about terminology used, what you will be able to do after following this guide, and provide some warnings before you proceed.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This is a lot of info to take in, but if you are a complete noob to the Switch scene, you should seriously consider reading all of it.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="what-is-homebrew">
+<h2>What is Homebrew?<a class="headerlink" href="#what-is-homebrew" title="Permalink to this headline">¶</a></h2>
+<p>Homebrew is a term used to describe software not authorized by Nintendo. This includes custom firmwares, tools, applications, games, emulators, etc.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="what-is-custom-firmware">
+<h2>What is Custom Firmware?<a class="headerlink" href="#what-is-custom-firmware" title="Permalink to this headline">¶</a></h2>
+<p>Custom Firmware (CFW) gives homebrew more access to the system than standard userland homebrew most commonly available on most systems.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="what-will-i-get-by-following-this-guide">
+<h2>What will I get by following this guide?<a class="headerlink" href="#what-will-i-get-by-following-this-guide" title="Permalink to this headline">¶</a></h2>
+<p>This guide will give you the ability to run a custom (or patched) firmware of choice on a previously unmodified Wii U.</p>
+<p>There are 2 ways to accomplish this, you can either run a browser exploit everytime you reboot your Wii U or you can install Haxchi, a permanent exploit taking over a DS title.</p>
+<p>You can also install Coldboot Haxchi, <strong>however</strong> this guide will not guide you through that due to multiple issues that Coldboot Haxchi can cause.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<ul class="simple">
+<li><p>There is always a chance that your Wii U will brick. This is very rare, and often recoverable, but unrecoverable bricks CAN happen.</p></li>
+<li><p>Follow the guide and everything should be fine.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While this guide was written for the newest firmware version, it does theoretically support all firmware versions</p>
+</div>
+<hr class="docutils" />
+<div class="admonition warning">
+        <p class="last">Continue to <a href="/wiiu/preperation">Preperation</a></p>
+</div><div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, noahc3 and friends
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,476 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Checking RCM &mdash; Homebrew Guide  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Choosing an Exploit" href="choosinganexploit.html" />
+    <link rel="prev" title="Before Starting" href="beforestarting.html" />
+<meta name="sourcename" content="gettingstarted/checkingrcm.rst.txt" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124060019-2');
+</script>
+<script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    var head = document.getElementsByTagName('HEAD')[0];  
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet';  
+    link.type = 'text/css'; 
+    var theme = getCookie('user_theme');
+    if (theme == "dark") {
+        link.href = '/_static/theme-dark.css';
+    } else {
+        link.href = '/_static/theme-light.css';
+    }
+    head.appendChild(link);
+</script>
+
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="beforestarting.html">Before Starting</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Checking RCM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-0-what-you-will-need">Step 0: What You Will Need</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-accessing-rcm">Step 1: Accessing RCM:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-determining-if-your-switch-is-vulnerable-to-fusee-gelee">Step 2: Determining if Your Switch is Vulnerable to fusee-gelee</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="choosinganexploit.html">Choosing an Exploit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hacking Your Switch</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/fuseegelee.html">fusee-gelee</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/nereba.html">Nereba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/caffeine.html">Caffeine</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CFW</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/hekate.html">Using and Configuring Hekate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualupgrade.html">Updating/Downgrading Manually</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualchoiupgrade.html">Upgrading/Downgrading Manually With a PC</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/windows.html">Create an emuMMC on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/linux.html">Create an emuMMC on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/mac.html">Create an emuMMC on Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Homebrew Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/introduction.html">Introduction to Homebrew development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/app_dev.html">Homebrew app development</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comparingcfws.html">Comparing Custom Firmwares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wiiu.html">Wii U Homebrew Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate.html">Donate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../switch-theme.html">Switch Theme (Light &lt;–&gt; Dark)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Homebrew Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Checking RCM</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/gettingstarted/checkingrcm.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="checking-rcm">
+<h1>Checking RCM<a class="headerlink" href="#checking-rcm" title="Permalink to this headline">¶</a></h1>
+<p>This section of the guide will teach you how to access RCM, determine if your Switch is vulnerable to fusee-gelee, and run a payload.</p>
+<p>RCM is the best way to run CFW as it supports all firmwares. Even if you plan to use a software-based exploit, you should always know if your Switch has an exploitable RCM and how to push payloads.</p>
+<div class="admonition warning">
+        <p class="last">If you know whether or not your system has a vulnerable RCM, continue to <a href="/gettingstarted/choosinganexploit">Choosing an Exploit</a></p>
+</div><hr class="docutils" />
+<div class="section" id="step-0-what-you-will-need">
+<h2>Step 0: What You Will Need<a class="headerlink" href="#step-0-what-you-will-need" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>A way to ground pin 10 on the right joycon rail</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>To access RCM, you must hold down volume up, power and the home button. <strong>The home button described here is not the home button on the joycon,</strong> but instead a hardware home button (think of the physical home button found on smartphones). The Nintendo Switch doesn’t have this button, but you can simulate pressing it down by grounding pin 10 of the right joycon rail.</p></li>
+<li><p>There are many ways to do this. You can pick any method <a class="reference external" href="https://gbatemp.net/threads/the-ultimate-list-of-mods-to-enter-rcm.502145/">listed here.</a> Some of these options are permanent hardmods, others are temporary. Later in the guide, you will learn of a way to have the Switch automatically enter RCM on every boot through a software mod, so don’t worry about hardmodding or purchasing anything if you don’t want to.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>A device to send a payload</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This guide will cover options for Windows, OSX, Linux and Android, though note that options exist for Chromebooks and jailbroken iOS devices.</p></li>
+<li><p>You can also use a dedicated payload sending device (a “dongle” or modchip) if you have one. Intructions will not be provided on how to use these as each device is different. Check the manufacturers website.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>A USB Type C to A/Micro USB/USB Type C cable/adapter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Some kind of cable to connect your Switch to your payload sender of choice.</p></li>
+<li><p>You can usually chain cables and adapters if necessary.</p></li>
+<li><p>This is not needed if you are using a dedicated payload sending device.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>A payload sending application <strong>(Download and install one now)</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>For Windows, you can use <a class="reference external" href="https://github.com/eliboa/TegraRcmGUI/releases">TegraRcmGUI by eliboa and rajkosto.</a></p></li>
+<li><p>For OSX and Linux, <a class="reference external" href="https://github.com/Cease-and-DeSwitch/fusee-launcher">you can use fusee-launcher by ReSwitched.</a></p></li>
+<li><p>For Android, you can use <a class="reference external" href="https://github.com/MenosGrante/Rekado/releases">Rekado by MenosGrante.</a></p></li>
+<li><p>If you don’t already have one, after determining if your Switch is vulnerable to fusee-gelee, you can also choose to purchase any number of dedicated payload sending dongles, or purchase and install a modchip.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>A Micro SD Card</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You should have an SD card at least 4GB in size (64GB or higher is recommended, however). A small SD card is enough to get CFW running, but larger ones are preferred for installing gamesm, performing NAND backups efficiently, and creating emuMMCs.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>This <a class="reference external" href="https://github.com/noahc3/Homebrew-Guide/files/3890384/fusee-test.zip">test payload</a> downloaded to your payload sender device to verify if your Switch is vulnerable to fusee-gelee.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-1-accessing-rcm">
+<h2>Step 1: Accessing RCM:<a class="headerlink" href="#step-1-accessing-rcm" title="Permalink to this headline">¶</a></h2>
+<p>It’s time to get into recovery mode.</p>
+<ol class="arabic">
+<li><p>Completely power off your Switch</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hold the power button on your Switch for 3 seconds and choose to power down in the menu</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Ground pin 10 of your right Joycon rail</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Using a method from the guide linked above, ground pin 10. <strong>Be very careful, bridging the wrong pins can fry your Switch!</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Press <strong>Volume Up + Power</strong></p>
+<blockquote>
+<div><ul>
+<li><p>While you’re grounding pin 10, hold down Volume Up and then hold down Power.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You will know you are successful if the Switch <strong>seemingly does not turn on.</strong></p></li>
+<li><p>If your Switch turns on, try again. <strong>This does not mean fusee-gelee is patched</strong> as RCM is still available on patched Switches.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This can be an extemely frustrating and tedious process without a jig. Keep trying, you’ll get it eventually.</p>
+</div>
+<p>Did it work? Pat yourself on the back, you just finished the hardest part!</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-2-determining-if-your-switch-is-vulnerable-to-fusee-gelee">
+<h2>Step 2: Determining if Your Switch is Vulnerable to fusee-gelee<a class="headerlink" href="#step-2-determining-if-your-switch-is-vulnerable-to-fusee-gelee" title="Permalink to this headline">¶</a></h2>
+<p>Time to find out if any of this prep was worth it.</p>
+<p><strong>Only follow the part related to the payload sender you chose.</strong> If you are using a payload sender not listed here, you’ll need to determine how to use it by yourself.</p>
+<hr class="docutils" />
+<p><strong>If you are using TegraRcmGUI, follow these instructions:</strong></p>
+<ol class="arabic">
+<li><p>Open TegraRCMGUI</p></li>
+<li><p>Navigate to the Settings tab.</p></li>
+<li><p>Click on Install Driver (this will install the driver required to communicate with your Switch).</p></li>
+<li><p>After the driver is installed, navigate to the Payload tab.</p></li>
+<li><p>Plug your Switch into your PC using your USB cable</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Your PC should play the device connected sound and your Switch <strong>should not turn on.</strong> If your Switch turns on, repeat Step 1 to enter RCM.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Once your Switch is plugged in, you should see a green icon with the message “RCM OK”.</p></li>
+<li><p>Select the <strong>fusee-test.bin</strong> test payload you downloaded earlier</p></li>
+<li><dl class="simple">
+<dt>Select <strong>“Inject Payload”</strong> if the payload has not already been injected.</dt><dd><ul class="simple">
+<li><p>If you get the error “RC=-50”, restart the application and try again.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>A success message should now be displayed on your Switch. If so, celebrate! Your Switch is vulnerable and you can now push payloads!</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched.  <strong>You should try a few more times to be certain, and consider trying another USB cable.</strong>
+If your Switch is patched and running firmware 4.1.0, you can still access CFW.
+If your Switch is patched and running a higher firmware version, unfortunately your Switch cannot be hacked right now.</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>TegraRcmGUI reporting the line “Smashed the stack with a 0x0000 byte SETUP request!” (specifically 0x0000 instead of some other number) is a reliable indicator that your Switch is patched. <strong>You should try a few more times to be certain, and consider trying another USB cable.</strong></p>
+</div>
+<hr class="docutils" />
+<p><strong>If you are using fusee-launcher, follow these instructions:</strong></p>
+<ol class="arabic">
+<li><p>Open a terminal in the fusee-launcher directory.</p></li>
+<li><p>Copy the <strong>fusee-test.bin</strong> file to this directory..</p></li>
+<li><p>Plug your Switch into your PC using your USB cable.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Your Switch <strong>should not turn on.</strong> If your Switch turns on, repeat Step 1 to enter RCM.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Run the command <strong>‘sudo python3 ./fusee-launcher.py ./fusee-test.bin’</strong></p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>A success message should now be displayed on your Switch. If so, celebrate! Your Switch is vulnerable and you can now push payloads!</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. <strong>You should try a few more times to be certain, and consider trying another USB cable.</strong>
+If your Switch is patched and running firmware 4.1.0, you can still access CFW.
+If your Switch is patched and running a higher firmware version, unfortunately your Switch cannot be hacked right now.</p>
+</div>
+<hr class="docutils" />
+<p><strong>If you are using Rekado, follow these instructions:</strong></p>
+<ol class="arabic simple">
+<li><p>Open Rekado on your Android device.</p></li>
+<li><p>Navigate to the Payloads section of the app and allow it to request storage.</p></li>
+<li><p>Click the ‘+’ button and select the <strong>fusee-test.bin</strong> file.</p></li>
+<li><p>Plug your Switch into your Android device using a USB cable/adapter.</p></li>
+<li><p>Your phone should give you a prompt to open Rekado with the option to use by default. Accept and press OK.</p></li>
+<li><p>Under the Select Injector menu, touch <strong>Boot Payload</strong> and <strong>fusee-test.bin</strong></p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>A success message should now be displayed on your Switch. If so, celebrate! Your Switch is vulnerable and you can now push payloads!</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is likely patched. <strong>You should try a few more times to be certain, and consider trying another USB cable.</strong>
+If your Switch is patched and running firmware 4.1.0, you can still access CFW.
+If your Switch is patched and running a higher firmware version, unfortunately your Switch cannot be hacked right now.</p>
+</div>
+<hr class="docutils" />
+<p>Wait for your Switch to shutdown before continuing. This should happen automatically. If the payload failed to launch, hold the power button for 15 seconds to be sure.</p>
+<hr class="docutils" />
+<div class="admonition warning">
+        <p class="last">Continue to <a href="choosinganexploit.html">Choosing an Exploit</a></p>
+</div><div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, noahc3 and friends
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using PegaScape (Nereba) &mdash; Homebrew Guide  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/table_styling.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Safety Precautions (Nereba)" href="safetyprecautions.html" />
+    <link rel="prev" title="SD Card Setup (Nereba)" href="sdsetup.html" />
+<meta name="sourcename" content="hacking/nereba/pegascape.rst.txt" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124060019-2');
+</script>
+<script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    var head = document.getElementsByTagName('HEAD')[0];  
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet';  
+    link.type = 'text/css'; 
+    var theme = getCookie('user_theme');
+    if (theme == "dark") {
+        link.href = '/_static/theme-dark.css';
+    } else {
+        link.href = '/_static/theme-light.css';
+    }
+    head.appendChild(link);
+</script>
+
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted/beforestarting.html">Before Starting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted/checkingrcm.html">Checking RCM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted/choosinganexploit.html">Choosing an Exploit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hacking Your Switch</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../fuseegelee.html">fusee-gelee</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../nereba.html">Nereba</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sdsetup.html">SD Card Setup (Nereba)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using PegaScape (Nereba)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-configuring-pegascape-dns-settings">Step 1: Configuring PegaScape DNS Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#understanding-switch-browser-entrypoints">Understanding Switch Browser Entrypoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-option-a-injecting-fake-news-jp-puyo-puyo-tetris">Step 2 Option A: Injecting Fake News (JP Puyo Puyo Tetris)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-option-b-injecting-fake-news-atmosphere-via-rcm">Step 2 Option B: Injecting Fake News (Atmosphere via RCM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Step 3: Rebooting to Hekate (Nereba)</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="safetyprecautions.html">Safety Precautions (Nereba)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aftersetup.html">After Setup (Nereba)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../caffeine.html">Caffeine</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CFW</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../usingcfw/hekate.html">Using and Configuring Hekate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usingcfw/manualupgrade.html">Updating/Downgrading Manually</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usingcfw/manualchoiupgrade.html">Upgrading/Downgrading Manually With a PC</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../emummc/windows.html">Create an emuMMC on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../emummc/linux.html">Create an emuMMC on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../emummc/mac.html">Create an emuMMC on Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Homebrew Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../homebrew_dev/introduction.html">Introduction to Homebrew development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homebrew_dev/app_dev.html">Homebrew app development</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../comparingcfws.html">Comparing Custom Firmwares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../wiiu.html">Wii U Homebrew Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../donate.html">Donate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../switch-theme.html">Switch Theme (Light &lt;–&gt; Dark)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Homebrew Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../nereba.html">Nereba</a> &raquo;</li>
+        
+      <li>Using PegaScape (Nereba)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/hacking/nereba/pegascape.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-pegascape-nereba">
+<h1>Using PegaScape (Nereba)<a class="headerlink" href="#using-pegascape-nereba" title="Permalink to this headline">¶</a></h1>
+<p>PegaScape is a user-friendly frontend for launching browser based Nintendo Switch exploits. PegaScape is accessed by setting a custom DNS on your Switch which redirects certain URLs to PegaScape servers. We will now configure your Switch to access PegaScape.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When you have a PegaScape DNS server configured, <strong>you will not be able to access any Nintendo services, including multiplayer, game and system updates, news, etc.</strong> PegaScape and online homebrew will still work.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If something goes wrong or you need help, check <a class="reference external" href="/troubleshooting.html">troubleshooting</a>.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-1-configuring-pegascape-dns-settings">
+<h2>Step 1: Configuring PegaScape DNS Settings<a class="headerlink" href="#step-1-configuring-pegascape-dns-settings" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Power on your Switch normally.</p></li>
+<li><p>Open settings and go to the Internet tab</p></li>
+<li><p>Delete your existing WiFi connection configuration if you have one for the network you want to connect to</p></li>
+<li><p>Add your WiFi network, <strong>but type in a long, wrong password</strong> to fail the connection test.</p></li>
+<li><p>After the connection test fails, choose to change settings.</p></li>
+<li><p>Set DNS Settings to Manual</p></li>
+<li><p>Set <strong>‘Primary DNS’</strong> to <strong>‘163.172.181.170’</strong></p></li>
+<li><p>Set <strong>‘Secondary DNS’</strong> to <strong>‘163.172.141.219’</strong></p></li>
+<li><p>Re-enter your WiFi password, correctly this time.</p></li>
+<li><p>Save and perform the connection test by connecting to the network. <strong>The connection test should pass.</strong></p></li>
+</ol>
+</div>
+<div class="section" id="understanding-switch-browser-entrypoints">
+<h2>Understanding Switch Browser Entrypoints<a class="headerlink" href="#understanding-switch-browser-entrypoints" title="Permalink to this headline">¶</a></h2>
+<p>On firmware 1.0.0, the Nintendo Switch has two ways to access the browser.</p>
+<p>The first browser can be accessed through a JP gamecart of Puyo Puyo Tetris. The digital manual for this game contains a link to the Japanese SEGA website which can be used to access PegaScape.</p>
+<p>The second browser is through the News applet. Most news entries use HTTPS, so we cannot redirect them with a DNS. However, we can inject our own News entry which points to a normal HTTP URL, which can be redirected. This entrypoint is called “Fake News”.</p>
+<p>To install Fake News on 1.0.0, we need to access hbmenu once to run the <strong>“Fake News Injector”</strong> homebrew. We can do this by either accessing PegaScape once through JP Puyo Puyo Tetris, or by launching Atmosphere CFW through RCM.</p>
+<div class="admonition warning">
+        <p class="last">To inject Fake News using a copy of JP Puyo Puyo Tetris, jump to <a href="#step-2-option-a-injecting-fake-news-jp-puyo-puyo-tetris">Injecting Fake News (JP Puyo Puyo Tetris)</a></p>
+</div><div class="admonition warning">
+        <p class="last">To inject Fake News using Atmosphere CFW via RCM, jump to <a href="#step-2-option-b-injecting-fake-news-atmosphere-via-rcm">Injecting Fake News (Atmosphere via RCM)</a></p>
+</div></div>
+<hr class="docutils" />
+<div class="section" id="step-2-option-a-injecting-fake-news-jp-puyo-puyo-tetris">
+<h2>Step 2 Option A: Injecting Fake News (JP Puyo Puyo Tetris)<a class="headerlink" href="#step-2-option-a-injecting-fake-news-jp-puyo-puyo-tetris" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Insert your copy of JP Puyo Puyo Tetris into your Switch</p></li>
+<li><p>Launch the game.</p></li>
+<li><p>Press A, then press R, then press A.</p></li>
+<li><p>Touch the bottom-most menu item labelled “お問い合わせ先”</p></li>
+<li><p>Touch the SEGA logo in the bottom-left corner. This will launch the browser. Wait for the PegaScape page to load.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you are told you must update your system to use WiFi, your system has been hit with “supernag”. Your console previously connected to the internet, discovered an update was available, and will not let you use the Internet browser until you update.</p></li>
+<li><p>At this stage, you will want to instead use RCM to install Fake-News. Jump to <a class="reference external" href="#step-2-option-b-injecting-fake-news-atmosphere-via-rcm">Injecting Fake News (Atmosphere via RCM)</a></p></li>
+<li><p>Afterwards, use <a class="reference external" href="https://github.com/Adubbz/Gag-Order">Gag-Order</a> to remove supernag the same way you ran fakenews-injector (place the .NRO in <strong>/switch</strong>, launch it through hbmenu).</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Touch the <strong>“hbmenu”</strong> icon.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If the exploit fails, press the HOME button, reopen the browser through Puyo Puyo Tetris and try again.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Press <strong>HOME</strong>.</p></li>
+<li><p>Tap the <strong>Album</strong> icon, hbmenu should load.</p></li>
+<li><p>Launch the <strong>“Fake News Injector”</strong> homebrew.</p></li>
+<li><p>Press <strong>+</strong> to reboot once finished.</p></li>
+</ol>
+<p>Jump to <a class="reference external" href="#id1">Step 3: Rebooting to Hekate (Nereba)</a></p>
+</div>
+<div class="section" id="step-2-option-b-injecting-fake-news-atmosphere-via-rcm">
+<h2>Step 2 Option B: Injecting Fake News (Atmosphere via RCM)<a class="headerlink" href="#step-2-option-b-injecting-fake-news-atmosphere-via-rcm" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Reboot into RCM the same way you did before, but this time push the <strong>Hekate</strong> payload included in the ZIP download from SDSetup.</p></li>
+<li><p>While holding <strong>R</strong>, tap the <strong>Album</strong> icon. This should load hbmenu.</p></li>
+<li><p>Launch the <strong>“Fake News Injector”</strong> homebrew.</p></li>
+<li><p>Press <strong>-</strong> to shutdown once finished.</p></li>
+<li><p>Turn your Switch back on.</p></li>
+</ol>
+</div>
+<div class="section" id="id1">
+<h2>Step 3: Rebooting to Hekate (Nereba)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>On the HOME menu, tap the <strong>News</strong> icon.</p></li>
+<li><p>Select the new <strong>“Launch PegaSwitch”</strong> news entry.</p></li>
+<li><p>Tap the “ReSwitched” video to load PegaScape.</p></li>
+<li><p>Once PegaScape loads, select the <strong>Nereba</strong> icon.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If the exploit fails, press the HOME button, reopen the browser through Fake News and try again.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>After a few seconds, your Switch should reboot into Hekate. Congratulations! You can now reboot into Hekate from PegaScape.</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>If nothing appears on the screen, hold the power button for 15 seconds to shutdown your Switch. Turn your Switch back on and try launching Nereba again. This can sometimes take a few tries.</p>
+</div>
+<hr class="docutils" />
+<div class="admonition warning">
+        <p class="last">Continue to <a href="/hacking/nereba/safetyprecautions">Safety Precautions (Nereba)</a></p>
+</div><div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, noahc3 and friends
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

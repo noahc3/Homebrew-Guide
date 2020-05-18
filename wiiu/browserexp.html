@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Exploits and You &mdash; Homebrew Guide  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Credits" href="../credits.html" />
+    <link rel="prev" title="Preparations" href="preperation.html" />
+<meta name="sourcename" content="wiiu/browserexp.rst.txt" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124060019-2');
+</script>
+<script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    var head = document.getElementsByTagName('HEAD')[0];  
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet';  
+    link.type = 'text/css'; 
+    var theme = getCookie('user_theme');
+    if (theme == "dark") {
+        link.href = '/_static/theme-dark.css';
+    } else {
+        link.href = '/_static/theme-light.css';
+    }
+    head.appendChild(link);
+</script>
+
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/beforestarting.html">Before Starting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/checkingrcm.html">Checking RCM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/choosinganexploit.html">Choosing an Exploit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hacking Your Switch</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/fuseegelee.html">fusee-gelee</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/nereba.html">Nereba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/caffeine.html">Caffeine</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CFW</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/hekate.html">Using and Configuring Hekate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualupgrade.html">Updating/Downgrading Manually</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualchoiupgrade.html">Upgrading/Downgrading Manually With a PC</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/windows.html">Create an emuMMC on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/linux.html">Create an emuMMC on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../emummc/mac.html">Create an emuMMC on Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Homebrew Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/introduction.html">Introduction to Homebrew development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/app_dev.html">Homebrew app development</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../comparingcfws.html">Comparing Custom Firmwares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../wiiu.html">Wii U Homebrew Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="wiiubefore.html">Before Starting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preperation.html">Preparations</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Exploits and You</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-running-the-exploit">Step 1: Running the Exploit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-backing-up-your-nand">Step 2: Backing up your NAND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#optional-step-3-installing-haxchi">[Optional] Step 3: Installing Haxchi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-installing-the-homebrew-channel-channel">Step 4: Installing the Homebrew Channel (Channel)</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate.html">Donate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../switch-theme.html">Switch Theme (Light &lt;–&gt; Dark)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Homebrew Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../wiiu.html">Wii U Homebrew Guide</a> &raquo;</li>
+        
+      <li>Exploits and You</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/wiiu/browserexp.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="exploits-and-you">
+<h1>Exploits and You<a class="headerlink" href="#exploits-and-you" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="step-1-running-the-exploit">
+<h2>Step 1: Running the Exploit<a class="headerlink" href="#step-1-running-the-exploit" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Go to <cite>http://u.wiidb.de</cite> in your Wii U web browser</p></li>
+<li><p>Press <cite>HAXX</cite>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Note:</strong> This may take some tries till it works. Just repeat the whole process from Step 0 and hope for the best.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The Homebrew Launcher should start.</p></li>
+<li><p>Now select <cite>Mocha CFW</cite> in your Homebrew Channel.</p></li>
+<li><p>You should return to the Homebrew Channel.</p></li>
+<li><p>Congratulations, you now started your first Wii U CFW - Mocha allows signature patches, region patches and many other CFW options.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This will only last until your reboot your console! Always start Mocha after the browser exploit to ensure the best homebrew compatibility.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-2-backing-up-your-nand">
+<h2>Step 2: Backing up your NAND<a class="headerlink" href="#step-2-backing-up-your-nand" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Select <cite>Wii U Nand Dumper</cite> in the Homebrew Channel.</p></li>
+<li><p>You now have multiple options:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Dump your SLC (512MB) (Wii U firmware)</p></li>
+<li><p>Dump your SLCCMPT (512MB) (vWii firmware and internal storage)</p></li>
+<li><p>Dump your MLC (8GB on white consoles, 32GB on black ones) (Your internal storage including all games, DLC, etc.)</p></li>
+<li><p>Dump your OTP [<strong>STRONGLY RECOMMENDED</strong>] (~1KB) (Your console specific keys)</p></li>
+<li><p>Dump your SEEPROM [<strong>STRONGLY RECOMMENDED</strong>] (~a few KB) (All general Wii U keys)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="optional-step-3-installing-haxchi">
+<h2>[Optional] Step 3: Installing Haxchi<a class="headerlink" href="#optional-step-3-installing-haxchi" title="Permalink to this headline">¶</a></h2>
+<p>If you installed any of the Haxchi-compatible games we mentioned in the preparations you can now proceed to install Haxchi.
+Compared to the browser exploit, haxchi does not require any luck or internet and is just a launchable icon on your home menu.</p>
+<p><strong>NOTE:</strong> Your DS game must be installed on your NAND, otherwise it will not work!</p>
+<ol class="arabic">
+<li><p>Select <cite>Haxchi</cite> in your Homebrew Channel.</p></li>
+<li><p>Select the DS title you would like to overwrite with Haxchi</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>NOTE:</strong> This will make the game unplayable, so don’t overwrite a DS title you want to play.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Press (A) to confirm your selected title</p></li>
+<li><p>Read the warning!</p></li>
+<li><p>Press (A) once again to confirm and install</p></li>
+<li><p>Once finished your DS title should be your gateway to the world of CFW.</p></li>
+</ol>
+<p>Pressing the Haxchi application will automatically start Mocha CFW, if you want to start Homebrew Channel hold and press (A) while starting the title.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-4-installing-the-homebrew-channel-channel">
+<h2>Step 4: Installing the Homebrew Channel (Channel)<a class="headerlink" href="#step-4-installing-the-homebrew-channel-channel" title="Permalink to this headline">¶</a></h2>
+<p>The Homebrew Channel (Channel) is a shortcut to the homebrew channel you can start from your home menu when having Mocha CFW enabled. Please note that you always have to launch Mocha before starting this application! Otherwise it won’t work.</p>
+<ol class="arabic">
+<li><p>Enter the Homebrew Channel</p></li>
+<li><p>Launch <cite>WUP Installer GX2</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If for some reason WUP Installer GX2 fails with <cite>DSi Exception Has Occurred</cite> try again.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Select <cite>Homebrew Channel</cite></p></li>
+<li><p>Press <cite>Install</cite></p></li>
+<li><p>Press <cite>Yes</cite> to confirm</p></li>
+<li><p>Select <cite>NAND</cite> as the destination</p></li>
+<li><p>Press the (HOME) button</p></li>
+<li><p>Close the application once the installation finishes.</p></li>
+<li><p>You can now launch the Homebrew Channel through the icon while being in CFW, congratulations!</p></li>
+</ol>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, noahc3 and friends
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

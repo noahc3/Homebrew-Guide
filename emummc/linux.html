@@ -1,0 +1,424 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Create an emuMMC on Linux &mdash; Homebrew Guide  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/table_styling.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Create an emuMMC on Mac OS" href="mac.html" />
+    <link rel="prev" title="Create an emuMMC on Windows" href="windows.html" />
+<meta name="sourcename" content="emummc/linux.rst.txt" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124060019-2');
+</script>
+<script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    var head = document.getElementsByTagName('HEAD')[0];  
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet';  
+    link.type = 'text/css'; 
+    var theme = getCookie('user_theme');
+    if (theme == "dark") {
+        link.href = '/_static/theme-dark.css';
+    } else {
+        link.href = '/_static/theme-light.css';
+    }
+    head.appendChild(link);
+</script>
+
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/beforestarting.html">Before Starting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/checkingrcm.html">Checking RCM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/choosinganexploit.html">Choosing an Exploit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hacking Your Switch</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/fuseegelee.html">fusee-gelee</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/nereba.html">Nereba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hacking/caffeine.html">Caffeine</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CFW</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/hekate.html">Using and Configuring Hekate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualupgrade.html">Updating/Downgrading Manually</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usingcfw/manualchoiupgrade.html">Upgrading/Downgrading Manually With a PC</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="windows.html">Create an emuMMC on Windows</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Create an emuMMC on Linux</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mac.html">Create an emuMMC on Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Homebrew Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/introduction.html">Introduction to Homebrew development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homebrew_dev/app_dev.html">Homebrew app development</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Misc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comparingcfws.html">Comparing Custom Firmwares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wiiu.html">Wii U Homebrew Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate.html">Donate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Options</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../switch-theme.html">Switch Theme (Light &lt;–&gt; Dark)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Homebrew Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Create an emuMMC on Linux</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/emummc/linux.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="create-an-emummc-on-linux">
+<h1>Create an emuMMC on Linux<a class="headerlink" href="#create-an-emummc-on-linux" title="Permalink to this headline">¶</a></h1>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>We are not responsible for what happens to your data, your computer, or your Nintendo Switch. We have written this guide to be as easy to follow as possible, and have walked through the steps ourselves to make sure everything works to the best of our ability. If something happens because you fail to follow the guide then you have no one to blame, but yourself.</p>
+</div>
+<p>Before getting started you will need the following:</p>
+<ul class="simple">
+<li><p>A hackable Nintendo Switch.</p></li>
+<li><p>An SD Card that is 32GB or larger.</p></li>
+<li><p>Latest version of <a class="reference external" href="https://github.com/Atmosphere-NX/Atmosphere/releases/latest">Atmosphere</a> and <a class="reference external" href="https://github.com/CTCaer/hekate/releases/latest">Hekate</a>.</p></li>
+<li><p>Linux based operating system (Installed or LiveCD)</p></li>
+<li><p>GParted</p></li>
+<li><p>Root access</p></li>
+</ul>
+<p>Once you are ready, follow the guide below:</p>
+<ol class="arabic">
+<li><p>Make sure everything on your SD Card is backed up on to your computer.</p></li>
+<li><p>Open GParted.</p></li>
+<li><p>Select your SD Card from the top left menu.</p>
+<blockquote>
+<div><div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>It is very important to select the correct device from this menu as this will be destructive.</p>
+</div>
+<img alt="../_images/Step3.png" src="../_images/Step3.png" />
+</div></blockquote>
+</li>
+<li><p>If any partitions have a mount point you will want to right click on them and click “Unmount”.</p>
+<blockquote>
+<div><img alt="../_images/Step4.png" src="../_images/Step4.png" />
+</div></blockquote>
+</li>
+<li><p>Next go up to the Device menu and click “Create Partition Table…”</p>
+<blockquote>
+<div><img alt="../_images/Step5.png" src="../_images/Step5.png" />
+</div></blockquote>
+</li>
+<li><p>A dialog box should show up, make sure the partition table type is set to “msdos” and then click “Apply”.</p>
+<blockquote>
+<div><img alt="../_images/Step6.png" src="../_images/Step6.png" />
+</div></blockquote>
+</li>
+<li><p>Right click on the unallocated space and click “New”.</p>
+<blockquote>
+<div><img alt="../_images/Step7.png" src="../_images/Step7.png" />
+</div></blockquote>
+</li>
+<li><p>You will want to put in 29856 for “Free space following (MiB):”, set the “File system:” to be “fat32”, give it a label, and click “Add”. This will be your SD Card partition that holds your atmosphere, bootloader, Nintendo, etc… folders.</p>
+<blockquote>
+<div><img alt="../_images/Step8.png" src="../_images/Step8.png" />
+</div></blockquote>
+</li>
+<li><p>Right click again on the unallocated space and click “New”.</p>
+<blockquote>
+<div><img alt="../_images/Step9.png" src="../_images/Step9.png" />
+</div></blockquote>
+</li>
+<li><p>For this you want to set the “File system:” to be “fat32”, and click “Add”. This will be the partition for your emuMMC.</p>
+<blockquote>
+<div><img alt="../_images/Step10.png" src="../_images/Step10.png" />
+</div></blockquote>
+</li>
+<li><p>Click “Apply All Operations” up in the top bar, confirm you want to apply and wait for it to finish.</p>
+<blockquote>
+<div><img alt="../_images/Step11.png" src="../_images/Step11.png" />
+</div></blockquote>
+</li>
+<li><p>Next we want to zero out the beginning and end of our emuMMC partition. The reason for doing this is because we formatted the partition as fat32, however we really only needed GParted to set the partition ID to something Hekate would pick up. On top of this Hekate won’t write to the first or last 512kb of the partition. This is problematic if it’s formatted as fat32, as some operating systems will continue to see this partition as a fat32 partition, and try to repair it. To do this open up a console window and run the following commands making sure to supply the block device of your emuMMC partition to the <code class="docutils literal notranslate"><span class="pre">of=</span></code> argument.</p>
+<blockquote>
+<div><div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This is highly destructive triple check you have the correct block device in the “of” argument.</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">dd</span> <span class="k">if</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">zero</span> <span class="n">of</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">your_emummc_partition</span> <span class="n">bs</span><span class="o">=</span><span class="mi">1</span><span class="n">M</span> <span class="n">count</span><span class="o">=</span><span class="mi">1</span> <span class="n">status</span><span class="o">=</span><span class="n">progress</span>
+<span class="n">sudo</span> <span class="n">dd</span> <span class="k">if</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">zero</span> <span class="n">of</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">your_emummc_partition</span> <span class="n">seek</span><span class="o">=</span><span class="mi">29854</span> <span class="n">bs</span><span class="o">=</span><span class="mi">1</span><span class="n">M</span> <span class="n">count</span><span class="o">=</span><span class="mi">1</span> <span class="n">status</span><span class="o">=</span><span class="n">progress</span>
+</pre></div>
+</div>
+<img alt="../_images/Step12.png" src="../_images/Step12.png" />
+</div></blockquote>
+</li>
+<li><p>To make sure you have done the last step correct go back to GParted, go to the GParted menu and click Refresh. Your emuMMC partition’s file system should now be “unknown”.</p>
+<blockquote>
+<div><img alt="../_images/Step13.png" src="../_images/Step13.png" />
+</div></blockquote>
+</li>
+<li><p>Next restore your files back to your SD Card.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The content of your SD card may look different.</p>
+</div>
+<img alt="../_images/Step14.png" src="../_images/Step14.png" />
+</div></blockquote>
+</li>
+<li><p>Eject your SD Card and insert it into your Switch. Turn your Switch on in RCM and inject the Hekate payload.</p></li>
+<li><p>Tap on “emuMMC”.</p>
+<blockquote>
+<div><img alt="../_images/HekateStep1.png" src="../_images/HekateStep1.png" />
+</div></blockquote>
+</li>
+<li><p>Tap on “Create emuMMC”.</p>
+<blockquote>
+<div><img alt="../_images/HekateStep2and5.png" src="../_images/HekateStep2and5.png" />
+</div></blockquote>
+</li>
+<li><p>Tap on “SD Partition”.</p>
+<blockquote>
+<div><img alt="../_images/HekateStep3.png" src="../_images/HekateStep3.png" />
+</div></blockquote>
+</li>
+<li><p>Tap on “Continue”, and wait.</p>
+<blockquote>
+<div><img alt="../_images/HekateStep4.png" src="../_images/HekateStep4.png" />
+</div></blockquote>
+</li>
+<li><p>Tap on “Close” on the top right, and then tap on “Change emuMMC”.</p>
+<blockquote>
+<div><img alt="../_images/HekateStep2and5.png" src="../_images/HekateStep2and5.png" />
+</div></blockquote>
+</li>
+<li><p>Tap on “SD RAW 1”, and tap “OK”.</p>
+<blockquote>
+<div><img alt="../_images/HekateStep6.png" src="../_images/HekateStep6.png" />
+</div></blockquote>
+</li>
+<li><p>Tap on “Close” on the top right, tap on “Launch”, and boot into your emuMMC.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you downloaded Hekate by itself then you needed to create a hekate_ipl.ini file in your bootloader folder. That is outside the scope of this guide. If you don’t know how to do that then use the SDSetup bundle.</p>
+</div>
+<img alt="../_images/HekateStep7.png" src="../_images/HekateStep7.png" />
+</div></blockquote>
+</li>
+<li><p>Congratulations you are done. You can go into “System Settings”, scroll down to “System”, and you should see an “E” at the end of your “Current version:” indicating you are in your emuMMC.</p>
+<blockquote>
+<div><img alt="../_images/SystemSettings.jpg" src="../_images/SystemSettings.jpg" />
+</div></blockquote>
+</li>
+</ol>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, noahc3 and friends
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
