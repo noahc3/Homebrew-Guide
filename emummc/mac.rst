@@ -48,9 +48,13 @@ Once you are ready, follow the guide below:
     .. danger::
         This is highly destructive triple check you have the correct disk number as this will partition and format the disk.
 
+
+    .. warning::
+        The first partition must not be called "SWITCH" otherwise the homebrew menu will not be able to locate or open the /switch folder or any apps or games stored on this partition. In this example, it has been named "SWPART", you can name it whatever you like.
+
     ::
 
-        diskutil partitionDisk disk# MBR fat32 "SWITCH" PutSizeHere fat32 "EMUMMC" 31306285056
+        diskutil partitionDisk disk# MBR fat32 "SWPART" PutSizeHere fat32 "EMUMMC" 31306285056
 
     .. image:: ../images/mac/Step5.png
 
