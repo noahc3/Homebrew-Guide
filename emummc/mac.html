@@ -276,7 +276,11 @@
 <p class="admonition-title">Danger</p>
 <p>This is highly destructive triple check you have the correct disk number as this will partition and format the disk.</p>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">diskutil</span> <span class="n">partitionDisk</span> <span class="n">disk</span><span class="c1"># MBR fat32 &quot;SWITCH&quot; PutSizeHere fat32 &quot;EMUMMC&quot; 31306285056</span>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The first partition must not be called “SWITCH” otherwise the homebrew menu will not be able to locate or open the /switch folder or any apps or games stored on this partition. In this example, it has been named “SWITCHSD”, you can name it whatever you like.</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">diskutil</span> <span class="n">partitionDisk</span> <span class="n">disk</span><span class="c1"># MBR fat32 &quot;SWITCHSD&quot; PutSizeHere fat32 &quot;EMUMMC&quot; 31306285056</span>
 </pre></div>
 </div>
 <img alt="../_images/Step51.png" src="../_images/Step51.png" />
