@@ -22,7 +22,7 @@ By backing up your NAND (the Switch's internal memory), you will later be able t
 2. In Hekate, select **'Tools > Backup eMMC > eMMC BOOT0 & BOOT1'**
 3. When finished, remove your SD card (you don't need to shutdown Hekate), insert it into your PC, and copy the 'backup' folder to a safe location on your PC. Afterwards, delete the 'backup' folder on your SD card.
 4. Insert your SD card back into your Switch
-5. In Hekate, select **'eMMC RAW GPP'**
+5. In Hekate, select **'Tools > Backup eMMC > eMMC RAW GPP'**
 
     * If your SD card has less than ~32GB free space, Hekate will provide additional instructions every few minutes about pulling files off of your SD card so it can continue.
 
