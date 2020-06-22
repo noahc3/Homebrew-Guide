@@ -93,6 +93,9 @@ Step 3: Installing the New Firmware Version
 5. Select **ChoiDujourNX**
 6. In ChoiDujourNX, enter the **/firmware** you created earlier and select Choose
 7. After processing, select **[x.x.x] (exFAT)** where [x.x.x] is the firmware version you chose
+
+    * This "exFAT" version of the firmware contains both the FAT32 and exFAT filesystem drivers, so it will work with any SD card. If you are certain your SD card is FAT32 formatted, you can choose the option without exFAT instead. Choose the exFAT version if you are unsure.
+
 8. After verification, choose **Select Firmware**
 9. Choose whether you want to enable or disable AutoRCM (see above for more information). **This will override an existing AutoRCM settings you have, so make sure to pick which you want.**
 
