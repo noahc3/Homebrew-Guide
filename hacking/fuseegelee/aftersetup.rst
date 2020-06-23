@@ -22,7 +22,7 @@ To launch Atmosphere:
 
 1. Enter RCM on your Switch
 2. Push the Hekate payload to your Switch
-3. Tap **'Launch > CFW (SYSNAND)'**
+3. Tap **'Launch > CFW (sysMMC)'**
 
 Hekate will now boot Atmosphere. Note that Atmosphere CFW does not look fundamentaly different to the normal Switch operating system. You can verify you are in Atmosphere by trying to load the Homebrew Menu (see below) or checking if the system version string in System Settings contains **(AMS x.x.x)**.
 
