@@ -16,13 +16,13 @@ Your access to homebrew and recovery tools primarily depends on the Switch's nor
 
 * memloader
 * ChoiDujour
-* ChoiDujourNX (OK in emuMMC/emuNAND, NEVER use in sysNAND)
+* ChoiDujourNX (OK in emuMMC/emuNAND, NEVER use in sysMMC/sysNAND)
 * Any homebrew or payloads involving the enabling or disabling of "AutoRCM"
 * Any homebrew or payloads which writes to the system internal memory without proper security or verification in place
 
 Upon using PegaScape to reboot into CFW for the first time, we will immediately create a NAND backup and dump system keys. **These steps are not optional** and will provide you at least one (tedious) hardware recovery method should anything ever go wrong.
 
-Additionally, you should **never connect to the internet without PegaScape or 90DNS configured on your sysNAND, even for a second,** as doing so can make your Switch **force you to update to use the browser**, which is required for this exploit. **There is currently no known way of removing supernag, so supernag may permanently block you from accessing CFW.**
+Additionally, you should **never connect to the internet without PegaScape or 90DNS configured on your sysMMC, even for a second,** as doing so can make your Switch **force you to update to use the browser**, which is required for this exploit. **There is currently no known way of removing supernag, so supernag may permanently block you from accessing CFW.**
 
 The guide also includes instructions on using emuMMC, which redirects all read and write operations on the internal memory to the SD card. With this, even if you accidentally brick within an emuMMC, your Switch will still function properly.
 
