@@ -57,8 +57,13 @@ It is highly recommended that you setup emuMMC to protect your Switch from brick
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">To setup emuMMC, continue to <a href="/hacking/emummc">emuMMC</a></p>
+		<p class="last">Continue to:<br>
+			<a href="/emummc/windows">Create an emuMMC on Windows</a><br>
+			<a href="/emummc/mac">Create an emuMMC on Mac OS</a><br>
+			<a href="/emummc/linux">Create an emuMMC on Linux</a>
+		</p>
 	</div>
+
 
 .. toctree::
    :maxdepth: 2
