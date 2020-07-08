@@ -47,9 +47,9 @@ It is very highly recommended that you setup emuMMC to protect your Switch from 
 
 	<div class="admonition warning">
 		<p class="last">Continue to:<br>
-		<a href="/emummc/windows">Create an emuMMC on Windows</a></p>
+		<a href="/emummc/windows">Create an emuMMC on Windows</a></p><br>
 		<a href="/emummc/mac">Create an emuMMC on Mac OS</a><br>
-		<a href="/emummc/linux">Create an emuMMC on Linux</a><br>
+		<a href="/emummc/linux">Create an emuMMC on Linux</a>
 	</div>
 
 
