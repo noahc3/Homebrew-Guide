@@ -39,17 +39,17 @@ In that folder create a file called ``c_cpp_properties.json`` and paste the foll
             {
                 "name": "DKP aarch64",
                 "includePath": [
-                    "/path/to/devkitPro/devkitA64/aarch64-none-elf/include/**",
-                    "/path/to/devkitPro/devkitA64/lib/gcc/aarch64-none-elf/8.3.0/include/**",
-                    "/path/to/devkitPro/libnx/include/**",
-                    "/path/to/devkitPro/portlibs/switch/include/**"
+                    "${env:DEVKITPRO}/devkitA64/aarch64-none-elf/include/**",
+                    "${env:DEVKITPRO}/devkitA64/lib/gcc/aarch64-none-elf/8.3.0/include/**",
+                    "${env:DEVKITPRO}/libnx/include/**",
+                    "${env:DEVKITPRO}/portlibs/switch/include/**"
                 ],
                 "defines": [
                     "SWITCH",
                     "__SWITCH__",
                     "DEBUG"
                 ],
-                "compilerPath": "/path/to/devkitPro/devkitA64/bin/aarch64-none-elf-g++",
+                "compilerPath": "${env:DEVKITPRO}/devkitA64/bin/aarch64-none-elf-g++",
                 "cStandard": "c11",
                 "cppStandard": "c++17",
                 "intelliSenseMode": "gcc-x64"
@@ -58,10 +58,10 @@ In that folder create a file called ``c_cpp_properties.json`` and paste the foll
         "version": 4
     }
 
-Now replace all the ``/path/to`` with the actual path to your devkitPro folder.
+If the DEVKITPRO environment variable is not set, replace all ``${env:DEVKITPRO}`` with the actual path to your devkitPro folder or set the environment variable.
 
 .. note::
-    On windows this is usually C:/devkitPro, on Linux it's /opt/devkitpro
+    On Windows the devkitpro path is usually ``C:/devkitPro``, on Linux it's ``/opt/devkitpro``.
 
 Configuring the Makefile
 ........................
