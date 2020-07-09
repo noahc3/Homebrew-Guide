@@ -38,7 +38,7 @@ Is it safe to update to the latest firmware version?
 
 When a new firmware update is released, you should always wait for SDSetup to add support for it, or if a trusted source says it is safe. New firmware versions can also bring unwanted telemetry. Ultimately, whether or not you update is up to you.
 
-**As of writing, the latest firmware version is 10.0.2. It is currently completely safe to update as long as you are using Atmosphere v0.12.0+ or a bundle from SDSetup downloaded after May 1st 2020.**
+**As of writing, the latest firmware version is 10.0.4. It is currently completely safe to update as long as you are using Atmosphere v0.12.0+ or a bundle from SDSetup downloaded after May 1st 2020.**
 
 ........
     
