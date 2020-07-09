@@ -61,7 +61,7 @@ In that folder create a file called ``c_cpp_properties.json`` and paste the foll
 If the DEVKITPRO environment variable is not set, replace all ``${env:DEVKITPRO}`` with the actual path to your devkitPro folder or set the environment variable.
 
 .. note::
-    On windows devkitpro path is usually ``C:/devkitPro``, on Linux it's ``/opt/devkitpro``.
+    On Windows the devkitpro path is usually ``C:/devkitPro``, on Linux it's ``/opt/devkitpro``.
 
 Configuring the Makefile
 ........................
