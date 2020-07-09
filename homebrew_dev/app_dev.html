@@ -285,17 +285,17 @@ In that folder create a file called <code class="docutils literal notranslate"><
         <span class="p">{</span>
             <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;DKP aarch64&quot;</span><span class="p">,</span>
             <span class="s2">&quot;includePath&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="s2">&quot;/path/to/devkitPro/devkitA64/aarch64-none-elf/include/**&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;/path/to/devkitPro/devkitA64/lib/gcc/aarch64-none-elf/8.3.0/include/**&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;/path/to/devkitPro/libnx/include/**&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;/path/to/devkitPro/portlibs/switch/include/**&quot;</span>
+                <span class="s2">&quot;${env:DEVKITPRO}/devkitA64/aarch64-none-elf/include/**&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;${env:DEVKITPRO}/devkitA64/lib/gcc/aarch64-none-elf/8.3.0/include/**&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;${env:DEVKITPRO}/libnx/include/**&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;${env:DEVKITPRO}/portlibs/switch/include/**&quot;</span>
             <span class="p">],</span>
             <span class="s2">&quot;defines&quot;</span><span class="p">:</span> <span class="p">[</span>
                 <span class="s2">&quot;SWITCH&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;__SWITCH__&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;DEBUG&quot;</span>
             <span class="p">],</span>
-            <span class="s2">&quot;compilerPath&quot;</span><span class="p">:</span> <span class="s2">&quot;/path/to/devkitPro/devkitA64/bin/aarch64-none-elf-g++&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;compilerPath&quot;</span><span class="p">:</span> <span class="s2">&quot;${env:DEVKITPRO}/devkitA64/bin/aarch64-none-elf-g++&quot;</span><span class="p">,</span>
             <span class="s2">&quot;cStandard&quot;</span><span class="p">:</span> <span class="s2">&quot;c11&quot;</span><span class="p">,</span>
             <span class="s2">&quot;cppStandard&quot;</span><span class="p">:</span> <span class="s2">&quot;c++17&quot;</span><span class="p">,</span>
             <span class="s2">&quot;intelliSenseMode&quot;</span><span class="p">:</span> <span class="s2">&quot;gcc-x64&quot;</span>
@@ -305,10 +305,10 @@ In that folder create a file called <code class="docutils literal notranslate"><
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>Now replace all the <code class="docutils literal notranslate"><span class="pre">/path/to</span></code> with the actual path to your devkitPro folder.</p>
+<p>If the DEVKITPRO environment variable is not set, replace all <code class="docutils literal notranslate"><span class="pre">${env:DEVKITPRO}</span></code> with the actual path to your devkitPro folder or set the environment variable.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>On windows this is usually C:/devkitPro, on Linux it’s /opt/devkitpro</p>
+<p>On Windows the devkitpro path is usually <code class="docutils literal notranslate"><span class="pre">C:/devkitPro</span></code>, on Linux it’s <code class="docutils literal notranslate"><span class="pre">/opt/devkitpro</span></code>.</p>
 </div>
 </div>
 <div class="section" id="configuring-the-makefile">
