@@ -11,12 +11,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@master
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Build
+      uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "."
-        pre-build-command: "pip install cloud_sptheme sphinx_rtd_theme"
-    - uses: actions/upload-artifact@v1
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1
       with:
         name: build-result
         path: ./_build
