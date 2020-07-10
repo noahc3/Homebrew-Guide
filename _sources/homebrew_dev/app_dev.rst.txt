@@ -40,7 +40,7 @@ In that folder create a file called ``c_cpp_properties.json`` and paste the foll
                 "name": "DKP aarch64",
                 "includePath": [
                     "${env:DEVKITPRO}/devkitA64/aarch64-none-elf/include/**",
-                    "${env:DEVKITPRO}/devkitA64/lib/gcc/aarch64-none-elf/8.3.0/include/**",
+                    "${env:DEVKITPRO}/devkitA64/lib/gcc/aarch64-none-elf/10.1.0/include/**",
                     "${env:DEVKITPRO}/libnx/include/**",
                     "${env:DEVKITPRO}/portlibs/switch/include/**"
                 ],
