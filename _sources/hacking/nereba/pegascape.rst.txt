@@ -75,7 +75,7 @@ Step 2 Option A: Injecting Fake News (JP Puyo Puyo Tetris)
 
 6. Touch the **"hbmenu"** icon.
     
-    * If the exploit fails, press the HOME button, reopen the browser through Puyo Puyo Tetris and try again.
+    * If the exploit fails, press the HOME button, close Puyo Puyo Tetris, reopen the browser through Puyo Puyo Tetris and try again.
 
 7. Press **HOME**.
 8. Tap the **Album** icon, hbmenu should load.
