@@ -27,7 +27,7 @@ Once you are ready, follow the guide below:
 
 #. Open Terminal.
 
-#. Run the follow command and identify which disk is your SD Card:
+#. Run the following command and identify which disk is your SD Card:
 
     ::
 
@@ -35,15 +35,7 @@ Once you are ready, follow the guide below:
 
     .. image:: ../images/mac/Step3.png
 
-#. Run the following command, making sure to replace the ``#`` with the drive number, to get the size of the SD Card in bytes.
-
-    ::
-
-        diskutil info disk# | grep "Disk Size"
-
-    .. image:: ../images/mac/Step4.png
-
-#. Take that number and subtract it by 31306285056 to get the size of our SD Card parition. (Ex. 31914983424 - 31306285056 = 608698368) With that number run the following command to partition your SD Card, making sure to replace ``#`` with the drive number and ``PutSizeHere`` with the number you came up with.
+#. Run the following command to partition your SD Card, making sure to replace ``X`` in ``diskX`` with the drive number.
 
     .. danger::
         This is highly destructive triple check you have the correct disk number as this will partition and format the disk.
@@ -54,35 +46,27 @@ Once you are ready, follow the guide below:
 
     ::
 
-        diskutil partitionDisk disk# MBR fat32 "SWITCHSD" PutSizeHere fat32 "EMUMMC" 31306285056
+        diskutil partitionDisk diskX MBR fat32 "SWITCHSD" R fat32 "EMUMMC" 31306285056
 
     .. image:: ../images/mac/Step5.png
 
-#. Run the following command to identify the partition number of your emuMMC partition, making sure to replace the ``#`` with the drive number.
+#. Run the following command to unmount your EmuMMC partition, making sure to replace ``X`` with the drive number in ``diskXs2``.
 
     ::
 
-        diskutil list disk#
-
-    .. image:: ../images/mac/Step6.png
-
-#. Run the following command to unmount your EmuMMC partition, making sure to replace the first ``#`` with the drive number and the second ``#`` with the partition number of your emuMMC partition.
-
-    ::
-
-        diskutil unmount disk#s#
+        diskutil unmount diskXs2
 
     .. image:: ../images/mac/Step7.png
 
-#. Next we want to zero out the beginning and end of our emuMMC partition. The reason for doing this is because we formatted the partition as fat32, however we only did this to set the partition ID to something Hekate would pick up. On top of this Hekate won't write to the first and last 512kb of the partition. This is problematic if it's formatted as fat32, as some operating systems will continue to see this partition as fat32, and will try to repair it. Run the following commands to zero out the first and last megabyte of the partition, making sure to replace the first ``#`` with the drive number of your SD Card and the second ``#`` with the partition number of your emuMMC partition.
+#. Next we want to zero out the beginning and end of our emuMMC partition. The reason for doing this is because we formatted the partition as FAT-32, however we only did this to set the partition ID to something Hekate would pick up. On top of this Hekate won't write to the first and last 512kB of the partition. This is problematic if it's formatted as FAT-32, as some operating systems will continue to see this partition as FAT-32, and will try to repair it. Run the following commands to zero out the first and last megabyte of the partition, making sure to replace ``X`` with the drive number of your SD Card.
 
     .. danger::
         This is highly destructive triple check you have the correct block device in the "of" argument.
 
     ::
 
-        sudo dd if=/dev/zero of=/dev/disk#s# bs=1m count=1
-        sudo dd if=/dev/zero of=/dev/disk#s# seek=29853 bs=1m count=1
+        sudo dd if=/dev/zero of=/dev/diskXs2 bs=1m count=1
+        sudo dd if=/dev/zero of=/dev/diskXs2 seek=29853 bs=1m count=1
 
     .. image:: ../images/mac/Step8.png
 
