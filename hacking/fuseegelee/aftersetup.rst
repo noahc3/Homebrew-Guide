@@ -26,6 +26,7 @@ To launch Atmosphere:
 
 Hekate will now boot Atmosphere. Note that Atmosphere CFW does not look fundamentaly different to the normal Switch operating system. You can verify you are in Atmosphere by trying to load the Homebrew Menu (see below) or checking if the system version string in System Settings contains **(AMS x.x.x)**.
 
+**Note:** If Atomosphere fails to start run "Fix Archive Bit" first.
 
 Accessing the Homebrew Menu
 ---------------------------
