@@ -144,7 +144,7 @@ Step 4: Converting Firmware Files
 
 3. In the command prompt, type **"ChoiDujour.exe \\-\\-keyset=keys.txt fw"** without quotes
 
-    * If ChoiDujour says it cannot find firmware files or keys.txt, you likely put keys.txt or the firmware files in the wrong location. Try steps 1.9-1.13 again.
+    * If ChoiDujour says it cannot find firmware files or keys.txt, you likely put keys.txt or the firmware files in the wrong location. Try steps 1.9-1.12 again.
     * If the script fails otherwise, your keys.txt may be incompatible with ChoiDujour.
 
 4. Once finished, you should see a message similar to **"All files verified! Prepared firmware update is in folder NX-X.X.X"** in the command prompt. Make sure you can find this folder, it will be used later.
@@ -176,7 +176,7 @@ Step 5: Transferring boot0 to your Switch
     * Etcher may say that **BOOT0.BIN** is not a bootable image. **Select "Continue" anyways.**
 
 8. Make sure the target is **"Linux UMS USB Device"** if it is not already chosen
-9. **"BOOT0.BIN" MUST SHOW AS 1.57MB. "Linux UMS USB Device" MUST SHOW AS 4.19MB.** If any of the sizes are incorrect, **STOP! You cannot continue!** Repeat steps 1.11-1.13, 4.1-4.4, and 5.3-5.9.
+9. **"BOOT0.BIN" MUST SHOW AS 1.57MB. "Linux UMS USB Device" MUST SHOW AS 4.19MB.** If any of the sizes are incorrect, **STOP! You cannot continue!** Repeat steps 1.11-1.12, 4.1-4.4, and 5.3-5.9.
 
 .. image:: https://puu.sh/C66TN/97d03d8ae3.png
 
@@ -207,7 +207,7 @@ Step 6: Transferring boot1 to your Switch
     * Etcher may say that **BOOT0.BIN** is not a bootable image. **Select "Continue" anyways.**
 
 5. Make sure the target is **"Linux UMS USB Device"** if it is not already chosen
-6. **"BOOT0.BIN" MUST SHOW AS 524.29KB. "Linux UMS USB Device" MUST SHOW AS 4.19MB.** If any of the sizes are incorrect, **STOP! You cannot continue!** Repeat steps 1.11-1.13, 4.1-4.4, and 5.1-5.7.
+6. **"BOOT0.BIN" MUST SHOW AS 524.29KB. "Linux UMS USB Device" MUST SHOW AS 4.19MB.** If any of the sizes are incorrect, **STOP! You cannot continue!** Repeat steps 1.11-1.12, 4.1-4.4, and 5.1-5.7.
 
 .. image:: https://puu.sh/C676E/3dc60b58bb.png
 
