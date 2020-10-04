@@ -5,13 +5,44 @@
 
 Frequently Asked Questions
 ==========================
+
+What actions can get me banned?
+-------------------------------
+
+Instant ban:
+
+* Piracy
+* Installing homebrew NSP files
+* Changing your user icon with homebrew
+* Sketchy eShop behavior, including chargebacks
+* Using homebrew or PC tools with your console unique certificate to query or download from Nintendo's CDN.
+
+Likely ban, typically delayed:
+
+* Modding online games
+* Cheating in online games
+* Clearing system logs using homebrew
+* Using multiple NANDs online (sysMMC and emuMMC) without using a DNS like 90DNS or PegaScape on all or all but one of them.
+
+Not a ban, so far:
+
+* Atmosphere CFW
+* Homebrew
+* Custom themes
+* Custom sysmodules
+* Mods/cheating in offline games with no multiplayer or online component
+* Overclocking
+* emuMMC
+* Simply running Fusee payloads
+* Running other operating systems such as Android or Linux
+
    
 Should I disable WiFi?
 ----------------------
 
 This is an extreme that you don't necessarily need to take, though it will basically 100% guarantee you won't get banned (since you are basically banning yourself).
 
-Using 90DNS (163.172.141.219 or 45.248.48.62) or enabling GDPR protections is usually enough to keep from being banned as long as you don't care about NSP files.
+Using 90DNS (163.172.141.219 or 207.246.121.77) or enabling GDPR protections is usually enough to keep from being banned as long as you don't care about NSP files.
 
 ........
 
