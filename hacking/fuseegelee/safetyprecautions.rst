@@ -54,7 +54,9 @@ Users with EU Nintendo Network accounts have the option of enabling GDPR protect
 Step 3: Blocking Updates & Telemetry with 90DNS
 -----------------------------------------------
 
-You can configure your WiFi settings to use a custom DNS server that blocks all connections to Nintendo servers (except the internet connection test server). 
+You can configure your WiFi settings to use a custom DNS server that blocks all connections to Nintendo servers (except the internet connection test server). This will prevent your Switch from communicating telemetry to Nintendo which could result in your console being banned, while still allowing Homebrew to access the internet. Note for this to be effective, you must enable these settings before doing anything bannable and keep them enabled until that NAND (either emuMMC or sysMMC, these will be explained later) is factory reset, or a NAND backup is restored to a time before you did anything bannable.
+
+Simply running Atmosphere CFW and using basic homebrew has not been a known cause for console bans. For a list of bannable behavior, see the `FAQ </faq.html#what-actions-can-get-me-banned>`_.
 
 **Doing this will make games unable to be played online, block eShop, game updates and system updates.** If you are OK with this, follow these instructions:
 
