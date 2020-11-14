@@ -34,7 +34,7 @@ What will I get by following this guide?
 
 This guide will give you the ability to run a custom firmware of choice on a previously unmodified Nintendo Switch.
 
-The guide details usage of two exploits (one of which with different implementations depending on the firmware version). 
+The guide details usage of two exploits, with different implementations depending on the firmware version. 
 
 fusee-gelee
 ^^^^^^^^^^^
