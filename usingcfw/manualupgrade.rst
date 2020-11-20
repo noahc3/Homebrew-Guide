@@ -39,7 +39,7 @@ Step 2: Installing the New Firmware Version
 3. **IMPORTANT: Plug your Switch in to prevent the Switch from dying midway through the install process**
 4. Enter the Homebrew Menu through Album or title override
 5. Select **Daybreak**
-6. In Daybreak, select **Install** and enter the **/firmware** you created earlier
+6. In Daybreak, select **Install** and enter the **/firmware** folder you created earlier
 7. After processing, select **Continue**
 8. If you are downgrading over multiple system version you should consider selecting **Reset to factory settings**. This will erase all save data. Otherwise select **Preserve settings**.
 9. Select **Install (FAT32 + exFAT)**
