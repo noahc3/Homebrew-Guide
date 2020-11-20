@@ -41,7 +41,7 @@ Step 2: Installing the New Firmware Version
 5. Select **Daybreak**
 6. In Daybreak, select **Install** and enter the **/firmware** folder you created earlier
 7. After processing, select **Continue**
-8. If you are downgrading select **Reset to factory settings**. This will erase all save data. Otherwise select **Preserve settings**.
+8. If you are upgrading select **Preserve settings**. Otherwise select **Reset to factory settings**, which will erase all save data.
 9. Select **Install (FAT32 + exFAT)**
 
     * This "FAT32 + exFAT" version of the firmware contains both the FAT32 and exFAT filesystem drivers, so it will work with any SD card. If you are certain your SD card is FAT32 formatted, you can choose the option without exFAT instead. Choose the "FAT32 + exFAT" version if you are unsure.
