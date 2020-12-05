@@ -146,8 +146,7 @@
 <li class="toctree-l1"><a class="reference internal" href="hekate.html">Using and Configuring Hekate</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Updating/Downgrading Manually</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#step-1-preparing-files">Step 1: Preparing Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-2-allow-choidujournx-to-write-to-bis">Step 2: Allow ChoiDujourNX to write to BIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-3-installing-the-new-firmware-version">Step 3: Installing the New Firmware Version</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="#step-2-installing-the-new-firmware-version">Step 2: Installing the New Firmware Version</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -246,108 +245,45 @@
             
   <div class="section" id="updating-downgrading-manually">
 <h1>Updating/Downgrading Manually<a class="headerlink" href="#updating-downgrading-manually" title="Permalink to this headline">¶</a></h1>
-<p>When you update your system firmware version, your Nintendo Switch burns a microscopic fuse to prevent your Switch from being able to downgrade. Essentially, if a firmware tries to boot but too many fuses are burnt for that specific firmware version, the system will simply power off, preventing you from booting.</p>
-<p>Hekate, ReiNX and SXOS bypass these fuse checks and the fuse burns. By enabling AutoRCM and then manually updating using ChoiDujourNX, you can keep your Switch in a state where it can be downgraded again the future.</p>
-<p>You can also use this guide as a way to upgrade your Switch if your Switch does not have access to the internet or is superbanned, and to downgrade your Switch to any firmware version.</p>
+<p>When you update your system firmware version and boot the stock operating system, your Nintendo Switch burns a microscopic fuse to prevent your Switch from being able to downgrade. Essentially, if a stock firmware tries to boot but too many fuses are burnt for that specific firmware version, the system will simply power off, preventing you from booting.</p>
+<p>All custom firmware bypasses these fuse checks and the fuse burns. By enabling AutoRCM you can prevent the stock bootloader from ever running and keep your Switch in a state where it can be downgraded again the future.</p>
+<p>You can also use this guide as a way to upgrade your Switch if your Switch does not have access to the internet, uses 90DNS or is superbanned, and to downgrade your Switch to any firmware version.</p>
+<p>If you want to prevent fuse burns you can follow <a class="reference external" href="/hekate.html#enabling-autorcm">this guide first</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If something goes wrong or you need help, check <a class="reference external" href="/troubleshooting.html">troubleshooting</a>.</p>
-</div>
-<div class="admonition danger" style="color:#C42525" align="center">
-            <h1 style="margin-bottom:0.5rem;margin-top:0.5rem;font-size:2.5rem">WARNING</h1>
-    <h2>Never enable AutoRCM on an IPATCHED Switch</h2>
-    <p>This is only intended to be used on consoles with a vulnerable RCM. Enabling AutoRCM on an IPATCHED Switch will <b>literally BRICK your Switch.</b>
-    <h2 style="margin-bottom:0.5rem">If you cannot run payloads from RCM with fusee-gelee, <b>DO NOT ENABLE AUTORCM.</b></h2>
-    <h2>Failure to heed this warning <b>will</b> result in a bricked Switch.</h2>
-    </div><div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p><strong>A later step will give you the option to enable or disable AutoRCM.</strong> AutoRCM is a software method of forcing your Switch to go into RCM on every launch, without the need of a jig or hardmod. Essentially, you are purposefully bricking your Switch in a controlled matter that forces it to launch into recovery. This might sound scary but is not actually dangerous on unpatched Switches, and can be undone at any time.</p>
-<ul class="simple">
-<li><p><strong>NEVER EVER EVER ENABLE AUTORCM ON AN IPATCHED SWITCH. THIS IS EQUIVALENT TO BRICKING YOUR SWITCH.</strong></p></li>
-</ul>
-<p>AutoRCM has the following benefits:</p>
-<ul class="simple">
-<li><p>The Switch will not burn any fuses, meaning you can downgrade your Switch to a lower firmware version in the future should the need arise.</p></li>
-<li><p>You will never accidentally boot stock firmware, meaning you can avoid having telemetry data accidentally sent to Nintendo.</p></li>
-</ul>
-<p>AutoRCM has the following disadvantages:</p>
-<ul class="simple">
-<li><p>You will not be able to boot your Switch at all without a payload sender.</p></li>
-</ul>
-<p>It is <strong>highly recommended that you enable AutoRCM</strong> as if you ever boot your Switch without Hekate, your fuses will burn and you will not be able to cleanly downgrade again in the future.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you just want to manually update your system firmware and do not care about burning fuses, you can leave AutoRCM disabled.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If you are downgrading to a firmware expecting less fuses burnt than you have, AutoRCM is required to boot your Switch until you upgrade again.</p>
-</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="step-1-preparing-files">
 <h2>Step 1: Preparing Files<a class="headerlink" href="#step-1-preparing-files" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p>You need to locate the firmware binaries for the firmware version you want to downgrade to. These cannot be shared here as they are copyrighted (hint: darthsternie)</p></li>
+<li><p>You need to locate the firmware binaries for the firmware version you want to upgrade/downgrade to. These cannot be shared here as they are copyrighted (hint: darthsternie)</p></li>
 <li><p>Make sure your SD card includes a basic Hekate/Atmosphere setup (such as the one installed when following this guide)</p></li>
 <li><p>Insert your SD card into your PC</p></li>
 <li><p>Create a new folder on the root of your SD card named <strong>“firmware”</strong></p></li>
 <li><p>Extract <strong>the contents</strong> of your firmware archive file into the new <strong>/firmware</strong> folder on your SD card</p></li>
-<li><p>Go to switchtools.sshnuke.net</p></li>
-<li><p>Download the latest version of ChoiDujourNX by rajkosto</p></li>
-<li><p>Extract the <strong>ChoiDujourNX.nro</strong> file within the downloaded .ZIP file into the /switch folder on your SD card</p></li>
 </ol>
 </div>
 <hr class="docutils" />
-<div class="section" id="step-2-allow-choidujournx-to-write-to-bis">
-<h2>Step 2: Allow ChoiDujourNX to write to BIS<a class="headerlink" href="#step-2-allow-choidujournx-to-write-to-bis" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you are not using Atmosphere, skip to step 3.</p>
-</div>
-<p>A new security feature in Atmosphere requires you to explicitly allow applications to write to BIS, something ChoiDujourNX needs to do to upgrade the firmware.</p>
-<ol class="arabic simple">
-<li><p>If you are on Windows, in File Explorer, make sure File Extensions are set to be shown</p></li>
-</ol>
-<img alt="https://i.imgur.com/REKpKTi.png" src="https://i.imgur.com/REKpKTi.png" />
-<ol class="arabic" start="2">
-<li><p>Navigate to <strong>/atmosphere</strong> on your SD card.</p></li>
-<li><p>Create a folder named <strong>flags</strong></p></li>
-<li><p>Create a blank txt file named <strong>hbl_bis_write.flag</strong>.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>The file extension must be changed from <strong>.txt</strong> to <strong>.flag</strong>. The filename <strong>hbl_bis_write.flag.txt</strong> is <strong>WRONG</strong>.</p></li>
-<li><p>On Windows, you will be asked to confirm to change the file extension. This means you have done it correctly, choose <strong>OK</strong>.</p></li>
-</ul>
-</div></blockquote>
-</li>
-</ol>
-</div>
-<div class="section" id="step-3-installing-the-new-firmware-version">
-<h2>Step 3: Installing the New Firmware Version<a class="headerlink" href="#step-3-installing-the-new-firmware-version" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-2-installing-the-new-firmware-version">
+<h2>Step 2: Installing the New Firmware Version<a class="headerlink" href="#step-2-installing-the-new-firmware-version" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p>Insert your SD card into your Switch</p></li>
 <li><p>Launch Atmosphere CFW</p></li>
 <li><p><strong>IMPORTANT: Plug your Switch in to prevent the Switch from dying midway through the install process</strong></p></li>
-<li><p>Enter the Homebrew Menu through Album while holding the R button</p></li>
-<li><p>Select <strong>ChoiDujourNX</strong></p></li>
-<li><p>In ChoiDujourNX, enter the <strong>/firmware</strong> you created earlier and select Choose</p></li>
-<li><p>After processing, select <strong>[x.x.x] (exFAT)</strong> where [x.x.x] is the firmware version you chose</p>
+<li><p>Enter the Homebrew Menu through Album or title override</p></li>
+<li><p>Select <strong>Daybreak</strong></p></li>
+<li><p>In Daybreak, select <strong>Install</strong> and enter the <strong>/firmware</strong> folder you created earlier</p></li>
+<li><p>After processing, select <strong>Continue</strong></p></li>
+<li><p>If you are upgrading select <strong>Preserve settings</strong>. Otherwise, if you are downgrading, select <strong>Reset to factory settings</strong>, which will erase all save data.</p></li>
+<li><p>Select <strong>Install (FAT32 + exFAT)</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><p>This “exFAT” version of the firmware contains both the FAT32 and exFAT filesystem drivers, so it will work with any SD card. If you are certain your SD card is FAT32 formatted, you can choose the option without exFAT instead. Choose the exFAT version if you are unsure.</p></li>
+<li><p>This “FAT32 + exFAT” version of the firmware contains both the FAT32 and exFAT filesystem drivers, so it will work with any SD card. If you are certain your SD card is FAT32 formatted, you can choose the option without exFAT instead. Choose the “FAT32 + exFAT” version if you are unsure.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>After verification, choose <strong>Select Firmware</strong></p></li>
-<li><p>Choose whether you want to enable or disable AutoRCM (see above for more information). <strong>This will override an existing AutoRCM settings you have, so make sure to pick which you want.</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><p>If you are on an IPATCHED Switch and are given the option to enable AutoRCM, <strong>DISABLE IT</strong>. Enabling AutoRCM is equivalent to bricking your Switch.</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>Choose <strong>Start installation</strong></p></li>
+<li><p>Select <strong>Continue</strong></p></li>
 <li><p>Wait for the firmware update to finish</p>
 <ul class="simple">
 <li><p>This can be take little time or a long time depending on the situation. Be patient, and don’t worry if it finishes very quickly.</p></li>
@@ -355,7 +291,6 @@
 </li>
 <li><p>After installation, select <strong>Reboot</strong> and then <strong>Shutdown Now!</strong></p></li>
 </ol>
-<p>You can now delete the <strong>/firmware</strong> folder and the file <strong>hbl_bis_write.flag</strong> in <strong>/atmosphere</strong> from your SD card.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
