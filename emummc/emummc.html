@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create an emuMMC on Windows &mdash; Homebrew Guide  documentation</title>
+  <title>Create an emuMMC &mdash; Homebrew Guide  documentation</title>
   
 
   
@@ -39,9 +39,9 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Create an emuMMC on Linux" href="linux.html" />
+    <link rel="next" title="Introduction to Homebrew development" href="../homebrew_dev/introduction.html" />
     <link rel="prev" title="Upgrading/Downgrading Manually With a PC" href="../usingcfw/manualchoiupgrade.html" />
-<meta name="sourcename" content="emummc/windows.rst.txt" />
+<meta name="sourcename" content="emummc/emummc.rst.txt" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124060019-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -149,11 +149,9 @@
 </ul>
 <p class="caption"><span class="caption-text">Creating an emuMMC</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Create an emuMMC on Windows</a><ul class="simple">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Create an emuMMC</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="linux.html">Create an emuMMC on Linux</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mac.html">Create an emuMMC on Mac OS</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Homebrew Development</span></p>
 <ul>
@@ -218,14 +216,14 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Create an emuMMC on Windows</li>
+      <li>Create an emuMMC</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/emummc/windows.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/noahc3/Homebrew-Guide/blob/master/emummc/emummc.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -239,121 +237,69 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="create-an-emummc-on-windows">
-<h1>Create an emuMMC on Windows<a class="headerlink" href="#create-an-emummc-on-windows" title="Permalink to this headline">¶</a></h1>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>We are not responsible for what happens to your data, your computer, or your Nintendo Switch. We have written this guide to be as easy to follow as possible, and have walked through the steps ourselves to make sure everything works to the best of our ability. If something happens because you fail to follow the guide then you have no one to blame, but yourself.</p>
-</div>
+  <div class="section" id="create-an-emummc">
+<h1>Create an emuMMC<a class="headerlink" href="#create-an-emummc" title="Permalink to this headline">¶</a></h1>
 <p>Before getting started you will need the following:</p>
 <ul class="simple">
 <li><p>A hackable Nintendo Switch.</p></li>
-<li><p>An SD Card that is 32GB or larger.</p></li>
+<li><p>An SD Card that is 64GB or larger.</p></li>
 <li><p>Latest version of <a class="reference external" href="https://github.com/Atmosphere-NX/Atmosphere/releases/latest">Atmosphere</a> and <a class="reference external" href="https://github.com/CTCaer/hekate/releases/latest">Hekate</a>.</p></li>
-<li><p>Windows 10</p></li>
-<li><p><a class="reference external" href="https://www.diskgenius.com/">DiskGenius</a></p></li>
-<li><p>Administrator access</p></li>
 </ul>
 <p>Once you are ready, follow the guide below:</p>
 <ol class="arabic">
-<li><p>Make sure everything on your SD Card is backed up on to your computer.</p></li>
-<li><p>Open DiskGenius.</p></li>
-<li><p>Click on your SD Card in the left menu.</p>
+<li><p>Launch Hekate.</p>
 <blockquote>
-<div><div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>It is very important to select the correct device from this menu as this will be destructive.</p>
-</div>
-<img alt="../_images/Step32.png" src="../_images/Step32.png" />
+<div><img alt="../_images/Step0.png" src="../_images/Step0.png" />
 </div></blockquote>
 </li>
-<li><p>In the center right click on your partition and click on “Delete Current Partition(Del)”.</p>
+<li><p>Select Tools, open the bottom right table and select <strong>Partition SD Card</strong></p>
 <blockquote>
-<div><img alt="../_images/Step41.png" src="../_images/Step41.png" />
+<div><img alt="../_images/Step1.png" src="../_images/Step1.png" />
 </div></blockquote>
 </li>
-<li><p>A dialog box should show up, click “Yes” to confirm.</p>
+<li><p>If you see this screen you can continue, otherwise backup the files via USB</p>
 <blockquote>
-<div><img alt="../_images/Step52.png" src="../_images/Step52.png" />
+<div><img alt="../_images/Step2.png" src="../_images/Step2.png" />
 </div></blockquote>
 </li>
-<li><p>In the center right click in the empty space and click on “Create New Parition(N)”.</p>
+<li><p>Drag the <strong>emuMMC (RAW)</strong> slider around to match your needs. One emuMMC copy is 29856MB in size</p>
 <blockquote>
-<div><img alt="../_images/Step61.png" src="../_images/Step61.png" />
+<div><img alt="../_images/Step3.png" src="../_images/Step3.png" />
 </div></blockquote>
 </li>
-<li><p>Make sure the partition type is set to “Primary Partition”, and the file system type is “FAT32”. To get the size of the partition you will want to take the total size available in MB and subtract it by 29856 MB to get the size of your first partition. (Ex 30436 - 29856 = 579) Give your partition a label, and then click “Ok”. This will be your SD Card partition that holds your atmosphere, bootloader, Nintendo, etc… folders.</p>
+<li><p>Select <strong>Next Step</strong>, <strong>Start</strong> and wait for it to finish</p>
 <blockquote>
-<div><img alt="../_images/Step72.png" src="../_images/Step72.png" />
+<div><img alt="../_images/Step4.png" src="../_images/Step4.png" />
 </div></blockquote>
 </li>
-<li><p>In the center right click in the empty space and click on “Create New Parition(N)” again.</p>
+<li><p>Go back to the home menu and select <strong>emuMMC</strong></p>
 <blockquote>
-<div><img alt="../_images/Step82.png" src="../_images/Step82.png" />
+<div><img alt="../_images/Step5.png" src="../_images/Step5.png" />
 </div></blockquote>
 </li>
-<li><p>Make sure the partition type is set to “Primary Partition”, and the file system type is “Linux swap”. The default size should be 29856 MB, and you should not be able to give this parition a label, simply click “Ok” when everything looks good. This will be the partition for your emuMMC.</p>
+<li><p>Select <strong>Create emuMMC</strong></p>
 <blockquote>
-<div><img alt="../_images/Step91.png" src="../_images/Step91.png" />
+<div><img alt="../_images/Step6.png" src="../_images/Step6.png" />
 </div></blockquote>
 </li>
-<li><p>Click “Save All” up in the top left, confirm you want to write all changes and wait for it to finish.</p>
+<li><p>Select <strong>SD Partition</strong></p>
 <blockquote>
-<div><img alt="../_images/Step102.png" src="../_images/Step102.png" />
+<div><img alt="../_images/Step7.png" src="../_images/Step7.png" />
 </div></blockquote>
 </li>
-<li><p>Once it finishes Windows will mount your SD Card, you may get a dialog prompt to format a drive. You will always want to hit “Cancel” on this. This is because Windows can not read your emuMMC partition.</p>
+<li><p>Select the partition you want</p>
 <blockquote>
-<div><img alt="../_images/Step111.png" src="../_images/Step111.png" />
+<div><img alt="../_images/Step8.png" src="../_images/Step8.png" />
 </div></blockquote>
 </li>
-<li><p>You can now close DiskGenius and restore your files back to your SD Card.</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The content of your SD card may look different.</p>
-</div>
-<img alt="../_images/Step121.png" src="../_images/Step121.png" />
-</div></blockquote>
-</li>
-<li><p>Eject your SD Card and insert it into your Switch. Turn your Switch on in RCM and inject the Hekate payload.</p></li>
-<li><p>Tap on “emuMMC”.</p>
-<blockquote>
-<div><img alt="../_images/HekateStep1.png" src="../_images/HekateStep1.png" />
-</div></blockquote>
-</li>
-<li><p>Tap on “Create emuMMC”.</p>
-<blockquote>
-<div><img alt="../_images/HekateStep2and5.png" src="../_images/HekateStep2and5.png" />
-</div></blockquote>
-</li>
-<li><p>Tap on “SD Partition”.</p>
-<blockquote>
-<div><img alt="../_images/HekateStep3.png" src="../_images/HekateStep3.png" />
-</div></blockquote>
-</li>
-<li><p>Tap on “Continue”, and wait.</p>
-<blockquote>
-<div><img alt="../_images/HekateStep4.png" src="../_images/HekateStep4.png" />
-</div></blockquote>
-</li>
-<li><p>Tap on “Close” on the top right, and then tap on “Change emuMMC”.</p>
-<blockquote>
-<div><img alt="../_images/HekateStep2and5.png" src="../_images/HekateStep2and5.png" />
-</div></blockquote>
-</li>
-<li><p>Tap on “SD RAW 1”, and tap “OK”.</p>
-<blockquote>
-<div><img alt="../_images/HekateStep6.png" src="../_images/HekateStep6.png" />
-</div></blockquote>
-</li>
+<li><p>Wait for it to finish</p></li>
 <li><p>Tap on “Close” on the top right, tap on “Launch”, and boot into your emuMMC.</p>
 <blockquote>
 <div><div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you downloaded Hekate by itself then you needed to create a hekate_ipl.ini file in your bootloader folder. That is outside the scope of this guide. If you don’t know how to do that then use SDSetup bundle.</p>
+<p>If you downloaded Hekate by itself then you needed to create a hekate_ipl.ini file in your bootloader folder. That is outside the scope of this guide. If you don’t know how to do that then use the SDSetup bundle.</p>
 </div>
-<img alt="../_images/HekateStep7.png" src="../_images/HekateStep7.png" />
+<img alt="../_images/Step9.png" src="../_images/Step9.png" />
 </div></blockquote>
 </li>
 <li><p>Congratulations you are done. You can go into “System Settings”, scroll down to “System”, and you should see an “E” at the end of your “Current version:” indicating you are in your emuMMC.</p>

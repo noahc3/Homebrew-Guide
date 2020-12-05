@@ -54,9 +54,7 @@ This guide will walk you through all of the steps required to getting homebrew a
    :caption: Creating an emuMMC
    :hidden:
    
-   /emummc/windows
-   /emummc/linux
-   /emummc/mac
+   /emummc/emummc
 
 .. toctree::
    :maxdepth: 2
