@@ -54,17 +54,8 @@ It is very highly recommended that you setup emuMMC to protect your Switch from 
 .. raw:: html
 
 	<div class="admonition warning">
-		<p class="last">To create an emuMMC on Windows, continue to <a href="/emummc/windows">Create an emuMMC on Windows</a></p>
+		<p class="last">To create an emuMMC, continue to <a href="/emummc/emummc">Create an emuMMC</a></p>
 	</div>
-	
-	<div class="admonition warning">
-		<p class="last">To create an emuMMC on MacOS, continue to <a href="/emummc/mac">Create an emuMMC on MacOS</a></p>
-	</div>
-
-	<div class="admonition warning">
-		<p class="last">To create an emuMMC on Linux, continue to <a href="/emummc/linux">Create an emuMMC on Linux</a></p>
-	</div>
-
 
 
 .. toctree::
