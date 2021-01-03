@@ -75,7 +75,7 @@ Step 0: Before Starting
 
     * You cannot use files for firmwares 6.2.0-9.1.0 as the ChoiDujour PC application does not support these versions. If you want to specifically upgrade/downgrade to one of these versions, you must first downgrade to any other firmware version and then upgrade to one of these versions using the ChoiDujourNX Switch application afterwards.
     
-4. You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal. Google is your friend.
+4. You need a fully populated hactool keys.txt file. These cannot be shared as doing so is illegal.
     
     * ChoiDujour is very picky about the keys file you use. If you have one generated from Lockpick or HACGUI, use that.
 
