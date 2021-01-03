@@ -22,7 +22,7 @@ If you want to prevent fuse burns you can follow `this guide first </hekate.html
 Step 1: Preparing Files
 -----------------------
 
-1. You need to locate the firmware binaries for the firmware version you want to upgrade/downgrade to. These cannot be shared here as they are copyrighted (hint: darthsternie)
+1. You need to locate the firmware binaries for the firmware version you want to upgrade/downgrade to. These cannot be shared here as they are copyrighted.
 2. Make sure your SD card includes a basic Hekate/Atmosphere setup (such as the one installed when following this guide)
 3. Insert your SD card into your PC
 4. Create a new folder on the root of your SD card named **"firmware"**
