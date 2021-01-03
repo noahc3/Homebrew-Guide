@@ -69,7 +69,6 @@ This guide will walk you through all of the steps required to getting homebrew a
    :caption: Misc
    :hidden:
    
-   /comparingcfws
    /troubleshooting
    /faq
    /wiiu
