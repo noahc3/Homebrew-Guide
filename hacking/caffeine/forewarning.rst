@@ -8,7 +8,7 @@ Forewarning (Caffeine)
 
 You're reading this page because your switch cannot use the fusee-gelee exploit to run payloads in the Switch's RCM mode. This is referred to as the console being "IPATCHED" or simply "patched".
 
-Up until recently, almost all homebrew were developed with the concept in mind that everyone running homebrew has access to RCM. With fusee-gelee, should a user prevent their system from booting, they can very easily take a NAND backup or regenerated system files, put them on their Switch, and they are back in action.
+In the past, almost all homebrew were developed with the concept in mind that everyone running homebrew has access to RCM. With fusee-gelee, should a user prevent their system from booting, they can very easily take a NAND backup or regenerated system files, put them on their Switch, and they are back in action.
 
 You do not have this luxury.
 
