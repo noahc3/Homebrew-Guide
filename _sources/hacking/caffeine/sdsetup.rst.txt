@@ -45,6 +45,9 @@ Step 2: Preparing Software
 Extract the ZIP file from SDSetup to a folder on your PC.
 
 * The **'sd'** folder contains all of the files that should go on your SD card. **Copy all of the contents of this folder to the root of your SD card.**
+
+.. image:: ../images/SDRoot.png
+
 * The **'payloads'** folder contains all of the payloads which can be launched with TegraRcmGui/Rekado/fusee-launcher/etc or Hekate that you selected.
 
     * In this folder, there should be a file named **lockpick_RCM.bin**. Move this to **sd:/bootloader/payloads/lockpick_RCM.bin** on your SD card, it will be used later.
