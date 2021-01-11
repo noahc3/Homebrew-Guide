@@ -87,14 +87,6 @@ The fusee-gelee exploit happens before any of these checks occur, meaning these 
 
 ........
 
-How can I load .XCI cartridge backups?
---------------------------------------
-
-Currently only SX OS is able to emulate cartridges using XCI files. SX OS is a paid custom firmware (usually $25 USD depending on the reseller) by Team Xecuter, with some drama behind it due to theft and license violation of open source code.
-
-
-.........
-
 .. tip::
     If this page doesn't answer your question, feel free to ask on the `Behemoth's discord: <https://discord.gg/a4VeH8Z>`_.
 
