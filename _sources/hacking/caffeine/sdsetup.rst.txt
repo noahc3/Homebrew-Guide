@@ -46,7 +46,7 @@ Extract the ZIP file from SDSetup to a folder on your PC.
 
 * The **'sd'** folder contains all of the files that should go on your SD card. **Copy all of the contents of this folder to the root of your SD card.**
 
-.. image:: ../images/SDRoot.png
+.. image:: ../../images/SDRoot.png
 
 * The **'payloads'** folder contains all of the payloads which can be launched with TegraRcmGui/Rekado/fusee-launcher/etc or Hekate that you selected.
 
