@@ -24,7 +24,8 @@ Step 0: What You Will Need
 * A way to ground pin 10 on the right joycon rail
 
     * To access RCM, you must hold down volume up, power and the home button. **The home button described here is not the home button on the joycon,** but instead a hardware home button (think of the physical home button found on smartphones). The Nintendo Switch doesn't have this button, but you can simulate pressing it down by grounding pin 10 of the right joycon rail.
-    * There are many ways to do this. You can pick any method `listed here. <https://gbatemp.net/threads/the-ultimate-list-of-mods-to-enter-rcm.502145/>`_ Some of these options are permanent hardmods, others are temporary. Later in the guide, you will learn of a way to have the Switch automatically enter RCM on every boot through a software mod, so don't worry about hardmodding or purchasing anything if you don't want to.
+    * There are many ways to do this. You can see a `list of methods here. <https://gbatemp.net/threads/the-ultimate-list-of-mods-to-enter-rcm.502145/>`_ Some of these options are permanent hardmods, others are temporary. For now, you should pick a method that does not require teardown or soldering, in case your console is not vulnerable. 
+    * Later in the guide, if your Switch is unpatched, you will learn of a way to have the Switch automatically enter RCM on every boot through a software mod.
 
 * A device to send a payload
 
@@ -46,7 +47,7 @@ Step 0: What You Will Need
 
 * A Micro SD Card
 
-    * You should have an SD card at least 4GB in size (64GB or higher is recommended, however). A small SD card is enough to get CFW running, but larger ones are preferred for installing games, performing NAND backups efficiently, and creating emuMMCs.
+    * You should have an SD card at least 4GB in size, however 64GB or higher is recommended. A small SD card is enough to get CFW running, but larger ones are preferred for installing games, performing NAND backups efficiently, and creating emuMMCs.
 
 * This `test payload <https://github.com/noahc3/Homebrew-Guide/files/3890384/fusee-test.zip>`_ downloaded to your payload sender device to verify if your Switch is vulnerable to fusee-gelee.
 
