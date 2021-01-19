@@ -12,7 +12,7 @@ At this point, you've decided that you want to use the Nereba browser exploit to
    If something goes wrong or you need help, check `troubleshooting </troubleshooting.html>`_.
    
 .. note:: 
-   This guide will assume you want to use `https://www.sdsetup.com <http://www.sdsetup.com>`_ to get your homebrew setup, and will guide you on doing so.
+   This guide will assume you want to use `https://www.sdsetup.com <https://www.sdsetup.com>`_ to get your homebrew setup, and will guide you on doing so.
 
 ........
    
