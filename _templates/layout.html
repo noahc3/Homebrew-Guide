@@ -57,7 +57,13 @@
         setCookie('user_theme', 'dark', 365);
     }
     
-    window.location.replace(document.referrer);
+    if (document.referrer.length < 1) {
+      window.location.replace("/");
+    } else {
+       window.location.replace(document.referrer);
+    }
+    
+   
   </script>
 {% endif %}
 {% endblock %}
