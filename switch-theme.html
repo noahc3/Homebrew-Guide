@@ -94,7 +94,7 @@
         setCookie('user_theme', 'dark', 365);
     }
     
-    if (document.referrer.length < 1) {
+    if (document.referrer.length < 1 || document.referrer.contains("switch-theme")) {
       window.location.replace("/");
     } else {
        window.location.replace(document.referrer);
