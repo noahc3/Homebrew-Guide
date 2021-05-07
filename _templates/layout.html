@@ -2,27 +2,11 @@
 {%- block extrahead %}
 <meta name="sourcename" content="{{ sourcename }}" />
 <script>
-    function getCookie(cname) {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-    
     var head = document.getElementsByTagName('HEAD')[0];  
     var link = document.createElement('link'); 
     link.rel = 'stylesheet';  
     link.type = 'text/css'; 
-    var theme = getCookie('user_theme');
+    var theme = localStorage.getItem('user_theme');
     if (theme == "dark") {
         link.href = '/_static/theme-dark.css';
     } else {
@@ -35,18 +19,11 @@
 {% endif %}
 {% if "switch-theme" in sourcename %}
   <script>
-    function setCookie(cname, cvalue, exdays) {
-      var d = new Date();
-      d.setTime(d.getTime() + (exdays*24*60*60*1000));
-      var expires = "expires="+ d.toUTCString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
-    
-    var theme = getCookie('user_theme');
+    var theme = localStorage.getItem('user_theme');
     if (theme == 'dark') {
-        setCookie('user_theme', 'light', 365);
+        localStorage.setItem('user_theme', 'light');
     } else {
-        setCookie('user_theme', 'dark', 365);
+        localStorage.setItem('user_theme', 'dark');
     }
     
     if (document.referrer.length < 1 || document.referrer.contains("switch-theme")) {
@@ -54,8 +31,6 @@
     } else {
        window.location.replace(document.referrer);
     }
-    
-   
   </script>
 {% endif %}
 {% endblock %}
