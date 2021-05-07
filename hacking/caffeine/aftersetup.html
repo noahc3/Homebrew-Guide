@@ -43,27 +43,11 @@
     <link rel="prev" title="Safety Precautions (Caffeine)" href="safetyprecautions.html" />
 <meta name="sourcename" content="hacking/caffeine/aftersetup.rst.txt" />
 <script>
-    function getCookie(cname) {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-    
     var head = document.getElementsByTagName('HEAD')[0];  
     var link = document.createElement('link'); 
     link.rel = 'stylesheet';  
     link.type = 'text/css'; 
-    var theme = getCookie('user_theme');
+    var theme = localStorage.getItem('user_theme');
     if (theme == "dark") {
         link.href = '/_static/theme-dark.css';
     } else {
