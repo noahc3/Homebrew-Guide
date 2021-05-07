@@ -64,7 +64,7 @@
         localStorage.setItem('user_theme', 'dark');
     }
     
-    if (document.referrer.length < 1 || document.referrer.contains("switch-theme")) {
+    if (document.referrer.length < 1 || document.referrer.indexOf("switch-theme") > -1) {
       window.location.replace("/");
     } else {
        window.location.replace(document.referrer);
